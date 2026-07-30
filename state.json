@@ -9,7 +9,7 @@
   "maxMp": 100,
   "stamina": 100,
   "maxStamina": 100,
-  "xp": 0,
+  "xp": 15,
   "xpToNext": 100,
   "statPoints": 0,
   "gold": 0,
@@ -253,5 +253,5 @@
   ],
   "journal": [],
   "startedAt": "2026-07-30T00:06:34.378Z",
-  "updatedAt": "2026-07-30T13:04:06.189Z"
+  "updatedAt": "2026-07-30T13:19:00.170Z"
 }
