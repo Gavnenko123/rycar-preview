@@ -369,9 +369,9 @@
 </div>
 
 <script>
-// Конфигурация: state.json лежит в этом же репозитории, доступен через raw URL
-// (без rate limit GitHub API — это статический файл).
-const STATE_URL = `https://raw.githubusercontent.com/Gavnenko123/rycar-preview/main/state.json`;
+// Конфигурация: state.json лежит в репозитории, отдаётся через jsDelivr CDN
+// (кэш короче чем у raw.githubusercontent.com, обновляется в течение минуты).
+const STATE_URL = `https://cdn.jsdelivr.net/gh/Gavnenko123/rycar-preview@main/state.json`;
 
 // D&D 5e навыки (для отображения, если в state их нет)
 const DND_SKILLS = [
