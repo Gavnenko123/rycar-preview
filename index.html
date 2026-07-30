@@ -399,8 +399,10 @@
 </div>
 
 <script>
-const STATE_URL = `https://cdn.jsdelivr.net/gh/Gavnenko123/rycar-preview@main/state.json`;
-const MESSAGES_URL = `https://cdn.jsdelivr.net/gh/Gavnenko123/rycar-preview@main/messages.json`;
+// Используем raw.githubusercontent.com — кэш короче, чем у jsDelivr (~5 мин vs 12ч).
+// Превью добавляет ?t=timestamp для обхода кэша.
+const STATE_URL = `https://raw.githubusercontent.com/Gavnenko123/rycar-preview/main/state.json`;
+const MESSAGES_URL = `https://raw.githubusercontent.com/Gavnenko123/rycar-preview/main/messages.json`;
 
 const DND_SKILLS = [
   {id:'acrobatics',name:'Акробатика',stat:'dexterity'},{id:'animal-handling',name:'Обращение с животными',stat:'wisdom'},
