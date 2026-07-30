@@ -369,9 +369,9 @@
 </div>
 
 <script>
-// Конфигурация: gist id (публичный gist, доступен без токена).
-const GIST_ID = 'ad43b5e51d7c7ef4549d8d6183fecb82';
-const GIST_URL = `https://api.github.com/gists/${GIST_ID}`;
+// Конфигурация: state.json лежит в этом же репозитории, доступен через raw URL
+// (без rate limit GitHub API — это статический файл).
+const STATE_URL = `https://raw.githubusercontent.com/Gavnenko123/rycar-preview/main/state.json`;
 
 // D&D 5e навыки (для отображения, если в state их нет)
 const DND_SKILLS = [
@@ -435,19 +435,18 @@ async function loadState() {
   syncText.textContent = 'загрузка…';
 
   try {
-    const res = await fetch(GIST_URL, { headers: { 'Accept': 'application/vnd.github+json' } });
-    if (!res.ok) throw new Error(`GitHub API: ${res.status}`);
-    const gist = await res.json();
-    const stateFile = gist.files && gist.files['state.json'];
-    if (!stateFile) throw new Error('state.json не найден в gist');
-    const state = JSON.parse(stateFile.content);
+    // raw.githubusercontent.com отдаёт статический файл без rate limit.
+    // Добавляем ?t=timestamp чтобы обойти кэш и всегда получать свежий state.
+    const res = await fetch(`${STATE_URL}?t=${Date.now()}`, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const state = await res.json();
     render(state);
     syncText.textContent = `обновлено ${new Date().toLocaleTimeString('ru-RU')}`;
     loading.style.display = 'none';
     content.style.display = 'block';
   } catch (e) {
     loading.style.display = 'none';
-    err.textContent = 'Не удалось загрузить состояние: ' + e.message + '. Возможно, gist приватный или лимит GitHub API исчерпан (60 запросов/час для анонимов).';
+    err.textContent = 'Не удалось загрузить состояние: ' + e.message;
     err.style.display = 'block';
     syncText.textContent = 'ошибка';
     document.getElementById('syncDot').style.background = '#e11d48';
