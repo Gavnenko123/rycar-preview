@@ -8,6 +8,7 @@
   :root {
     --bg: #0c0a09;
     --panel: #1c1917;
+    --panel2: #292524;
     --border: #44403c;
     --amber: #f59e0b;
     --amber-dim: #b45309;
@@ -15,14 +16,16 @@
     --sky: #0ea5e9;
     --emerald: #10b981;
     --violet: #a78bfa;
+    --pink: #ec4899;
     --stone: #a8a29e;
     --muted: #78716c;
+    --txt: #e7e5e4;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: Georgia, 'Times New Roman', serif;
     background: var(--bg);
-    color: #e7e5e4;
+    color: var(--txt);
     min-height: 100vh;
     line-height: 1.5;
   }
@@ -39,153 +42,69 @@
     background: rgba(12,10,9,0.8);
     backdrop-filter: blur(8px);
     padding: 0.75rem 1rem;
+    position: sticky; top: 0; z-index: 20;
   }
   .header-inner {
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.75rem;
+    flex-wrap: wrap;
   }
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-  }
+  .logo { display: flex; align-items: center; gap: 0.6rem; }
   .logo-mark {
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 2.2rem; height: 2.2rem;
+    display: flex; align-items: center; justify-content: center;
     border: 1px solid rgba(180,83,9,0.4);
     background: rgba(69,26,3,0.3);
-    color: var(--amber);
-    font-size: 1.2rem;
-    border-radius: 4px;
+    color: var(--amber); font-size: 1.3rem; border-radius: 4px;
   }
-  .logo h1 {
-    font-size: 1.05rem;
-    color: #f5f5f4;
-  }
-  .logo .sub {
-    font-size: 0.65rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: rgba(180,83,9,0.7);
-  }
-  .sync-status {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.7rem;
-    color: var(--muted);
-  }
-  .sync-dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--emerald);
-    animation: pulse 2s infinite;
-  }
+  .logo h1 { font-size: 1.1rem; color: #f5f5f4; }
+  .logo .sub { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(180,83,9,0.7); }
+  .sync-status { display: flex; align-items: center; gap: 0.4rem; font-size: 0.7rem; color: var(--muted); }
+  .sync-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--emerald); animation: pulse 2s infinite; }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
-  main {
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    flex: 1;
+  .refresh-btn {
+    background: rgba(69,26,3,0.4); border: 1px solid rgba(180,83,9,0.4); color: var(--amber);
+    padding: 0.3rem 0.6rem; border-radius: 4px; cursor: pointer; font-size: 0.75rem;
   }
+  .refresh-btn:hover { background: rgba(69,26,3,0.6); }
+  main { max-width: 960px; width: 100%; margin: 0 auto; padding: 1rem; flex: 1; }
   footer {
     border-top: 1px solid var(--border);
     background: rgba(12,10,9,0.9);
-    padding: 0.75rem 1rem;
-    text-align: center;
-    font-size: 0.7rem;
-    color: var(--muted);
+    padding: 0.75rem 1rem; text-align: center; font-size: 0.7rem; color: var(--muted);
   }
   .card {
-    background: rgba(28,25,23,0.6);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    background: rgba(28,25,23,0.6); border: 1px solid var(--border);
+    border-radius: 8px; padding: 1rem; margin-bottom: 1rem;
   }
   .header-card {
     background: linear-gradient(135deg, #1c1917, #0c0a09);
-    border-color: rgba(180,83,9,0.3);
-    position: relative;
-    overflow: hidden;
+    border-color: rgba(180,83,9,0.3); position: relative; overflow: hidden;
   }
   .header-card::before {
-    content: '✦';
-    position: absolute;
-    right: -0.5rem; top: -0.5rem;
-    font-size: 7rem;
-    color: rgba(180,83,9,0.08);
-    pointer-events: none;
+    content: '✦'; position: absolute; right: -0.5rem; top: -0.5rem;
+    font-size: 7rem; color: rgba(180,83,9,0.08); pointer-events: none;
   }
-  .names-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  .name-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(180,83,9,0.8);
-  }
+  .names-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; margin-bottom: 0.5rem; }
+  .name-label { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(180,83,9,0.8); }
   .name-label.body { color: var(--muted); }
-  .name-val {
-    font-size: 1.1rem;
-    color: #f5f5f4;
-  }
+  .name-val { font-size: 1.15rem; color: #f5f5f4; }
   .name-val.body { color: rgba(251,191,36,0.85); }
-  .meta-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    font-size: 0.75rem;
-    color: var(--stone);
-    margin-bottom: 0.4rem;
-  }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.75rem; color: var(--stone); margin-bottom: 0.4rem; }
   .meta-row .v { color: #f5f5f4; font-weight: 600; }
-  .location {
-    font-size: 0.75rem;
-    color: var(--stone);
-    font-style: italic;
-  }
-  .vitals-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
-  @media (min-width: 640px) {
-    .vitals-grid { grid-template-columns: repeat(3, 1fr); }
-  }
+  .location { font-size: 0.78rem; color: var(--stone); font-style: italic; }
+  .vitals-grid { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
+  @media (min-width: 640px) { .vitals-grid { grid-template-columns: repeat(3, 1fr); } }
   .vital { font-size: 0.8rem; }
-  .vital-head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.25rem;
-  }
+  .vital-head { display: flex; justify-content: space-between; margin-bottom: 0.25rem; }
   .vital-label { color: var(--stone); }
   .vital-val { font-family: monospace; color: var(--stone); }
-  .bar {
-    height: 10px;
-    background: rgba(0,0,0,0.5);
-    border-radius: 5px;
-    overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.05);
-  }
-  .bar-fill {
-    height: 100%;
-    border-radius: 5px;
-    transition: width 0.6s ease;
-  }
+  .bar { height: 10px; background: rgba(0,0,0,0.5); border-radius: 5px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); }
+  .bar-fill { height: 100%; border-radius: 5px; transition: width 0.6s ease; }
   .bar-hp .bar-fill { background: linear-gradient(90deg, #9f1239, #e11d48); }
   .bar-mp .bar-fill { background: linear-gradient(90deg, #075985, #0ea5e9); }
   .bar-sta .bar-fill { background: linear-gradient(90deg, #92400e, #f59e0b); }
@@ -193,148 +112,190 @@
   .low .bar-fill { animation: blink 1s infinite; }
   @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.5; } }
   .section-title {
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(245,158,11,0.8);
-    margin-bottom: 0.75rem;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
+    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(245,158,11,0.8); margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 0.4rem;
   }
-  .stat-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.6rem;
+  .section-title .count { margin-left: auto; font-size: 0.7rem; color: var(--muted); }
+  /* табы */
+  .tabs {
+    display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 1rem;
+    border: 1px solid var(--border); background: rgba(28,25,23,0.6);
+    padding: 0.4rem; border-radius: 8px;
   }
+  .tab {
+    padding: 0.4rem 0.7rem; font-size: 0.75rem; cursor: pointer;
+    border-radius: 4px; border: 1px solid transparent; color: var(--stone);
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    font-family: Georgia, serif; background: transparent;
+  }
+  .tab:hover { background: rgba(0,0,0,0.3); color: var(--txt); }
+  .tab.active {
+    background: rgba(69,26,3,0.4); color: #fcd34d;
+    border-color: rgba(180,83,9,0.4); box-shadow: 0 0 0 1px rgba(245,158,11,0.2);
+  }
+  .tab .ic { font-size: 0.85rem; }
+  .tab .badge {
+    font-size: 0.6rem; padding: 0 0.3rem; border-radius: 9999px;
+    background: rgba(0,0,0,0.4); color: var(--muted); margin-left: 0.2rem;
+  }
+  .tab .badge.alert { color: var(--rose); }
+  .tab .badge.gold { color: var(--amber); }
+  /* характеристики */
+  .stat-grid { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
   @media (min-width: 640px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 900px) { .stat-grid { grid-template-columns: repeat(3, 1fr); } }
-  .stat {
-    background: rgba(0,0,0,0.2);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 0.6rem;
-  }
-  .stat-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.25rem;
-  }
+  .stat { background: rgba(0,0,0,0.2); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem; }
+  .stat-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem; }
   .stat-name { font-size: 0.85rem; color: var(--stone); }
-  .stat-mod {
-    font-family: monospace;
-    font-size: 1.1rem;
-    font-weight: bold;
-  }
+  .stat-mod { font-family: monospace; font-size: 1.1rem; font-weight: bold; }
   .stat-mod.pos { color: var(--emerald); }
   .stat-mod.neg { color: var(--rose); }
-  .stat-val-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin: 0.2rem 0;
-  }
-  .stat-val {
-    font-family: monospace;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #f5f5f4;
-  }
-  .stat-tier {
-    font-size: 0.6rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-  .stat-bar {
-    height: 6px;
-    background: rgba(0,0,0,0.5);
-    border-radius: 3px;
-    overflow: hidden;
-    margin-top: 0.3rem;
-  }
-  .stat-bar-fill {
-    height: 100%;
-    border-radius: 3px;
-    transition: width 0.5s;
-  }
-  .saves-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.4rem;
-  }
+  .stat-val-row { display: flex; justify-content: space-between; align-items: baseline; margin: 0.2rem 0; }
+  .stat-val { font-family: monospace; font-size: 1.5rem; font-weight: 600; color: #f5f5f4; }
+  .stat-tier { font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; }
+  .stat-bar { height: 6px; background: rgba(0,0,0,0.5); border-radius: 3px; overflow: hidden; margin-top: 0.3rem; }
+  .stat-bar-fill { height: 100%; border-radius: 3px; transition: width 0.5s; }
+  .saves-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.4rem; }
   @media (min-width: 640px) { .saves-grid { grid-template-columns: repeat(3, 1fr); } }
-  .save-row, .skill-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.25rem 0.5rem;
-    font-size: 0.8rem;
-    border-radius: 3px;
-  }
+  .save-row, .skill-row { display: flex; justify-content: space-between; padding: 0.3rem 0.5rem; font-size: 0.8rem; border-radius: 3px; }
   .save-row:hover, .skill-row:hover { background: rgba(0,0,0,0.3); }
-  .save-row .v, .skill-row .v {
-    font-family: monospace;
-    font-weight: 600;
-  }
-  .skills-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.2rem;
-  }
+  .save-row .v, .skill-row .v { font-family: monospace; font-weight: 600; }
+  .skills-grid { display: grid; grid-template-columns: 1fr; gap: 0.2rem; }
   @media (min-width: 640px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
-  .prof-dot {
-    display: inline-block;
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    margin-right: 0.4rem;
-  }
+  .prof-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 0.4rem; }
   .prof-dot.yes { background: var(--amber); box-shadow: 0 0 0 2px rgba(245,158,11,0.3); }
   .prof-dot.no { border: 1px solid var(--muted); }
   .skill-stat { font-size: 0.6rem; color: var(--muted); text-transform: uppercase; }
-  .empty {
-    text-align: center;
-    padding: 2rem;
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
-  .badge {
-    display: inline-block;
-    padding: 0.15rem 0.5rem;
-    border-radius: 9999px;
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    border: 1px solid;
-  }
-  .badge-amber { background: rgba(69,26,3,0.5); color: #fcd34d; border-color: rgba(180,83,9,0.4); }
-  .badge-emerald { background: rgba(6,78,59,0.5); color: #6ee7b7; border-color: rgba(6,95,70,0.4); }
-  .error-banner {
-    background: rgba(69,10,10,0.6);
-    border: 1px solid var(--rose);
-    color: #fca5a5;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-    font-size: 0.85rem;
-  }
-  .refresh-btn {
-    background: rgba(69,26,3,0.4);
-    border: 1px solid rgba(180,83,9,0.4);
-    color: var(--amber);
-    padding: 0.3rem 0.8rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-  .refresh-btn:hover { background: rgba(69,26,3,0.6); }
-  .hint {
-    font-size: 0.7rem;
-    color: var(--muted);
-    font-style: italic;
-    margin-top: 0.5rem;
-  }
+  /* предметы */
+  .item { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem; margin-bottom: 0.5rem; }
+  .item.common { border-color: #57534e; }
+  .item.uncommon { border-color: rgba(16,185,129,0.5); }
+  .item.rare { border-color: rgba(14,165,233,0.5); }
+  .item.epic { border-color: rgba(167,139,250,0.5); }
+  .item.legendary { border-color: rgba(245,158,11,0.6); }
+  .item-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; }
+  .item-name { font-size: 0.9rem; color: #f5f5f4; }
+  .item.rare .item-name { color: #7dd3fc; }
+  .item.epic .item-name { color: #c4b5fd; }
+  .item.legendary .item-name { color: #fcd34d; }
+  .item-desc { font-size: 0.75rem; color: var(--stone); margin-top: 0.2rem; }
+  .item-meta { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-top: 0.3rem; display: flex; gap: 0.8rem; }
+  .qty { background: rgba(0,0,0,0.5); padding: 0 0.4rem; border-radius: 3px; font-family: monospace; font-size: 0.75rem; color: var(--txt); }
+  .equipped { background: rgba(69,26,3,0.6); color: #fcd34d; padding: 0 0.3rem; border-radius: 3px; font-size: 0.6rem; text-transform: uppercase; }
+  /* NPC */
+  .npc { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem; margin-bottom: 0.5rem; }
+  .npc.ally, .npc.friend { border-color: rgba(16,185,129,0.4); }
+  .npc.enemy, .npc.rival { border-color: rgba(225,29,72,0.4); }
+  .npc.dead { opacity: 0.55; }
+  .npc-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; }
+  .npc-name { font-size: 0.9rem; color: #f5f5f4; }
+  .npc-role { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-top: 0.1rem; }
+  .npc-badge { font-size: 0.6rem; padding: 0.1rem 0.4rem; border-radius: 9999px; text-transform: uppercase; letter-spacing: 0.1em; border: 1px solid; }
+  .npc-badge.ally, .npc-badge.friend { background: rgba(6,78,59,0.5); color: #6ee7b7; border-color: rgba(6,95,70,0.4); }
+  .npc-badge.neutral { background: rgba(41,37,36,0.6); color: var(--stone); border-color: var(--border); }
+  .npc-badge.rival, .npc-badge.enemy { background: rgba(69,10,10,0.5); color: #fca5a5; border-color: rgba(136,19,55,0.4); }
+  .npc-badge.unknown { background: rgba(41,37,36,0.6); color: var(--muted); border-color: var(--border); }
+  .trust-row { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.4rem; font-size: 0.7rem; }
+  .trust-bar { flex: 1; height: 6px; background: rgba(0,0,0,0.5); border-radius: 3px; position: relative; overflow: hidden; }
+  .trust-bar::before { content: ''; position: absolute; left: 50%; top: 0; width: 1px; height: 100%; background: rgba(120,113,108,0.6); }
+  .trust-fill { position: absolute; top: 0; height: 100%; border-radius: 3px; }
+  .trust-fill.pos { left: 50%; background: linear-gradient(90deg, #059669, #34d399); }
+  .trust-fill.neg { right: 50%; background: linear-gradient(270deg, #9f1239, #e11d48); }
+  .trust-val { font-family: monospace; color: var(--stone); min-width: 2rem; text-align: right; }
+  .npc-notes { font-size: 0.72rem; color: var(--stone); margin-top: 0.3rem; }
+  .fact-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.4rem; }
+  .chip { font-size: 0.62rem; background: rgba(41,37,36,0.6); color: var(--stone); padding: 0.1rem 0.4rem; border-radius: 3px; }
+  /* заметки */
+  .journal-entry { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-left-width: 3px; border-radius: 4px; padding: 0.6rem; margin-bottom: 0.5rem; }
+  .journal-entry.clue { border-left-color: var(--sky); }
+  .journal-entry.person { border-left-color: var(--pink); }
+  .journal-entry.place { border-left-color: var(--emerald); }
+  .journal-entry.plan { border-left-color: var(--amber); }
+  .journal-entry.danger { border-left-color: var(--rose); }
+  .journal-entry.lore { border-left-color: var(--violet); }
+  .journal-entry.other { border-left-color: var(--muted); }
+  .journal-entry.pinned { background: rgba(69,26,3,0.15); }
+  .j-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; }
+  .j-title { font-size: 0.88rem; color: #f5f5f4; }
+  .j-pin { color: var(--amber); font-size: 0.8rem; }
+  .j-content { font-size: 0.75rem; color: var(--stone); margin-top: 0.2rem; white-space: pre-wrap; }
+  .j-meta { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-top: 0.4rem; display: flex; gap: 0.8rem; }
+  /* квесты */
+  .quest { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem; margin-bottom: 0.5rem; }
+  .quest.completed { border-color: rgba(16,185,129,0.4); }
+  .quest.failed { border-color: rgba(225,29,72,0.4); opacity: 0.7; }
+  .q-head { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+  .q-title { font-size: 0.88rem; color: #f5f5f4; }
+  .q-status { font-size: 0.6rem; padding: 0.1rem 0.4rem; border-radius: 9999px; text-transform: uppercase; letter-spacing: 0.1em; }
+  .q-status.active { background: rgba(69,26,3,0.5); color: #fcd34d; }
+  .q-status.completed { background: rgba(6,78,59,0.5); color: #6ee7b7; }
+  .q-status.failed { background: rgba(69,10,10,0.5); color: #fca5a5; }
+  .q-desc { font-size: 0.75rem; color: var(--stone); margin-top: 0.2rem; }
+  /* смерти */
+  .death { background: rgba(0,0,0,0.3); border: 1px solid rgba(136,19,55,0.3); border-radius: 4px; padding: 0.6rem; margin-bottom: 0.5rem; }
+  .death-head { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--muted); margin-bottom: 0.2rem; }
+  .death-cause { font-size: 0.82rem; color: var(--txt); }
+  /* эффекты */
+  .effect-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .effect { font-size: 0.72rem; padding: 0.3rem 0.5rem; border-radius: 4px; border: 1px solid; display: inline-flex; align-items: center; gap: 0.3rem; }
+  .effect.buff { background: rgba(6,78,59,0.4); color: #6ee7b7; border-color: rgba(6,95,70,0.4); }
+  .effect.debuff { background: rgba(69,10,10,0.4); color: #fca5a5; border-color: rgba(136,19,55,0.4); }
+  .effect.injury { background: rgba(69,10,10,0.5); color: #fca5a5; border-color: rgba(136,19,55,0.5); }
+  .effect.condition { background: rgba(69,26,3,0.4); color: #fcd34d; border-color: rgba(180,83,9,0.4); }
+  .effect .dur { font-family: monospace; font-size: 0.65rem; opacity: 0.8; }
+  /* лента событий */
+  .event { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-left-width: 3px; border-radius: 4px; padding: 0.5rem; margin-bottom: 0.4rem; }
+  .event.narrator { border-left-color: var(--violet); }
+  .event.player { border-left-color: var(--sky); }
+  .event.gm { border-left-color: var(--violet); }
+  .event.system { border-left-color: var(--muted); }
+  .event.npc { border-left-color: var(--amber); }
+  .event-head { display: flex; align-items: center; gap: 0.4rem; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.2rem; }
+  .role-badge { padding: 0.1rem 0.4rem; border-radius: 9999px; border: 1px solid; font-size: 0.6rem; }
+  .role-badge.narrator, .role-badge.gm { background: rgba(46,16,101,0.4); color: #c4b5fd; border-color: rgba(76,29,149,0.4); }
+  .role-badge.player { background: rgba(8,47,73,0.4); color: #7dd3fc; border-color: rgba(12,74,110,0.4); }
+  .role-badge.system { background: rgba(41,37,36,0.6); color: var(--stone); border-color: var(--border); }
+  .role-badge.npc { background: rgba(69,26,3,0.4); color: #fcd34d; border-color: rgba(180,83,9,0.4); }
+  .event-time { margin-left: auto; font-family: monospace; }
+  .event-text { font-size: 0.78rem; color: var(--stone); white-space: pre-wrap; line-height: 1.4; }
+  /* карта */
+  .map-container { position: relative; width: 100%; aspect-ratio: 4/3; background: linear-gradient(to bottom, #1c1917, rgba(0,0,0,0.7)); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+  .map-loc { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; }
+  .map-btn { background: rgba(0,0,0,0.7); border: 1px solid; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.65rem; color: var(--stone); cursor: default; text-align: center; }
+  .map-btn.current { border-color: var(--amber); background: rgba(69,26,3,0.6); color: #fcd34d; box-shadow: 0 0 0 2px rgba(245,158,11,0.3); }
+  .map-btn.safe { border-color: rgba(16,185,129,0.5); color: #6ee7b7; }
+  .map-btn.caution { border-color: rgba(245,158,11,0.5); color: #fcd34d; }
+  .map-btn.danger { border-color: rgba(225,29,72,0.6); color: #fca5a5; }
+  .map-pulse { position: absolute; left: 50%; top: 50%; width: 2rem; height: 2rem; border-radius: 50%; background: rgba(245,158,11,0.2); transform: translate(-50%,-50%); animation: mapPulse 2s ease-out infinite; }
+  @keyframes mapPulse { 0% { transform: translate(-50%,-50%) scale(0.5); opacity: 0.8; } 100% { transform: translate(-50%,-50%) scale(1.5); opacity: 0; } }
+  /* достижения */
+  .ach { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem; display: flex; gap: 0.6rem; }
+  .ach.done { border-color: rgba(180,83,9,0.5); background: linear-gradient(135deg, rgba(69,26,3,0.3), rgba(28,25,23,0.6)); }
+  .ach-icon { font-size: 1.5rem; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: rgba(41,37,36,0.5); border-radius: 4px; flex-shrink: 0; }
+  .ach.done .ach-icon { background: rgba(69,26,3,0.4); box-shadow: 0 0 0 1px rgba(245,158,11,0.3); }
+  .ach.locked .ach-icon { filter: grayscale(1); opacity: 0.4; }
+  .ach-name { font-size: 0.85rem; color: #f5f5f4; }
+  .ach.done .ach-name { color: #fcd34d; }
+  .ach-desc { font-size: 0.7rem; color: var(--muted); margin-top: 0.1rem; }
+  .ach-bar { height: 4px; background: rgba(0,0,0,0.5); border-radius: 2px; overflow: hidden; margin-top: 0.3rem; }
+  .ach-bar-fill { height: 100%; border-radius: 2px; }
+  .ach.done .ach-bar-fill { background: linear-gradient(90deg, #b45309, #fbbf24); }
+  .ach.locked .ach-bar-fill { background: var(--muted); }
+  .ach-progress { font-family: monospace; font-size: 0.65rem; color: var(--stone); margin-top: 0.2rem; }
+  /* статистика */
+  .stat-box { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem; text-align: center; }
+  .stat-box-label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.2rem; }
+  .stat-box-val { font-family: monospace; font-size: 1.1rem; font-weight: 600; }
+  .empty { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.85rem; }
+  .error-banner { background: rgba(69,10,10,0.6); border: 1px solid var(--rose); color: #fca5a5; padding: 0.75rem 1rem; border-radius: 6px; margin-bottom: 1rem; font-size: 0.85rem; }
+  .ornament { display: flex; align-items: center; gap: 0.75rem; color: rgba(180,83,9,0.3); margin: 1rem 0; }
+  .ornament::before, .ornament::after { content: ''; height: 1px; flex: 1; background: linear-gradient(to right, transparent, rgba(180,83,9,0.3)); }
+  .ornament::after { background: linear-gradient(to left, transparent, rgba(180,83,9,0.3)); }
+  .grid-2 { display: grid; grid-template-columns: 1fr; gap: 0.5rem; }
+  @media (min-width: 640px) { .grid-2 { grid-template-columns: repeat(2, 1fr); } }
+  .grid-4 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+  @media (min-width: 640px) { .grid-4 { grid-template-columns: repeat(4, 1fr); } }
 </style>
 </head>
 <body>
@@ -345,7 +306,7 @@
         <div class="logo-mark">✦</div>
         <div>
           <h1>Рыцарь одного дня</h1>
-          <div class="sub">системное окно · статическое превью</div>
+          <div class="sub">системное окно</div>
         </div>
       </div>
       <div class="sync-status">
@@ -363,42 +324,27 @@
   </main>
 
   <footer>
-    Превью тянет состояние из GitHub Gist. Игра ведётся в чате с мастером.
-    <br>После смерти — возврат на контрольную точку. Уровень, опыт и навыки остаются с тобой.
+    Превью тянет состояние из GitHub (jsDelivr CDN). Игра ведётся в чате с мастером.
+    <br>После смерти — возврат на контрольную точку. Уровень, опыт, навыки и заметки остаются с тобой.
   </footer>
 </div>
 
 <script>
-// Конфигурация: state.json лежит в репозитории, отдаётся через jsDelivr CDN
-// (кэш короче чем у raw.githubusercontent.com, обновляется в течение минуты).
 const STATE_URL = `https://cdn.jsdelivr.net/gh/Gavnenko123/rycar-preview@main/state.json`;
+const MESSAGES_URL = `https://cdn.jsdelivr.net/gh/Gavnenko123/rycar-preview@main/messages.json`;
 
-// D&D 5e навыки (для отображения, если в state их нет)
 const DND_SKILLS = [
-  {id:'acrobatics',name:'Акробатика',stat:'dexterity'},
-  {id:'animal-handling',name:'Обращение с животными',stat:'wisdom'},
-  {id:'arcana',name:'Магия',stat:'intelligence'},
-  {id:'athletics',name:'Атлетика',stat:'strength'},
-  {id:'deception',name:'Обман',stat:'charisma'},
-  {id:'history',name:'История',stat:'intelligence'},
-  {id:'insight',name:'Проницательность',stat:'wisdom'},
-  {id:'intimidation',name:'Запугивание',stat:'charisma'},
-  {id:'investigation',name:'Расследование',stat:'intelligence'},
-  {id:'medicine',name:'Медицина',stat:'wisdom'},
-  {id:'nature',name:'Природа',stat:'intelligence'},
-  {id:'perception',name:'Восприятие',stat:'wisdom'},
-  {id:'performance',name:'Выступление',stat:'charisma'},
-  {id:'persuasion',name:'Убеждение',stat:'charisma'},
-  {id:'religion',name:'Религия',stat:'intelligence'},
-  {id:'sleight-of-hand',name:'Ловкость рук',stat:'dexterity'},
-  {id:'stealth',name:'Скрытность',stat:'dexterity'},
-  {id:'survival',name:'Выживание',stat:'wisdom'},
+  {id:'acrobatics',name:'Акробатика',stat:'dexterity'},{id:'animal-handling',name:'Обращение с животными',stat:'wisdom'},
+  {id:'arcana',name:'Магия',stat:'intelligence'},{id:'athletics',name:'Атлетика',stat:'strength'},
+  {id:'deception',name:'Обман',stat:'charisma'},{id:'history',name:'История',stat:'intelligence'},
+  {id:'insight',name:'Проницательность',stat:'wisdom'},{id:'intimidation',name:'Запугивание',stat:'charisma'},
+  {id:'investigation',name:'Расследование',stat:'intelligence'},{id:'medicine',name:'Медицина',stat:'wisdom'},
+  {id:'nature',name:'Природа',stat:'intelligence'},{id:'perception',name:'Восприятие',stat:'wisdom'},
+  {id:'performance',name:'Выступление',stat:'charisma'},{id:'persuasion',name:'Убеждение',stat:'charisma'},
+  {id:'religion',name:'Религия',stat:'intelligence'},{id:'sleight-of-hand',name:'Ловкость рук',stat:'dexterity'},
+  {id:'stealth',name:'Скрытность',stat:'dexterity'},{id:'survival',name:'Выживание',stat:'wisdom'},
 ];
-
-const STAT_LABELS = {
-  strength:'Сила', dexterity:'Ловкость', constitution:'Телосложение',
-  intelligence:'Интеллект', wisdom:'Мудрость', charisma:'Харизма',
-};
+const STAT_LABELS = {strength:'Сила',dexterity:'Ловкость',constitution:'Телосложение',intelligence:'Интеллект',wisdom:'Мудрость',charisma:'Харизма'};
 const STAT_DESC = {
   strength:'Атаки ближним боем, атлетика, переноска груза, взлом.',
   dexterity:'Броня (CA), инициатива, ловкость рук, скрытность, дальний бой.',
@@ -408,21 +354,60 @@ const STAT_DESC = {
   charisma:'Убеждение, обман, запугивание, выступление, доверие NPC.',
 };
 const STAT_ORDER = ['strength','dexterity','constitution','intelligence','wisdom','charisma'];
+const RARITY_LABELS = {common:'Обычное',uncommon:'Необычное',rare:'Редкое',epic:'Эпическое',legendary:'Легендарное'};
+const ITEM_TYPE_LABELS = {weapon:'Оружие',armor:'Броня',consumable:'Расходник',misc:'Прочее',key:'Ключевое'};
+const REL_LABELS = {ally:'Союзник',friend:'Друг',neutral:'Нейтрален',rival:'Соперник',enemy:'Враг',unknown:'Незнакомец'};
+const JCAT_LABELS = {clue:'Улика',person:'Персона',place:'Место',plan:'План',danger:'Опасность',lore:'Знание',other:'Прочее'};
+const ROLE_LABELS = {narrator:'Мастер',player:'Герой',gm:'Мастер',system:'Система',npc:'НИП'};
 
-function statMod(score) { return Math.floor((score - 10) / 2); }
-function fmtMod(n) { return n >= 0 ? `+${n}` : `${n}`; }
-function tier(val) {
-  if (val >= 18) return {label:'выдающаяся', grad:'linear-gradient(90deg,#d97706,#fbbf24)'};
-  if (val >= 14) return {label:'сильная', grad:'linear-gradient(90deg,#059669,#34d399)'};
-  if (val >= 10) return {label:'средняя', grad:'linear-gradient(90deg,#78716c,#d6d3d1)'};
-  if (val >= 7) return {label:'слабая', grad:'linear-gradient(90deg,#c2410c,#f97316)'};
-  return {label:'жалкая', grad:'linear-gradient(90deg,#9f1239,#e11d48)'};
-}
+const MAP_LOCS = [
+  {id:'dungeon',name:'Тюрьма',x:15,y:78,danger:'safe'},
+  {id:'courtyard',name:'Двор',x:50,y:60,danger:'danger'},
+  {id:'barracks',name:'Казармы',x:78,y:70,danger:'caution'},
+  {id:'hall',name:'Главный зал',x:50,y:40,danger:'caution'},
+  {id:'archive',name:'Архив',x:25,y:35,danger:'caution'},
+  {id:'chapel',name:'Часовня',x:75,y:35,danger:'caution'},
+  {id:'tavern',name:'«Сломанное Копьё»',x:88,y:90,danger:'caution'},
+  {id:'tower',name:'Башня лорда',x:50,y:15,danger:'danger'},
+];
 
-function escapeHtml(s) {
-  if (s == null) return '';
-  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ACHIEVEMENTS = [
+  {id:'first-death',name:'Первая смерть',desc:'Умереть в первый раз.',icon:'💀',cat:'Петли',target:1,fn:s=>Math.min(s.deathLog.length,1)},
+  {id:'five-deaths',name:'Привыкший умирать',desc:'Умереть 5 раз.',icon:'🪦',cat:'Петли',target:5,fn:s=>s.deathLog.length},
+  {id:'ten-deaths',name:'Бессмертный неудачник',desc:'Умереть 10 раз.',icon:'♾️',cat:'Петли',target:10,fn:s=>s.deathLog.length},
+  {id:'loop-master',name:'Хозяин петли',desc:'Дожить до 20-й петли.',icon:'🔄',cat:'Петли',target:20,fn:s=>s.loopCount},
+  {id:'first-skill',name:'Первый навык',desc:'Изучить любой навык.',icon:'⚔️',cat:'Бой',target:1,fn:s=>Math.min(s.skills.length,1)},
+  {id:'five-skills',name:'Разносторонний',desc:'Изучить 5 навыков.',icon:'🗡️',cat:'Бой',target:5,fn:s=>s.skills.length},
+  {id:'master-skill',name:'Мастер',desc:'Прокачать навык до 5 уровня.',icon:'🏆',cat:'Бой',target:1,fn:s=>s.skills.filter(x=>x.level>=5).length},
+  {id:'level-5',name:'Окрепший',desc:'Достичь 5 уровня.',icon:'📈',cat:'Бой',target:5,fn:s=>s.level},
+  {id:'level-10',name:'Закалённый петлёй',desc:'Достичь 10 уровня.',icon:'🌟',cat:'Бой',target:10,fn:s=>s.level},
+  {id:'first-npc',name:'Первая встреча',desc:'Узнать имя хоть одного человека.',icon:'👥',cat:'Люди',target:1,fn:s=>Math.min(s.relationships.length,1)},
+  {id:'five-npcs',name:'Знающий людей',desc:'Узнать 5 людей.',icon:'🤝',cat:'Люди',target:5,fn:s=>s.relationships.length},
+  {id:'first-friend',name:'Завязавший связь',desc:'Завести союзника (trust ≥ 30).',icon:'💚',cat:'Люди',target:1,fn:s=>s.relationships.filter(r=>(r.type==='ally'||r.type==='friend')&&r.trust>=30).length},
+  {id:'enemy',name:'Наживший врага',desc:'Заработать врага (trust ≤ -30).',icon:'💢',cat:'Люди',target:1,fn:s=>s.relationships.filter(r=>r.type==='enemy'||r.trust<=-30).length},
+  {id:'first-journal',name:'Записавший улику',desc:'Сделать первую заметку.',icon:'📝',cat:'Исследование',target:1,fn:s=>Math.min(s.journal.length,1)},
+  {id:'ten-journal',name:'Дотошный',desc:'Собрать 10 заметок.',icon:'📚',cat:'Исследование',target:10,fn:s=>s.journal.length},
+  {id:'rare-item',name:'Находящий редкости',desc:'Заполучить редкий предмет.',icon:'💎',cat:'Исследование',target:1,fn:s=>s.inventory.filter(i=>['rare','epic','legendary'].includes(i.rarity)).length},
+  {id:'gold-50',name:'При деньгах',desc:'Накопить 50 золотых.',icon:'🪙',cat:'Исследование',target:50,fn:s=>s.gold},
+  {id:'five-facts',name:'Собиратель фактов',desc:'Узнать 5 фактов о людях.',icon:'🔍',cat:'Знание',target:5,fn:s=>s.relationships.reduce((a,r)=>a+r.knownFacts.length,0)},
+  {id:'quest-done',name:'Закрывший дело',desc:'Выполнить любой квест.',icon:'✅',cat:'Знание',target:1,fn:s=>s.questLog.filter(q=>q.status==='completed').length},
+];
+
+function statMod(score){return Math.floor((score-10)/2);}
+function fmtMod(n){return n>=0?`+${n}`:`${n}`;}
+function tier(val){
+  if(val>=18)return{label:'выдающаяся',grad:'linear-gradient(90deg,#d97706,#fbbf24)'};
+  if(val>=14)return{label:'сильная',grad:'linear-gradient(90deg,#059669,#34d399)'};
+  if(val>=10)return{label:'средняя',grad:'linear-gradient(90deg,#78716c,#d6d3d1)'};
+  if(val>=7)return{label:'слабая',grad:'linear-gradient(90deg,#c2410c,#f97316)'};
+  return{label:'жалкая',grad:'linear-gradient(90deg,#9f1239,#e11d48)'};
 }
+function escapeHtml(s){if(s==null)return'';return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function fmtDuration(ms){const sec=Math.floor(ms/1000),min=Math.floor(sec/60),hr=Math.floor(min/60);if(hr>0)return`${hr}ч ${min%60}м`;if(min>0)return`${min}м ${sec%60}с`;return`${sec}с`;}
+
+let currentState = null;
+let currentMessages = [];
+let activeTab = 'stats';
 
 async function loadState() {
   const err = document.getElementById('error');
@@ -430,17 +415,20 @@ async function loadState() {
   const content = document.getElementById('content');
   const syncText = document.getElementById('syncText');
   err.style.display = 'none';
-  loading.style.display = 'block';
-  content.style.display = 'none';
+  if (!currentState) { loading.style.display = 'block'; content.style.display = 'none'; }
   syncText.textContent = 'загрузка…';
-
   try {
-    // raw.githubusercontent.com отдаёт статический файл без rate limit.
-    // Добавляем ?t=timestamp чтобы обойти кэш и всегда получать свежий state.
-    const res = await fetch(`${STATE_URL}?t=${Date.now()}`, { cache: 'no-store' });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const state = await res.json();
-    render(state);
+    const t = Date.now();
+    const [stateRes, msgRes] = await Promise.all([
+      fetch(`${STATE_URL}?t=${t}`, {cache:'no-store'}),
+      fetch(`${MESSAGES_URL}?t=${t}`, {cache:'no-store'}).catch(()=>null),
+    ]);
+    if (!stateRes.ok) throw new Error(`HTTP ${stateRes.status}`);
+    currentState = await stateRes.json();
+    if (msgRes && msgRes.ok) {
+      try { currentMessages = await msgRes.json(); } catch { currentMessages = []; }
+    }
+    render();
     syncText.textContent = `обновлено ${new Date().toLocaleTimeString('ru-RU')}`;
     loading.style.display = 'none';
     content.style.display = 'block';
@@ -453,17 +441,20 @@ async function loadState() {
   }
 }
 
-function render(state) {
-  const s = state;
+function render() {
+  const s = currentState;
   const ca = 10 + statMod(s.stats.dexterity);
-  const html = `
+  document.getElementById('content').innerHTML = `
     ${renderHeader(s, ca)}
     ${renderVitals(s)}
-    ${renderStats(s, ca)}
-    ${renderSaves(s)}
-    ${renderSkills(s)}
+    ${renderEffects(s)}
+    <div class="ornament">✦</div>
+    ${renderTabs(s)}
+    <div id="tabContent"></div>
+    <div class="ornament">✦</div>
+    ${renderEvents()}
   `;
-  document.getElementById('content').innerHTML = html;
+  renderTab();
 }
 
 function renderHeader(s, ca) {
@@ -471,18 +462,16 @@ function renderHeader(s, ca) {
   return `
     <div class="card header-card">
       <div class="names-row">
-        <span class="name-label">Душа</span>
-        <span class="name-val">${escapeHtml(s.characterName)}</span>
+        <span class="name-label">Душа</span><span class="name-val">${escapeHtml(s.characterName)}</span>
         <span style="color:var(--muted)">·</span>
-        <span class="name-label body">Тело</span>
-        <span class="name-val body">${escapeHtml(s.bodyName)}</span>
+        <span class="name-label body">Тело</span><span class="name-val body">${escapeHtml(s.bodyName)}</span>
       </div>
       <div class="meta-row">
         <span>Уровень <span class="v">${s.level}</span></span>
         <span>Петля <span class="v" style="color:var(--rose)">#${s.loopCount}</span></span>
         <span>CA <span class="v" style="color:var(--sky)">${ca}</span></span>
-        <span>Бонус мастерства <span class="v" style="color:var(--amber)">+${s.proficiencyBonus || 2}</span></span>
-        ${s.statPoints > 0 ? `<span class="badge badge-emerald">очков: ${s.statPoints}</span>` : ''}
+        <span>Бонус мастерства <span class="v" style="color:var(--amber)">+${s.proficiencyBonus||2}</span></span>
+        ${s.statPoints>0?`<span class="equipped">очков: ${s.statPoints}</span>`:''}
       </div>
       <div class="meta-row">
         <span>Время: <span class="v">${escapeHtml(s.dayTime)}</span></span>
@@ -502,105 +491,250 @@ function renderHeader(s, ca) {
 
 function renderVitals(s) {
   const mk = (label, val, max, cls, color) => {
-    const pct = max > 0 ? Math.min(100, (val / max) * 100) : 0;
-    const low = pct < 25 ? 'low' : '';
-    return `
-      <div class="vital ${low}">
-        <div class="vital-head">
-          <span class="vital-label" style="color:${color}">${label}</span>
-          <span class="vital-val">${val}/${max}</span>
-        </div>
-        <div class="bar ${cls}"><div class="bar-fill" style="width:${pct}%"></div></div>
-      </div>
-    `;
+    const pct = max>0?Math.min(100,(val/max)*100):0;
+    const low = pct<25?'low':'';
+    return `<div class="vital ${low}"><div class="vital-head"><span class="vital-label" style="color:${color}">${label}</span><span class="vital-val">${val}/${max}</span></div><div class="bar ${cls}"><div class="bar-fill" style="width:${pct}%"></div></div></div>`;
   };
-  return `
-    <div class="card">
-      <div class="section-title">❤ Состояние</div>
-      <div class="vitals-grid">
-        ${mk('HP', s.hp, s.maxHp, 'bar-hp', '#fb7185')}
-        ${mk('MP', s.mp, s.maxMp, 'bar-mp', '#38bdf8')}
-        ${mk('STA', s.stamina, s.maxStamina, 'bar-sta', '#fbbf24')}
-      </div>
-    </div>
-  `;
+  return `<div class="card"><div class="section-title">❤ Состояние</div><div class="vitals-grid">${mk('HP',s.hp,s.maxHp,'bar-hp','#fb7185')}${mk('MP',s.mp,s.maxMp,'bar-mp','#38bdf8')}${mk('STA',s.stamina,s.maxStamina,'bar-sta','#fbbf24')}</div></div>`;
 }
 
-function renderStats(s, ca) {
+function renderEffects(s) {
+  if (!s.statusEffects || s.statusEffects.length === 0) {
+    return `<div class="card"><div class="section-title">⊙ Активные эффекты</div><div class="empty">Тело чисто. Ни ран, ни ядов, ни благословений.</div></div>`;
+  }
+  const chips = s.statusEffects.map(e => `<div class="effect ${e.kind}"><span>${escapeHtml(e.name)}</span><span class="dur">${e.duration===-1?'∞':e.duration+'х'}</span></div>`).join('');
+  return `<div class="card"><div class="section-title">⊙ Активные эффекты <span class="count">${s.statusEffects.length}</span></div><div class="effect-chips">${chips}</div></div>`;
+}
+
+function renderTabs(s) {
+  const tabs = [
+    {id:'stats',ic:'⚔',label:'Характеристики'},
+    {id:'skills',ic:'🗡',label:'Навыки',badge:s.skills.length},
+    {id:'inventory',ic:'🎒',label:'Инвентарь',badge:s.inventory.length},
+    {id:'quests',ic:'📜',label:'Квесты',badge:s.questLog.length},
+    {id:'relations',ic:'👥',label:'Связи',badge:s.relationships.length},
+    {id:'journal',ic:'📖',label:'Заметки',badge:s.journal.length,gold:true},
+    {id:'deaths',ic:'💀',label:'Смерти',badge:s.deathLog.length,alert:true},
+    {id:'history',ic:'⏱',label:'Хроника',badge:currentMessages.length},
+    {id:'map',ic:'🗺',label:'Карта'},
+    {id:'achievements',ic:'🏆',label:'Чести'},
+    {id:'playstats',ic:'📊',label:'Стата'},
+  ];
+  const html = tabs.map(t => {
+    const badge = t.badge !== undefined ? `<span class="badge ${t.alert?'alert':''} ${t.gold?'gold':''}">${t.badge}</span>` : '';
+    return `<button class="tab ${activeTab===t.id?'active':''}" onclick="switchTab('${t.id}')"><span class="ic">${t.ic}</span>${t.label}${badge}</button>`;
+  }).join('');
+  return `<div class="tabs">${html}</div>`;
+}
+
+function switchTab(id) { activeTab = id; document.querySelectorAll('.tab').forEach((t,i)=>{t.classList.toggle('active', t.textContent.includes(id) || false);}); render(); }
+
+function renderTab() {
+  const c = document.getElementById('tabContent');
+  if (!c) return;
+  const s = currentState;
+  switch (activeTab) {
+    case 'stats': c.innerHTML = renderStats(s); break;
+    case 'skills': c.innerHTML = renderSkills(s); break;
+    case 'inventory': c.innerHTML = renderInventory(s); break;
+    case 'quests': c.innerHTML = renderQuests(s); break;
+    case 'relations': c.innerHTML = renderRelations(s); break;
+    case 'journal': c.innerHTML = renderJournal(s); break;
+    case 'deaths': c.innerHTML = renderDeaths(s); break;
+    case 'history': c.innerHTML = renderHistory(s); break;
+    case 'map': c.innerHTML = renderMap(s); break;
+    case 'achievements': c.innerHTML = renderAchievements(s); break;
+    case 'playstats': c.innerHTML = renderPlayStats(s); break;
+    default: c.innerHTML = renderStats(s);
+  }
+}
+
+function renderStats(s) {
   const cards = STAT_ORDER.map(key => {
-    const val = s.stats[key] || 0;
-    const mod = statMod(val);
-    const t = tier(val);
-    const pct = (val / 20) * 100;
-    return `
-      <div class="stat" title="${escapeHtml(STAT_DESC[key])}">
-        <div class="stat-head">
-          <span class="stat-name">${STAT_LABELS[key]}</span>
-          <span class="stat-mod ${mod >= 0 ? 'pos' : 'neg'}">${fmtMod(mod)}</span>
-        </div>
-        <div class="stat-val-row">
-          <span class="stat-val">${val}</span>
-          <span class="stat-tier" style="color:${mod >= 0 ? '#6ee7b7' : '#fca5a5'}">${t.label}</span>
-        </div>
-        <div class="stat-bar"><div class="stat-bar-fill" style="width:${pct}%;background:${t.grad}"></div></div>
-      </div>
-    `;
+    const val = s.stats[key]||0, mod = statMod(val), t = tier(val), pct = (val/20)*100;
+    return `<div class="stat" title="${escapeHtml(STAT_DESC[key])}"><div class="stat-head"><span class="stat-name">${STAT_LABELS[key]}</span><span class="stat-mod ${mod>=0?'pos':'neg'}">${fmtMod(mod)}</span></div><div class="stat-val-row"><span class="stat-val">${val}</span><span class="stat-tier" style="color:${mod>=0?'#6ee7b7':'#fca5a5'}">${t.label}</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:${pct}%;background:${t.grad}"></div></div></div>`;
   }).join('');
-  return `
-    <div class="card">
-      <div class="section-title">⚔ Характеристики (D&D 5e)</div>
-      <div class="stat-grid">${cards}</div>
-    </div>
-  `;
-}
-
-function renderSaves(s) {
-  const rows = STAT_ORDER.map(key => {
-    const bonus = statMod(s.stats[key] || 0);
-    return `
-      <div class="save-row">
-        <span>${STAT_LABELS[key]}</span>
-        <span class="v" style="color:${bonus >= 0 ? '#6ee7b7' : '#fca5a5'}">${fmtMod(bonus)}</span>
-      </div>
-    `;
-  }).join('');
-  return `
-    <div class="card">
-      <div class="section-title">🎲 Спасброски</div>
-      <div class="saves-grid">${rows}</div>
-    </div>
-  `;
+  const saves = STAT_ORDER.map(key => {const b=statMod(s.stats[key]||0);return `<div class="save-row"><span>${STAT_LABELS[key]}</span><span class="v" style="color:${b>=0?'#6ee7b7':'#fca5a5'}">${fmtMod(b)}</span></div>`;}).join('');
+  return `<div class="card"><div class="section-title">⚔ Характеристики (D&D 5e)</div><div class="stat-grid">${cards}</div></div><div class="card"><div class="section-title">🎲 Спасброски</div><div class="saves-grid">${saves}</div></div>`;
 }
 
 function renderSkills(s) {
-  const dndSkills = s.dndSkills || DND_SKILLS.map(sk => ({...sk, proficient: false, bonus: 0}));
-  const prof = s.proficiencyBonus || 2;
-  const rows = dndSkills.map(sk => {
-    const statVal = s.stats[sk.stat] || 0;
-    const bonus = statMod(statVal) + (sk.proficient ? prof : 0) + (sk.bonus || 0);
-    const dotClass = sk.proficient ? 'yes' : 'no';
-    return `
-      <div class="skill-row" title="Связана с ${STAT_LABELS[sk.stat]}">
-        <span>
-          <span class="prof-dot ${dotClass}"></span>
-          ${escapeHtml(sk.name)}
-          <span class="skill-stat">(${STAT_LABELS[sk.stat].slice(0,3)})</span>
-        </span>
-        <span class="v" style="color:${bonus >= 0 ? '#6ee7b7' : '#fca5a5'}">${fmtMod(bonus)}</span>
-      </div>
-    `;
+  const gameSkills = s.skills.length ? s.skills.map(sk => `<div class="save-row"><span>${escapeHtml(sk.name)} <span class="skill-stat">(${sk.category})</span></span><span class="v" style="color:var(--amber)">ур.${sk.level}</span></div>`).join('') : '<div class="empty">Игровых навыков пока нет. Тренируйся у мастеров замка.</div>';
+  const dnd = (s.dndSkills||DND_SKILLS.map(x=>({...x,proficient:false,bonus:0}))).map(sk => {
+    const statVal = s.stats[sk.stat]||0;
+    const bonus = statMod(statVal) + (sk.proficient?(s.proficiencyBonus||2):0) + (sk.bonus||0);
+    return `<div class="skill-row" title="Связана с ${STAT_LABELS[sk.stat]}"><span><span class="prof-dot ${sk.proficient?'yes':'no'}"></span>${escapeHtml(sk.name)} <span class="skill-stat">(${STAT_LABELS[sk.stat].slice(0,3)})</span></span><span class="v" style="color:${bonus>=0?'#6ee7b7':'#fca5a5'}">${fmtMod(bonus)}</span></div>`;
   }).join('');
-  const profCount = dndSkills.filter(sk => sk.proficient).length;
-  return `
-    <div class="card">
-      <div class="section-title">✓ Навыки (D&D 5e) <span style="margin-left:auto;font-size:0.7rem;color:var(--muted)">владений: ${profCount}/${dndSkills.length}</span></div>
-      <div class="skills-grid">${rows}</div>
-      <div class="hint">Заполненный кружок — владение (бонус мастерства +${prof}). Пустой — без владения.</div>
-    </div>
-  `;
+  const profCount = (s.dndSkills||[]).filter(x=>x.proficient).length;
+  return `<div class="card"><div class="section-title">🗡 Игровые навыки <span class="count">${s.skills.length}</span></div>${gameSkills}</div><div class="card"><div class="section-title">✓ Навыки D&D 5e <span class="count">владений: ${profCount}/18</span></div><div class="skills-grid">${dnd}</div></div>`;
 }
 
-// автообновление каждые 10 секунд
+function renderInventory(s) {
+  if (!s.inventory.length) return `<div class="card"><div class="section-title">🎒 Инвентарь</div><div class="empty">Карманы пусты.</div></div>`;
+  const items = s.inventory.map(i => `
+    <div class="item ${i.rarity}">
+      <div class="item-head">
+        <div>
+          <div class="item-name">${escapeHtml(i.name)}${i.equipped?' <span class="equipped">надето</span>':''}</div>
+          <div class="item-desc">${escapeHtml(i.description)}</div>
+          <div class="item-meta"><span>${ITEM_TYPE_LABELS[i.type]||i.type}</span><span>${RARITY_LABELS[i.rarity]||i.rarity}</span></div>
+        </div>
+        ${i.quantity>1?`<span class="qty">×${i.quantity}</span>`:''}
+      </div>
+    </div>`).join('');
+  return `<div class="card"><div class="section-title">🎒 Инвентарь <span class="count">${s.inventory.length} · ${s.gold} зол.</span></div>${items}</div>`;
+}
+
+function renderQuests(s) {
+  if (!s.questLog.length) return `<div class="card"><div class="section-title">📜 Квесты</div><div class="empty">Журнал квестов пуст.</div></div>`;
+  const quests = s.questLog.map(q => `
+    <div class="quest ${q.status}">
+      <div class="q-head"><span class="q-title">${escapeHtml(q.title)}</span><span class="q-status ${q.status}">${q.status==='active'?'активен':q.status==='completed'?'выполнен':'провален'}</span></div>
+      <div class="q-desc">${escapeHtml(q.description)}</div>
+    </div>`).join('');
+  return `<div class="card"><div class="section-title">📜 Квесты <span class="count">${s.questLog.length}</span></div>${quests}</div>`;
+}
+
+function renderRelations(s) {
+  if (!s.relationships.length) return `<div class="card"><div class="section-title">👥 Связи</div><div class="empty">Никого не знаешь.</div></div>`;
+  const sorted = [...s.relationships].sort((a,b)=>{if(a.alive!==b.alive)return a.alive?-1:1;return b.trust-a.trust;});
+  const npcs = sorted.map(r => {
+    const pct = Math.abs(r.trust)/2, pos = r.trust>=0;
+    const facts = (r.knownFacts||[]).map(f=>`<span class="chip">${escapeHtml(f)}</span>`).join('');
+    return `<div class="npc ${r.type} ${!r.alive?'dead':''}">
+      <div class="npc-head"><div><div class="npc-name">${escapeHtml(r.name)}${!r.alive?' ☠':''}</div><div class="npc-role">${escapeHtml(r.role)}</div></div><span class="npc-badge ${r.type}">${REL_LABELS[r.type]||r.type}</span></div>
+      ${r.alive?`<div class="trust-row"><span style="color:var(--muted);font-size:0.6rem;text-transform:uppercase">доверие</span><div class="trust-bar"><div class="trust-fill ${pos?'pos':'neg'}" style="${pos?'left:50%':'right:50%'};width:${pct}%"></div></div><span class="trust-val">${r.trust>0?'+':''}${r.trust}</span></div>`:''}
+      ${r.notes?`<div class="npc-notes">${escapeHtml(r.notes)}</div>`:''}
+      ${facts?`<div class="fact-chips">${facts}</div>`:''}
+    </div>`;
+  }).join('');
+  const alive = s.relationships.filter(r=>r.alive).length;
+  return `<div class="card"><div class="section-title">👥 Связи <span class="count">живых: ${alive}</span></div>${npcs}</div>`;
+}
+
+function renderJournal(s) {
+  if (!s.journal.length) return `<div class="card"><div class="section-title">📖 Заметки Нотты</div><div class="empty">Пусто. Запиши первую улику, имя или план.</div></div>`;
+  const sorted = [...s.journal].sort((a,b)=>{if(a.pinned!==b.pinned)return a.pinned?-1:1;return b.updatedAt.localeCompare(a.updatedAt);});
+  const entries = sorted.map(j => `
+    <div class="journal-entry ${j.category} ${j.pinned?'pinned':''}">
+      <div class="j-head"><div><span class="j-title">${j.pinned?'📌 ':''}${escapeHtml(j.title)}</div></div></div>
+      ${j.content?`<div class="j-content">${escapeHtml(j.content)}</div>`:''}
+      <div class="j-meta"><span>${JCAT_LABELS[j.category]||j.category}</span><span>петля #${j.loop}</span></div>
+    </div>`).join('');
+  return `<div class="card"><div class="section-title">📖 Заметки Нотты <span class="count">${s.journal.length}</span></div><div style="font-size:0.7rem;color:var(--muted);font-style:italic;margin-bottom:0.5rem">Память между петлями. Что узнал — записывай.</div>${entries}</div>`;
+}
+
+function renderDeaths(s) {
+  const timeline = s.deathLog.length ? s.deathLog.map((d,i)=>`<div class="death"><div class="death-head"><span>Петля #${d.loop}</span><span>${escapeHtml(d.dayTime)} · ${escapeHtml(d.location)}</span></div><div class="death-cause">${escapeHtml(d.cause)}</div></div>`).join('') : '<div class="empty">Пока жив. Первая смерть вернёт тебя сюда — но с памятью.</div>';
+  return `<div class="card"><div class="section-title">🔄 Хронология петель <span class="count">${s.deathLog.length} смертей</span></div>${timeline}</div><div class="card"><div class="section-title">💀 Журнал смертей</div>${s.deathLog.length?s.deathLog.map(d=>`<div class="death"><div class="death-head"><span>Петля #${d.loop}</span><span>${escapeHtml(d.dayTime)}</span></div><div class="death-cause">${escapeHtml(d.cause)}</div><div class="npc-notes">📍 ${escapeHtml(d.location)}</div></div>`).join(''):'<div class="empty">Пока жив.</div>'}</div>`;
+}
+
+function renderHistory(s) {
+  if (!currentMessages.length) return `<div class="card"><div class="section-title">⏱ Хроника игры</div><div class="empty">Хроника пуста. Игра ещё не началась.</div></div>`;
+  const msgs = currentMessages.slice(-30).reverse();
+  const html = msgs.map(m => {
+    const label = ROLE_LABELS[m.role]||m.role;
+    const time = new Date(m.createdAt).toLocaleString('ru-RU',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+    return `<div class="event ${m.role}"><div class="event-head"><span class="role-badge ${m.role}">${label}</span><span class="event-time">${time}</span></div><div class="event-text">${escapeHtml(m.content)}</div></div>`;
+  }).join('');
+  return `<div class="card"><div class="section-title">⏱ Хроника игры <span class="count">${currentMessages.length}</span></div>${html}</div>`;
+}
+
+function renderMap(s) {
+  const matchLoc = (loc) => {
+    const l = (loc||'').toLowerCase();
+    for (const m of MAP_LOCS) { if (l.includes(m.name.toLowerCase().slice(0,4))) return m.id; }
+    if (l.includes('темниц')||l.includes('камер')||l.includes('тюрем')) return 'dungeon';
+    if (l.includes('двор')||l.includes('висел')||l.includes('помост')) return 'courtyard';
+    if (l.includes('казарм')||l.includes('варрик')) return 'barracks';
+    if (l.includes('зал')||l.includes('очаг')) return 'hall';
+    if (l.includes('архив')||l.includes('кабинет')||l.includes('торвен')) return 'archive';
+    if (l.includes('часовн')||l.includes('церкв')||l.includes('ортин')) return 'chapel';
+    if (l.includes('таверн')||l.includes('копь')) return 'tavern';
+    if (l.includes('башн')||l.includes('воссен')||l.includes('лорд')) return 'tower';
+    return null;
+  };
+  const curId = matchLoc(s.location);
+  const locs = MAP_LOCS.map(l => {
+    const isCur = l.id === curId;
+    return `<div class="map-loc" style="left:${l.x}%;top:${l.y}%">${isCur?'<div class="map-pulse"></div>':''}<div class="map-btn ${isCur?'current':l.danger}" title="${escapeHtml(l.name)}">${escapeHtml(l.name)}</div></div>`;
+  }).join('');
+  return `<div class="card"><div class="section-title">🗺 Замок Дрел <span class="count">${curId?'ты здесь':'неизвестно где'}</span></div><div class="map-container">${locs}</div><div style="display:flex;gap:1rem;margin-top:0.5rem;font-size:0.65rem;color:var(--muted)"><span>🟢 безопасно</span><span>🟡 осторожно</span><span>🔴 опасно</span></div></div>`;
+}
+
+function renderAchievements(s) {
+  const results = ACHIEVEMENTS.map(a => {
+    const cur = a.fn(s), done = cur >= a.target, prog = Math.min(1, cur/a.target);
+    return {...a, cur, done, prog};
+  });
+  const doneCount = results.filter(r=>r.done).length;
+  const pct = Math.round(doneCount/results.length*100);
+  const cards = results.map(r => `
+    <div class="ach ${r.done?'done':'locked'}">
+      <div class="ach-icon">${r.icon}</div>
+      <div style="flex:1">
+        <div class="ach-name">${r.done?'✓ ':''}${escapeHtml(r.name)}</div>
+        <div class="ach-desc">${escapeHtml(r.desc)}</div>
+        <div class="ach-bar"><div class="ach-bar-fill" style="width:${r.prog*100}%"></div></div>
+        <div class="ach-progress">${Math.min(r.cur,r.target)}/${r.target} · ${r.cat}</div>
+      </div>
+    </div>`).join('');
+  return `<div class="card"><div class="section-title">🏆 Достижения <span class="count">${doneCount}/${results.length} · ${pct}%</span></div><div style="margin-bottom:0.75rem"><div class="bar bar-xp"><div class="bar-fill" style="width:${pct}%"></div></div></div><div class="grid-2">${cards}</div></div>`;
+}
+
+function renderPlayStats(s) {
+  const ms = Date.now() - new Date(s.startedAt).getTime();
+  const playerActions = currentMessages.filter(m=>m.role==='player').length;
+  const narratorScenes = currentMessages.filter(m=>m.role==='narrator').length;
+  const achDone = ACHIEVEMENTS.filter(a=>a.fn(s)>=a.target).length;
+  const furthestDay = (() => {
+    const order = ['Рассвет','Утро','Полдень','После полудня','Закат','Ночь','Глубокая ночь'];
+    let maxIdx = -1, furthest = '—';
+    for (const d of s.deathLog) {const i=order.findIndex(o=>d.dayTime.toLowerCase().startsWith(o.toLowerCase().slice(0,4)));if(i>maxIdx){maxIdx=i;furthest=d.dayTime;}}
+    const ci = order.findIndex(o=>s.dayTime.toLowerCase().startsWith(o.toLowerCase().slice(0,4)));
+    if (ci>maxIdx) furthest = s.dayTime;
+    return furthest;
+  })();
+  const topCauses = (() => {
+    const m = new Map();
+    for (const d of s.deathLog) {const k=d.cause.slice(0,40);m.set(k,(m.get(k)||0)+1);}
+    return Array.from(m.entries()).sort((a,b)=>b[1]-a[1]).slice(0,3);
+  })();
+  return `<div class="card"><div class="section-title">📊 Статистика игры</div>
+    <div class="grid-4">
+      <div class="stat-box"><div class="stat-box-label">В игре</div><div class="stat-box-val">${fmtDuration(ms)}</div></div>
+      <div class="stat-box"><div class="stat-box-label">Петля</div><div class="stat-box-val" style="color:var(--rose)">#${s.loopCount}</div></div>
+      <div class="stat-box"><div class="stat-box-label">Уровень</div><div class="stat-box-val" style="color:var(--amber)">${s.level}</div></div>
+      <div class="stat-box"><div class="stat-box-label">Достиж.</div><div class="stat-box-val" style="color:var(--emerald)">${achDone}/${ACHIEVEMENTS.length}</div></div>
+    </div>
+    <div class="grid-4" style="margin-top:0.5rem">
+      <div class="stat-box"><div class="stat-box-label">Ходов</div><div class="stat-box-val">${playerActions}</div></div>
+      <div class="stat-box"><div class="stat-box-label">Сцен мастера</div><div class="stat-box-val">${narratorScenes}</div></div>
+      <div class="stat-box"><div class="stat-box-label">Заметок</div><div class="stat-box-val">${s.journal.length}</div></div>
+      <div class="stat-box"><div class="stat-box-label">NPC</div><div class="stat-box-val">${s.relationships.length}</div></div>
+    </div>
+    <div style="margin-top:1rem;border:1px solid rgba(136,19,55,0.3);background:rgba(69,10,10,0.1);border-radius:4px;padding:0.6rem">
+      <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:#fca5a5;margin-bottom:0.4rem">💀 Анализ смертей</div>
+      ${s.deathLog.length===0?'<div style="font-size:0.75rem;color:var(--muted)">Пока не умирал.</div>':`
+        <div style="display:flex;gap:1rem;font-size:0.75rem;margin-bottom:0.4rem"><span>Всего смертей: <span style="font-family:monospace;color:#fca5a5">${s.deathLog.length}</span></span><span>Дальше всех: <span style="font-family:monospace;color:var(--txt)">${escapeHtml(furthestDay)}</span></span></div>
+        ${topCauses.length?`<div style="font-size:0.65rem;text-transform:uppercase;color:var(--muted);margin-bottom:0.3rem">Частые причины:</div>${topCauses.map(([c,n])=>`<div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.3rem"><div class="bar" style="flex:1"><div class="bar-fill" style="width:${(n/s.deathLog.length)*100}%;background:linear-gradient(90deg,#9f1239,#e11d48)"></div></div><span style="font-family:monospace;font-size:0.65rem;color:var(--stone)">×${n}</span><span style="font-size:0.65rem;color:var(--muted);max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${escapeHtml(c)}">${escapeHtml(c)}</span></div>`).join('')}`:''}
+      `}
+    </div>
+  </div>`;
+}
+
+function renderEvents() {
+  if (!currentMessages.length) return '';
+  const recent = currentMessages.slice(-8).reverse();
+  const html = recent.map(m => {
+    const label = ROLE_LABELS[m.role]||m.role;
+    const time = new Date(m.createdAt).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'});
+    const text = m.content.length>200 ? m.content.slice(0,200)+'…' : m.content;
+    return `<div class="event ${m.role}"><div class="event-head"><span class="role-badge ${m.role}">${label}</span><span class="event-time">${time}</span></div><div class="event-text">${escapeHtml(text)}</div></div>`;
+  }).join('');
+  return `<div class="card"><div class="section-title">⏱ Лента событий <span class="count">последних ${recent.length}</span></div>${html}</div>`;
+}
+
 loadState();
 setInterval(loadState, 10000);
 </script>
