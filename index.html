@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Рыцарь одного дня · системное окно</title>
+<style>
+  :root {
+    --bg: #0c0a09;
+    --panel: #1c1917;
+    --border: #44403c;
+    --amber: #f59e0b;
+    --amber-dim: #b45309;
+    --rose: #e11d48;
+    --sky: #0ea5e9;
+    --emerald: #10b981;
+    --violet: #a78bfa;
+    --stone: #a8a29e;
+    --muted: #78716c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--bg);
+    color: #e7e5e4;
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(180,83,9,0.06), transparent 60%),
+      linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+  }
+  header {
+    border-bottom: 1px solid rgba(180,83,9,0.3);
+    background: rgba(12,10,9,0.8);
+    backdrop-filter: blur(8px);
+    padding: 0.75rem 1rem;
+  }
+  .header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .logo-mark {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(180,83,9,0.4);
+    background: rgba(69,26,3,0.3);
+    color: var(--amber);
+    font-size: 1.2rem;
+    border-radius: 4px;
+  }
+  .logo h1 {
+    font-size: 1.05rem;
+    color: #f5f5f4;
+  }
+  .logo .sub {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(180,83,9,0.7);
+  }
+  .sync-status {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+  .sync-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--emerald);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+  main {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    flex: 1;
+  }
+  footer {
+    border-top: 1px solid var(--border);
+    background: rgba(12,10,9,0.9);
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+  .card {
+    background: rgba(28,25,23,0.6);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .header-card {
+    background: linear-gradient(135deg, #1c1917, #0c0a09);
+    border-color: rgba(180,83,9,0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  .header-card::before {
+    content: '✦';
+    position: absolute;
+    right: -0.5rem; top: -0.5rem;
+    font-size: 7rem;
+    color: rgba(180,83,9,0.08);
+    pointer-events: none;
+  }
+  .names-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .name-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(180,83,9,0.8);
+  }
+  .name-label.body { color: var(--muted); }
+  .name-val {
+    font-size: 1.1rem;
+    color: #f5f5f4;
+  }
+  .name-val.body { color: rgba(251,191,36,0.85); }
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: var(--stone);
+    margin-bottom: 0.4rem;
+  }
+  .meta-row .v { color: #f5f5f4; font-weight: 600; }
+  .location {
+    font-size: 0.75rem;
+    color: var(--stone);
+    font-style: italic;
+  }
+  .vitals-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  @media (min-width: 640px) {
+    .vitals-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .vital { font-size: 0.8rem; }
+  .vital-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+  }
+  .vital-label { color: var(--stone); }
+  .vital-val { font-family: monospace; color: var(--stone); }
+  .bar {
+    height: 10px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.6s ease;
+  }
+  .bar-hp .bar-fill { background: linear-gradient(90deg, #9f1239, #e11d48); }
+  .bar-mp .bar-fill { background: linear-gradient(90deg, #075985, #0ea5e9); }
+  .bar-sta .bar-fill { background: linear-gradient(90deg, #92400e, #f59e0b); }
+  .bar-xp .bar-fill { background: linear-gradient(90deg, #b45309, #f59e0b); }
+  .low .bar-fill { animation: blink 1s infinite; }
+  @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.5; } }
+  .section-title {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(245,158,11,0.8);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+  @media (min-width: 640px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 900px) { .stat-grid { grid-template-columns: repeat(3, 1fr); } }
+  .stat {
+    background: rgba(0,0,0,0.2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.6rem;
+  }
+  .stat-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+  }
+  .stat-name { font-size: 0.85rem; color: var(--stone); }
+  .stat-mod {
+    font-family: monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .stat-mod.pos { color: var(--emerald); }
+  .stat-mod.neg { color: var(--rose); }
+  .stat-val-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0.2rem 0;
+  }
+  .stat-val {
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f5f5f4;
+  }
+  .stat-tier {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .stat-bar {
+    height: 6px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 0.3rem;
+  }
+  .stat-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.5s;
+  }
+  .saves-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+  }
+  @media (min-width: 640px) { .saves-grid { grid-template-columns: repeat(3, 1fr); } }
+  .save-row, .skill-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 3px;
+  }
+  .save-row:hover, .skill-row:hover { background: rgba(0,0,0,0.3); }
+  .save-row .v, .skill-row .v {
+    font-family: monospace;
+    font-weight: 600;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+  @media (min-width: 640px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
+  .prof-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+  }
+  .prof-dot.yes { background: var(--amber); box-shadow: 0 0 0 2px rgba(245,158,11,0.3); }
+  .prof-dot.no { border: 1px solid var(--muted); }
+  .skill-stat { font-size: 0.6rem; color: var(--muted); text-transform: uppercase; }
+  .empty {
+    text-align: center;
+    padding: 2rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 1px solid;
+  }
+  .badge-amber { background: rgba(69,26,3,0.5); color: #fcd34d; border-color: rgba(180,83,9,0.4); }
+  .badge-emerald { background: rgba(6,78,59,0.5); color: #6ee7b7; border-color: rgba(6,95,70,0.4); }
+  .error-banner {
+    background: rgba(69,10,10,0.6);
+    border: 1px solid var(--rose);
+    color: #fca5a5;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+  }
+  .refresh-btn {
+    background: rgba(69,26,3,0.4);
+    border: 1px solid rgba(180,83,9,0.4);
+    color: var(--amber);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .refresh-btn:hover { background: rgba(69,26,3,0.6); }
+  .hint {
+    font-size: 0.7rem;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-mark">✦</div>
+        <div>
+          <h1>Рыцарь одного дня</h1>
+          <div class="sub">системное окно · статическое превью</div>
+        </div>
+      </div>
+      <div class="sync-status">
+        <span class="sync-dot" id="syncDot"></span>
+        <span id="syncText">синхронизация…</span>
+        <button class="refresh-btn" onclick="loadState()">↻</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="error" class="error-banner" style="display:none"></div>
+    <div id="loading" class="empty">Загрузка состояния из облака…</div>
+    <div id="content" style="display:none"></div>
+  </main>
+
+  <footer>
+    Превью тянет состояние из GitHub Gist. Игра ведётся в чате с мастером.
+    <br>После смерти — возврат на контрольную точку. Уровень, опыт и навыки остаются с тобой.
+  </footer>
+</div>
+
+<script>
+// Конфигурация: gist id (публичный gist, доступен без токена).
+const GIST_ID = 'ad43b5e51d7c7ef4549d8d6183fecb82';
+const GIST_URL = `https://api.github.com/gists/${GIST_ID}`;
+
+// D&D 5e навыки (для отображения, если в state их нет)
+const DND_SKILLS = [
+  {id:'acrobatics',name:'Акробатика',stat:'dexterity'},
+  {id:'animal-handling',name:'Обращение с животными',stat:'wisdom'},
+  {id:'arcana',name:'Магия',stat:'intelligence'},
+  {id:'athletics',name:'Атлетика',stat:'strength'},
+  {id:'deception',name:'Обман',stat:'charisma'},
+  {id:'history',name:'История',stat:'intelligence'},
+  {id:'insight',name:'Проницательность',stat:'wisdom'},
+  {id:'intimidation',name:'Запугивание',stat:'charisma'},
+  {id:'investigation',name:'Расследование',stat:'intelligence'},
+  {id:'medicine',name:'Медицина',stat:'wisdom'},
+  {id:'nature',name:'Природа',stat:'intelligence'},
+  {id:'perception',name:'Восприятие',stat:'wisdom'},
+  {id:'performance',name:'Выступление',stat:'charisma'},
+  {id:'persuasion',name:'Убеждение',stat:'charisma'},
+  {id:'religion',name:'Религия',stat:'intelligence'},
+  {id:'sleight-of-hand',name:'Ловкость рук',stat:'dexterity'},
+  {id:'stealth',name:'Скрытность',stat:'dexterity'},
+  {id:'survival',name:'Выживание',stat:'wisdom'},
+];
+
+const STAT_LABELS = {
+  strength:'Сила', dexterity:'Ловкость', constitution:'Телосложение',
+  intelligence:'Интеллект', wisdom:'Мудрость', charisma:'Харизма',
+};
+const STAT_DESC = {
+  strength:'Атаки ближним боем, атлетика, переноска груза, взлом.',
+  dexterity:'Броня (CA), инициатива, ловкость рук, скрытность, дальний бой.',
+  constitution:'Здоровье (HP), выносливость, сопротивление ядам.',
+  intelligence:'Знания (Арканы, История, Природа, Религия), расследование.',
+  wisdom:'Восприятие, инсайт, медицина, выживание, осторожность.',
+  charisma:'Убеждение, обман, запугивание, выступление, доверие NPC.',
+};
+const STAT_ORDER = ['strength','dexterity','constitution','intelligence','wisdom','charisma'];
+
+function statMod(score) { return Math.floor((score - 10) / 2); }
+function fmtMod(n) { return n >= 0 ? `+${n}` : `${n}`; }
+function tier(val) {
+  if (val >= 18) return {label:'выдающаяся', grad:'linear-gradient(90deg,#d97706,#fbbf24)'};
+  if (val >= 14) return {label:'сильная', grad:'linear-gradient(90deg,#059669,#34d399)'};
+  if (val >= 10) return {label:'средняя', grad:'linear-gradient(90deg,#78716c,#d6d3d1)'};
+  if (val >= 7) return {label:'слабая', grad:'linear-gradient(90deg,#c2410c,#f97316)'};
+  return {label:'жалкая', grad:'linear-gradient(90deg,#9f1239,#e11d48)'};
+}
+
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+async function loadState() {
+  const err = document.getElementById('error');
+  const loading = document.getElementById('loading');
+  const content = document.getElementById('content');
+  const syncText = document.getElementById('syncText');
+  err.style.display = 'none';
+  loading.style.display = 'block';
+  content.style.display = 'none';
+  syncText.textContent = 'загрузка…';
+
+  try {
+    const res = await fetch(GIST_URL, { headers: { 'Accept': 'application/vnd.github+json' } });
+    if (!res.ok) throw new Error(`GitHub API: ${res.status}`);
+    const gist = await res.json();
+    const stateFile = gist.files && gist.files['state.json'];
+    if (!stateFile) throw new Error('state.json не найден в gist');
+    const state = JSON.parse(stateFile.content);
+    render(state);
+    syncText.textContent = `обновлено ${new Date().toLocaleTimeString('ru-RU')}`;
+    loading.style.display = 'none';
+    content.style.display = 'block';
+  } catch (e) {
+    loading.style.display = 'none';
+    err.textContent = 'Не удалось загрузить состояние: ' + e.message + '. Возможно, gist приватный или лимит GitHub API исчерпан (60 запросов/час для анонимов).';
+    err.style.display = 'block';
+    syncText.textContent = 'ошибка';
+    document.getElementById('syncDot').style.background = '#e11d48';
+  }
+}
+
+function render(state) {
+  const s = state;
+  const ca = 10 + statMod(s.stats.dexterity);
+  const html = `
+    ${renderHeader(s, ca)}
+    ${renderVitals(s)}
+    ${renderStats(s, ca)}
+    ${renderSaves(s)}
+    ${renderSkills(s)}
+  `;
+  document.getElementById('content').innerHTML = html;
+}
+
+function renderHeader(s, ca) {
+  const xpPct = Math.min(100, (s.xp / s.xpToNext) * 100);
+  return `
+    <div class="card header-card">
+      <div class="names-row">
+        <span class="name-label">Душа</span>
+        <span class="name-val">${escapeHtml(s.characterName)}</span>
+        <span style="color:var(--muted)">·</span>
+        <span class="name-label body">Тело</span>
+        <span class="name-val body">${escapeHtml(s.bodyName)}</span>
+      </div>
+      <div class="meta-row">
+        <span>Уровень <span class="v">${s.level}</span></span>
+        <span>Петля <span class="v" style="color:var(--rose)">#${s.loopCount}</span></span>
+        <span>CA <span class="v" style="color:var(--sky)">${ca}</span></span>
+        <span>Бонус мастерства <span class="v" style="color:var(--amber)">+${s.proficiencyBonus || 2}</span></span>
+        ${s.statPoints > 0 ? `<span class="badge badge-emerald">очков: ${s.statPoints}</span>` : ''}
+      </div>
+      <div class="meta-row">
+        <span>Время: <span class="v">${escapeHtml(s.dayTime)}</span></span>
+        <span>Золото: <span class="v" style="color:var(--amber)">${s.gold}</span></span>
+      </div>
+      <div class="location">📍 ${escapeHtml(s.location)}</div>
+      <div style="margin-top:0.6rem">
+        <div style="display:flex;justify-content:space-between;font-size:0.7rem;margin-bottom:0.2rem">
+          <span style="color:var(--muted);text-transform:uppercase;letter-spacing:0.1em">Опыт</span>
+          <span style="font-family:monospace;color:var(--amber)">${s.xp}/${s.xpToNext}</span>
+        </div>
+        <div class="bar bar-xp"><div class="bar-fill" style="width:${xpPct}%"></div></div>
+      </div>
+    </div>
+  `;
+}
+
+function renderVitals(s) {
+  const mk = (label, val, max, cls, color) => {
+    const pct = max > 0 ? Math.min(100, (val / max) * 100) : 0;
+    const low = pct < 25 ? 'low' : '';
+    return `
+      <div class="vital ${low}">
+        <div class="vital-head">
+          <span class="vital-label" style="color:${color}">${label}</span>
+          <span class="vital-val">${val}/${max}</span>
+        </div>
+        <div class="bar ${cls}"><div class="bar-fill" style="width:${pct}%"></div></div>
+      </div>
+    `;
+  };
+  return `
+    <div class="card">
+      <div class="section-title">❤ Состояние</div>
+      <div class="vitals-grid">
+        ${mk('HP', s.hp, s.maxHp, 'bar-hp', '#fb7185')}
+        ${mk('MP', s.mp, s.maxMp, 'bar-mp', '#38bdf8')}
+        ${mk('STA', s.stamina, s.maxStamina, 'bar-sta', '#fbbf24')}
+      </div>
+    </div>
+  `;
+}
+
+function renderStats(s, ca) {
+  const cards = STAT_ORDER.map(key => {
+    const val = s.stats[key] || 0;
+    const mod = statMod(val);
+    const t = tier(val);
+    const pct = (val / 20) * 100;
+    return `
+      <div class="stat" title="${escapeHtml(STAT_DESC[key])}">
+        <div class="stat-head">
+          <span class="stat-name">${STAT_LABELS[key]}</span>
+          <span class="stat-mod ${mod >= 0 ? 'pos' : 'neg'}">${fmtMod(mod)}</span>
+        </div>
+        <div class="stat-val-row">
+          <span class="stat-val">${val}</span>
+          <span class="stat-tier" style="color:${mod >= 0 ? '#6ee7b7' : '#fca5a5'}">${t.label}</span>
+        </div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:${pct}%;background:${t.grad}"></div></div>
+      </div>
+    `;
+  }).join('');
+  return `
+    <div class="card">
+      <div class="section-title">⚔ Характеристики (D&D 5e)</div>
+      <div class="stat-grid">${cards}</div>
+    </div>
+  `;
+}
+
+function renderSaves(s) {
+  const rows = STAT_ORDER.map(key => {
+    const bonus = statMod(s.stats[key] || 0);
+    return `
+      <div class="save-row">
+        <span>${STAT_LABELS[key]}</span>
+        <span class="v" style="color:${bonus >= 0 ? '#6ee7b7' : '#fca5a5'}">${fmtMod(bonus)}</span>
+      </div>
+    `;
+  }).join('');
+  return `
+    <div class="card">
+      <div class="section-title">🎲 Спасброски</div>
+      <div class="saves-grid">${rows}</div>
+    </div>
+  `;
+}
+
+function renderSkills(s) {
+  const dndSkills = s.dndSkills || DND_SKILLS.map(sk => ({...sk, proficient: false, bonus: 0}));
+  const prof = s.proficiencyBonus || 2;
+  const rows = dndSkills.map(sk => {
+    const statVal = s.stats[sk.stat] || 0;
+    const bonus = statMod(statVal) + (sk.proficient ? prof : 0) + (sk.bonus || 0);
+    const dotClass = sk.proficient ? 'yes' : 'no';
+    return `
+      <div class="skill-row" title="Связана с ${STAT_LABELS[sk.stat]}">
+        <span>
+          <span class="prof-dot ${dotClass}"></span>
+          ${escapeHtml(sk.name)}
+          <span class="skill-stat">(${STAT_LABELS[sk.stat].slice(0,3)})</span>
+        </span>
+        <span class="v" style="color:${bonus >= 0 ? '#6ee7b7' : '#fca5a5'}">${fmtMod(bonus)}</span>
+      </div>
+    `;
+  }).join('');
+  const profCount = dndSkills.filter(sk => sk.proficient).length;
+  return `
+    <div class="card">
+      <div class="section-title">✓ Навыки (D&D 5e) <span style="margin-left:auto;font-size:0.7rem;color:var(--muted)">владений: ${profCount}/${dndSkills.length}</span></div>
+      <div class="skills-grid">${rows}</div>
+      <div class="hint">Заполненный кружок — владение (бонус мастерства +${prof}). Пустой — без владения.</div>
+    </div>
+  `;
+}
+
+// автообновление каждые 10 секунд
+loadState();
+setInterval(loadState, 10000);
+</script>
+</body>
+</html>
