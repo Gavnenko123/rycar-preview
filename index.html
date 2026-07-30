@@ -365,6 +365,47 @@
   @media (min-width: 640px) { .grid-2 { grid-template-columns: repeat(2, 1fr); } }
   .grid-4 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
   @media (min-width: 640px) { .grid-4 { grid-template-columns: repeat(4, 1fr); } }
+  /* чат */
+  .chat-card { border-color: rgba(167,139,250,0.3); background: rgba(46,16,101,0.1); }
+  .chat-messages { max-height: 320px; overflow-y: auto; padding-right: 0.3rem; margin-bottom: 0.5rem; }
+  .chat-msg { margin-bottom: 0.5rem; padding: 0.4rem 0.5rem; border-radius: 4px; background: rgba(0,0,0,0.3); border-left: 3px solid var(--border); }
+  .chat-msg.narrator { border-left-color: var(--violet); }
+  .chat-msg.player { border-left-color: var(--sky); }
+  .chat-msg.gm { border-left-color: var(--violet); }
+  .chat-msg.system { border-left-color: var(--muted); opacity: 0.7; font-style: italic; }
+  .chat-msg.npc { border-left-color: var(--amber); }
+  .chat-msg .role-badge { margin-bottom: 0.2rem; display: inline-block; }
+  .chat-text { font-size: 0.82rem; color: var(--txt); white-space: pre-wrap; line-height: 1.4; }
+  .chat-empty { text-align: center; color: var(--muted); font-size: 0.8rem; padding: 1.5rem; font-style: italic; }
+  .chat-input-row { display: flex; gap: 0.4rem; }
+  .chat-input {
+    flex: 1; background: rgba(0,0,0,0.4); border: 1px solid var(--border); border-radius: 4px;
+    padding: 0.45rem 0.6rem; color: var(--txt); font-family: Georgia, serif; font-size: 0.85rem;
+  }
+  .chat-input:focus { outline: none; border-color: var(--violet); box-shadow: 0 0 0 1px rgba(167,139,250,0.3); }
+  .chat-suggested { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.4rem; }
+  .suggest-chip {
+    background: rgba(69,26,3,0.3); border: 1px solid rgba(180,83,9,0.4); color: #fcd34d;
+    padding: 0.25rem 0.5rem; border-radius: 9999px; font-size: 0.7rem; cursor: pointer; font-family: Georgia, serif;
+  }
+  .suggest-chip:hover { background: rgba(69,26,3,0.5); }
+  /* компактное событие */
+  .event.compact { display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.5rem; }
+  .event-text-compact { font-size: 0.78rem; color: var(--stone); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+  /* список локаций карты */
+  .map-list { display: grid; grid-template-columns: 1fr; gap: 0.4rem; margin-top: 0.75rem; }
+  @media (min-width: 640px) { .map-list { grid-template-columns: repeat(2, 1fr); } }
+  .map-list-item { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px; padding: 0.5rem; }
+  .map-list-item.current { border-color: var(--amber); background: rgba(69,26,3,0.2); }
+  .mli-head { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.2rem; }
+  .mli-icon { font-size: 1rem; }
+  .mli-name { font-size: 0.82rem; color: #f5f5f4; font-weight: 600; }
+  .mli-here { margin-left: auto; font-size: 0.6rem; text-transform: uppercase; color: var(--amber); background: rgba(69,26,3,0.5); padding: 0.1rem 0.3rem; border-radius: 3px; }
+  .mli-desc { font-size: 0.72rem; color: var(--stone); line-height: 1.3; }
+  .mli-danger { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.3rem; }
+  .mli-danger.safe { color: #6ee7b7; }
+  .mli-danger.caution { color: #fcd34d; }
+  .mli-danger.danger { color: #fca5a5; }
 </style>
 </head>
 <body>
@@ -418,11 +459,11 @@ const DND_SKILLS = [
 const STAT_LABELS = {strength:'Сила',dexterity:'Ловкость',constitution:'Телосложение',intelligence:'Интеллект',wisdom:'Мудрость',charisma:'Харизма'};
 const STAT_DESC = {
   strength:'Атаки ближним боем, атлетика, переноска груза, взлом.',
-  dexterity:'Броня (CA), инициатива, ловкость рук, скрытность, дальний бой.',
-  constitution:'Здоровье (HP), выносливость, сопротивление ядам.',
-  intelligence:'Знания (Арканы, История, Природа, Религия), расследование.',
-  wisdom:'Восприятие, инсайт, медицина, выживание, осторожность.',
-  charisma:'Убеждение, обман, запугивание, выступление, доверие NPC.',
+  dexterity:'Уклонение, ловкость рук, скрытность, дальний бой.',
+  constitution:'Здоровье, выносливость, сопротивление ядам.',
+  intelligence:'Знания, расследование, память.',
+  wisdom:'Восприятие, интуиция, осторожность.',
+  charisma:'Убеждение, обман, запугивание, доверие.',
 };
 const STAT_ORDER = ['strength','dexterity','constitution','intelligence','wisdom','charisma'];
 const RARITY_LABELS = {common:'Обычное',uncommon:'Необычное',rare:'Редкое',epic:'Эпическое',legendary:'Легендарное'};
@@ -432,14 +473,14 @@ const JCAT_LABELS = {clue:'Улика',person:'Персона',place:'Место
 const ROLE_LABELS = {narrator:'Мастер',player:'Герой',gm:'Мастер',system:'Система',npc:'НИП'};
 
 const MAP_LOCS = [
-  {id:'dungeon',name:'Тюрьма',x:15,y:78,danger:'safe'},
-  {id:'courtyard',name:'Двор',x:50,y:60,danger:'danger'},
-  {id:'barracks',name:'Казармы',x:78,y:70,danger:'caution'},
-  {id:'hall',name:'Главный зал',x:50,y:40,danger:'caution'},
-  {id:'archive',name:'Архив',x:25,y:35,danger:'caution'},
-  {id:'chapel',name:'Часовня',x:75,y:35,danger:'caution'},
-  {id:'tavern',name:'«Сломанное Копьё»',x:88,y:90,danger:'caution'},
-  {id:'tower',name:'Башня лорда',x:50,y:15,danger:'danger'},
+  {id:'dungeon',name:'Тюрьма',x:15,y:78,danger:'safe',desc:'Сырые камеры под замком. Здесь Роэн ждёт казни.'},
+  {id:'courtyard',name:'Двор',x:50,y:60,danger:'danger',desc:'Здесь ставят виселицу. Стража, шум, казнь на закате.'},
+  {id:'barracks',name:'Казармы',x:78,y:70,danger:'caution',desc:'Солдаты, тренировки, мастер Варрик обучает мечу.'},
+  {id:'hall',name:'Главный зал',x:50,y:40,danger:'caution',desc:'Сердце замка. Очаг, стол, слуги, слухи.'},
+  {id:'archive',name:'Архив',x:25,y:35,danger:'caution',desc:'Кабинет Торвена. Документы, улики, тайны.'},
+  {id:'chapel',name:'Часовня',x:75,y:35,danger:'caution',desc:'Церковь Пламенного Ока. Капеллан Ортин.'},
+  {id:'tavern',name:'«Сломанное Копьё»',x:88,y:90,danger:'caution',desc:'Таверна у ворот. Слухи, наёмники, выпивка.'},
+  {id:'tower',name:'Башня лорда',x:50,y:15,danger:'danger',desc:'Покои лорда Воссена. Опасно и охраняется.'},
 ];
 
 const ACHIEVEMENTS = [
@@ -503,7 +544,7 @@ async function loadState() {
     syncText.textContent = `обновлено ${new Date().toLocaleTimeString('ru-RU')}`;
     loading.style.display = 'none';
     content.style.display = 'block';
-    renderDrafts();
+    renderChatMessages();
   } catch (e) {
     loading.style.display = 'none';
     err.textContent = 'Не удалось загрузить состояние: ' + e.message;
@@ -515,12 +556,11 @@ async function loadState() {
 
 function render() {
   const s = currentState;
-  const ca = 10 + statMod(s.stats.dexterity);
   document.getElementById('content').innerHTML = `
-    ${renderHeader(s, ca)}
+    ${renderHeader(s)}
     ${renderVitals(s)}
     ${renderEffects(s)}
-    ${renderActionInput()}
+    ${renderChat()}
     <div class="ornament">✦</div>
     ${renderTabs(s)}
     <div id="tabContent"></div>
@@ -530,85 +570,110 @@ function render() {
   renderTab();
 }
 
-// Поле ввода действия от имени персонажа.
-// Сохраняет в localStorage (черновики игрока) + кнопка копирования для мастера.
-function renderActionInput() {
+// Чат с мастером (LLM через /api/game/chat).
+// Игрок пишет действие → мастер отвечает нарративом → state обновляется.
+let chatBusy = false;
+let chatHistory = []; // последние сообщения из state + ответы
+
+function renderChat() {
   return `
-    <div class="card action-input-card">
-      <div class="section-title">✍ Действие от имени героя</div>
-      <textarea id="actionInput" class="action-textarea" placeholder="Что делает Нотта? Например: «Спросить Бромма, кто приходил к Торвену вчера вечером»" rows="2"></textarea>
-      <div class="action-buttons">
-        <button class="action-btn save" onclick="saveActionDraft()">сохранить черновик</button>
-        <button class="action-btn copy" onclick="copyActionToMaster()">скопировать для мастера</button>
+    <div class="card chat-card">
+      <div class="section-title">💬 Игра с мастером</div>
+      <div id="chatMessages" class="chat-messages"></div>
+      <div class="chat-input-row">
+        <input type="text" id="chatInput" class="chat-input" placeholder="Что делает Нотта?" maxlength="2000" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendChat();}">
+        <button id="chatSend" class="action-btn copy" onclick="sendChat()">отправить</button>
       </div>
-      <div id="actionDrafts" class="action-drafts"></div>
+      <div id="chatSuggested" class="chat-suggested"></div>
     </div>
   `;
 }
 
-function getDrafts() {
-  try { return JSON.parse(localStorage.getItem('actionDrafts')||'[]'); } catch { return []; }
-}
-
-function saveActionDraft() {
-  const input = document.getElementById('actionInput');
-  const text = (input.value||'').trim();
-  if (!text) return;
-  const drafts = getDrafts();
-  drafts.unshift({ text, ts: new Date().toISOString(), loop: currentState?.loopCount ?? 0 });
-  if (drafts.length > 20) drafts.length = 20;
-  localStorage.setItem('actionDrafts', JSON.stringify(drafts));
-  input.value = '';
-  renderDrafts();
-}
-
-function copyActionToMaster() {
-  const input = document.getElementById('actionInput');
-  const text = (input.value||'').trim();
-  if (!text) return;
-  navigator.clipboard.writeText(text).then(() => {
-    const btn = document.querySelector('.action-btn.copy');
-    const orig = btn.textContent;
-    btn.textContent = '✓ скопировано';
-    btn.classList.add('ok');
-    setTimeout(() => { btn.textContent = orig; btn.classList.remove('ok'); }, 1500);
-  }).catch(() => {
-    // fallback
-    input.select();
-    document.execCommand('copy');
-  });
-}
-
-function deleteDraft(i) {
-  const drafts = getDrafts();
-  drafts.splice(i, 1);
-  localStorage.setItem('actionDrafts', JSON.stringify(drafts));
-  renderDrafts();
-}
-
-function useDraft(i) {
-  const drafts = getDrafts();
-  const input = document.getElementById('actionInput');
-  if (drafts[i]) input.value = drafts[i].text;
-}
-
-function renderDrafts() {
-  const container = document.getElementById('actionDrafts');
+function renderChatMessages() {
+  const container = document.getElementById('chatMessages');
   if (!container) return;
-  const drafts = getDrafts();
-  if (!drafts.length) { container.innerHTML = ''; return; }
-  container.innerHTML = '<div class="drafts-title">черновики:</div>' + drafts.map((d, i) => `
-    <div class="draft-item">
-      <div class="draft-text">${escapeHtml(d.text)}</div>
-      <div class="draft-meta">петля #${d.loop} · ${new Date(d.ts).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'})}</div>
-      <div class="draft-actions">
-        <button class="draft-btn" onclick="useDraft(${i})" title="вставить в поле">↑</button>
-        <button class="draft-btn del" onclick="deleteDraft(${i})" title="удалить">✕</button>
-      </div>
-    </div>`).join('');
+  // берём последние сообщения из currentMessages + локальные
+  const all = [...(currentMessages||[]).slice(-8), ...chatHistory];
+  // дедуп по content+timestamp
+  const seen = new Set();
+  const msgs = all.filter(m => {
+    const k = (m.content||'').slice(0,50) + (m.createdAt||m.ts||'');
+    if (seen.has(k)) return false;
+    seen.add(k); return true;
+  }).slice(-8);
+  if (!msgs.length) {
+    container.innerHTML = '<div class="chat-empty">Напиши действие — мастер ответит.</div>';
+    return;
+  }
+  container.innerHTML = msgs.map(m => {
+    const role = m.role || (m.narration ? 'narrator' : 'player');
+    const label = ROLE_LABELS[role]||role;
+    const text = m.content || m.narration || '';
+    const isShort = text.length > 300;
+    const display = isShort ? text.slice(0,300)+'…' : text;
+    return `<div class="chat-msg ${role}"><span class="role-badge ${role}">${label}</span><div class="chat-text">${escapeHtml(display)}</div></div>`;
+  }).join('');
+  container.scrollTop = container.scrollHeight;
 }
 
-function renderHeader(s, ca) {
+async function sendChat() {
+  const input = document.getElementById('chatInput');
+  const sendBtn = document.getElementById('chatSend');
+  if (!input || chatBusy) return;
+  const text = (input.value||'').trim();
+  if (!text) return;
+  // определяем URL API: если превью на Pages — обращаемся к dev-серверу через gateway
+  // Для GitHub Pages нужен публичный URL API. Пока — пробуем относительный /api/game/chat
+  // (работает когда превью на dev-сервере) и fallback.
+  chatBusy = true;
+  if (sendBtn) { sendBtn.disabled = true; sendBtn.textContent = '…'; }
+  input.value = '';
+
+  // добавляем сообщение игрока сразу в историю
+  chatHistory.push({ role: 'player', content: text, ts: new Date().toISOString() });
+  renderChatMessages();
+
+  // показываем индикатор
+  chatHistory.push({ role: 'system', content: 'мастер думает…', ts: new Date().toISOString() });
+  renderChatMessages();
+
+  try {
+    const res = await fetch('/api/game/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: text }),
+    });
+    // убираем «мастер думает»
+    chatHistory = chatHistory.filter(m => m.content !== 'мастер думает…');
+    if (!res.ok) {
+      const err = await res.json().catch(()=>({}));
+      throw new Error(err.error || `HTTP ${res.status}`);
+    }
+    const data = await res.json();
+    if (data.narration) chatHistory.push({ role: 'narrator', content: data.narration, ts: new Date().toISOString() });
+    if (data.gmNote) chatHistory.push({ role: 'gm', content: data.gmNote, ts: new Date().toISOString() });
+    // обновляем state
+    if (data.state) { currentState = data.state; }
+    // подсказки
+    if (data.suggestedActions?.length) {
+      const sg = document.getElementById('chatSuggested');
+      if (sg) sg.innerHTML = data.suggestedActions.map(a => `<button class="suggest-chip" onclick="document.getElementById('chatInput').value=${JSON.stringify(a)};document.getElementById('chatInput').focus()">${escapeHtml(a)}</button>`).join('');
+    }
+    renderChatMessages();
+    // перерисовываем всё (state изменился)
+    render();
+    renderChatMessages();
+  } catch (e) {
+    chatHistory = chatHistory.filter(m => m.content !== 'мастер думает…');
+    chatHistory.push({ role: 'system', content: 'Мастер недоступен. ' + e.message + ' Возможно, нужно запустить игру на стороне мастера.', ts: new Date().toISOString() });
+    renderChatMessages();
+  } finally {
+    chatBusy = false;
+    if (sendBtn) { sendBtn.disabled = false; sendBtn.textContent = 'отправить'; }
+  }
+}
+
+function renderHeader(s) {
   const xpPct = Math.min(100, (s.xp / s.xpToNext) * 100);
   return `
     <div class="card header-card">
@@ -620,8 +685,6 @@ function renderHeader(s, ca) {
       <div class="meta-row">
         <span>Уровень <span class="v">${s.level}</span></span>
         <span>Петля <span class="v" style="color:var(--rose)">#${s.loopCount}</span></span>
-        <span>CA <span class="v" style="color:var(--sky)">${ca}</span></span>
-        <span>Бонус мастерства <span class="v" style="color:var(--amber)">+${s.proficiencyBonus||2}</span></span>
         ${s.statPoints>0?`<span class="equipped">очков: ${s.statPoints}</span>`:''}
       </div>
       <div class="meta-row">
@@ -669,7 +732,7 @@ function renderTabs(s) {
     {id:'deaths',ic:'💀',label:'Смерти',badge:s.deathLog.length,alert:true},
     {id:'history',ic:'⏱',label:'Хроника',badge:currentMessages.length},
     {id:'map',ic:'🗺',label:'Карта'},
-    {id:'achievements',ic:'🏆',label:'Чести'},
+    {id:'achievements',ic:'🏆',label:'Честь'},
     {id:'playstats',ic:'📊',label:'Стата'},
   ];
   const html = tabs.map(t => {
@@ -707,19 +770,12 @@ function renderStats(s) {
     const val = s.stats[key]||0, mod = statMod(val), t = tier(val), pct = (val/20)*100;
     return `<div class="stat" title="${escapeHtml(STAT_DESC[key])}"><div class="stat-head"><span class="stat-name">${STAT_LABELS[key]}</span><span class="stat-mod ${mod>=0?'pos':'neg'}">${fmtMod(mod)}</span></div><div class="stat-val-row"><span class="stat-val">${val}</span><span class="stat-tier" style="color:${t.color}">${t.label}</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:${pct}%;background:${t.grad}"></div></div></div>`;
   }).join('');
-  const saves = STAT_ORDER.map(key => {const b=statMod(s.stats[key]||0);return `<div class="save-row"><span>${STAT_LABELS[key]}</span><span class="v" style="color:${b>=0?'#6ee7b7':'#fca5a5'}">${fmtMod(b)}</span></div>`;}).join('');
-  return `<div class="card"><div class="section-title">⚔ Характеристики (D&D 5e)</div><div class="stat-grid">${cards}</div></div><div class="card"><div class="section-title">🎲 Спасброски</div><div class="saves-grid">${saves}</div></div>`;
+  return `<div class="card"><div class="section-title">⚔ Характеристики</div><div class="stat-grid">${cards}</div></div>`;
 }
 
 function renderSkills(s) {
-  const gameSkills = s.skills.length ? s.skills.map(sk => `<div class="save-row"><span>${escapeHtml(sk.name)} <span class="skill-stat">(${sk.category})</span></span><span class="v" style="color:var(--amber)">ур.${sk.level}</span></div>`).join('') : '<div class="empty">Игровых навыков пока нет. Тренируйся у мастеров замка.</div>';
-  const dnd = (s.dndSkills||DND_SKILLS.map(x=>({...x,proficient:false,bonus:0}))).map(sk => {
-    const statVal = s.stats[sk.stat]||0;
-    const bonus = statMod(statVal) + (sk.proficient?(s.proficiencyBonus||2):0) + (sk.bonus||0);
-    return `<div class="skill-row" title="Связана с ${STAT_LABELS[sk.stat]}"><span><span class="prof-dot ${sk.proficient?'yes':'no'}"></span>${escapeHtml(sk.name)} <span class="skill-stat">(${STAT_LABELS[sk.stat].slice(0,3)})</span></span><span class="v" style="color:${bonus>=0?'#6ee7b7':'#fca5a5'}">${fmtMod(bonus)}</span></div>`;
-  }).join('');
-  const profCount = (s.dndSkills||[]).filter(x=>x.proficient).length;
-  return `<div class="card"><div class="section-title">🗡 Игровые навыки <span class="count">${s.skills.length}</span></div>${gameSkills}</div><div class="card"><div class="section-title">✓ Навыки D&D 5e <span class="count">владений: ${profCount}/18</span></div><div class="skills-grid">${dnd}</div></div>`;
+  const gameSkills = s.skills.length ? s.skills.map(sk => `<div class="skill-row"><span>${escapeHtml(sk.name)} <span class="skill-stat">(${sk.category})</span></span><span class="v" style="color:var(--amber)">ур.${sk.level}</span></div>`).join('') : '<div class="empty">Навыков пока нет. Тренируйся у мастеров замка, учись, наблюдай.</div>';
+  return `<div class="card"><div class="section-title">🗡 Навыки <span class="count">${s.skills.length}</span></div>${gameSkills}</div>`;
 }
 
 function renderInventory(s) {
@@ -930,37 +986,34 @@ function renderMap(s) {
   const locIcons = {dungeon:'🔒',courtyard:'⚔',barracks:'🛡',hall:'🏰',archive:'📚',chapel:'✚',tavern:'🍺',tower:'👑'};
   const locs = MAP_LOCS.map(l => {
     const isCur = l.id === curId;
-    return `<div class="map-loc" style="left:${l.x}%;top:${l.y}%">${isCur?'<div class="map-pulse"></div>':''}<div class="map-btn ${isCur?'current':l.danger}" title="${escapeHtml(l.name)}"><span class="map-ic">${locIcons[l.id]||'•'}</span><span>${escapeHtml(l.name)}</span></div></div>`;
+    return `<div class="map-loc" style="left:${l.x}%;top:${l.y}%">${isCur?'<div class="map-pulse"></div>':''}<div class="map-btn ${isCur?'current':l.danger}" title="${escapeHtml(l.desc||'')}"><span class="map-ic">${locIcons[l.id]||'•'}</span><span>${escapeHtml(l.name)}</span></div></div>`;
+  }).join('');
+  // список локаций с описаниями
+  const locList = MAP_LOCS.map(l => {
+    const isCur = l.id === curId;
+    return `<div class="map-list-item ${isCur?'current':''}">
+      <div class="mli-head"><span class="mli-icon">${locIcons[l.id]||'•'}</span><span class="mli-name">${escapeHtml(l.name)}</span>${isCur?'<span class="mli-here">ты здесь</span>':''}</div>
+      <div class="mli-desc">${escapeHtml(l.desc||'')}</div>
+      <div class="mli-danger ${l.danger}">${l.danger==='safe'?'безопасно':l.danger==='caution'?'осторожно':'опасно'}</div>
+    </div>`;
   }).join('');
   return `<div class="card"><div class="section-title">🗺 Замок Дрел <span class="count">${curId?'ты здесь':'неизвестно где'}</span></div>
     <div class="map-container">
       <svg class="map-bg" viewBox="0 0 100 75" preserveAspectRatio="none">
-        <defs>
-          <pattern id="stone" x="0" y="0" width="8" height="6" patternUnits="userSpaceOnUse">
-            <rect width="8" height="6" fill="#1c1917"/>
-            <rect width="7" height="5" x="0.5" y="0.5" fill="#292524" stroke="#44403c" stroke-width="0.2"/>
-          </pattern>
-        </defs>
-        <rect width="100" height="75" fill="url(#stone)" opacity="0.4"/>
-        <rect x="6" y="6" width="88" height="63" fill="none" stroke="#78716c" stroke-width="0.5" opacity="0.6"/>
-        <rect x="4" y="4" width="6" height="6" fill="#57534e" opacity="0.7"/>
-        <rect x="90" y="4" width="6" height="6" fill="#57534e" opacity="0.7"/>
-        <rect x="4" y="65" width="6" height="6" fill="#57534e" opacity="0.7"/>
-        <rect x="90" y="65" width="6" height="6" fill="#57534e" opacity="0.7"/>
-        <line x1="35" y1="30" x2="65" y2="30" stroke="#57534e" stroke-width="0.3" strokeDasharray="1 1" opacity="0.5"/>
-        <line x1="50" y1="30" x2="50" y2="50" stroke="#57534e" stroke-width="0.3" strokeDasharray="1 1" opacity="0.5"/>
-        <line x1="20" y1="50" x2="80" y2="50" stroke="#57534e" stroke-width="0.3" strokeDasharray="1 1" opacity="0.5"/>
-        <circle cx="50" cy="40" r="1" fill="#78716c" opacity="0.4"/>
+        <rect width="100" height="75" fill="#0c0a09"/>
+        <rect x="6" y="6" width="88" height="63" fill="none" stroke="#57534e" stroke-width="0.4" opacity="0.5"/>
+        <rect x="4" y="4" width="6" height="6" fill="#44403c" opacity="0.6"/>
+        <rect x="90" y="4" width="6" height="6" fill="#44403c" opacity="0.6"/>
+        <rect x="4" y="65" width="6" height="6" fill="#44403c" opacity="0.6"/>
+        <rect x="90" y="65" width="6" height="6" fill="#44403c" opacity="0.6"/>
+        <line x1="35" y1="30" x2="65" y2="30" stroke="#44403c" stroke-width="0.3" strokeDasharray="1 1" opacity="0.4"/>
+        <line x1="50" y1="30" x2="50" y2="50" stroke="#44403c" stroke-width="0.3" strokeDasharray="1 1" opacity="0.4"/>
+        <line x1="20" y1="50" x2="80" y2="50" stroke="#44403c" stroke-width="0.3" strokeDasharray="1 1" opacity="0.4"/>
       </svg>
-      <div class="map-compass" title="Север">N<br>↑</div>
+      <div class="map-compass">N<br>↑</div>
       ${locs}
     </div>
-    <div style="display:flex;gap:1rem;margin-top:0.5rem;font-size:0.65rem;color:var(--muted);flex-wrap:wrap">
-      <span style="color:#6ee7b7">● безопасно</span>
-      <span style="color:#fcd34d">● осторожно</span>
-      <span style="color:#fca5a5">● опасно</span>
-      <span style="color:var(--amber)">● ты здесь</span>
-    </div>
+    <div class="map-list">${locList}</div>
   </div>`;
 }
 
@@ -1027,17 +1080,12 @@ function renderPlayStats(s) {
 
 function renderEvents() {
   if (!currentMessages.length) return '';
-  // только последние 3 сообщения, кратко (≤120 символов)
-  const recent = currentMessages.slice(-3).reverse();
-  const html = recent.map(m => {
-    const label = ROLE_LABELS[m.role]||m.role;
-    const time = new Date(m.createdAt).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'});
-    // кратко: первая строка или обрезка до 120 символов
-    let text = m.content.split('\n')[0];
-    if (text.length > 120) text = text.slice(0, 117) + '…';
-    return `<div class="event ${m.role}"><div class="event-head"><span class="role-badge ${m.role}">${label}</span><span class="event-time">${time}</span></div><div class="event-text">${escapeHtml(text)}</div></div>`;
-  }).join('');
-  return `<div class="card"><div class="section-title">⏱ Лента событий <span class="count">последние ${recent.length}</span></div>${html}</div>`;
+  // только последнее сообщение, кратко (≤100 символов), в одну строку
+  const last = currentMessages[currentMessages.length - 1];
+  const label = ROLE_LABELS[last.role]||last.role;
+  let text = last.content.split('\n')[0].trim();
+  if (text.length > 100) text = text.slice(0, 97) + '…';
+  return `<div class="card event-card"><div class="section-title">⏱ Последнее событие</div><div class="event ${last.role} compact"><span class="role-badge ${last.role}">${label}</span><span class="event-text-compact">${escapeHtml(text)}</span></div></div>`;
 }
 
 loadState();
