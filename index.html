@@ -377,10 +377,11 @@
   .chat-msg .role-badge { margin-bottom: 0.2rem; display: inline-block; }
   .chat-text { font-size: 0.82rem; color: var(--txt); white-space: pre-wrap; line-height: 1.4; }
   .chat-empty { text-align: center; color: var(--muted); font-size: 0.8rem; padding: 1.5rem; font-style: italic; }
-  .chat-input-row { display: flex; gap: 0.4rem; }
+  .chat-input-row { display: flex; gap: 0.4rem; align-items: flex-end; }
   .chat-input {
     flex: 1; background: rgba(0,0,0,0.4); border: 1px solid var(--border); border-radius: 4px;
     padding: 0.45rem 0.6rem; color: var(--txt); font-family: Georgia, serif; font-size: 0.85rem;
+    resize: vertical; min-height: 2.5rem; max-height: 8rem;
   }
   .chat-input:focus { outline: none; border-color: var(--violet); box-shadow: 0 0 0 1px rgba(167,139,250,0.3); }
   .chat-suggested { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.4rem; }
@@ -484,25 +485,25 @@ const MAP_LOCS = [
 ];
 
 const ACHIEVEMENTS = [
-  {id:'first-death',name:'Первая смерть',desc:'Умереть в первый раз.',icon:'💀',cat:'Петли',target:1,fn:s=>Math.min(s.deathLog.length,1)},
-  {id:'five-deaths',name:'Привыкший умирать',desc:'Умереть 5 раз.',icon:'🪦',cat:'Петли',target:5,fn:s=>s.deathLog.length},
-  {id:'ten-deaths',name:'Бессмертный неудачник',desc:'Умереть 10 раз.',icon:'♾️',cat:'Петли',target:10,fn:s=>s.deathLog.length},
-  {id:'loop-master',name:'Хозяин петли',desc:'Дожить до 20-й петли.',icon:'🔄',cat:'Петли',target:20,fn:s=>s.loopCount},
-  {id:'first-skill',name:'Первый навык',desc:'Изучить любой навык.',icon:'⚔️',cat:'Бой',target:1,fn:s=>Math.min(s.skills.length,1)},
-  {id:'five-skills',name:'Разносторонний',desc:'Изучить 5 навыков.',icon:'🗡️',cat:'Бой',target:5,fn:s=>s.skills.length},
-  {id:'master-skill',name:'Мастер',desc:'Прокачать навык до 5 уровня.',icon:'🏆',cat:'Бой',target:1,fn:s=>s.skills.filter(x=>x.level>=5).length},
-  {id:'level-5',name:'Окрепший',desc:'Достичь 5 уровня.',icon:'📈',cat:'Бой',target:5,fn:s=>s.level},
-  {id:'level-10',name:'Закалённый петлёй',desc:'Достичь 10 уровня.',icon:'🌟',cat:'Бой',target:10,fn:s=>s.level},
-  {id:'first-npc',name:'Первая встреча',desc:'Узнать имя хоть одного человека.',icon:'👥',cat:'Люди',target:1,fn:s=>Math.min(s.relationships.length,1)},
-  {id:'five-npcs',name:'Знающий людей',desc:'Узнать 5 людей.',icon:'🤝',cat:'Люди',target:5,fn:s=>s.relationships.length},
-  {id:'first-friend',name:'Завязавший связь',desc:'Завести союзника (trust ≥ 30).',icon:'💚',cat:'Люди',target:1,fn:s=>s.relationships.filter(r=>(r.type==='ally'||r.type==='friend')&&r.trust>=30).length},
-  {id:'enemy',name:'Наживший врага',desc:'Заработать врага (trust ≤ -30).',icon:'💢',cat:'Люди',target:1,fn:s=>s.relationships.filter(r=>r.type==='enemy'||r.trust<=-30).length},
-  {id:'first-journal',name:'Записавший улику',desc:'Сделать первую заметку.',icon:'📝',cat:'Исследование',target:1,fn:s=>Math.min(s.journal.length,1)},
-  {id:'ten-journal',name:'Дотошный',desc:'Собрать 10 заметок.',icon:'📚',cat:'Исследование',target:10,fn:s=>s.journal.length},
-  {id:'rare-item',name:'Находящий редкости',desc:'Заполучить редкий предмет.',icon:'💎',cat:'Исследование',target:1,fn:s=>s.inventory.filter(i=>['rare','epic','legendary'].includes(i.rarity)).length},
-  {id:'gold-50',name:'При деньгах',desc:'Накопить 50 золотых.',icon:'🪙',cat:'Исследование',target:50,fn:s=>s.gold},
-  {id:'five-facts',name:'Собиратель фактов',desc:'Узнать 5 фактов о людях.',icon:'🔍',cat:'Знание',target:5,fn:s=>s.relationships.reduce((a,r)=>a+r.knownFacts.length,0)},
-  {id:'quest-done',name:'Закрывший дело',desc:'Выполнить любой квест.',icon:'✅',cat:'Знание',target:1,fn:s=>s.questLog.filter(q=>q.status==='completed').length},
+  {id:'first-death',name:'Первая смерть',desc:'Умереть в первый раз.',icon:'💀',cat:'Петли',target:1,fn:s=>Math.min((s.deathLog||[]).length,1)},
+  {id:'five-deaths',name:'Привыкший умирать',desc:'Умереть 5 раз.',icon:'🪦',cat:'Петли',target:5,fn:s=>(s.deathLog||[]).length},
+  {id:'ten-deaths',name:'Бессмертный неудачник',desc:'Умереть 10 раз.',icon:'♾️',cat:'Петли',target:10,fn:s=>(s.deathLog||[]).length},
+  {id:'loop-master',name:'Хозяин петли',desc:'Дожить до 20-й петли.',icon:'🔄',cat:'Петли',target:20,fn:s=>s.loopCount||0},
+  {id:'first-skill',name:'Первый навык',desc:'Изучить любой навык.',icon:'⚔️',cat:'Бой',target:1,fn:s=>Math.min((s.skills||[]).length,1)},
+  {id:'five-skills',name:'Разносторонний',desc:'Изучить 5 навыков.',icon:'🗡️',cat:'Бой',target:5,fn:s=>(s.skills||[]).length},
+  {id:'master-skill',name:'Мастер',desc:'Прокачать навык до 5 уровня.',icon:'🏆',cat:'Бой',target:1,fn:s=>(s.skills||[]).filter(x=>x.level>=5).length},
+  {id:'level-5',name:'Окрепший',desc:'Достичь 5 уровня.',icon:'📈',cat:'Бой',target:5,fn:s=>s.level||1},
+  {id:'level-10',name:'Закалённый петлёй',desc:'Достичь 10 уровня.',icon:'🌟',cat:'Бой',target:10,fn:s=>s.level||1},
+  {id:'first-npc',name:'Первая встреча',desc:'Узнать имя хоть одного человека.',icon:'👥',cat:'Люди',target:1,fn:s=>Math.min((s.relationships||[]).length,1)},
+  {id:'five-npcs',name:'Знающий людей',desc:'Узнать 5 людей.',icon:'🤝',cat:'Люди',target:5,fn:s=>(s.relationships||[]).length},
+  {id:'first-friend',name:'Завязавший связь',desc:'Завести союзника (trust ≥ 30).',icon:'💚',cat:'Люди',target:1,fn:s=>(s.relationships||[]).filter(r=>(r.type==='ally'||r.type==='friend')&&r.trust>=30).length},
+  {id:'enemy',name:'Наживший врага',desc:'Заработать врага (trust ≤ -30).',icon:'💢',cat:'Люди',target:1,fn:s=>(s.relationships||[]).filter(r=>r.type==='enemy'||r.trust<=-30).length},
+  {id:'first-journal',name:'Записавший улику',desc:'Сделать первую заметку.',icon:'📝',cat:'Исследование',target:1,fn:s=>Math.min((s.journal||[]).length,1)},
+  {id:'ten-journal',name:'Дотошный',desc:'Собрать 10 заметок.',icon:'📚',cat:'Исследование',target:10,fn:s=>(s.journal||[]).length},
+  {id:'rare-item',name:'Находящий редкости',desc:'Заполучить редкий предмет.',icon:'💎',cat:'Исследование',target:1,fn:s=>(s.inventory||[]).filter(i=>['rare','epic','legendary'].includes(i.rarity)).length},
+  {id:'gold-50',name:'При деньгах',desc:'Накопить 50 золотых.',icon:'🪙',cat:'Исследование',target:50,fn:s=>s.gold||0},
+  {id:'five-facts',name:'Собиратель фактов',desc:'Узнать 5 фактов о людях.',icon:'🔍',cat:'Знание',target:5,fn:s=>(s.relationships||[]).reduce((a,r)=>a+(r.knownFacts||[]).length,0)},
+  {id:'quest-done',name:'Закрывший дело',desc:'Выполнить любой квест.',icon:'✅',cat:'Знание',target:1,fn:s=>(s.questLog||[]).filter(q=>q.status==='completed').length},
 ];
 
 function statMod(score){return Math.floor((score-10)/2);}
@@ -581,7 +582,7 @@ function renderChat() {
       <div class="section-title">💬 Игра с мастером</div>
       <div id="chatMessages" class="chat-messages"></div>
       <div class="chat-input-row">
-        <input type="text" id="chatInput" class="chat-input" placeholder="Что делает Нотта?" maxlength="2000" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendChat();}">
+        <textarea id="chatInput" class="chat-input" placeholder="Что делает Нотта? (Enter — отправить, Shift+Enter — новая строка)" maxlength="2000" rows="2" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendChat();}"></textarea>
         <button id="chatSend" class="action-btn copy" onclick="sendChat()">отправить</button>
       </div>
       <div id="chatSuggested" class="chat-suggested"></div>
@@ -593,14 +594,14 @@ function renderChatMessages() {
   const container = document.getElementById('chatMessages');
   if (!container) return;
   // берём последние сообщения из currentMessages + локальные
-  const all = [...(currentMessages||[]).slice(-8), ...chatHistory];
+  const all = [...(currentMessages||[]).slice(-30), ...chatHistory];
   // дедуп по content+timestamp
   const seen = new Set();
   const msgs = all.filter(m => {
     const k = (m.content||'').slice(0,50) + (m.createdAt||m.ts||'');
     if (seen.has(k)) return false;
     seen.add(k); return true;
-  }).slice(-8);
+  }).slice(-50);
   if (!msgs.length) {
     container.innerHTML = '<div class="chat-empty">Напиши действие — мастер ответит.</div>';
     return;
@@ -609,9 +610,7 @@ function renderChatMessages() {
     const role = m.role || (m.narration ? 'narrator' : 'player');
     const label = ROLE_LABELS[role]||role;
     const text = m.content || m.narration || '';
-    const isShort = text.length > 300;
-    const display = isShort ? text.slice(0,300)+'…' : text;
-    return `<div class="chat-msg ${role}"><span class="role-badge ${role}">${label}</span><div class="chat-text">${escapeHtml(display)}</div></div>`;
+    return `<div class="chat-msg ${role}"><span class="role-badge ${role}">${label}</span><div class="chat-text">${escapeHtml(text)}</div></div>`;
   }).join('');
   container.scrollTop = container.scrollHeight;
 }
@@ -675,6 +674,7 @@ async function sendChat() {
 
 function renderHeader(s) {
   const xpPct = Math.min(100, (s.xp / s.xpToNext) * 100);
+  const armor = 10 + statMod(s.stats.dexterity);
   return `
     <div class="card header-card">
       <div class="names-row">
@@ -685,6 +685,7 @@ function renderHeader(s) {
       <div class="meta-row">
         <span>Уровень <span class="v">${s.level}</span></span>
         <span>Петля <span class="v" style="color:var(--rose)">#${s.loopCount}</span></span>
+        <span>Защита <span class="v" style="color:var(--emerald)">${armor}</span></span>
         ${s.statPoints>0?`<span class="equipped">очков: ${s.statPoints}</span>`:''}
       </div>
       <div class="meta-row">
@@ -723,14 +724,14 @@ function renderEffects(s) {
 function renderTabs(s) {
   const tabs = [
     {id:'stats',ic:'⚔',label:'Характеристики'},
-    {id:'skills',ic:'🗡',label:'Навыки',badge:s.skills.length},
-    {id:'inventory',ic:'🎒',label:'Инвентарь',badge:s.inventory.length},
-    {id:'quests',ic:'📜',label:'Квесты',badge:s.questLog.length},
-    {id:'relations',ic:'👥',label:'Связи',badge:s.relationships.length},
-    {id:'journal',ic:'📖',label:'Заметки',badge:s.journal.length,gold:true},
+    {id:'skills',ic:'🗡',label:'Навыки',badge:(s.skills||[]).length},
+    {id:'inventory',ic:'🎒',label:'Инвентарь',badge:(s.inventory||[]).length},
+    {id:'quests',ic:'📜',label:'Квесты',badge:(s.questLog||[]).length},
+    {id:'relations',ic:'👥',label:'Связи',badge:(s.relationships||[]).length},
+    {id:'journal',ic:'📖',label:'Заметки',badge:(s.journal||[]).length,gold:true},
     {id:'combat',ic:'⚔',label:'Бой'},
-    {id:'deaths',ic:'💀',label:'Смерти',badge:s.deathLog.length,alert:true},
-    {id:'history',ic:'⏱',label:'Хроника',badge:currentMessages.length},
+    {id:'deaths',ic:'💀',label:'Смерти',badge:(s.deathLog||[]).length,alert:true},
+    {id:'history',ic:'⏱',label:'Хроника',badge:(currentMessages||[]).length},
     {id:'map',ic:'🗺',label:'Карта'},
     {id:'achievements',ic:'🏆',label:'Честь'},
     {id:'playstats',ic:'📊',label:'Стата'},
@@ -908,7 +909,7 @@ function renderCombat(s) {
       <div class="section-title">⚔ Боевой лист</div>
       <div class="grid-2">
         <div class="combat-stat">
-          <div class="cs-label">Класс брони (CA)</div>
+          <div class="cs-label">Защита</div>
           <div class="cs-val" style="color:var(--sky)">${ca}</div>
           <div class="cs-hint">10 + мод. ловкости</div>
         </div>
@@ -923,9 +924,9 @@ function renderCombat(s) {
           <div class="cs-hint">мод. ловкости</div>
         </div>
         <div class="combat-stat">
-          <div class="cs-label">Скорость</div>
-          <div class="cs-val" style="color:var(--emerald)">30 фт</div>
-          <div class="cs-hint">базовая</div>
+          <div class="cs-label">Урон без оружия</div>
+          <div class="cs-val" style="color:var(--rose)">${fmtMod(statMod(s.stats.strength))}</div>
+          <div class="cs-hint">мод. силы</div>
         </div>
       </div>
     </div>
@@ -953,8 +954,9 @@ function renderCombat(s) {
 }
 
 function renderDeaths(s) {
-  const timeline = s.deathLog.length ? s.deathLog.map((d,i)=>`<div class="death"><div class="death-head"><span>Петля #${d.loop}</span><span>${escapeHtml(d.dayTime)} · ${escapeHtml(d.location)}</span></div><div class="death-cause">${escapeHtml(d.cause)}</div></div>`).join('') : '<div class="empty">Пока жив. Первая смерть вернёт тебя сюда — но с памятью.</div>';
-  return `<div class="card"><div class="section-title">🔄 Хронология петель <span class="count">${s.deathLog.length} смертей</span></div>${timeline}</div><div class="card"><div class="section-title">💀 Журнал смертей</div>${s.deathLog.length?s.deathLog.map(d=>`<div class="death"><div class="death-head"><span>Петля #${d.loop}</span><span>${escapeHtml(d.dayTime)}</span></div><div class="death-cause">${escapeHtml(d.cause)}</div><div class="npc-notes">📍 ${escapeHtml(d.location)}</div></div>`).join(''):'<div class="empty">Пока жив.</div>'}</div>`;
+  const deaths = s.deathLog||[];
+  const timeline = deaths.length ? deaths.map((d,i)=>`<div class="death"><div class="death-head"><span>Петля #${d.loop}</span><span>${escapeHtml(d.dayTime||'?')} · ${escapeHtml(d.location||'?')}</span></div><div class="death-cause">${escapeHtml(d.cause||'?')}</div></div>`).join('') : '<div class="empty">Пока жив. Первая смерть вернёт тебя сюда — но с памятью.</div>';
+  return `<div class="card"><div class="section-title">🔄 Хронология петель <span class="count">${deaths.length} смертей</span></div>${timeline}</div><div class="card"><div class="section-title">💀 Журнал смертей</div>${deaths.length?deaths.map(d=>`<div class="death"><div class="death-head"><span>Петля #${d.loop}</span><span>${escapeHtml(d.dayTime||'?')}</span></div><div class="death-cause">${escapeHtml(d.cause||'?')}</div><div class="npc-notes">📍 ${escapeHtml(d.location||'?')}</div></div>`).join(''):'<div class="empty">Пока жив.</div>'}</div>`;
 }
 
 function renderHistory(s) {
@@ -1038,28 +1040,29 @@ function renderAchievements(s) {
 }
 
 function renderPlayStats(s) {
-  const ms = Date.now() - new Date(s.startedAt).getTime();
+  const started = s.startedAt ? new Date(s.startedAt).getTime() : Date.now();
+  const ms = Date.now() - started;
   const playerActions = currentMessages.filter(m=>m.role==='player').length;
   const narratorScenes = currentMessages.filter(m=>m.role==='narrator').length;
   const achDone = ACHIEVEMENTS.filter(a=>a.fn(s)>=a.target).length;
   const furthestDay = (() => {
     const order = ['Рассвет','Утро','Полдень','После полудня','Закат','Ночь','Глубокая ночь'];
     let maxIdx = -1, furthest = '—';
-    for (const d of s.deathLog) {const i=order.findIndex(o=>d.dayTime.toLowerCase().startsWith(o.toLowerCase().slice(0,4)));if(i>maxIdx){maxIdx=i;furthest=d.dayTime;}}
-    const ci = order.findIndex(o=>s.dayTime.toLowerCase().startsWith(o.toLowerCase().slice(0,4)));
+    for (const d of (s.deathLog||[])) {const i=order.findIndex(o=>(d.dayTime||'').toLowerCase().startsWith(o.toLowerCase().slice(0,4)));if(i>maxIdx){maxIdx=i;furthest=d.dayTime;}}
+    const ci = order.findIndex(o=>(s.dayTime||'').toLowerCase().startsWith(o.toLowerCase().slice(0,4)));
     if (ci>maxIdx) furthest = s.dayTime;
     return furthest;
   })();
   const topCauses = (() => {
     const m = new Map();
-    for (const d of s.deathLog) {const k=d.cause.slice(0,40);m.set(k,(m.get(k)||0)+1);}
+    for (const d of (s.deathLog||[])) {const k=(d.cause||'').slice(0,40);m.set(k,(m.get(k)||0)+1);}
     return Array.from(m.entries()).sort((a,b)=>b[1]-a[1]).slice(0,3);
   })();
   return `<div class="card"><div class="section-title">📊 Статистика игры</div>
     <div class="grid-4">
       <div class="stat-box"><div class="stat-box-label">В игре</div><div class="stat-box-val">${fmtDuration(ms)}</div></div>
-      <div class="stat-box"><div class="stat-box-label">Петля</div><div class="stat-box-val" style="color:var(--rose)">#${s.loopCount}</div></div>
-      <div class="stat-box"><div class="stat-box-label">Уровень</div><div class="stat-box-val" style="color:var(--amber)">${s.level}</div></div>
+      <div class="stat-box"><div class="stat-box-label">Петля</div><div class="stat-box-val" style="color:var(--rose)">#${s.loopCount||0}</div></div>
+      <div class="stat-box"><div class="stat-box-label">Уровень</div><div class="stat-box-val" style="color:var(--amber)">${s.level||1}</div></div>
       <div class="stat-box"><div class="stat-box-label">Достиж.</div><div class="stat-box-val" style="color:var(--emerald)">${achDone}/${ACHIEVEMENTS.length}</div></div>
     </div>
     <div class="grid-4" style="margin-top:0.5rem">
@@ -1070,9 +1073,9 @@ function renderPlayStats(s) {
     </div>
     <div style="margin-top:1rem;border:1px solid rgba(136,19,55,0.3);background:rgba(69,10,10,0.1);border-radius:4px;padding:0.6rem">
       <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:#fca5a5;margin-bottom:0.4rem">💀 Анализ смертей</div>
-      ${s.deathLog.length===0?'<div style="font-size:0.75rem;color:var(--muted)">Пока не умирал.</div>':`
-        <div style="display:flex;gap:1rem;font-size:0.75rem;margin-bottom:0.4rem"><span>Всего смертей: <span style="font-family:monospace;color:#fca5a5">${s.deathLog.length}</span></span><span>Дальше всех: <span style="font-family:monospace;color:var(--txt)">${escapeHtml(furthestDay)}</span></span></div>
-        ${topCauses.length?`<div style="font-size:0.65rem;text-transform:uppercase;color:var(--muted);margin-bottom:0.3rem">Частые причины:</div>${topCauses.map(([c,n])=>`<div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.3rem"><div class="bar" style="flex:1"><div class="bar-fill" style="width:${(n/s.deathLog.length)*100}%;background:linear-gradient(90deg,#9f1239,#e11d48)"></div></div><span style="font-family:monospace;font-size:0.65rem;color:var(--stone)">×${n}</span><span style="font-size:0.65rem;color:var(--muted);max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${escapeHtml(c)}">${escapeHtml(c)}</span></div>`).join('')}`:''}
+      ${(s.deathLog||[]).length===0?'<div style="font-size:0.75rem;color:var(--muted)">Пока не умирал.</div>':`
+        <div style="display:flex;gap:1rem;font-size:0.75rem;margin-bottom:0.4rem"><span>Всего смертей: <span style="font-family:monospace;color:#fca5a5">${(s.deathLog||[]).length}</span></span><span>Дальше всех: <span style="font-family:monospace;color:var(--txt)">${escapeHtml(furthestDay)}</span></span></div>
+        ${topCauses.length?`<div style="font-size:0.65rem;text-transform:uppercase;color:var(--muted);margin-bottom:0.3rem">Частые причины:</div>${topCauses.map(([c,n])=>`<div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.3rem"><div class="bar" style="flex:1"><div class="bar-fill" style="width:${(n/(s.deathLog||[]).length)*100}%;background:linear-gradient(90deg,#9f1239,#e11d48)"></div></div><span style="font-family:monospace;font-size:0.65rem;color:var(--stone)">×${n}</span><span style="font-size:0.65rem;color:var(--muted);max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${escapeHtml(c)}">${escapeHtml(c)}</span></div>`).join('')}`:''}
       `}
     </div>
   </div>`;
