@@ -221,6 +221,25 @@
   .j-pin { color: var(--amber); font-size: 0.8rem; }
   .j-content { font-size: 0.75rem; color: var(--stone); margin-top: 0.2rem; white-space: pre-wrap; }
   .j-meta { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-top: 0.4rem; display: flex; gap: 0.8rem; }
+  /* форма заметок */
+  .journal-form { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem; }
+  .j-input {
+    width: 100%; background: rgba(0,0,0,0.4); border: 1px solid var(--border); border-radius: 3px;
+    padding: 0.35rem 0.5rem; color: var(--txt); font-family: Georgia, serif; font-size: 0.85rem; margin-bottom: 0.4rem;
+  }
+  .j-input:focus { outline: none; border-color: var(--amber); }
+  .j-textarea {
+    width: 100%; background: rgba(0,0,0,0.4); border: 1px solid var(--border); border-radius: 3px;
+    padding: 0.35rem 0.5rem; color: var(--txt); font-family: Georgia, serif; font-size: 0.8rem; resize: vertical;
+  }
+  .j-textarea:focus { outline: none; border-color: var(--amber); }
+  .j-categories { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.4rem; }
+  .j-cat {
+    background: rgba(0,0,0,0.3); border: 1px solid var(--border); color: var(--stone);
+    padding: 0.2rem 0.5rem; border-radius: 9999px; font-size: 0.65rem; cursor: pointer; font-family: Georgia, serif;
+  }
+  .j-cat:hover { background: rgba(69,26,3,0.3); }
+  .j-cat.active { background: rgba(69,26,3,0.5); color: #fcd34d; border-color: rgba(180,83,9,0.5); }
   /* квесты */
   .quest { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem; margin-bottom: 0.5rem; }
   .quest.completed { border-color: rgba(16,185,129,0.4); }
@@ -252,23 +271,39 @@
   .event.system { border-left-color: var(--muted); }
   .event.npc { border-left-color: var(--amber); }
   .event-head { display: flex; align-items: center; gap: 0.4rem; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.2rem; }
-  .role-badge { padding: 0.1rem 0.4rem; border-radius: 9999px; border: 1px solid; font-size: 0.6rem; }
-  .role-badge.narrator, .role-badge.gm { background: rgba(46,16,101,0.4); color: #c4b5fd; border-color: rgba(76,29,149,0.4); }
-  .role-badge.player { background: rgba(8,47,73,0.4); color: #7dd3fc; border-color: rgba(12,74,110,0.4); }
-  .role-badge.system { background: rgba(41,37,36,0.6); color: var(--stone); border-color: var(--border); }
-  .role-badge.npc { background: rgba(69,26,3,0.4); color: #fcd34d; border-color: rgba(180,83,9,0.4); }
+  .role-badge { padding: 0.2rem 0.55rem; border-radius: 9999px; border: 1px solid; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.08em; }
+  .role-badge.narrator, .role-badge.gm { background: rgba(76,29,149,0.4); color: #ddd6fe; border-color: rgba(139,92,246,0.6); }
+  .role-badge.player { background: rgba(12,74,110,0.5); color: #bae6fd; border-color: rgba(14,165,233,0.6); }
+  .role-badge.system { background: rgba(68,64,60,0.7); color: #e7e5e4; border-color: rgba(120,113,108,0.6); }
+  .role-badge.npc { background: rgba(120,53,15,0.5); color: #fde68a; border-color: rgba(245,158,11,0.6); }
   .event-time { margin-left: auto; font-family: monospace; }
   .event-text { font-size: 0.78rem; color: var(--stone); white-space: pre-wrap; line-height: 1.4; }
   /* карта */
-  .map-container { position: relative; width: 100%; aspect-ratio: 4/3; background: linear-gradient(to bottom, #1c1917, rgba(0,0,0,0.7)); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
-  .map-loc { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; }
-  .map-btn { background: rgba(0,0,0,0.7); border: 1px solid; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.65rem; color: var(--stone); cursor: default; text-align: center; }
-  .map-btn.current { border-color: var(--amber); background: rgba(69,26,3,0.6); color: #fcd34d; box-shadow: 0 0 0 2px rgba(245,158,11,0.3); }
-  .map-btn.safe { border-color: rgba(16,185,129,0.5); color: #6ee7b7; }
-  .map-btn.caution { border-color: rgba(245,158,11,0.5); color: #fcd34d; }
-  .map-btn.danger { border-color: rgba(225,29,72,0.6); color: #fca5a5; }
-  .map-pulse { position: absolute; left: 50%; top: 50%; width: 2rem; height: 2rem; border-radius: 50%; background: rgba(245,158,11,0.2); transform: translate(-50%,-50%); animation: mapPulse 2s ease-out infinite; }
+  .map-container { position: relative; width: 100%; aspect-ratio: 4/3; background: linear-gradient(to bottom, #1c1917, rgba(0,0,0,0.85)); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; box-shadow: inset 0 0 30px rgba(0,0,0,0.6); }
+  .map-bg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .map-compass { position: absolute; top: 0.5rem; right: 0.5rem; font-size: 0.6rem; color: var(--muted); text-align: center; background: rgba(0,0,0,0.6); padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid var(--border); line-height: 1.2; }
+  .map-loc { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; z-index: 2; }
+  .map-btn { background: rgba(0,0,0,0.8); border: 1px solid; padding: 0.25rem 0.45rem; border-radius: 4px; font-size: 0.65rem; color: var(--stone); cursor: default; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.1rem; min-width: 3rem; transition: transform 0.2s; }
+  .map-btn:hover { transform: scale(1.1); z-index: 10; }
+  .map-ic { font-size: 0.9rem; line-height: 1; }
+  .map-btn.current { border-color: var(--amber); background: rgba(69,26,3,0.7); color: #fcd34d; box-shadow: 0 0 0 2px rgba(245,158,11,0.4), 0 0 12px rgba(245,158,11,0.3); }
+  .map-btn.safe { border-color: rgba(16,185,129,0.6); color: #6ee7b7; }
+  .map-btn.caution { border-color: rgba(245,158,11,0.6); color: #fcd34d; }
+  .map-btn.danger { border-color: rgba(225,29,72,0.7); color: #fca5a5; }
+  .map-pulse { position: absolute; left: 50%; top: 50%; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: rgba(245,158,11,0.25); transform: translate(-50%,-50%); animation: mapPulse 2s ease-out infinite; pointer-events: none; }
   @keyframes mapPulse { 0% { transform: translate(-50%,-50%) scale(0.5); opacity: 0.8; } 100% { transform: translate(-50%,-50%) scale(1.5); opacity: 0; } }
+  /* бой */
+  .combat-stat { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem; text-align: center; }
+  .cs-label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.2rem; }
+  .cs-val { font-family: monospace; font-size: 1.4rem; font-weight: 700; }
+  .cs-hint { font-size: 0.6rem; color: var(--muted); margin-top: 0.1rem; }
+  .combat-weapon { display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0.5rem; background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px; margin-bottom: 0.3rem; }
+  .cw-name { font-size: 0.85rem; color: #f5f5f4; }
+  .combat-target { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px; padding: 0.5rem; margin-bottom: 0.4rem; }
+  .ct-head { display: flex; justify-content: space-between; align-items: center; gap: 0.4rem; }
+  .ct-name { font-size: 0.88rem; color: #f5f5f4; }
+  .ct-role { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-top: 0.1rem; }
+  .ct-stats { font-size: 0.7rem; color: var(--stone); margin-top: 0.2rem; }
   /* достижения */
   .ach { background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem; display: flex; gap: 0.6rem; }
   .ach.done { border-color: rgba(180,83,9,0.5); background: linear-gradient(135deg, rgba(69,26,3,0.3), rgba(28,25,23,0.6)); }
@@ -288,6 +323,40 @@
   .stat-box-label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.2rem; }
   .stat-box-val { font-family: monospace; font-size: 1.1rem; font-weight: 600; }
   .empty { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.85rem; }
+  /* поле действия */
+  .action-input-card { border-color: rgba(14,165,233,0.3); background: rgba(8,47,73,0.15); }
+  .action-textarea {
+    width: 100%; background: rgba(0,0,0,0.4); border: 1px solid var(--border); border-radius: 4px;
+    padding: 0.5rem; color: var(--txt); font-family: Georgia, serif; font-size: 0.85rem; resize: vertical;
+    min-height: 2.5rem;
+  }
+  .action-textarea:focus { outline: none; border-color: var(--sky); box-shadow: 0 0 0 1px rgba(14,165,233,0.3); }
+  .action-textarea::placeholder { color: var(--muted); font-style: italic; }
+  .action-buttons { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+  .action-btn {
+    padding: 0.35rem 0.7rem; font-size: 0.72rem; border-radius: 4px; cursor: pointer;
+    border: 1px solid; font-family: Georgia, serif; text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .action-btn.save { background: rgba(69,26,3,0.3); border-color: rgba(180,83,9,0.4); color: #fcd34d; }
+  .action-btn.save:hover { background: rgba(69,26,3,0.5); }
+  .action-btn.copy { background: rgba(8,47,73,0.3); border-color: rgba(14,165,233,0.4); color: #7dd3fc; }
+  .action-btn.copy:hover { background: rgba(8,47,73,0.5); }
+  .action-btn.copy.ok { background: rgba(6,78,59,0.4); border-color: var(--emerald); color: #6ee7b7; }
+  .action-drafts { margin-top: 0.5rem; }
+  .drafts-title { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.3rem; }
+  .draft-item {
+    background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-left: 3px solid var(--sky);
+    border-radius: 4px; padding: 0.4rem 0.5rem; margin-bottom: 0.3rem; display: flex; align-items: flex-start; gap: 0.4rem;
+  }
+  .draft-text { flex: 1; font-size: 0.78rem; color: var(--stone); }
+  .draft-meta { font-size: 0.6rem; color: var(--muted); white-space: nowrap; }
+  .draft-actions { display: flex; flex-direction: column; gap: 0.2rem; }
+  .draft-btn {
+    background: rgba(0,0,0,0.4); border: 1px solid var(--border); color: var(--stone);
+    width: 1.4rem; height: 1.4rem; border-radius: 3px; cursor: pointer; font-size: 0.7rem; padding: 0;
+  }
+  .draft-btn:hover { background: rgba(69,26,3,0.4); color: #fcd34d; }
+  .draft-btn.del:hover { background: rgba(69,10,10,0.4); color: #fca5a5; }
   .error-banner { background: rgba(69,10,10,0.6); border: 1px solid var(--rose); color: #fca5a5; padding: 0.75rem 1rem; border-radius: 6px; margin-bottom: 1rem; font-size: 0.85rem; }
   .ornament { display: flex; align-items: center; gap: 0.75rem; color: rgba(180,83,9,0.3); margin: 1rem 0; }
   .ornament::before, .ornament::after { content: ''; height: 1px; flex: 1; background: linear-gradient(to right, transparent, rgba(180,83,9,0.3)); }
@@ -396,11 +465,11 @@ const ACHIEVEMENTS = [
 function statMod(score){return Math.floor((score-10)/2);}
 function fmtMod(n){return n>=0?`+${n}`:`${n}`;}
 function tier(val){
-  if(val>=18)return{label:'выдающаяся',grad:'linear-gradient(90deg,#d97706,#fbbf24)'};
-  if(val>=14)return{label:'сильная',grad:'linear-gradient(90deg,#059669,#34d399)'};
-  if(val>=10)return{label:'средняя',grad:'linear-gradient(90deg,#78716c,#d6d3d1)'};
-  if(val>=7)return{label:'слабая',grad:'linear-gradient(90deg,#c2410c,#f97316)'};
-  return{label:'жалкая',grad:'linear-gradient(90deg,#9f1239,#e11d48)'};
+  if(val>=18)return{label:'выдающаяся',grad:'linear-gradient(90deg,#b45309,#fbbf24)',color:'#fbbf24'};
+  if(val>=14)return{label:'сильная',grad:'linear-gradient(90deg,#047857,#34d399)',color:'#34d399'};
+  if(val>=10)return{label:'средняя',grad:'linear-gradient(90deg,#0369a1,#38bdf8)',color:'#38bdf8'};
+  if(val>=7)return{label:'слабая',grad:'linear-gradient(90deg,#9a3412,#fb923c)',color:'#fb923c'};
+  return{label:'жалкая',grad:'linear-gradient(90deg,#9f1239,#f43f5e)',color:'#f43f5e'};
 }
 function escapeHtml(s){if(s==null)return'';return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function fmtDuration(ms){const sec=Math.floor(ms/1000),min=Math.floor(sec/60),hr=Math.floor(min/60);if(hr>0)return`${hr}ч ${min%60}м`;if(min>0)return`${min}м ${sec%60}с`;return`${sec}с`;}
@@ -432,6 +501,7 @@ async function loadState() {
     syncText.textContent = `обновлено ${new Date().toLocaleTimeString('ru-RU')}`;
     loading.style.display = 'none';
     content.style.display = 'block';
+    renderDrafts();
   } catch (e) {
     loading.style.display = 'none';
     err.textContent = 'Не удалось загрузить состояние: ' + e.message;
@@ -448,6 +518,7 @@ function render() {
     ${renderHeader(s, ca)}
     ${renderVitals(s)}
     ${renderEffects(s)}
+    ${renderActionInput()}
     <div class="ornament">✦</div>
     ${renderTabs(s)}
     <div id="tabContent"></div>
@@ -455,6 +526,84 @@ function render() {
     ${renderEvents()}
   `;
   renderTab();
+}
+
+// Поле ввода действия от имени персонажа.
+// Сохраняет в localStorage (черновики игрока) + кнопка копирования для мастера.
+function renderActionInput() {
+  return `
+    <div class="card action-input-card">
+      <div class="section-title">✍ Действие от имени героя</div>
+      <textarea id="actionInput" class="action-textarea" placeholder="Что делает Нотта? Например: «Спросить Бромма, кто приходил к Торвену вчера вечером»" rows="2"></textarea>
+      <div class="action-buttons">
+        <button class="action-btn save" onclick="saveActionDraft()">сохранить черновик</button>
+        <button class="action-btn copy" onclick="copyActionToMaster()">скопировать для мастера</button>
+      </div>
+      <div id="actionDrafts" class="action-drafts"></div>
+    </div>
+  `;
+}
+
+function getDrafts() {
+  try { return JSON.parse(localStorage.getItem('actionDrafts')||'[]'); } catch { return []; }
+}
+
+function saveActionDraft() {
+  const input = document.getElementById('actionInput');
+  const text = (input.value||'').trim();
+  if (!text) return;
+  const drafts = getDrafts();
+  drafts.unshift({ text, ts: new Date().toISOString(), loop: currentState?.loopCount ?? 0 });
+  if (drafts.length > 20) drafts.length = 20;
+  localStorage.setItem('actionDrafts', JSON.stringify(drafts));
+  input.value = '';
+  renderDrafts();
+}
+
+function copyActionToMaster() {
+  const input = document.getElementById('actionInput');
+  const text = (input.value||'').trim();
+  if (!text) return;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.action-btn.copy');
+    const orig = btn.textContent;
+    btn.textContent = '✓ скопировано';
+    btn.classList.add('ok');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('ok'); }, 1500);
+  }).catch(() => {
+    // fallback
+    input.select();
+    document.execCommand('copy');
+  });
+}
+
+function deleteDraft(i) {
+  const drafts = getDrafts();
+  drafts.splice(i, 1);
+  localStorage.setItem('actionDrafts', JSON.stringify(drafts));
+  renderDrafts();
+}
+
+function useDraft(i) {
+  const drafts = getDrafts();
+  const input = document.getElementById('actionInput');
+  if (drafts[i]) input.value = drafts[i].text;
+}
+
+function renderDrafts() {
+  const container = document.getElementById('actionDrafts');
+  if (!container) return;
+  const drafts = getDrafts();
+  if (!drafts.length) { container.innerHTML = ''; return; }
+  container.innerHTML = '<div class="drafts-title">черновики:</div>' + drafts.map((d, i) => `
+    <div class="draft-item">
+      <div class="draft-text">${escapeHtml(d.text)}</div>
+      <div class="draft-meta">петля #${d.loop} · ${new Date(d.ts).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'})}</div>
+      <div class="draft-actions">
+        <button class="draft-btn" onclick="useDraft(${i})" title="вставить в поле">↑</button>
+        <button class="draft-btn del" onclick="deleteDraft(${i})" title="удалить">✕</button>
+      </div>
+    </div>`).join('');
 }
 
 function renderHeader(s, ca) {
@@ -514,6 +663,7 @@ function renderTabs(s) {
     {id:'quests',ic:'📜',label:'Квесты',badge:s.questLog.length},
     {id:'relations',ic:'👥',label:'Связи',badge:s.relationships.length},
     {id:'journal',ic:'📖',label:'Заметки',badge:s.journal.length,gold:true},
+    {id:'combat',ic:'⚔',label:'Бой'},
     {id:'deaths',ic:'💀',label:'Смерти',badge:s.deathLog.length,alert:true},
     {id:'history',ic:'⏱',label:'Хроника',badge:currentMessages.length},
     {id:'map',ic:'🗺',label:'Карта'},
@@ -540,6 +690,7 @@ function renderTab() {
     case 'quests': c.innerHTML = renderQuests(s); break;
     case 'relations': c.innerHTML = renderRelations(s); break;
     case 'journal': c.innerHTML = renderJournal(s); break;
+    case 'combat': c.innerHTML = renderCombat(s); break;
     case 'deaths': c.innerHTML = renderDeaths(s); break;
     case 'history': c.innerHTML = renderHistory(s); break;
     case 'map': c.innerHTML = renderMap(s); break;
@@ -552,7 +703,7 @@ function renderTab() {
 function renderStats(s) {
   const cards = STAT_ORDER.map(key => {
     const val = s.stats[key]||0, mod = statMod(val), t = tier(val), pct = (val/20)*100;
-    return `<div class="stat" title="${escapeHtml(STAT_DESC[key])}"><div class="stat-head"><span class="stat-name">${STAT_LABELS[key]}</span><span class="stat-mod ${mod>=0?'pos':'neg'}">${fmtMod(mod)}</span></div><div class="stat-val-row"><span class="stat-val">${val}</span><span class="stat-tier" style="color:${mod>=0?'#6ee7b7':'#fca5a5'}">${t.label}</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:${pct}%;background:${t.grad}"></div></div></div>`;
+    return `<div class="stat" title="${escapeHtml(STAT_DESC[key])}"><div class="stat-head"><span class="stat-name">${STAT_LABELS[key]}</span><span class="stat-mod ${mod>=0?'pos':'neg'}">${fmtMod(mod)}</span></div><div class="stat-val-row"><span class="stat-val">${val}</span><span class="stat-tier" style="color:${t.color}">${t.label}</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:${pct}%;background:${t.grad}"></div></div></div>`;
   }).join('');
   const saves = STAT_ORDER.map(key => {const b=statMod(s.stats[key]||0);return `<div class="save-row"><span>${STAT_LABELS[key]}</span><span class="v" style="color:${b>=0?'#6ee7b7':'#fca5a5'}">${fmtMod(b)}</span></div>`;}).join('');
   return `<div class="card"><div class="section-title">⚔ Характеристики (D&D 5e)</div><div class="stat-grid">${cards}</div></div><div class="card"><div class="section-title">🎲 Спасброски</div><div class="saves-grid">${saves}</div></div>`;
@@ -613,15 +764,134 @@ function renderRelations(s) {
 }
 
 function renderJournal(s) {
-  if (!s.journal.length) return `<div class="card"><div class="section-title">📖 Заметки Нотты</div><div class="empty">Пусто. Запиши первую улику, имя или план.</div></div>`;
-  const sorted = [...s.journal].sort((a,b)=>{if(a.pinned!==b.pinned)return a.pinned?-1:1;return b.updatedAt.localeCompare(a.updatedAt);});
-  const entries = sorted.map(j => `
+  const masterNotes = (s.journal||[]).slice().sort((a,b)=>{if(a.pinned!==b.pinned)return a.pinned?-1:1;return b.updatedAt.localeCompare(a.updatedAt);});
+  const masterHtml = masterNotes.length ? masterNotes.map(j => `
     <div class="journal-entry ${j.category} ${j.pinned?'pinned':''}">
-      <div class="j-head"><div><span class="j-title">${j.pinned?'📌 ':''}${escapeHtml(j.title)}</div></div></div>
+      <div class="j-head"><div><span class="j-title">${j.pinned?'📌 ':''}${escapeHtml(j.title)}</span></div></div>
       ${j.content?`<div class="j-content">${escapeHtml(j.content)}</div>`:''}
-      <div class="j-meta"><span>${JCAT_LABELS[j.category]||j.category}</span><span>петля #${j.loop}</span></div>
-    </div>`).join('');
-  return `<div class="card"><div class="section-title">📖 Заметки Нотты <span class="count">${s.journal.length}</span></div><div style="font-size:0.7rem;color:var(--muted);font-style:italic;margin-bottom:0.5rem">Память между петлями. Что узнал — записывай.</div>${entries}</div>`;
+      <div class="j-meta"><span>${JCAT_LABELS[j.category]||j.category}</span><span>петля #${j.loop}</span><span style="color:var(--amber)">от мастера</span></div>
+    </div>`).join('') : '';
+  const myNotes = getMyNotes();
+  const myHtml = myNotes.length ? myNotes.map((j, i) => `
+    <div class="journal-entry ${j.category||'other'}">
+      <div class="j-head">
+        <div><span class="j-title">${escapeHtml(j.title||'Без названия')}</span></div>
+        <button class="draft-btn del" onclick="deleteMyNote(${i})" title="удалить">✕</button>
+      </div>
+      ${j.content?`<div class="j-content">${escapeHtml(j.content)}</div>`:''}
+      <div class="j-meta"><span>${JCAT_LABELS[j.category||'other']||'прочее'}</span><span>петля #${j.loop||0}</span><span style="color:var(--sky)">моя</span></div>
+    </div>`).join('') : '';
+  return `
+    <div class="card">
+      <div class="section-title">📖 Заметки Нотты <span class="count">${masterNotes.length + myNotes.length}</span></div>
+      <div style="font-size:0.7rem;color:var(--muted);font-style:italic;margin-bottom:0.5rem">Память между петлями. Личные заметки хранятся в браузере.</div>
+      <div class="journal-form">
+        <input type="text" id="jTitle" class="j-input" placeholder="Заголовок (что запомнить?)" maxlength="120">
+        <textarea id="jContent" class="j-textarea" placeholder="Подробности: улики, имена, планы…" rows="3" maxlength="4000"></textarea>
+        <div class="j-categories">
+          ${Object.entries(JCAT_LABELS).map(([k,v])=>`<button class="j-cat ${currentJournalCat===k?'active':''}" onclick="setJournalCat('${k}')">${v}</button>`).join('')}
+        </div>
+        <button class="action-btn save" onclick="addMyNote()" style="margin-top:0.4rem">+ добавить заметку</button>
+      </div>
+      ${myHtml ? `<div style="margin-top:0.75rem"><div style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--sky);margin-bottom:0.3rem">личные (${myNotes.length})</div>${myHtml}</div>` : ''}
+      ${masterHtml ? `<div style="margin-top:0.75rem"><div style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--amber);margin-bottom:0.3rem">от мастера (${masterNotes.length})</div>${masterHtml}</div>` : ''}
+      ${(!masterHtml && !myHtml) ? '<div class="empty">Пусто. Запиши первую улику, имя или план.</div>' : ''}
+    </div>
+  `;
+}
+
+let currentJournalCat = 'clue';
+function setJournalCat(c) { currentJournalCat = c; renderTab(); }
+function getMyNotes() { try { return JSON.parse(localStorage.getItem('myNotes')||'[]'); } catch { return []; } }
+function addMyNote() {
+  const title = (document.getElementById('jTitle')?.value||'').trim();
+  const content = (document.getElementById('jContent')?.value||'').trim();
+  if (!title && !content) return;
+  const notes = getMyNotes();
+  notes.unshift({ title: title||'Без названия', content, category: currentJournalCat, loop: currentState?.loopCount ?? 0, ts: new Date().toISOString() });
+  if (notes.length > 100) notes.length = 100;
+  localStorage.setItem('myNotes', JSON.stringify(notes));
+  renderTab();
+}
+function deleteMyNote(i) {
+  const notes = getMyNotes();
+  notes.splice(i, 1);
+  localStorage.setItem('myNotes', JSON.stringify(notes));
+  renderTab();
+}
+
+function renderCombat(s) {
+  const ca = 10 + statMod(s.stats.dexterity);
+  const atkBonus = statMod(s.stats.strength) + (s.proficiencyBonus||2);
+  // потенциальные цели — живые NPC, которых игрок знает
+  const targets = (s.relationships||[]).filter(r => r.alive);
+  const weapons = (s.inventory||[]).filter(i => i.type === 'weapon');
+
+  const targetHtml = targets.length ? targets.map(t => `
+    <div class="combat-target">
+      <div class="ct-head">
+        <span class="ct-name">${escapeHtml(t.name)}</span>
+        <span class="npc-badge ${t.type}">${REL_LABELS[t.type]||t.type}</span>
+      </div>
+      <div class="ct-role">${escapeHtml(t.role)}</div>
+      <div class="ct-stats">
+        <span>trust: <span style="color:${t.trust>=0?'#6ee7b7':'#fca5a5'}">${t.trust>0?'+':''}${t.trust}</span></span>
+      </div>
+    </div>`).join('') : '<div class="empty">Нет известных живых NPC. Найди людей в замке.</div>';
+
+  const weaponHtml = weapons.length ? weapons.map(w => `
+    <div class="combat-weapon">
+      <span class="cw-name">${escapeHtml(w.name)}</span>
+      <span class="qty">${RARITY_LABELS[w.rarity]||w.rarity}</span>
+    </div>`).join('') : '<div class="empty" style="padding:0.5rem">Нет оружия. Только голые руки.</div>';
+
+  return `
+    <div class="card">
+      <div class="section-title">⚔ Боевой лист</div>
+      <div class="grid-2">
+        <div class="combat-stat">
+          <div class="cs-label">Класс брони (CA)</div>
+          <div class="cs-val" style="color:var(--sky)">${ca}</div>
+          <div class="cs-hint">10 + мод. ловкости</div>
+        </div>
+        <div class="combat-stat">
+          <div class="cs-label">Бонус атаки</div>
+          <div class="cs-val" style="color:var(--rose)">${fmtMod(atkBonus)}</div>
+          <div class="cs-hint">мод. силы + мастерство</div>
+        </div>
+        <div class="combat-stat">
+          <div class="cs-label">Инициатива</div>
+          <div class="cs-val" style="color:var(--amber)">${fmtMod(statMod(s.stats.dexterity))}</div>
+          <div class="cs-hint">мод. ловкости</div>
+        </div>
+        <div class="combat-stat">
+          <div class="cs-label">Скорость</div>
+          <div class="cs-val" style="color:var(--emerald)">30 фт</div>
+          <div class="cs-hint">базовая</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="section-title">🗡 Оружие</div>
+      ${weaponHtml}
+    </div>
+    <div class="card">
+      <div class="section-title">🎯 Потенциальные цели</div>
+      <div style="font-size:0.7rem;color:var(--muted);font-style:italic;margin-bottom:0.5rem">Бой ещё не реализован. Это подготовка — кого ты знаешь и можешь встретить.</div>
+      ${targetHtml}
+    </div>
+    <div class="card">
+      <div class="section-title">ℹ Как будет работать бой</div>
+      <div style="font-size:0.78rem;color:var(--stone);line-height:1.6">
+        <p>• Бой идёт по раундам. Инициатива определяет порядок.</p>
+        <p>• Атака: d20 + бонус атаки vs CA цели. ≥ — попадание.</p>
+        <p>• Урон: куб оружия + мод. силы. HP цели уменьшается.</p>
+        <p>• При HP ≤ 0 цель падает (не обязательно умирает).</p>
+        <p>• Слабый персонаж не победит рыцаря — качайся и думай.</p>
+        <p style="color:var(--amber);margin-top:0.5rem">Мастер ведёт бой в чате. Здесь — справка и подготовка.</p>
+      </div>
+    </div>
+  `;
 }
 
 function renderDeaths(s) {
@@ -655,11 +925,41 @@ function renderMap(s) {
     return null;
   };
   const curId = matchLoc(s.location);
+  const locIcons = {dungeon:'🔒',courtyard:'⚔',barracks:'🛡',hall:'🏰',archive:'📚',chapel:'✚',tavern:'🍺',tower:'👑'};
   const locs = MAP_LOCS.map(l => {
     const isCur = l.id === curId;
-    return `<div class="map-loc" style="left:${l.x}%;top:${l.y}%">${isCur?'<div class="map-pulse"></div>':''}<div class="map-btn ${isCur?'current':l.danger}" title="${escapeHtml(l.name)}">${escapeHtml(l.name)}</div></div>`;
+    return `<div class="map-loc" style="left:${l.x}%;top:${l.y}%">${isCur?'<div class="map-pulse"></div>':''}<div class="map-btn ${isCur?'current':l.danger}" title="${escapeHtml(l.name)}"><span class="map-ic">${locIcons[l.id]||'•'}</span><span>${escapeHtml(l.name)}</span></div></div>`;
   }).join('');
-  return `<div class="card"><div class="section-title">🗺 Замок Дрел <span class="count">${curId?'ты здесь':'неизвестно где'}</span></div><div class="map-container">${locs}</div><div style="display:flex;gap:1rem;margin-top:0.5rem;font-size:0.65rem;color:var(--muted)"><span>🟢 безопасно</span><span>🟡 осторожно</span><span>🔴 опасно</span></div></div>`;
+  return `<div class="card"><div class="section-title">🗺 Замок Дрел <span class="count">${curId?'ты здесь':'неизвестно где'}</span></div>
+    <div class="map-container">
+      <svg class="map-bg" viewBox="0 0 100 75" preserveAspectRatio="none">
+        <defs>
+          <pattern id="stone" x="0" y="0" width="8" height="6" patternUnits="userSpaceOnUse">
+            <rect width="8" height="6" fill="#1c1917"/>
+            <rect width="7" height="5" x="0.5" y="0.5" fill="#292524" stroke="#44403c" stroke-width="0.2"/>
+          </pattern>
+        </defs>
+        <rect width="100" height="75" fill="url(#stone)" opacity="0.4"/>
+        <rect x="6" y="6" width="88" height="63" fill="none" stroke="#78716c" stroke-width="0.5" opacity="0.6"/>
+        <rect x="4" y="4" width="6" height="6" fill="#57534e" opacity="0.7"/>
+        <rect x="90" y="4" width="6" height="6" fill="#57534e" opacity="0.7"/>
+        <rect x="4" y="65" width="6" height="6" fill="#57534e" opacity="0.7"/>
+        <rect x="90" y="65" width="6" height="6" fill="#57534e" opacity="0.7"/>
+        <line x1="35" y1="30" x2="65" y2="30" stroke="#57534e" stroke-width="0.3" strokeDasharray="1 1" opacity="0.5"/>
+        <line x1="50" y1="30" x2="50" y2="50" stroke="#57534e" stroke-width="0.3" strokeDasharray="1 1" opacity="0.5"/>
+        <line x1="20" y1="50" x2="80" y2="50" stroke="#57534e" stroke-width="0.3" strokeDasharray="1 1" opacity="0.5"/>
+        <circle cx="50" cy="40" r="1" fill="#78716c" opacity="0.4"/>
+      </svg>
+      <div class="map-compass" title="Север">N<br>↑</div>
+      ${locs}
+    </div>
+    <div style="display:flex;gap:1rem;margin-top:0.5rem;font-size:0.65rem;color:var(--muted);flex-wrap:wrap">
+      <span style="color:#6ee7b7">● безопасно</span>
+      <span style="color:#fcd34d">● осторожно</span>
+      <span style="color:#fca5a5">● опасно</span>
+      <span style="color:var(--amber)">● ты здесь</span>
+    </div>
+  </div>`;
 }
 
 function renderAchievements(s) {
@@ -725,14 +1025,17 @@ function renderPlayStats(s) {
 
 function renderEvents() {
   if (!currentMessages.length) return '';
-  const recent = currentMessages.slice(-8).reverse();
+  // только последние 3 сообщения, кратко (≤120 символов)
+  const recent = currentMessages.slice(-3).reverse();
   const html = recent.map(m => {
     const label = ROLE_LABELS[m.role]||m.role;
     const time = new Date(m.createdAt).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'});
-    const text = m.content.length>200 ? m.content.slice(0,200)+'…' : m.content;
+    // кратко: первая строка или обрезка до 120 символов
+    let text = m.content.split('\n')[0];
+    if (text.length > 120) text = text.slice(0, 117) + '…';
     return `<div class="event ${m.role}"><div class="event-head"><span class="role-badge ${m.role}">${label}</span><span class="event-time">${time}</span></div><div class="event-text">${escapeHtml(text)}</div></div>`;
   }).join('');
-  return `<div class="card"><div class="section-title">⏱ Лента событий <span class="count">последних ${recent.length}</span></div>${html}</div>`;
+  return `<div class="card"><div class="section-title">⏱ Лента событий <span class="count">последние ${recent.length}</span></div>${html}</div>`;
 }
 
 loadState();
