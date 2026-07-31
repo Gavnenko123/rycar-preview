@@ -393,6 +393,9 @@
   /* компактное событие */
   .event.compact { display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.5rem; }
   .event-text-compact { font-size: 0.78rem; color: var(--stone); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+  .events-list { max-height: 400px; overflow-y: auto; padding-right: 0.3rem; }
+  .events-list .event { margin-bottom: 0.4rem; }
+  .events-list .event-text { max-height: none; }
   /* список локаций карты */
   .map-list { display: grid; grid-template-columns: 1fr; gap: 0.4rem; margin-top: 0.75rem; }
   @media (min-width: 640px) { .map-list { grid-template-columns: repeat(2, 1fr); } }
@@ -474,14 +477,14 @@ const JCAT_LABELS = {clue:'Улика',person:'Персона',place:'Место
 const ROLE_LABELS = {narrator:'Мастер',player:'Герой',gm:'Мастер',system:'Система',npc:'НИП'};
 
 const MAP_LOCS = [
-  {id:'dungeon',name:'Тюрьма',x:15,y:78,danger:'safe',desc:'Сырые камеры под замком. Здесь Роэн ждёт казни.'},
-  {id:'courtyard',name:'Двор',x:50,y:60,danger:'danger',desc:'Здесь ставят виселицу. Стража, шум, казнь на закате.'},
-  {id:'barracks',name:'Казармы',x:78,y:70,danger:'caution',desc:'Солдаты, тренировки, мастер Варрик обучает мечу.'},
-  {id:'hall',name:'Главный зал',x:50,y:40,danger:'caution',desc:'Сердце замка. Очаг, стол, слуги, слухи.'},
-  {id:'archive',name:'Архив',x:25,y:35,danger:'caution',desc:'Кабинет Торвена. Документы, улики, тайны.'},
-  {id:'chapel',name:'Часовня',x:75,y:35,danger:'caution',desc:'Церковь Пламенного Ока. Капеллан Ортин.'},
-  {id:'tavern',name:'«Сломанное Копьё»',x:88,y:90,danger:'caution',desc:'Таверна у ворот. Слухи, наёмники, выпивка.'},
-  {id:'tower',name:'Башня лорда',x:50,y:15,danger:'danger',desc:'Покои лорда Воссена. Опасно и охраняется.'},
+  {id:'camp',name:'Лагерь',x:20,y:75,danger:'safe',desc:'Палатки «Серых Копий». Костры, тын, палатка десятого десятка.'},
+  {id:'armory',name:'Оружейная',x:40,y:68,danger:'caution',desc:'Тренировки, Старая Коса, выдача снаряжения.'},
+  {id:'field',name:'Тренирующее поле',x:62,y:72,danger:'safe',desc:'Отработка боя, стрельбы из лука, построения.'},
+  {id:'thornwood',name:'Крепость Торнвуд',x:50,y:45,danger:'caution',desc:'Гарнизон регулярной армии. Командование, штаб.'},
+  {id:'infirmary',name:'Лазарет',x:25,y:55,danger:'caution',desc:'Раненые. Лекарь брат Томас. Пахнет травами и кровью.'},
+  {id:'chapel',name:'Часовня',x:75,y:50,danger:'caution',desc:'Полевая церковь Пламенного Ока. Капеллан Дорн.'},
+  {id:'village',name:'Деревня Каменный Брод',x:15,y:25,danger:'caution',desc:'Мирные жители к югу. Таверна, рынок, слухи.'},
+  {id:'forest',name:'Северный лес',x:80,y:20,danger:'danger',desc:'Патрули, засады кланов, охота. Опасно.'},
 ];
 
 const ACHIEVEMENTS = [
@@ -545,7 +548,6 @@ async function loadState() {
     syncText.textContent = `обновлено ${new Date().toLocaleTimeString('ru-RU')}`;
     loading.style.display = 'none';
     content.style.display = 'block';
-    renderChatMessages();
   } catch (e) {
     loading.style.display = 'none';
     err.textContent = 'Не удалось загрузить состояние: ' + e.message;
@@ -561,7 +563,6 @@ function render() {
     ${renderHeader(s)}
     ${renderVitals(s)}
     ${renderEffects(s)}
-    ${renderChat()}
     <div class="ornament">✦</div>
     ${renderTabs(s)}
     <div id="tabContent"></div>
@@ -974,18 +975,18 @@ function renderMap(s) {
   const matchLoc = (loc) => {
     const l = (loc||'').toLowerCase();
     for (const m of MAP_LOCS) { if (l.includes(m.name.toLowerCase().slice(0,4))) return m.id; }
-    if (l.includes('темниц')||l.includes('камер')||l.includes('тюрем')) return 'dungeon';
-    if (l.includes('двор')||l.includes('висел')||l.includes('помост')) return 'courtyard';
-    if (l.includes('казарм')||l.includes('варрик')) return 'barracks';
-    if (l.includes('зал')||l.includes('очаг')) return 'hall';
-    if (l.includes('архив')||l.includes('кабинет')||l.includes('торвен')) return 'archive';
-    if (l.includes('часовн')||l.includes('церкв')||l.includes('ортин')) return 'chapel';
-    if (l.includes('таверн')||l.includes('копь')) return 'tavern';
-    if (l.includes('башн')||l.includes('воссен')||l.includes('лорд')) return 'tower';
+    if (l.includes('лагер')||l.includes('палатк')||l.includes('серых копий')) return 'camp';
+    if (l.includes('оружейн')||l.includes('старая коса')) return 'armory';
+    if (l.includes('поле')||l.includes('тренир')) return 'field';
+    if (l.includes('торнвуд')||l.includes('крепост')||l.includes('гарнизон')) return 'thornwood';
+    if (l.includes('лазарет')||l.includes('томас')||l.includes('ранен')) return 'infirmary';
+    if (l.includes('часовн')||l.includes('церкв')||l.includes('дорн')) return 'chapel';
+    if (l.includes('деревн')||l.includes('каменный брод')||l.includes('рынок')) return 'village';
+    if (l.includes('лес')||l.includes('патрул')||l.includes('охот')) return 'forest';
     return null;
   };
   const curId = matchLoc(s.location);
-  const locIcons = {dungeon:'🔒',courtyard:'⚔',barracks:'🛡',hall:'🏰',archive:'📚',chapel:'✚',tavern:'🍺',tower:'👑'};
+  const locIcons = {camp:'⛺',armory:'⚔',field:'🎯',thornwood:'🏰',infirmary:'✚',chapel:'⛪',village:'🏘',forest:'🌲'};
   const locs = MAP_LOCS.map(l => {
     const isCur = l.id === curId;
     return `<div class="map-loc" style="left:${l.x}%;top:${l.y}%">${isCur?'<div class="map-pulse"></div>':''}<div class="map-btn ${isCur?'current':l.danger}" title="${escapeHtml(l.desc||'')}"><span class="map-ic">${locIcons[l.id]||'•'}</span><span>${escapeHtml(l.name)}</span></div></div>`;
@@ -999,7 +1000,7 @@ function renderMap(s) {
       <div class="mli-danger ${l.danger}">${l.danger==='safe'?'безопасно':l.danger==='caution'?'осторожно':'опасно'}</div>
     </div>`;
   }).join('');
-  return `<div class="card"><div class="section-title">🗺 Замок Дрел <span class="count">${curId?'ты здесь':'неизвестно где'}</span></div>
+  return `<div class="card"><div class="section-title">🗺 Лагерь у Торнвуда <span class="count">${curId?'ты здесь':'неизвестно где'}</span></div>
     <div class="map-container">
       <svg class="map-bg" viewBox="0 0 100 75" preserveAspectRatio="none">
         <rect width="100" height="75" fill="#0c0a09"/>
@@ -1083,12 +1084,14 @@ function renderPlayStats(s) {
 
 function renderEvents() {
   if (!currentMessages.length) return '';
-  // только последнее сообщение, кратко (≤100 символов), в одну строку
-  const last = currentMessages[currentMessages.length - 1];
-  const label = ROLE_LABELS[last.role]||last.role;
-  let text = last.content.split('\n')[0].trim();
-  if (text.length > 100) text = text.slice(0, 97) + '…';
-  return `<div class="card event-card"><div class="section-title">⏱ Последнее событие</div><div class="event ${last.role} compact"><span class="role-badge ${last.role}">${label}</span><span class="event-text-compact">${escapeHtml(text)}</span></div></div>`;
+  // последние 3 сообщения, полный текст (с прокруткой если длинно)
+  const recent = currentMessages.slice(-3).reverse();
+  const html = recent.map(m => {
+    const label = ROLE_LABELS[m.role]||m.role;
+    const time = new Date(m.createdAt).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'});
+    return `<div class="event ${m.role}"><div class="event-head"><span class="role-badge ${m.role}">${label}</span><span class="event-time">${time}</span></div><div class="event-text">${escapeHtml(m.content)}</div></div>`;
+  }).join('');
+  return `<div class="card"><div class="section-title">⏱ Последние события <span class="count">${recent.length}</span></div><div class="events-list">${html}</div></div>`;
 }
 
 loadState();
