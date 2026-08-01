@@ -180,6 +180,10 @@
   .item.epic .item-name { color: #c4b5fd; }
   .item.legendary .item-name { color: #fcd34d; }
   .item-desc { font-size: 0.75rem; color: var(--stone); margin-top: 0.2rem; }
+  .item-stats { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.3rem; margin-bottom: 0.3rem; }
+  .stat-chip { display: inline-flex; align-items: center; gap: 0.2rem; background: rgba(0,0,0,0.4); border: 1px solid var(--border); border-radius: 3px; padding: 0.1rem 0.35rem; font-size: 0.62rem; }
+  .sc-key { color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .sc-val { color: var(--amber); font-family: monospace; font-weight: 600; }
   .item-meta { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-top: 0.3rem; display: flex; gap: 0.8rem; }
   .qty { background: rgba(0,0,0,0.5); padding: 0 0.4rem; border-radius: 3px; font-family: monospace; font-size: 0.75rem; color: var(--txt); }
   .equipped { background: rgba(69,26,3,0.6); color: #fcd34d; padding: 0 0.3rem; border-radius: 3px; font-size: 0.6rem; text-transform: uppercase; }
@@ -782,17 +786,21 @@ function renderSkills(s) {
 
 function renderInventory(s) {
   if (!s.inventory.length) return `<div class="card"><div class="section-title">🎒 Инвентарь</div><div class="empty">Карманы пусты.</div></div>`;
-  const items = s.inventory.map(i => `
+  const items = s.inventory.map(i => {
+    const statsHtml = i.stats ? `<div class="item-stats">${Object.entries(i.stats).map(([k,v])=>`<span class="stat-chip"><span class="sc-key">${k}</span><span class="sc-val">${escapeHtml(String(v))}</span></span>`).join('')}</div>` : '';
+    return `
     <div class="item ${i.rarity}">
       <div class="item-head">
         <div>
           <div class="item-name">${escapeHtml(i.name)}${i.equipped?' <span class="equipped">надето</span>':''}</div>
           <div class="item-desc">${escapeHtml(i.description)}</div>
+          ${statsHtml}
           <div class="item-meta"><span>${ITEM_TYPE_LABELS[i.type]||i.type}</span><span>${RARITY_LABELS[i.rarity]||i.rarity}</span></div>
         </div>
         ${i.quantity>1?`<span class="qty">×${i.quantity}</span>`:''}
       </div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
   return `<div class="card"><div class="section-title">🎒 Инвентарь <span class="count">${s.inventory.length} · ${s.gold} зол.</span></div>${items}</div>`;
 }
 
