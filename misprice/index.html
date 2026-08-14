@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misprice Hunter — Пошук помилково низьких цін</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+  <div class="app">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-inner">
+        <div class="brand">
+          <div class="brand-icon">🔍</div>
+          <div>
+            <h1>Misprice Hunter</h1>
+            <p class="brand-sub">Пошук помилково низьких цін на маркетплейсах</p>
+          </div>
+        </div>
+        <a class="gh-link" href="https://github.com/gavnenko123/rycar-preview/actions" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          Actions
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- CONTROL PANEL -->
+      <section class="card control-panel">
+        <h2 class="card-title">🚀 Запуск сканування</h2>
+        <p class="muted">Натисніть кнопку — GitHub Actions запустить скрапер (≈2 хв), результати з'являться автоматично.</p>
+
+        <div class="form-row">
+          <label for="queries">Запити (через кому):</label>
+          <input id="queries" type="text" value="Ноутбук,Смартфон Samsung,Видеокарта RTX" placeholder="Ноутбук, Смартфон, ...">
+        </div>
+
+        <div class="form-row">
+          <label for="token">GitHub PAT <span class="req">(необхідно для запуску workflow)</span>:</label>
+          <input id="token" type="password" placeholder="ghp_..." autocomplete="off">
+          <small class="muted">Зберігається тільки у вашому браузері (localStorage). Нікуди не відправляється крім GitHub API.</small>
+        </div>
+
+        <div class="form-row repo-row">
+          <div>
+            <label for="owner">Власник репо:</label>
+            <input id="owner" type="text" value="gavnenko123">
+          </div>
+          <div>
+            <label for="repo">Назва репо:</label>
+            <input id="repo" type="text" value="rycar-preview">
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="runBtn" class="btn btn-primary">▶ Запустити скан</button>
+          <button id="refreshBtn" class="btn btn-outline">↻ Оновити результати</button>
+        </div>
+
+        <div id="status" class="status hidden"></div>
+      </section>
+
+      <!-- SUMMARY -->
+      <section id="summary" class="summary-grid hidden">
+        <div class="stat-card">
+          <div class="stat-label">📦 Товарів</div>
+          <div class="stat-value" id="statTotal">—</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">⚠️ Алертів</div>
+          <div class="stat-value warn" id="statAlerts">—</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">🔴 Critical</div>
+          <div class="stat-value danger" id="statCritical">—</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">🕒 Скан</div>
+          <div class="stat-value small" id="statTime">—</div>
+        </div>
+      </section>
+
+      <!-- ALERTS -->
+      <section id="alertsSection" class="card hidden">
+        <h2 class="card-title">🚨 Misprice-алерти <span id="alertsBadge" class="badge badge-danger">0</span></h2>
+        <div class="table-wrap">
+          <table id="alertsTable">
+            <thead>
+              <tr>
+                <th>Рівень</th>
+                <th>Score</th>
+                <th>Ціна</th>
+                <th>Медіана</th>
+                <th>−%</th>
+                <th>Кат.</th>
+                <th>Товар</th>
+                <th>Сайт</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="alertsBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- NO ALERTS -->
+      <section id="noAlerts" class="card hidden success-card">
+        <div class="success-icon">✅</div>
+        <h2 class="card-title">Аномалій не знайдено</h2>
+        <p class="muted">У останньому скані misprice-помилок не виявлено.</p>
+      </section>
+
+      <!-- ALL PRODUCTS -->
+      <section id="productsSection" class="card hidden">
+        <h2 class="card-title">📦 Усі товари <span id="productsBadge" class="badge">0</span></h2>
+        <div class="table-wrap">
+          <table id="productsTable">
+            <thead>
+              <tr>
+                <th>Кат.</th>
+                <th>Сайт</th>
+                <th>Ціна</th>
+                <th>Назва</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="productsBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- DOWNLOAD -->
+      <section class="card">
+        <h2 class="card-title">📁 Завантажити результати</h2>
+        <div class="downloads">
+          <a id="dlJson" class="btn btn-outline" download>📄 results.json</a>
+          <a id="dlAlerts" class="btn btn-outline" download>📊 results_alerts.csv</a>
+          <a id="dlAll" class="btn btn-outline" download>📋 results_all.csv</a>
+          <a id="dlLog" class="btn btn-outline" download>📝 scan_log.txt</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Misprice Hunter · Comfy + Citrus · GitHub Actions</span>
+      <span id="footerStatus"></span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
