@@ -1,15 +1,53 @@
 {
-  "queries": [],
-  "scan_time_utc": null,
-  "scan_duration_sec": 0,
-  "total_products_scanned": 0,
-  "by_site": {},
-  "by_category": {},
-  "category_stats": {},
+  "queries": [
+    "Ноутбук"
+  ],
+  "scan_time_utc": "2026-08-14T10:48:40.981191+00:00",
+  "scan_duration_sec": 44.9,
+  "total_products_scanned": 3,
+  "by_site": {
+    "Citrus": 3
+  },
+  "by_category": {
+    "laptop": 3
+  },
+  "category_stats": {
+    "laptop": {
+      "count": 3,
+      "main_count": 3,
+      "median": 36999.0,
+      "mad": 0.0,
+      "sigma": 8660.25
+    }
+  },
   "misprice_alerts_count": 0,
   "critical_count": 0,
   "high_count": 0,
   "alerts": [],
-  "all_products": [],
-  "_note": "Это начальная заглушка. После первого запуска workflow здесь появятся реальные данные сканирования."
+  "all_products": [
+    {
+      "name": "Ноутбук Acer Nitro V",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/acer-nitro-v-16-ai-anv16-42-nhu1keu008-shale-black-792263.html",
+      "price": 51999.0,
+      "site": "Citrus",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Apple MacBook Neo A",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
+      "price": 36999.0,
+      "site": "Citrus",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Apple MacBook Neo A",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-blush-mhfh4-2026-790213.html",
+      "price": 36999.0,
+      "site": "Citrus",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    }
+  ]
 }
