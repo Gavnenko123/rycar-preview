@@ -1,0 +1,15 @@
+{
+  "queries": [],
+  "scan_time_utc": null,
+  "scan_duration_sec": 0,
+  "total_products_scanned": 0,
+  "by_site": {},
+  "by_category": {},
+  "category_stats": {},
+  "misprice_alerts_count": 0,
+  "critical_count": 0,
+  "high_count": 0,
+  "alerts": [],
+  "all_products": [],
+  "_note": "Это начальная заглушка. После первого запуска workflow здесь появятся реальные данные сканирования."
+}
