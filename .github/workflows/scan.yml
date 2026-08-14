@@ -1,0 +1,64 @@
+name: Price Scan
+
+# Workflow запускается:
+#   1. Вручную через UI GitHub (Actions → Run workflow) — основной способ
+#   2. По расписанию — каждый час (опционально, можно закомментировать)
+on:
+  workflow_dispatch:
+    inputs:
+      queries:
+        description: 'Поисковые запросы через запятую'
+        required: false
+        default: 'Ноутбук,Смартфон Samsung,Видеокарта RTX'
+  schedule:
+    # Каждый час (UTC). Закомментируйте, если не нужен авто-запуск.
+    - cron: '0 * * * *'
+
+# Права для коммита в репо и деплоя Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install playwright playwright-stealth
+          playwright install --with-deps chromium
+
+      - name: Run scan
+        env:
+          QUERIES: ${{ github.event.inputs.queries }}
+        run: |
+          python misprice/scripts/monitor_actions.py "${QUERIES:-Ноутбук,Смартфон Samsung,Видеокарта RTX}"
+
+      - name: Commit results to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add misprice/docs/
+          if git diff --cached --quiet; then
+            echo "Нет изменений для коммита"
+          else
+            git commit -m "chore: update scan results [skip ci]"
+            git push
+          fi
+
+      - name: Upload artifacts (для скачивания из Actions)
+        uses: actions/upload-artifact@v4
+        with:
+          name: scan-results
+          path: misprice/docs/
+          retention-days: 30
