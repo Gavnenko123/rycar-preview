@@ -1,19 +1,15 @@
 {
   "queries": [
-    "Ноутбук",
-    "Смартфон Samsung",
-    "Видеокарта RTX"
+    "Ноутбук"
   ],
-  "scan_time_utc": "2026-08-14T10:54:07.991158+00:00",
-  "scan_duration_sec": 136.5,
-  "total_products_scanned": 9,
+  "scan_time_utc": "2026-08-14T11:03:32.373650+00:00",
+  "scan_duration_sec": 47.5,
+  "total_products_scanned": 3,
   "by_site": {
-    "Citrus": 9
+    "Citrus": 3
   },
   "by_category": {
-    "laptop": 3,
-    "phone": 3,
-    "gpu": 3
+    "laptop": 3
   },
   "category_stats": {
     "laptop": {
@@ -22,41 +18,12 @@
       "median": 36999.0,
       "mad": 0.0,
       "sigma": 8660.25
-    },
-    "phone": {
-      "count": 3,
-      "main_count": 3,
-      "median": 64999.0,
-      "mad": 6000.0,
-      "sigma": 8895.6
-    },
-    "gpu": {
-      "count": 3,
-      "main_count": 3,
-      "median": 55199.0,
-      "mad": 21100.0,
-      "sigma": 31282.86
     }
   },
-  "misprice_alerts_count": 1,
-  "critical_count": 1,
+  "misprice_alerts_count": 0,
+  "critical_count": 0,
   "high_count": 0,
-  "alerts": [
-    {
-      "name": "Смартфон Samsung Galaxy A",
-      "url": "https://citrus.ua/smartfony/a576b-dbd-awesome-navy-samsung-8256gb-790531.html",
-      "site": "Citrus",
-      "category": "phone",
-      "search_query": "Смартфон Samsung",
-      "current_price": 26999.0,
-      "median_price": 64999.0,
-      "expected_min_price": 19499.7,
-      "discount_vs_median_pct": 58.5,
-      "misprice_score": 75.1,
-      "severity": "critical",
-      "reason": "z-score=-4.27 (викид)"
-    }
-  ],
+  "alerts": [],
   "all_products": [
     {
       "name": "Ноутбук Acer Nitro V",
@@ -81,54 +48,6 @@
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy S",
-      "url": "https://citrus.ua/smartfony/s948b-zkg-black-samsung-12512gb-786715.html",
-      "price": 70999.0,
-      "site": "Citrus",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy A",
-      "url": "https://citrus.ua/smartfony/a576b-dbd-awesome-navy-samsung-8256gb-790531.html",
-      "price": 26999.0,
-      "site": "Citrus",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy S",
-      "url": "https://citrus.ua/smartfony/s948b-zkd-black-samsung-12256gb-786720.html",
-      "price": 64999.0,
-      "site": "Citrus",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5060-8gb-gddr7-gv-n5060eagle-oc-8gd-791626.html",
-      "price": 17399.0,
-      "site": "Citrus",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Відеокарта MSI RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5080-16gb-gddr7-rtx5080-16gb-gaming-rtx5080-16g-gam-trio-oc-791432.html",
-      "price": 76299.0,
-      "site": "Citrus",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5070ti-16gb-n507teagleoc-ice-16gd-10-791647.html",
-      "price": 55199.0,
-      "site": "Citrus",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
     }
   ]
 }
