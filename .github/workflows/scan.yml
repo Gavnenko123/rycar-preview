@@ -53,7 +53,12 @@ jobs:
             echo "Нет изменений для коммита"
           else
             git commit -m "chore: update scan results [skip ci]"
-            git push
+            # Pull + rebase на случай если Pages параллельно сделал коммит
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              echo "Push attempt $attempt failed, retrying..."
+              sleep 3
+            done
           fi
 
       - name: Upload artifacts (для скачивания из Actions)
