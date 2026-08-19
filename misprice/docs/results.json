@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-08-19T14:11:05.767276+00:00",
-  "scan_duration_sec": 138.6,
+  "scan_time_utc": "2026-08-19T17:57:41.550944+00:00",
+  "scan_duration_sec": 138.4,
   "total_products_scanned": 9,
   "by_site": {
     "Citrus": 9
@@ -108,16 +108,16 @@
     },
     {
       "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5060-8gb-gddr7-gv-n5060eagle-oc-8gd-791626.html",
-      "price": 17399.0,
+      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5070ti-16gb-n507teagleoc-ice-16gd-10-791647.html",
+      "price": 55199.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
       "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5070ti-16gb-n507teagleoc-ice-16gd-10-791647.html",
-      "price": 55199.0,
+      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5060-8gb-gddr7-gv-n5060eagle-oc-8gd-791626.html",
+      "price": 17399.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
