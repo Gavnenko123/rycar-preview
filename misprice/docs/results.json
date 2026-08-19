@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-08-19T22:59:42.620624+00:00",
-  "scan_duration_sec": 137.7,
+  "scan_time_utc": "2026-08-19T23:55:14.948406+00:00",
+  "scan_duration_sec": 138.7,
   "total_products_scanned": 9,
   "by_site": {
     "Citrus": 9
@@ -19,9 +19,9 @@
     "laptop": {
       "count": 3,
       "main_count": 3,
-      "median": 44599.0,
-      "mad": 7400.0,
-      "sigma": 10971.24
+      "median": 36999.0,
+      "mad": 0.0,
+      "sigma": 8660.25
     },
     "phone": {
       "count": 3,
@@ -67,16 +67,16 @@
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Dream Machines RG",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/dream-machines-rg3050-15-rg3050-15ua71-black-795686.html",
-      "price": 44599.0,
+      "name": "Ноутбук Apple MacBook Neo A",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
+      "price": 36999.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
     },
     {
       "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-blush-mhfh4-2026-790213.html",
       "price": 36999.0,
       "site": "Citrus",
       "category": "laptop",
