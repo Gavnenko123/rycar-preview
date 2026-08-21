@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-08-20T23:04:35.718080+00:00",
-  "scan_duration_sec": 139.1,
+  "scan_time_utc": "2026-08-21T03:34:21.626636+00:00",
+  "scan_duration_sec": 137.8,
   "total_products_scanned": 9,
   "by_site": {
     "Citrus": 9
@@ -19,9 +19,9 @@
     "laptop": {
       "count": 3,
       "main_count": 3,
-      "median": 51999.0,
-      "mad": 15000.0,
-      "sigma": 22239.0
+      "median": 36999.0,
+      "mad": 0.0,
+      "sigma": 24190.98
     },
     "phone": {
       "count": 3,
@@ -67,16 +67,16 @@
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Acer Nitro V",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/acer-nitro-v-16-ai-anv16-42-nhu1keu008-shale-black-792263.html",
-      "price": 51999.0,
+      "name": "Ноутбук Apple MacBook Neo A",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
+      "price": 36999.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
     },
     {
       "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-blush-mhfh4-2026-790213.html",
       "price": 36999.0,
       "site": "Citrus",
       "category": "laptop",
