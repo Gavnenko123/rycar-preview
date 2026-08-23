@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-08-23T22:55:14.986725+00:00",
-  "scan_duration_sec": 141.1,
+  "scan_time_utc": "2026-08-23T23:50:31.842054+00:00",
+  "scan_duration_sec": 139.8,
   "total_products_scanned": 9,
   "by_site": {
     "Citrus": 9
@@ -60,6 +60,14 @@
   "all_products": [
     {
       "name": "Ноутбук Apple MacBook Neo A",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-blush-mhfh4-2026-790213.html",
+      "price": 36999.0,
+      "site": "Citrus",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Apple MacBook Neo A",
       "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-blush-mhfj4-2026-790231.html",
       "price": 42999.0,
       "site": "Citrus",
@@ -69,14 +77,6 @@
     {
       "name": "Ноутбук Apple MacBook Neo A",
       "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
-      "price": 36999.0,
-      "site": "Citrus",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-blush-mhfh4-2026-790213.html",
       "price": 36999.0,
       "site": "Citrus",
       "category": "laptop",
@@ -115,17 +115,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5070ti-16gb-n507teagleoc-ice-16gd-10-791647.html",
-      "price": 55199.0,
+      "name": "Відеокарта ASUS GeForce RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-asus-geforce-rtx-5060-ti-8gb-gddr7-aero-gv-n506taero-oc-8gd-789996.html",
+      "price": 26104.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта ASUS GeForce RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-asus-geforce-rtx-5060-ti-8gb-gddr7-aero-gv-n506taero-oc-8gd-789996.html",
-      "price": 26104.0,
+      "name": "Відеокарта GIGABYTE RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5070ti-16gb-n507teagleoc-ice-16gd-10-791647.html",
+      "price": 55199.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
