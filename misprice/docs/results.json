@@ -4,16 +4,16 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-08-24T19:46:35.454897+00:00",
-  "scan_duration_sec": 141.4,
-  "total_products_scanned": 10,
+  "scan_time_utc": "2026-08-24T20:37:11.730243+00:00",
+  "scan_duration_sec": 144.7,
+  "total_products_scanned": 9,
   "by_site": {
-    "Citrus": 10
+    "Citrus": 9
   },
   "by_category": {
     "laptop": 3,
     "phone": 3,
-    "gpu": 4
+    "gpu": 3
   },
   "category_stats": {
     "laptop": {
@@ -31,11 +31,11 @@
       "sigma": 8895.6
     },
     "gpu": {
-      "count": 4,
-      "main_count": 4,
-      "median": 29601.5,
-      "mad": 7850.0,
-      "sigma": 11638.41
+      "count": 3,
+      "main_count": 3,
+      "median": 26104.0,
+      "mad": 8705.0,
+      "sigma": 12906.03
     }
   },
   "misprice_alerts_count": 1,
@@ -118,14 +118,6 @@
       "name": "Відеокарта ASUS GeForce RTX",
       "url": "https://citrus.ua/videokarti/videokarta-asus-geforce-rtx-5060-ti-8gb-gddr7-aero-gv-n506taero-oc-8gd-789996.html",
       "price": 26104.0,
-      "site": "Citrus",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Відеокарта MSI RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
-      "price": 33099.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
