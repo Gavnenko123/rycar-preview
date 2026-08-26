@@ -4,16 +4,16 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-08-26T06:58:15.368337+00:00",
-  "scan_duration_sec": 141.8,
-  "total_products_scanned": 9,
+  "scan_time_utc": "2026-08-26T07:53:42.454305+00:00",
+  "scan_duration_sec": 138.9,
+  "total_products_scanned": 10,
   "by_site": {
-    "Citrus": 9
+    "Citrus": 10
   },
   "by_category": {
     "laptop": 3,
     "phone": 3,
-    "gpu": 3
+    "gpu": 4
   },
   "category_stats": {
     "laptop": {
@@ -31,11 +31,11 @@
       "sigma": 8895.6
     },
     "gpu": {
-      "count": 3,
-      "main_count": 3,
-      "median": 26104.0,
-      "mad": 6995.0,
-      "sigma": 10370.79
+      "count": 4,
+      "main_count": 4,
+      "median": 29601.5,
+      "mad": 7850.0,
+      "sigma": 11638.41
     }
   },
   "misprice_alerts_count": 1,
@@ -126,6 +126,14 @@
       "name": "Відеокарта ASUS GeForce RTX",
       "url": "https://citrus.ua/videokarti/videokarta-asus-geforce-rtx-5060-ti-8gb-gddr7-aero-gv-n506taero-oc-8gd-789996.html",
       "price": 26104.0,
+      "site": "Citrus",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Відеокарта GIGABYTE RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5070ti-16gb-n507teagleoc-ice-16gd-10-791647.html",
+      "price": 55199.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
