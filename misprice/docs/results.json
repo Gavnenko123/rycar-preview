@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-08-27T04:28:08.169915+00:00",
-  "scan_duration_sec": 138.7,
+  "scan_time_utc": "2026-08-27T16:18:54.352960+00:00",
+  "scan_duration_sec": 143.6,
   "total_products_scanned": 9,
   "by_site": {
     "Citrus": 9
@@ -48,13 +48,13 @@
       "site": "Citrus",
       "category": "phone",
       "search_query": "Смартфон Samsung",
-      "current_price": 26999.0,
+      "current_price": 25599.0,
       "median_price": 64999.0,
       "expected_min_price": 19499.7,
-      "discount_vs_median_pct": 58.5,
-      "misprice_score": 75.1,
+      "discount_vs_median_pct": 60.6,
+      "misprice_score": 76.4,
       "severity": "critical",
-      "reason": "z-score=-4.27 (викид)"
+      "reason": "z-score=-4.43 (викид)"
     }
   ],
   "all_products": [
@@ -101,7 +101,7 @@
     {
       "name": "Смартфон Samsung Galaxy A",
       "url": "https://citrus.ua/smartfony/a576b-dbd-awesome-navy-samsung-8256gb-790531.html",
-      "price": 26999.0,
+      "price": 25599.0,
       "site": "Citrus",
       "category": "phone",
       "search_query": "Смартфон Samsung"
