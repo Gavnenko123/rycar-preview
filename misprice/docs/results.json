@@ -4,31 +4,41 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-08-31T16:56:33.661913+00:00",
-  "scan_duration_sec": 139.7,
-  "total_products_scanned": 9,
+  "scan_time_utc": "2026-08-31T21:51:19.128749+00:00",
+  "scan_duration_sec": 106.8,
+  "total_products_scanned": 99,
   "by_site": {
+    "Comfy": 90,
     "Citrus": 9
   },
   "by_category": {
-    "laptop": 3,
-    "phone": 3,
+    "laptop": 51,
+    "other": 11,
+    "cpu": 1,
+    "phone": 33,
     "gpu": 3
   },
   "category_stats": {
     "laptop": {
-      "count": 3,
-      "main_count": 3,
-      "median": 36999.0,
-      "mad": 0.0,
-      "sigma": 3464.1
+      "count": 51,
+      "main_count": 50,
+      "median": 49999.0,
+      "mad": 13000.0,
+      "sigma": 19273.8
+    },
+    "other": {
+      "count": 11,
+      "main_count": 11,
+      "median": 34999.0,
+      "mad": 24800.0,
+      "sigma": 36768.48
     },
     "phone": {
-      "count": 3,
-      "main_count": 3,
-      "median": 64999.0,
-      "mad": 6000.0,
-      "sigma": 8895.6
+      "count": 33,
+      "main_count": 31,
+      "median": 17099.0,
+      "mad": 6100.0,
+      "sigma": 9043.86
     },
     "gpu": {
       "count": 3,
@@ -38,26 +48,308 @@
       "sigma": 10370.79
     }
   },
-  "misprice_alerts_count": 1,
-  "critical_count": 1,
-  "high_count": 0,
+  "misprice_alerts_count": 4,
+  "critical_count": 0,
+  "high_count": 4,
   "alerts": [
     {
-      "name": "Смартфон Samsung Galaxy A",
-      "url": "https://citrus.ua/smartfony/a576b-dbd-awesome-navy-samsung-8256gb-790531.html",
-      "site": "Citrus",
-      "category": "phone",
-      "search_query": "Смартфон Samsung",
-      "current_price": 25599.0,
-      "median_price": 64999.0,
-      "expected_min_price": 19499.7,
-      "discount_vs_median_pct": 60.6,
-      "misprice_score": 76.4,
-      "severity": "critical",
-      "reason": "z-score=-4.43 (викид)"
+      "name": "Жорсткий диск зовнішній Toshiba 2.5\" USB 1.0TB Canvio Ready Black (HDTP310EK3AA)",
+      "url": "https://comfy.ua/ua/zhorstkij-disk-zovnishnij-toshiba-2-5-usb-1-0tb-canvio-ready-black-hdtp310ek3aa.html",
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Ноутбук",
+      "current_price": 3999.0,
+      "median_price": 34999.0,
+      "expected_min_price": 10499.699999999999,
+      "discount_vs_median_pct": 88.6,
+      "misprice_score": 58.4,
+      "severity": "high",
+      "reason": "ціна < 20% від медіани (3,999 < 7,000₴); ціна нижче очікуваного мінімуму (3,999 < 10,500₴)"
+    },
+    {
+      "name": "Жорсткий диск зовнішній Toshiba External Hard Drive Canvio Ready 2TB Black (HDTP320EK3AA)",
+      "url": "https://comfy.ua/ua/zhestkij-disk-vneshnij-toshiba-external-hard-drive-canvio-ready-2tb-black-hdtp320ek3aa.html",
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Ноутбук",
+      "current_price": 4999.0,
+      "median_price": 34999.0,
+      "expected_min_price": 10499.699999999999,
+      "discount_vs_median_pct": 85.7,
+      "misprice_score": 58.2,
+      "severity": "high",
+      "reason": "ціна < 20% від медіани (4,999 < 7,000₴); ціна нижче очікуваного мінімуму (4,999 < 10,500₴)"
+    },
+    {
+      "name": "SSD-накопичувач внутрішній Kingston NV3 1TB M.2 2280 NVMe PCIe 4.0 x4 3D NAND (SNV3S/1000G)",
+      "url": "https://comfy.ua/ua/ssd-nakopitel-vnutrennij-kingston-m-2-1tb-pcie-4-0-nv3-snv3s-1000g.html",
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Ноутбук",
+      "current_price": 7899.0,
+      "median_price": 34999.0,
+      "expected_min_price": 10499.699999999999,
+      "discount_vs_median_pct": 77.4,
+      "misprice_score": 53.8,
+      "severity": "high",
+      "reason": "ціна нижче очікуваного мінімуму (7,899 < 10,500₴)"
+    },
+    {
+      "name": "Windows 11 Home 64-Bit online",
+      "url": "https://comfy.ua/ua/pp-win-home-fpp-11-64-bit-all-lng-pk-lic-online-dwnld-nr.html",
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Ноутбук",
+      "current_price": 7999.0,
+      "median_price": 34999.0,
+      "expected_min_price": 10499.699999999999,
+      "discount_vs_median_pct": 77.1,
+      "misprice_score": 53.6,
+      "severity": "high",
+      "reason": "ціна нижче очікуваного мінімуму (7,999 < 10,500₴)"
     }
   ],
   "all_products": [
+    {
+      "name": "Ноутбук Acer Extensa 15 EXO15-41-R3P7 (NX.EL5EU.009) Lunar Grey",
+      "url": "https://comfy.ua/ua/noutbuk-acer-extensa-15-exo15-41-r3p7-nx-el5eu-009-lunar-grey.html",
+      "price": 31999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Lenovo IdeaPad Slim 3 15AMN8 (82XQ01ASRA) Arctic Grey",
+      "url": "https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-3-15amn8-82xq01asra-arctic-grey.html",
+      "price": 29999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Acer TravelMate P2 TMP216-51 (NX.BTWEU.001) Grey",
+      "url": "https://comfy.ua/ua/noutbuk-acer-travelmate-p2-tmp216-51-nx-btweu-001-grey.html",
+      "price": 34999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Acer Aspire Lite AL15-46P (NX.DSGEU.001) Light Silver",
+      "url": "https://comfy.ua/ua/noutbuk-acer-aspire-lite-al15-46p-nx-dsgeu-001-light-silver.html",
+      "price": 21999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Lenovo LOQ 15ARP10E (83S000EKRA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp10e-83s000ekra-luna-grey.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Lenovo IdeaPad Slim 3 15IRH10 (83K100ACRA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-3-15irh10-83k100acra-luna-grey.html",
+      "price": 33999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук HP OmniBook 5 Laptop 16-bc1013ua (D41WSEA) Glacier Silver",
+      "url": "https://comfy.ua/ua/noutbuk-hp-omnibook-5-laptop-16-bc1013ua-d41wsea-glacier-silver.html",
+      "price": 33999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 256GB MHFA4 Silver",
+      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-256gb-mhfa4-silver.html",
+      "price": 36999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 512GB Touch ID MHFG4 Indigo",
+      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-512gb-touch-id-mhfg4-indigo.html",
+      "price": 42999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Windows 11 Home 64-Bit online",
+      "url": "https://comfy.ua/ua/pp-win-home-fpp-11-64-bit-all-lng-pk-lic-online-dwnld-nr.html",
+      "price": 7999.0,
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Lenovo LOQ 15ARP9 (83JC00K6RA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp9-83jc00k6ra-luna-grey.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Acer Swift Lite 16 SFL16-31P-34N6 (NX.D4WEU.001) Silver",
+      "url": "https://comfy.ua/ua/noutbuk-acer-swift-lite-16-sfl16-31p-34n6-nx-d4weu-001-silver.html",
+      "price": 24999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "SSD-накопичувач внутрішній Kingston NV3 1TB M.2 2280 NVMe PCIe 4.0 x4 3D NAND (SNV3S/1000G)",
+      "url": "https://comfy.ua/ua/ssd-nakopitel-vnutrennij-kingston-m-2-1tb-pcie-4-0-nv3-snv3s-1000g.html",
+      "price": 7899.0,
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Asus Vivobook Go 15 E1504FA-BQ2965 Cool Silver",
+      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-go-15-e1504fa-bq2965-cool-silver.html",
+      "price": 29999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Lenovo IdeaPad Slim 3 16ARP10 (83K80091RA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-3-16arp10-83k80091ra-luna-grey.html",
+      "price": 31999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Asus Vivobook 15 X1504VA-BQ5549 Quiet Blue",
+      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504va-bq5549-quiet-blue.html",
+      "price": 32499.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Acer Nitro V 15 ANV15-52 (NH.QV3EU.00X) Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-15-anv15-52-nh-qv3eu-00x-black.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 512GB Touch ID MHFE4 Citrus",
+      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-512gb-touch-id-mhfe4-citrus.html",
+      "price": 42999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 256GB MHFF4 Indigo",
+      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-256gb-mhff4-indigo.html",
+      "price": 36999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Lenovo IdeaPad Slim 3 15AMN8 (82XQ01ARRA) Arctic Grey",
+      "url": "https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-3-15amn8-82xq01arra-arctic-grey.html",
+      "price": 24999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Підставка під ноутбук охолоджуюча GamePro CP870 Black",
+      "url": "https://comfy.ua/ua/podstavka-pod-noutbuk-gamepro-cp870-black.html",
+      "price": 1799.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Xiaomi RedmiBook 16 2024 i5/16GB/512GB (JYU4614CN)",
+      "url": "https://comfy.ua/ua/noutbuk-xiaomi-redmibook-16-2024-i5-16gb-512gb-jyu4614cn.html",
+      "price": 33999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Asus TUF Gaming A15 FA506NCG-HN341 Graphite Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-a15-fa506ncg-hn341-graphite-black.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Dell Inspiron 15,6 AMD Ryzen 7 7730U 16Gb/512Gb (LDC15255-A117BLK-PUS) Carbon Black (Відновлений, Ідеальний стан)",
+      "url": "https://comfy.ua/ua/noutbuk-dell-inspiron-15-6-amd-ryzen-7-7730u-16gb-512gb-ldc15-6255-a117blk-pus-carbon-black-vidnovlenij-ideal-nij-stan.html",
+      "price": 29999.0,
+      "site": "Comfy",
+      "category": "cpu",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Lenovo LOQ 15IRX9 (83DV01ELRA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15irx9-83dv01elra-luna-grey.html",
+      "price": 59999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий MSI Cyborg 15 B13WEKG-1038XUA (9S7-15Q342-1038) Translucent Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-msi-cyborg-15-b13wekg-1038xua-9s7-15q342-1038-translucent-black.html",
+      "price": 57499.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Жорсткий диск зовнішній Toshiba External Hard Drive Canvio Ready 2TB Black (HDTP320EK3AA)",
+      "url": "https://comfy.ua/ua/zhestkij-disk-vneshnij-toshiba-external-hard-drive-canvio-ready-2tb-black-hdtp320ek3aa.html",
+      "price": 4999.0,
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 512GB Touch ID MHFJ4 Blush",
+      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-512gb-touch-id-mhfj4-blush.html",
+      "price": 42999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 256GB MHFD4 Citrus",
+      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-256gb-mhfd4-citrus.html",
+      "price": 36999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Жорсткий диск зовнішній Toshiba 2.5\" USB 1.0TB Canvio Ready Black (HDTP310EK3AA)",
+      "url": "https://comfy.ua/ua/zhorstkij-disk-zovnishnij-toshiba-2-5-usb-1-0tb-canvio-ready-black-hdtp310ek3aa.html",
+      "price": 3999.0,
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Ноутбук"
+    },
     {
       "name": "Ноутбук Apple MacBook Neo A",
       "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-blush-mhfj4-2026-790231.html",
@@ -83,6 +375,246 @@
       "search_query": "Ноутбук"
     },
     {
+      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Black (SM-A266BZKCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-black-sm-a266bzkceuc.html",
+      "price": 13999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A37 8/256Gb Awesome Lavender (SM-A376BLVGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-8-256gb-awesome-lavender-sm-a376blvgeuc.html",
+      "price": 20699.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A26 5G 6/128Gb Black (SM-A266BZKBEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-6-128gb-black-sm-a266bzkbeuc.html",
+      "price": 10999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy S26 12/256Gb Black (SM-S942BZKGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-12-256gb-black-sm-s942bzkgeuc.html",
+      "price": 45999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A57 8/256Gb Awesome Lilac (SM-A576BZVDEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-lilac-sm-a576bzvdeuc.html",
+      "price": 25599.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy S26 Ultra 12/512Gb Black (SM-S948BZKGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-ultra-12-512gb-black-sm-s948bzkgeuc.html",
+      "price": 70999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A17 8/256Gb Black (SM-A175FZKEEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-8-256gb-black-sm-a175fzkeeuc.html",
+      "price": 11699.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A27 5G 6/128Gb Black (SM-A276BZKBEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-6-128gb-black-sm-a276bzkbeuc.html",
+      "price": 13499.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Black (SM-A276BZKCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-black-sm-a276bzkceuc.html",
+      "price": 17099.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A57 8/256Gb Awesome Navy (SM-A576BDBDEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-navy-sm-a576bdbdeuc.html",
+      "price": 25599.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Mint (SM-A266BLGCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-mint-sm-a266blgceuc.html",
+      "price": 13999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A27 5G 6/128Gb Light Pink (SM-A276BLIBEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-6-128gb-light-pink-sm-a276blibeuc.html",
+      "price": 13499.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A37 8/256Gb Awesome Charcoal (SM-A376BZAGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-8-256gb-awesome-charcoal-sm-a376bzageuc.html",
+      "price": 20699.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A17 4/128Gb Black (SM-A175FZKBEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-4-128gb-black-sm-a175fzkbeuc.html",
+      "price": 8999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy S26 Ultra 12/256Gb Black (SM-S948BZKDEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-ultra-12-256gb-black-sm-s948bzkdeuc.html",
+      "price": 64999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb White (SM-A266BZWCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-white-sm-a266bzwceuc.html",
+      "price": 13999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Захисне скло для смартфону MAKE Samsung A26/M16 (MGF-SA26/SM16)",
+      "url": "https://comfy.ua/ua/zaschitnoe-steklo-dlja-smartfona-make-samsung-a26-m16-mgf-sa26-sm16.html",
+      "price": 349.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Чохол для смартфону Samsung Clear Case A26 Transparent (EF-QA266CTEGWW)",
+      "url": "https://comfy.ua/ua/chehol-dlja-smartfona-samsung-clear-case-a26-transparent-ef-qa266ctegww.html",
+      "price": 319.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy S26 12/256Gb Cobalt Violet (SM-S942BZVGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-12-256gb-cobalt-violet-sm-s942bzvgeuc.html",
+      "price": 45999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A17 8/256Gb Light Blue (SM-A175FLBEEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-8-256gb-light-blue-sm-a175flbeeuc.html",
+      "price": 11699.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A17 8/256Gb Gray (SM-A175FZAEEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-8-256gb-gray-sm-a175fzaeeuc.html",
+      "price": 11699.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy S26 Ultra 12/256Gb Cobalt Violet (SM-S948BZVDEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-ultra-12-256gb-cobalt-violet-sm-s948bzvdeuc.html",
+      "price": 64999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A17 4/128Gb Gray (SM-A175FZABEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-4-128gb-gray-sm-a175fzabeuc.html",
+      "price": 8999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy S26 Ultra 16/1Tb Black (SM-S948BZKHEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-ultra-16-1tb-black-sm-s948bzkheuc.html",
+      "price": 79999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A37 6/128Gb Awesome Charcoal (SM-A376BZABEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-6-128gb-awesome-charcoal-sm-a376bzabeuc.html",
+      "price": 17099.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A57 8/256Gb Awesome Icyblue (SM-A576BLBDEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-icyblue-sm-a576blbdeuc.html",
+      "price": 25599.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Light Pink (SM-A276BLICEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-light-pink-sm-a276bliceuc.html",
+      "price": 17099.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy S26 Ultra 12/512Gb Cobalt Violet (SM-S948BZVGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-ultra-12-512gb-cobalt-violet-sm-s948bzvgeuc.html",
+      "price": 70999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Blue (SM-A276BZBCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-blue-sm-a276bzbceuc.html",
+      "price": 17099.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A37 6/128Gb Awesome Lavender (SM-A376BLVBEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-6-128gb-awesome-lavender-sm-a376blvbeuc.html",
+      "price": 17099.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
       "name": "Смартфон Samsung Galaxy S",
       "url": "https://citrus.ua/smartfony/s948b-zkd-black-samsung-12256gb-786720.html",
       "price": 64999.0,
@@ -105,6 +637,246 @@
       "site": "Citrus",
       "category": "phone",
       "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Системний блок Expert PC Ultimate (I12400F.32.S1.5060.A6305)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-i12400f-32-s1-5060-a6305.html",
+      "price": 50999.0,
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Lenovo LOQ 15ARP10E (83S000EKRA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp10e-83s000ekra-luna-grey.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Expert PC Ultimate (A7500F.32.S1.5060.A6298)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a7500f-32-s1-5060-a6298.html",
+      "price": 59999.0,
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Lenovo LOQ 15ARP9 (83JC00K6RA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp9-83jc00k6ra-luna-grey.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Expert PC Ultimate (A5500.16.S10.3050.A6279)",
+      "url": "https://comfy.ua/ua/sistemnyj-blok-expert-pc-ultimate-a5500-16-s10-3050-a6279.html",
+      "price": 34999.0,
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Acer Nitro V 15 ANV15-52 (NH.QV3EU.00X) Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-15-anv15-52-nh-qv3eu-00x-black.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Asus TUF Gaming A15 FA506NCG-HN341 Graphite Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-a15-fa506ncg-hn341-graphite-black.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Expert PC Ultimate (I12400F.32.S1.5060.A6306W)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-i12400f-32-s1-5060-a6306w.html",
+      "price": 50999.0,
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Lenovo LOQ 15IRX9 (83DV01ELRA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15irx9-83dv01elra-luna-grey.html",
+      "price": 59999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий MSI Cyborg 15 B13WEKG-1038XUA (9S7-15Q342-1038) Translucent Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-msi-cyborg-15-b13wekg-1038xua-9s7-15q342-1038-translucent-black.html",
+      "price": 57499.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Expert PC Ultimate (A5500.16.S10.3050.A6346)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5500-16-s10-3050-a6346.html",
+      "price": 33999.0,
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Asus TUF Gaming A18 FA808UM-S8019 Jaeger Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-a18-fa808um-s8019-jaeger-gray.html",
+      "price": 79999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Acer Nitro V 15 ANV15-52 (NH.QV2EU.004) Obsidian Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-15-anv15-52-nh-qv2eu-004-obsidian-black.html",
+      "price": 55999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Dream Machines RG3050-15 (RG3050-15UA83) Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-dream-machines-rg3050-15-rg3050-15ua83-black.html",
+      "price": 43999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Expert PC Ultimate (A5600.32.S1.5060T.A6307)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-32-s1-5060t-a6307.html",
+      "price": 59799.0,
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Asus TUF Gaming F16 FX608JHR-RV116 Jaeger Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-f16-fx608jhr-rv116-jaeger-gray.html",
+      "price": 68999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Lenovo Legion Pro 5 16ADR10 (83LT008FRA) Eclipse Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-legion-pro-5-16adr10-83lt008fra-eclipse-black.html",
+      "price": 119999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Asus ROG Strix G16 G615JHR-RV103 Eclipse Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-rog-strix-g16-g615jhr-rv103-eclipse-gray.html",
+      "price": 68999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Expert PC Ultimate (I12400F.32.S1.5060.A6338)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-i12400f-32-s1-5060-a6338.html",
+      "price": 50999.0,
+      "site": "Comfy",
+      "category": "other",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий MSI Thin 15 B13VE (B13VE-3446XUA) Cosmos Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-msi-thin-15-b13ve-b13ve-3446xua-cosmos-gray.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Acer Nitro V 16 AI ANV16-42 (NH.U1GEU.00A) Shale Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-16-ai-anv16-42-nh-u1geu-00a-shale-black.html",
+      "price": 71999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Asus TUF Gaming A15 FA506NCQ-HN036 Graphite Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-a15-fa506ncq-hn036-graphite-black.html",
+      "price": 39999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Lenovo LOQ-15ARP10E (83S0007JRA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp10e-83s0007jra-luna-grey.html",
+      "price": 59999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Asus ROG Strix G16 G615JMR-RV265 Eclipse Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-rog-strix-g16-g615jmr-rv265-eclipse-gray.html",
+      "price": 85999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Acer Nitro V 16 AI ANV16-42 (NH.U1JEU.002) Shale Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-16-ai-anv16-42-nh-u1jeu-002-shale-black.html",
+      "price": 59999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Asus TUF Gaming A16 FA608UP-RV142 Jaeger Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-a16-fa608up-rv142-jaeger-gray.html",
+      "price": 109999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Acer Nitro V 16 AI ANV16-42-R81K (NH.U1FEU.008) Shale Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-16-ai-anv16-42-r81k-nh-u1feu-008-shale-black.html",
+      "price": 94999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Lenovo LOQ 15AHP11 (83TN0025RA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15ahp11-83tn0025ra-luna-grey.html",
+      "price": 79999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Asus TUF Gaming A16 FA608UH-RV026 Jaeger Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-a16-fa608uh-rv026-jaeger-gray.html",
+      "price": 69999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Ноутбук ігровий Asus TUF Gaming F16 FX607VJB-RL135 Mecha Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-f16-fx607vjb-rl135-mecha-gray.html",
+      "price": 55999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Видеокарта RTX"
     },
     {
       "name": "Відеокарта GIGABYTE RTX",
