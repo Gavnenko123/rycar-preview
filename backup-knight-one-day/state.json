@@ -1,0 +1,335 @@
+{
+  "id": "singleton",
+  "characterName": "Нотта",
+  "bodyName": "Нотта (наёмник)",
+  "level": 1,
+  "hp": 9,
+  "maxHp": 9,
+  "mp": 4,
+  "maxMp": 4,
+  "stamina": 5,
+  "maxStamina": 12,
+  "xp": 18,
+  "xpToNext": 100,
+  "statPoints": 0,
+  "gold": 5,
+  "loopCount": 0,
+  "dayTime": "Рассвет",
+  "location": "Тренировочное поле, лагерь «Серых Копий»",
+  "stats": {
+    "strength": 12,
+    "dexterity": 11,
+    "constitution": 12,
+    "intelligence": 10,
+    "wisdom": 9,
+    "charisma": 9
+  },
+  "skills": [
+    {
+      "id": "short-sword",
+      "name": "Короткий меч",
+      "level": 2,
+      "description": "Тело помнит базовые выпады и блоки. После первой тренировки Нотта начал чувствовать ритм чужих мышц. Уровень 2 из 10.",
+      "category": "combat"
+    }
+  ],
+  "dndSkills": [
+    {
+      "id": "acrobatics",
+      "name": "Акробатика",
+      "stat": "dexterity",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "animal-handling",
+      "name": "Обращение с животными",
+      "stat": "wisdom",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "arcana",
+      "name": "Магия",
+      "stat": "intelligence",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "athletics",
+      "name": "Атлетика",
+      "stat": "strength",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "deception",
+      "name": "Обман",
+      "stat": "charisma",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "history",
+      "name": "История",
+      "stat": "intelligence",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "insight",
+      "name": "Проницательность",
+      "stat": "wisdom",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "intimidation",
+      "name": "Запугивание",
+      "stat": "charisma",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "investigation",
+      "name": "Расследование",
+      "stat": "intelligence",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "medicine",
+      "name": "Медицина",
+      "stat": "wisdom",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "nature",
+      "name": "Природа",
+      "stat": "intelligence",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "perception",
+      "name": "Восприятие",
+      "stat": "wisdom",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "performance",
+      "name": "Выступление",
+      "stat": "charisma",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "persuasion",
+      "name": "Убеждение",
+      "stat": "charisma",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "religion",
+      "name": "Религия",
+      "stat": "intelligence",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "sleight-of-hand",
+      "name": "Ловкость рук",
+      "stat": "dexterity",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "stealth",
+      "name": "Скрытность",
+      "stat": "dexterity",
+      "proficient": false,
+      "bonus": 0
+    },
+    {
+      "id": "survival",
+      "name": "Выживание",
+      "stat": "wisdom",
+      "proficient": false,
+      "bonus": 0
+    }
+  ],
+  "proficiencyBonus": 2,
+  "inventory": [
+    {
+      "id": "short-sword",
+      "name": "Короткий меч",
+      "description": "Потёртый, но исправный. Клинок в ножнах, рукоять обмотана кожей. Привычное оружие наёмника.",
+      "quantity": 1,
+      "type": "weapon",
+      "rarity": "common",
+      "equipped": true,
+      "stats": {
+        "damage": "1d6",
+        "damageType": "рубящий",
+        "weight": "1.5 кг",
+        "bonus": "+0",
+        "range": "ближний"
+      }
+    },
+    {
+      "id": "leather-armor",
+      "name": "Кожаная броня",
+      "description": "Потёртая, с заплатками на груди. Защитит от случайного удара, но не от арбалетного болта.",
+      "quantity": 1,
+      "type": "armor",
+      "rarity": "common",
+      "equipped": true,
+      "stats": {
+        "armor": "+1",
+        "weight": "5 кг",
+        "penalty": "нет",
+        "slot": "торс"
+      }
+    },
+    {
+      "id": "wooden-shield",
+      "name": "Деревянный щит",
+      "description": "Округлый, с металлическим умбоном. Несколько зарубок — память о прошлых стычках.",
+      "quantity": 1,
+      "type": "armor",
+      "rarity": "common",
+      "stats": {
+        "armor": "+1",
+        "weight": "3 кг",
+        "type": "деревянный",
+        "covers": "левая сторона"
+      }
+    }
+  ],
+  "checkpoint": {
+    "inventory": [
+      {
+        "id": "short-sword",
+        "name": "Короткий меч",
+        "description": "Потёртый, но исправный. Клинок в ножнах, рукоять обмотана кожей. Привычное оружие наёмника.",
+        "quantity": 1,
+        "type": "weapon",
+        "rarity": "common",
+        "equipped": true
+      },
+      {
+        "id": "leather-armor",
+        "name": "Кожаная броня",
+        "description": "Потёртая, с заплатками на груди. Защитит от случайного удара, но не от арбалетного болта.",
+        "quantity": 1,
+        "type": "armor",
+        "rarity": "common",
+        "equipped": true
+      },
+      {
+        "id": "wooden-shield",
+        "name": "Деревянный щит",
+        "description": "Округлый, с металлическим умбоном. Несколько зарубок — память о прошлых стычках.",
+        "quantity": 1,
+        "type": "armor",
+        "rarity": "common"
+      }
+    ],
+    "gold": 5,
+    "location": "Лагерь «Серых Копий», палатка десятого десятка",
+    "dayTime": "Рассвет",
+    "hp": 9,
+    "maxHp": 9,
+    "mp": 4,
+    "maxMp": 4,
+    "stamina": 12,
+    "maxStamina": 12,
+    "statusEffects": []
+  },
+  "deathLog": [],
+  "statusEffects": [],
+  "questLog": [
+    {
+      "id": "orient",
+      "title": "Осмотреться",
+      "description": "Ты очнулся в чужом теле, в чужом мире. Разберись, где ты и что происходит.",
+      "status": "active",
+      "updatedAt": "2026-07-31T01:10:18.367Z"
+    },
+    {
+      "id": "first-day",
+      "title": "Первая служба",
+      "description": "Рота «Серые Копья» стоит лагерем у Торнвуда. Через неделю — выступление на север. Найди своё место.",
+      "status": "active",
+      "updatedAt": "2026-07-31T01:10:18.368Z"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "npc-vesna",
+      "name": "Весна",
+      "role": "Кухарка лагеря",
+      "type": "neutral",
+      "trust": 0,
+      "notes": "Толстая женщина у котла с кашей. Добрая на вид.",
+      "knownFacts": [
+        "готовит гречневую кашу"
+      ],
+      "alive": true,
+      "updatedAt": "2026-07-31T12:11:25.102Z"
+    },
+    {
+      "id": "npc-ren",
+      "name": "Рен",
+      "role": "Товарищ по десятку",
+      "type": "neutral",
+      "trust": 5,
+      "notes": "Болтливый, точил копьё у костра. Сказал, что Брюс искал меня.",
+      "knownFacts": [
+        "точил копьё у костра",
+        "сказал что Брюс ищет меня"
+      ],
+      "alive": true,
+      "updatedAt": "2026-07-30T15:00:00Z"
+    },
+    {
+      "id": "npc-bruce",
+      "name": "Брюс Кард",
+      "role": "Десятник, командир десятого десятка",
+      "type": "neutral",
+      "trust": 2,
+      "notes": "Ветеран, пьёт. Рыжая щетина, шрам на скуле. Грубоват, но справедлив. Дал задание: показаться Старой Косе. Предупредил не лезть к капеллану Дорну.",
+      "knownFacts": [
+        "десятник",
+        "ветеран трёх войн",
+        "пьёт",
+        "предупредил про Дорна",
+        "дал задание на тренировку"
+      ],
+      "alive": true,
+      "updatedAt": "2026-07-30T15:10:00Z"
+    },
+    {
+      "id": "npc-rina",
+      "name": "Старая Коса (Рина)",
+      "role": "Сержант-инструктор",
+      "type": "neutral",
+      "trust": -5,
+      "notes": "Женщина, 38 лет. Потеряла мужа в бою. Учит молча, бьёт больно. Дала Нотте тренировочный меч и заставила отрабатывать базовые выпады. Сказала: 'Приходи каждый день. Может, через месяц не умрёшь в первом бою.'",
+      "knownFacts": [
+        "сержант-инструктор",
+        "учит молча",
+        "бьёт больно",
+        "давала тренировочный меч"
+      ],
+      "alive": true,
+      "updatedAt": "2026-07-30T15:20:00Z"
+    }
+  ],
+  "journal": [],
+  "startedAt": "2026-07-30T00:06:34.378Z",
+  "updatedAt": "2026-07-30T15:00:00Z"
+}
