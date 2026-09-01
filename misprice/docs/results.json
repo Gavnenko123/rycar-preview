@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-01T01:09:20.215119+00:00",
-  "scan_duration_sec": 142.1,
+  "scan_time_utc": "2026-09-01T07:34:15.151823+00:00",
+  "scan_duration_sec": 140.7,
   "total_products_scanned": 9,
   "by_site": {
     "Citrus": 9
@@ -26,9 +26,9 @@
     "phone": {
       "count": 3,
       "main_count": 3,
-      "median": 64999.0,
-      "mad": 6000.0,
-      "sigma": 8895.6
+      "median": 59799.0,
+      "mad": 5500.0,
+      "sigma": 8154.3
     },
     "gpu": {
       "count": 3,
@@ -49,12 +49,12 @@
       "category": "phone",
       "search_query": "Смартфон Samsung",
       "current_price": 25599.0,
-      "median_price": 64999.0,
-      "expected_min_price": 19499.7,
-      "discount_vs_median_pct": 60.6,
-      "misprice_score": 76.4,
+      "median_price": 59799.0,
+      "expected_min_price": 17939.7,
+      "discount_vs_median_pct": 57.2,
+      "misprice_score": 74.3,
       "severity": "critical",
-      "reason": "z-score=-4.43 (викид)"
+      "reason": "z-score=-4.19 (викид)"
     }
   ],
   "all_products": [
@@ -85,7 +85,7 @@
     {
       "name": "Смартфон Samsung Galaxy S",
       "url": "https://citrus.ua/smartfony/s948b-zkd-black-samsung-12256gb-786720.html",
-      "price": 64999.0,
+      "price": 59799.0,
       "site": "Citrus",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -93,7 +93,7 @@
     {
       "name": "Смартфон Samsung Galaxy S",
       "url": "https://citrus.ua/smartfony/s948b-zkg-black-samsung-12512gb-786715.html",
-      "price": 70999.0,
+      "price": 65299.0,
       "site": "Citrus",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -115,17 +115,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта MSI RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
-      "price": 33099.0,
+      "name": "Відеокарта ASUS GeForce RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-asus-geforce-rtx-5060-ti-8gb-gddr7-aero-gv-n506taero-oc-8gd-789996.html",
+      "price": 26104.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта ASUS GeForce RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-asus-geforce-rtx-5060-ti-8gb-gddr7-aero-gv-n506taero-oc-8gd-789996.html",
-      "price": 26104.0,
+      "name": "Відеокарта MSI RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
+      "price": 33099.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
