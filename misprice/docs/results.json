@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-01T07:34:15.151823+00:00",
-  "scan_duration_sec": 140.7,
+  "scan_time_utc": "2026-09-01T13:20:26.839735+00:00",
+  "scan_duration_sec": 139.4,
   "total_products_scanned": 9,
   "by_site": {
     "Citrus": 9
@@ -115,17 +115,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта ASUS GeForce RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-asus-geforce-rtx-5060-ti-8gb-gddr7-aero-gv-n506taero-oc-8gd-789996.html",
-      "price": 26104.0,
+      "name": "Відеокарта MSI RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
+      "price": 33099.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта MSI RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
-      "price": 33099.0,
+      "name": "Відеокарта ASUS GeForce RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-asus-geforce-rtx-5060-ti-8gb-gddr7-aero-gv-n506taero-oc-8gd-789996.html",
+      "price": 26104.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
