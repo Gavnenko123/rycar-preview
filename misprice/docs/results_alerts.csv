@@ -1,2 +1,1 @@
 severity,misprice_score,category,site,current_price_uah,median_price_uah,discount_vs_median_pct,name,reason,url
-critical,74.3,phone,Citrus,25599.0,59799.0,57.2,Смартфон Samsung Galaxy A,z-score=-4.19 (викид),https://citrus.ua/smartfony/a576b-dbd-awesome-navy-samsung-8256gb-790531.html
