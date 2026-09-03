@@ -1,2 +1,2 @@
 severity,misprice_score,category,site,current_price_uah,median_price_uah,discount_vs_median_pct,name,reason,url
-high,60.6,gpu,Citrus,17399.0,63248.0,72.5,Відеокарта GIGABYTE RTX,"ціна нижче очікуваного мінімуму (17,399 < 18,974₴)",https://citrus.ua/videokarti/videokarta-gigabyte-rtx5060-8gb-gddr7-gv-n5060eagle-oc-8gd-791626.html
+critical,74.3,phone,Citrus,25599.0,59799.0,57.2,Смартфон Samsung Galaxy A,z-score=-4.19 (викид),https://citrus.ua/smartfony/a576b-dbd-awesome-navy-samsung-8256gb-790531.html
