@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-03T17:43:19.584493+00:00",
-  "scan_duration_sec": 139.2,
+  "scan_time_utc": "2026-09-03T20:47:58.464078+00:00",
+  "scan_duration_sec": 139.3,
   "total_products_scanned": 9,
   "by_site": {
     "Citrus": 9
@@ -19,7 +19,7 @@
     "laptop": {
       "count": 3,
       "main_count": 3,
-      "median": 42999.0,
+      "median": 36999.0,
       "mad": 0.0,
       "sigma": 3464.1
     },
@@ -76,8 +76,8 @@
     },
     {
       "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-silver-mhfc4-2026-790234.html",
-      "price": 42999.0,
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
+      "price": 36999.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
