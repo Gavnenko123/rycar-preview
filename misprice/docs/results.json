@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-05T21:03:26.664153+00:00",
-  "scan_duration_sec": 136.9,
+  "scan_time_utc": "2026-09-05T23:41:41.154525+00:00",
+  "scan_duration_sec": 135.6,
   "total_products_scanned": 10,
   "by_site": {
     "Citrus": 10
@@ -77,16 +77,16 @@
     },
     {
       "name": "Смартфон Samsung Galaxy S",
-      "url": "https://citrus.ua/smartfony/s948b-zkg-black-samsung-12512gb-786715.html",
-      "price": 65299.0,
+      "url": "https://citrus.ua/smartfony/s942b-zkg-black-samsung-12256gb-786736.html",
+      "price": 42299.0,
       "site": "Citrus",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
       "name": "Смартфон Samsung Galaxy S",
-      "url": "https://citrus.ua/smartfony/s942b-zkg-black-samsung-12256gb-786736.html",
-      "price": 42299.0,
+      "url": "https://citrus.ua/smartfony/s948b-zkg-black-samsung-12512gb-786715.html",
+      "price": 65299.0,
       "site": "Citrus",
       "category": "phone",
       "search_query": "Смартфон Samsung"
