@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-06T21:14:09.237708+00:00",
-  "scan_duration_sec": 135.6,
+  "scan_time_utc": "2026-09-06T23:40:20.386587+00:00",
+  "scan_duration_sec": 140.1,
   "total_products_scanned": 10,
   "by_site": {
     "Citrus": 10
@@ -26,9 +26,9 @@
     "phone": {
       "count": 3,
       "main_count": 3,
-      "median": 59799.0,
-      "mad": 5500.0,
-      "sigma": 8154.3
+      "median": 42299.0,
+      "mad": 16700.0,
+      "sigma": 24759.42
     },
     "gpu": {
       "count": 4,
@@ -84,9 +84,9 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy S",
-      "url": "https://citrus.ua/smartfony/s948b-zkg-black-samsung-12512gb-786715.html",
-      "price": 65299.0,
+      "name": "Смартфон Samsung Galaxy A",
+      "url": "https://citrus.ua/smartfony/a576b-dbd-awesome-navy-samsung-8256gb-790531.html",
+      "price": 25599.0,
       "site": "Citrus",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -108,17 +108,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта MSI RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-gaming-rtx5070-12g-gam-trio-oc-791431.html",
-      "price": 39199.0,
+      "name": "Відеокарта GIGABYTE RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html",
+      "price": 75099.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html",
-      "price": 75099.0,
+      "name": "Відеокарта MSI RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-gaming-rtx5070-12g-gam-trio-oc-791431.html",
+      "price": 39199.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
