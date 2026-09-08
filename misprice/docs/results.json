@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-08T17:10:27.265593+00:00",
-  "scan_duration_sec": 103.4,
+  "scan_time_utc": "2026-09-08T20:58:02.662669+00:00",
+  "scan_duration_sec": 110.5,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -21,8 +21,8 @@
       "count": 33,
       "main_count": 33,
       "median": 46499.0,
-      "mad": 12500.0,
-      "sigma": 18532.5
+      "mad": 13500.0,
+      "sigma": 20015.1
     },
     "phone": {
       "count": 33,
@@ -308,17 +308,17 @@
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-silver-mhfc4-2026-790234.html",
-      "price": 46499.0,
+      "name": "Ноутбук Asus Vivobook",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/asus-vivobook-15-x1504va-bq4055-90nb13y1-m01mp0-quiet-blue-794532.html",
+      "price": 32499.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
     },
     {
       "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
-      "price": 40999.0,
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-silver-mhfc4-2026-790234.html",
+      "price": 46499.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
