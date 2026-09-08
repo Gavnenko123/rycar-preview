@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-08T20:58:02.662669+00:00",
-  "scan_duration_sec": 110.5,
+  "scan_time_utc": "2026-09-08T23:18:06.590372+00:00",
+  "scan_duration_sec": 106.0,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -702,7 +702,7 @@
     {
       "name": "Відеокарта Palit GF RTX 5060 Ti  8GB GDDR7 Dual OC (NE7506TT19P1-GB2062D)",
       "url": "https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-ti-8gb-gddr7-dual-oc-ne7506tt19p1-gb2062d.html",
-      "price": 28515.0,
+      "price": 28575.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
