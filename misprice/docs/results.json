@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-09T13:37:18.088617+00:00",
-  "scan_duration_sec": 103.4,
+  "scan_time_utc": "2026-09-09T20:45:13.847361+00:00",
+  "scan_duration_sec": 103.0,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -20,9 +20,9 @@
     "laptop": {
       "count": 33,
       "main_count": 33,
-      "median": 46499.0,
-      "mad": 12500.0,
-      "sigma": 18532.5
+      "median": 49999.0,
+      "mad": 15000.0,
+      "sigma": 22239.0
     },
     "phone": {
       "count": 33,
@@ -143,14 +143,6 @@
       "name": "Ноутбук ігровий Acer Nitro V 15 ANV15-52 (NH.QV2EU.004) Obsidian Black",
       "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-15-anv15-52-nh-qv2eu-004-obsidian-black.html",
       "price": 55999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук HP OmniBook 3 16-by0002ua (D41WYEA) Starlit Blue Iron Gray",
-      "url": "https://comfy.ua/ua/noutbuk-igrovij-hp-omnibook-3-16-by0002ua-d41wyea-starlit-blue-iron-gray.html",
-      "price": 30999.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -300,6 +292,14 @@
       "search_query": "Ноутбук"
     },
     {
+      "name": "Ноутбук Lenovo IdeaPad Slim 5 16IMH10 (83V70042RA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-5-16imh10-83v70042ra-luna-grey.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
       "name": "Ноутбук Apple MacBook Neo A",
       "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-blush-mhfj4-2026-790231.html",
       "price": 46499.0,
@@ -309,16 +309,16 @@
     },
     {
       "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-blush-mhfh4-2026-790213.html",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
       "price": 40999.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-silver-mhfc4-2026-790234.html",
-      "price": 46499.0,
+      "name": "Ноутбук Lenovo Legion",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/lenovo-legion-5-15ahp11-83q70048ra-eclipse-black-795673.html",
+      "price": 89999.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
