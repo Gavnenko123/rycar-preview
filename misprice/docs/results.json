@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-09T20:45:13.847361+00:00",
-  "scan_duration_sec": 103.0,
+  "scan_time_utc": "2026-09-09T23:06:27.062406+00:00",
+  "scan_duration_sec": 102.7,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 34,
       "main_count": 34,
-      "median": 59681.0,
-      "mad": 16050.0,
-      "sigma": 23795.73
+      "median": 60768.5,
+      "mad": 19172.5,
+      "sigma": 28425.15
     }
   },
   "misprice_alerts_count": 1,
@@ -50,12 +50,12 @@
       "category": "gpu",
       "search_query": "Видеокарта RTX",
       "current_price": 17399.0,
-      "median_price": 59681.0,
-      "expected_min_price": 17904.3,
-      "discount_vs_median_pct": 70.8,
-      "misprice_score": 60.3,
+      "median_price": 60768.5,
+      "expected_min_price": 18230.55,
+      "discount_vs_median_pct": 71.4,
+      "misprice_score": 58.1,
       "severity": "high",
-      "reason": "ціна нижче очікуваного мінімуму (17,399 < 17,904₴)"
+      "reason": "ціна нижче очікуваного мінімуму (17,399 < 18,231₴)"
     }
   ],
   "all_products": [
@@ -588,14 +588,6 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 16Gb / SSD 1Tb (A5600.16.S10.5060.A6499)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s10-5060-a6499.html",
-      "price": 49999.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
       "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGw 3210 (Ryzen77700RTX507012GBMRGw3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5070-12gb-mrgw-3210-ryzen77700rtx507012gbmrgw3210.html",
       "price": 104051.0,
@@ -823,6 +815,14 @@
       "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB CRb 3210 (Ryzen55500RTX50608GBCRb3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-crb-3210-ryzen55500rtx50608gbcrb3210.html",
       "price": 59768.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок QUBE QB Ryzen 7 9800X3D RTX 5070 Ti 16GB TK3B 3210 (Ryzen79800X3DRTX5070TI16GBTK3B3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9800x3d-rtx-5070-ti-16gb-tk3b-3210-ryzen79800x3drtx5070ti16gbtk3b3210.html",
+      "price": 155621.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
