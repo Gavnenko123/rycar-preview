@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-09T08:53:47.577295+00:00",
-  "scan_duration_sec": 103.7,
+  "scan_time_utc": "2026-09-09T13:37:18.088617+00:00",
+  "scan_duration_sec": 103.4,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -309,16 +309,16 @@
     },
     {
       "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-silver-mhfc4-2026-790234.html",
-      "price": 46499.0,
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-blush-mhfh4-2026-790213.html",
+      "price": 40999.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
     },
     {
       "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
-      "price": 40999.0,
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-silver-mhfc4-2026-790234.html",
+      "price": 46499.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -412,6 +412,14 @@
       "search_query": "Смартфон Samsung"
     },
     {
+      "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Graphite (SM-S741BZKGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-graphite-sm-s741bzkgeuc.html",
+      "price": 39499.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
       "name": "Смартфон Samsung Galaxy A37 8/256Gb Awesome Charcoal (SM-A376BZAGEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-8-256gb-awesome-charcoal-sm-a376bzageuc.html",
       "price": 20699.0,
@@ -423,14 +431,6 @@
       "name": "Смартфон Samsung Galaxy A17 4/128Gb Black (SM-A175FZKBEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-4-128gb-black-sm-a175fzkbeuc.html",
       "price": 8999.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Graphite (SM-S741BZKGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-graphite-sm-s741bzkgeuc.html",
-      "price": 39499.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -460,17 +460,17 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A17 8/256Gb Gray (SM-A175FZAEEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-8-256gb-gray-sm-a175fzaeeuc.html",
-      "price": 11699.0,
+      "name": "Захисне скло для смартфону MAKE Samsung A26/M16 (MGF-SA26/SM16)",
+      "url": "https://comfy.ua/ua/zaschitnoe-steklo-dlja-smartfona-make-samsung-a26-m16-mgf-sa26-sm16.html",
+      "price": 349.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Захисне скло для смартфону MAKE Samsung A26/M16 (MGF-SA26/SM16)",
-      "url": "https://comfy.ua/ua/zaschitnoe-steklo-dlja-smartfona-make-samsung-a26-m16-mgf-sa26-sm16.html",
-      "price": 349.0,
+      "name": "Смартфон Samsung Galaxy A17 8/256Gb Gray (SM-A175FZAEEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-8-256gb-gray-sm-a175fzaeeuc.html",
+      "price": 11699.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -500,17 +500,17 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Light Pink (SM-A276BLICEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-light-pink-sm-a276bliceuc.html",
-      "price": 17099.0,
+      "name": "Чохол для смартфону Samsung Clear Case A26 Transparent (EF-QA266CTEGWW)",
+      "url": "https://comfy.ua/ua/chehol-dlja-smartfona-samsung-clear-case-a26-transparent-ef-qa266ctegww.html",
+      "price": 319.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Чохол для смартфону Samsung Clear Case A26 Transparent (EF-QA266CTEGWW)",
-      "url": "https://comfy.ua/ua/chehol-dlja-smartfona-samsung-clear-case-a26-transparent-ef-qa266ctegww.html",
-      "price": 319.0,
+      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Light Pink (SM-A276BLICEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-light-pink-sm-a276bliceuc.html",
+      "price": 17099.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
