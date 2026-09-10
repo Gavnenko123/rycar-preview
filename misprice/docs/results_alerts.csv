@@ -1,2 +1,1 @@
 severity,misprice_score,category,site,current_price_uah,median_price_uah,discount_vs_median_pct,name,reason,url
-high,60.7,gpu,Citrus,17399.0,62204.0,72.0,Відеокарта GIGABYTE RTX,"ціна нижче очікуваного мінімуму (17,399 < 18,661₴)",https://citrus.ua/videokarti/videokarta-gigabyte-rtx5060-8gb-gddr7-gv-n5060eagle-oc-8gd-791626.html
