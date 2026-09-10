@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-10T03:57:08.330830+00:00",
-  "scan_duration_sec": 103.9,
+  "scan_time_utc": "2026-09-10T08:51:57.837753+00:00",
+  "scan_duration_sec": 106.1,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 34,
       "main_count": 34,
-      "median": 62204.0,
-      "mad": 19052.5,
-      "sigma": 28247.24
+      "median": 60768.5,
+      "mad": 15931.5,
+      "sigma": 23620.04
     }
   },
   "misprice_alerts_count": 1,
@@ -50,12 +50,12 @@
       "category": "gpu",
       "search_query": "Видеокарта RTX",
       "current_price": 17399.0,
-      "median_price": 62204.0,
-      "expected_min_price": 18661.2,
-      "discount_vs_median_pct": 72.0,
-      "misprice_score": 59.1,
+      "median_price": 60768.5,
+      "expected_min_price": 18230.55,
+      "discount_vs_median_pct": 71.4,
+      "misprice_score": 61.2,
       "severity": "high",
-      "reason": "ціна нижче очікуваного мінімуму (17,399 < 18,661₴)"
+      "reason": "ціна нижче очікуваного мінімуму (17,399 < 18,231₴)"
     }
   ],
   "all_products": [
@@ -316,9 +316,9 @@
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Lenovo Legion",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/lenovo-legion-5-15ahp11-83q70048ra-eclipse-black-795673.html",
-      "price": 89999.0,
+      "name": "Ноутбук Apple MacBook Neo A",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-indigo-mhfg4-2026-790233.html",
+      "price": 46499.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -588,6 +588,14 @@
       "search_query": "Смартфон Samsung"
     },
     {
+      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 16Gb / SSD 1Tb (A5600.16.S10.5060.A6499)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s10-5060-a6499.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
       "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGw 3210 (Ryzen77700RTX507012GBMRGw3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5070-12gb-mrgw-3210-ryzen77700rtx507012gbmrgw3210.html",
       "price": 104051.0,
@@ -815,14 +823,6 @@
       "name": "Системний блок QUBE QB Ryzen 7 9800X3D RTX 5070 Ti 16GB TK3B 3210 (Ryzen79800X3DRTX5070TI16GBTK3B3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9800x3d-rtx-5070-ti-16gb-tk3b-3210-ryzen79800x3drtx5070ti16gbtk3b3210.html",
       "price": 155621.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Системний блок QUBE QB Ryzen 9 9950X RTX 5080 16GB TK3B 641010 (Ryzen99950XRTX508016GBTK3B641010)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-9-9950x-rtx-5080-16gb-tk3b-641010-ryzen99950xrtx508016gbtk3b641010.html",
-      "price": 224250.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
