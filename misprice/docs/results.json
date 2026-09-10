@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-10T08:51:57.837753+00:00",
-  "scan_duration_sec": 106.1,
+  "scan_time_utc": "2026-09-10T13:28:48.752368+00:00",
+  "scan_duration_sec": 107.0,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -27,16 +27,16 @@
     "phone": {
       "count": 33,
       "main_count": 30,
-      "median": 20699.0,
-      "mad": 9000.0,
-      "sigma": 13343.4
+      "median": 23149.0,
+      "mad": 9650.0,
+      "sigma": 14307.09
     },
     "gpu": {
       "count": 34,
       "main_count": 34,
-      "median": 60768.5,
-      "mad": 15931.5,
-      "sigma": 23620.04
+      "median": 62204.0,
+      "mad": 17330.0,
+      "sigma": 25693.46
     }
   },
   "misprice_alerts_count": 1,
@@ -50,12 +50,12 @@
       "category": "gpu",
       "search_query": "Видеокарта RTX",
       "current_price": 17399.0,
-      "median_price": 60768.5,
-      "expected_min_price": 18230.55,
-      "discount_vs_median_pct": 71.4,
-      "misprice_score": 61.2,
+      "median_price": 62204.0,
+      "expected_min_price": 18661.2,
+      "discount_vs_median_pct": 72.0,
+      "misprice_score": 60.7,
       "severity": "high",
-      "reason": "ціна нижче очікуваного мінімуму (17,399 < 18,231₴)"
+      "reason": "ціна нижче очікуваного мінімуму (17,399 < 18,661₴)"
     }
   ],
   "all_products": [
@@ -244,6 +244,14 @@
       "search_query": "Ноутбук"
     },
     {
+      "name": "Ноутбук ігровий Lenovo Legion Pro 5 16ADR10 (83LT008FRA) Eclipse Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-legion-pro-5-16adr10-83lt008fra-eclipse-black.html",
+      "price": 119999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
       "name": "Ноутбук ігровий Dream Machines RG3050-15 (RG3050-15UA83) Black",
       "url": "https://comfy.ua/ua/noutbuk-igrovij-dream-machines-rg3050-15-rg3050-15ua83-black.html",
       "price": 43999.0,
@@ -292,14 +300,6 @@
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Lenovo IdeaPad Slim 5 16IMH10 (83V70042RA) Luna Grey",
-      "url": "https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-5-16imh10-83v70042ra-luna-grey.html",
-      "price": 49999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
       "name": "Ноутбук Apple MacBook Neo A",
       "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-blush-mhfj4-2026-790231.html",
       "price": 46499.0,
@@ -343,14 +343,6 @@
       "name": "Смартфон Samsung Galaxy A17 8/256Gb Black (SM-A175FZKEEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-8-256gb-black-sm-a175fzkeeuc.html",
       "price": 11699.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb White (SM-A266BZWCEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-white-sm-a266bzwceuc.html",
-      "price": 13999.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -564,6 +556,14 @@
       "search_query": "Смартфон Samsung"
     },
     {
+      "name": "Смартфон Samsung Galaxy A57 8/256Gb Awesome Icyblue (SM-A576BLBDEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-icyblue-sm-a576blbdeuc.html",
+      "price": 25599.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
       "name": "Смартфон Samsung Galaxy S",
       "url": "https://citrus.ua/smartfony/s948b-zkd-black-samsung-12256gb-786720.html",
       "price": 59799.0,
@@ -620,6 +620,14 @@
       "search_query": "Видеокарта RTX"
     },
     {
+      "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB CRb 3210 (Ryzen55600XRTX5060TI16GBCRb3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-crb-3210-ryzen55600xrtx5060ti16gbcrb3210.html",
+      "price": 68555.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
       "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB CRb 1610 (Ryzen55500RTX50608GBCRb1610)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-crb-1610-ryzen55500rtx50608gbcrb1610.html",
       "price": 53765.0,
@@ -662,7 +670,7 @@
     {
       "name": "Відеокарта Palit GF RTX 5060 Ti  8GB GDDR7 Dual (NE7506T019P1-GB2062D)",
       "url": "https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-ti-8gb-gddr7-dual-ne7506t019p1-gb2062d.html",
-      "price": 27999.0,
+      "price": 28159.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -751,14 +759,6 @@
       "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB NM 3210 (Ryzen55600XRTX5060TI16GBNM3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-nm-3210-ryzen55600xrtx5060ti16gbnm3210.html",
       "price": 81344.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Відеокарта Gigabyte PCI-Ex GeForce RTX 5070 Windforce OC 12GB GDDR7 192bit (GV-N5070WF3OC-12GD)",
-      "url": "https://comfy.ua/ua/videokarta-gigabyte-pci-ex-geforce-rtx-5070-windforce-oc-12gb-gddr7-192bit-gv-n5070wf3oc-12gd.html",
-      "price": 46435.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"

@@ -1,11 +1,10 @@
 category,site,search_query,price_uah,name,url
 gpu,Citrus,Видеокарта RTX,17399.0,Відеокарта GIGABYTE RTX,https://citrus.ua/videokarti/videokarta-gigabyte-rtx5060-8gb-gddr7-gv-n5060eagle-oc-8gd-791626.html
-gpu,Comfy,Видеокарта RTX,27999.0,Відеокарта Palit GF RTX 5060 Ti  8GB GDDR7 Dual (NE7506T019P1-GB2062D),https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-ti-8gb-gddr7-dual-ne7506t019p1-gb2062d.html
 gpu,Comfy,Видеокарта RTX,28059.0,Відеокарта Asus Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition (DUAL-RTX5060TI-O8G),https://comfy.ua/ua/videokarta-asus-dual-rtx5060ti-o8g.html
+gpu,Comfy,Видеокарта RTX,28159.0,Відеокарта Palit GF RTX 5060 Ti  8GB GDDR7 Dual (NE7506T019P1-GB2062D),https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-ti-8gb-gddr7-dual-ne7506t019p1-gb2062d.html
 gpu,Citrus,Видеокарта RTX,33099.0,Відеокарта MSI RTX,https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html
 gpu,Citrus,Видеокарта RTX,39199.0,Відеокарта MSI RTX,https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-gaming-rtx5070-12g-gam-trio-oc-791431.html
 gpu,Comfy,Видеокарта RTX,43239.0,Відеокарта Asus GeForce RTX 5070 12GB (DUAL-RTX5070-O12G),https://comfy.ua/ua/videokarta-asus-geforce-rtx-5070-12gb-dual-rtx5070-o12g.html
-gpu,Comfy,Видеокарта RTX,46435.0,Відеокарта Gigabyte PCI-Ex GeForce RTX 5070 Windforce OC 12GB GDDR7 192bit (GV-N5070WF3OC-12GD),https://comfy.ua/ua/videokarta-gigabyte-pci-ex-geforce-rtx-5070-windforce-oc-12gb-gddr7-192bit-gv-n5070wf3oc-12gd.html
 gpu,Comfy,Видеокарта RTX,46509.0,Системний блок QUBE QB Ryzen 5 5500 RTX 5050 8GB CRb 1610 (Ryzen55500RTX50508GBCRb1610),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5050-8gb-crb-1610-ryzen55500rtx50508gbcrb1610.html
 gpu,Comfy,Видеокарта RTX,49589.0,Системний блок QUBE QB Ryzen 5 5500 RTX 5050 8GB NM 1610 (Ryzen55500RTX50508GBNM1610),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5050-8gb-nm-1610-ryzen55500rtx50508gbnm1610.html
 gpu,Comfy,Видеокарта RTX,49999.0,Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 16Gb / SSD 1Tb (A5600.16.S10.5060.A6499),https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s10-5060-a6499.html
@@ -20,6 +19,7 @@ gpu,Comfy,Видеокарта RTX,61769.0,Системний блок QUBE QB R
 gpu,Comfy,Видеокарта RTX,62639.0,Системний блок QUBE QB Ryzen 5 5600X RTX 5060 8GB CRb 3210 (Ryzen55600XRTX50608GBCRb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-8gb-crb-3210-ryzen55600xrtx50608gbcrb3210.html
 gpu,Comfy,Видеокарта RTX,63248.0,Системний блок QUBE QB i5 12400F RTX 5060 8GB NM 3210 (i512400FRTX50608GBNM3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-i5-12400f-rtx-5060-8gb-nm-3210-i512400frtx50608gbnm3210.html
 gpu,Comfy,Видеокарта RTX,66379.0,Відеокарта Palit NVIDIA RTX5070Ti GAMINGPRO-S OC 16GB GDDR7 (NE7507TS19T2-GB2031U),https://comfy.ua/ua/videokarta-palit-nvidia-rtx5070ti-gamingpro-s-oc-16gb-gddr7-ne7507ts19t2-gb2031u.html
+gpu,Comfy,Видеокарта RTX,68555.0,Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB CRb 3210 (Ryzen55600XRTX5060TI16GBCRb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-crb-3210-ryzen55600xrtx5060ti16gbcrb3210.html
 gpu,Comfy,Видеокарта RTX,71840.0,Системний блок QUBE QB Ryzen 5 5600 RTX 5060 Ti 16GB CRb 1610 (Ryzen55600RTX5060TI16GBCRb1610),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600-rtx-5060-ti-16gb-crb-1610-ryzen55600rtx5060ti16gbcrb1610.html
 gpu,Citrus,Видеокарта RTX,75099.0,Відеокарта GIGABYTE RTX,https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html
 gpu,Comfy,Видеокарта RTX,81344.0,Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB NM 3210 (Ryzen55600XRTX5060TI16GBNM3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-nm-3210-ryzen55600xrtx5060ti16gbnm3210.html
@@ -52,7 +52,6 @@ laptop,Citrus,Ноутбук,46499.0,Ноутбук Apple MacBook Neo A,https://
 laptop,Comfy,Ноутбук,49999.0,Ноутбук ігровий Lenovo LOQ 15ARP10E (83S000EKRA) Luna Grey,https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp10e-83s000ekra-luna-grey.html
 laptop,Comfy,Ноутбук,49999.0,Ноутбук ігровий Acer Nitro V 15 ANV15-52 (NH.QV3EU.00X) Black,https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-15-anv15-52-nh-qv3eu-00x-black.html
 laptop,Comfy,Ноутбук,49999.0,Ноутбук ігровий MSI Thin 15 B13VE (B13VE-3446XUA) Cosmos Gray,https://comfy.ua/ua/noutbuk-igrovij-msi-thin-15-b13ve-b13ve-3446xua-cosmos-gray.html
-laptop,Comfy,Ноутбук,49999.0,Ноутбук Lenovo IdeaPad Slim 5 16IMH10 (83V70042RA) Luna Grey,https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-5-16imh10-83v70042ra-luna-grey.html
 laptop,Comfy,Ноутбук,52999.0,Ноутбук ігровий Asus TUF Gaming F16 FX607VJB-RL135 Mecha Gray,https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-f16-fx607vjb-rl135-mecha-gray.html
 laptop,Comfy,Ноутбук,55999.0,Ноутбук ігровий Acer Nitro V 15 ANV15-52 (NH.QV2EU.004) Obsidian Black,https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-15-anv15-52-nh-qv2eu-004-obsidian-black.html
 laptop,Comfy,Ноутбук,59999.0,Ноутбук ігровий Lenovo LOQ 15IRX9 (83DV01ELRA) Luna Grey,https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15irx9-83dv01elra-luna-grey.html
@@ -66,6 +65,7 @@ laptop,Comfy,Ноутбук,88999.0,Ноутбук ігровий Asus ROG Strix
 laptop,Comfy,Ноутбук,88999.0,Ноутбук ігровий Asus TUF Gaming F16 FX608JHR-RV116 Jaeger Gray,https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-f16-fx608jhr-rv116-jaeger-gray.html
 laptop,Comfy,Ноутбук,89999.0,Ноутбук ігровий Asus ROG Strix G16 G615JMR-RV265 Eclipse Gray,https://comfy.ua/ua/noutbuk-igrovij-asus-rog-strix-g16-g615jmr-rv265-eclipse-gray.html
 laptop,Comfy,Ноутбук,89999.0,Ноутбук ігровий Lenovo Legion 5 15AHP11 (83Q70049RA) Eclipse Black,https://comfy.ua/ua/noutbuk-igrovij-lenovo-legion-5-15ahp11-83q70049ra-eclipse-black.html
+laptop,Comfy,Ноутбук,119999.0,Ноутбук ігровий Lenovo Legion Pro 5 16ADR10 (83LT008FRA) Eclipse Black,https://comfy.ua/ua/noutbuk-igrovij-lenovo-legion-pro-5-16adr10-83lt008fra-eclipse-black.html
 phone,Comfy,Смартфон Samsung,319.0,Чохол для смартфону Samsung Clear Case A26 Transparent (EF-QA266CTEGWW),https://comfy.ua/ua/chehol-dlja-smartfona-samsung-clear-case-a26-transparent-ef-qa266ctegww.html
 phone,Comfy,Смартфон Samsung,349.0,Захисне скло для смартфону MAKE Samsung A26/M16 (MGF-SA26/SM16),https://comfy.ua/ua/zaschitnoe-steklo-dlja-smartfona-make-samsung-a26-m16-mgf-sa26-sm16.html
 phone,Comfy,Смартфон Samsung,599.0,Захисне скло для смартфону MAKE Pro for Samsung A37/A57 (MGP-SA37/A57),https://comfy.ua/ua/zahisne-sklo-dlja-smartfonu-make-pro-for-samsung-a37-a57-mgp-sa37-a57.html
@@ -78,7 +78,6 @@ phone,Comfy,Смартфон Samsung,11699.0,Смартфон Samsung Galaxy A17
 phone,Comfy,Смартфон Samsung,13499.0,Смартфон Samsung Galaxy A27 5G 6/128Gb Black (SM-A276BZKBEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-6-128gb-black-sm-a276bzkbeuc.html
 phone,Comfy,Смартфон Samsung,13499.0,Смартфон Samsung Galaxy A27 5G 6/128Gb Light Pink (SM-A276BLIBEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-6-128gb-light-pink-sm-a276blibeuc.html
 phone,Comfy,Смартфон Samsung,13999.0,Смартфон Samsung Galaxy A26 5G 8/256Gb Black (SM-A266BZKCEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-black-sm-a266bzkceuc.html
-phone,Comfy,Смартфон Samsung,13999.0,Смартфон Samsung Galaxy A26 5G 8/256Gb White (SM-A266BZWCEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-white-sm-a266bzwceuc.html
 phone,Comfy,Смартфон Samsung,13999.0,Смартфон Samsung Galaxy A26 5G 8/256Gb Mint (SM-A266BLGCEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-mint-sm-a266blgceuc.html
 phone,Comfy,Смартфон Samsung,17099.0,Смартфон Samsung Galaxy A27 5G 8/256Gb Black (SM-A276BZKCEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-black-sm-a276bzkceuc.html
 phone,Comfy,Смартфон Samsung,17099.0,Смартфон Samsung Galaxy A37 6/128Gb Awesome Charcoal (SM-A376BZABEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-a37-6-128gb-awesome-charcoal-sm-a376bzabeuc.html
@@ -88,6 +87,7 @@ phone,Comfy,Смартфон Samsung,20699.0,Смартфон Samsung Galaxy A37
 phone,Comfy,Смартфон Samsung,25599.0,Смартфон Samsung Galaxy A57 8/256Gb Awesome Navy (SM-A576BDBDEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-navy-sm-a576bdbdeuc.html
 phone,Comfy,Смартфон Samsung,25599.0,Смартфон Samsung Galaxy A57 8/256Gb Awesome Lilac (SM-A576BZVDEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-lilac-sm-a576bzvdeuc.html
 phone,Comfy,Смартфон Samsung,25599.0,Смартфон Samsung Galaxy A57 8/256Gb Awesome Gray (SM-A576BZADEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-gray-sm-a576bzadeuc.html
+phone,Comfy,Смартфон Samsung,25599.0,Смартфон Samsung Galaxy A57 8/256Gb Awesome Icyblue (SM-A576BLBDEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-icyblue-sm-a576blbdeuc.html
 phone,Citrus,Смартфон Samsung,25599.0,Смартфон Samsung Galaxy A,https://citrus.ua/smartfony/a576b-dbd-awesome-navy-samsung-8256gb-790531.html
 phone,Comfy,Смартфон Samsung,32499.0,Смартфон Samsung Galaxy S25FE 8/256Gb Jetblack (SM-S731BZKGEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-s25-fe-8-256gb-jetblack-sm-s731bzkgeuc.html
 phone,Comfy,Смартфон Samsung,32499.0,Смартфон Samsung Galaxy S25FE 8/256Gb Navy (SM-S731BDBGEUC),https://comfy.ua/ua/smartfon-samsung-galaxy-s25-fe-8-256gb-navy-sm-s731bdbgeuc.html
