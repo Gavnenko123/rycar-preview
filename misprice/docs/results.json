@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-10T13:28:48.752368+00:00",
-  "scan_duration_sec": 107.0,
+  "scan_time_utc": "2026-09-10T17:37:00.005890+00:00",
+  "scan_duration_sec": 104.7,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -27,9 +27,9 @@
     "phone": {
       "count": 33,
       "main_count": 30,
-      "median": 23149.0,
-      "mad": 9650.0,
-      "sigma": 14307.09
+      "median": 20699.0,
+      "mad": 9000.0,
+      "sigma": 13343.4
     },
     "gpu": {
       "count": 34,
@@ -348,6 +348,14 @@
       "search_query": "Смартфон Samsung"
     },
     {
+      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb White (SM-A266BZWCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-white-sm-a266bzwceuc.html",
+      "price": 13999.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
       "name": "Смартфон Samsung Galaxy A17 4/128Gb Black (SM-A175FZKBEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-4-128gb-black-sm-a175fzkbeuc.html",
       "price": 8999.0,
@@ -551,14 +559,6 @@
       "name": "Захисне скло для смартфону MAKE Pro for Samsung A37/A57 (MGP-SA37/A57)",
       "url": "https://comfy.ua/ua/zahisne-sklo-dlja-smartfonu-make-pro-for-samsung-a37-a57-mgp-sa37-a57.html",
       "price": 599.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy A57 8/256Gb Awesome Icyblue (SM-A576BLBDEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-icyblue-sm-a576blbdeuc.html",
-      "price": 25599.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
