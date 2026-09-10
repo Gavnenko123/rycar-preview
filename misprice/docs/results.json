@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-09T23:06:27.062406+00:00",
-  "scan_duration_sec": 102.7,
+  "scan_time_utc": "2026-09-10T03:57:08.330830+00:00",
+  "scan_duration_sec": 103.9,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -26,7 +26,7 @@
     },
     "phone": {
       "count": 33,
-      "main_count": 31,
+      "main_count": 30,
       "median": 20699.0,
       "mad": 9000.0,
       "sigma": 13343.4
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 34,
       "main_count": 34,
-      "median": 60768.5,
-      "mad": 19172.5,
-      "sigma": 28425.15
+      "median": 62204.0,
+      "mad": 19052.5,
+      "sigma": 28247.24
     }
   },
   "misprice_alerts_count": 1,
@@ -50,12 +50,12 @@
       "category": "gpu",
       "search_query": "Видеокарта RTX",
       "current_price": 17399.0,
-      "median_price": 60768.5,
-      "expected_min_price": 18230.55,
-      "discount_vs_median_pct": 71.4,
-      "misprice_score": 58.1,
+      "median_price": 62204.0,
+      "expected_min_price": 18661.2,
+      "discount_vs_median_pct": 72.0,
+      "misprice_score": 59.1,
       "severity": "high",
-      "reason": "ціна нижче очікуваного мінімуму (17,399 < 18,231₴)"
+      "reason": "ціна нижче очікуваного мінімуму (17,399 < 18,661₴)"
     }
   ],
   "all_products": [
@@ -102,7 +102,7 @@
     {
       "name": "Ноутбук Lenovo IdeaPad Slim 3 15AMN8 (82XQ01ASRA) Arctic Grey",
       "url": "https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-3-15amn8-82xq01asra-arctic-grey.html",
-      "price": 29999.0,
+      "price": 32999.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -150,7 +150,7 @@
     {
       "name": "Ноутбук Lenovo IdeaPad Slim 3 15IRH10 (83K100ACRA) Luna Grey",
       "url": "https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-3-15irh10-83k100acra-luna-grey.html",
-      "price": 33999.0,
+      "price": 39999.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -324,14 +324,6 @@
       "search_query": "Ноутбук"
     },
     {
-      "name": "Смартфон Samsung Galaxy A57 8/256Gb Awesome Navy (SM-A576BDBDEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-navy-sm-a576bdbdeuc.html",
-      "price": 25599.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
       "name": "Смартфон Samsung Galaxy A26 5G 6/128Gb Black (SM-A266BZKBEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-6-128gb-black-sm-a266bzkbeuc.html",
       "price": 10999.0,
@@ -340,33 +332,9 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Black (SM-A276BZKCEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-black-sm-a276bzkceuc.html",
-      "price": 17099.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
       "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Black (SM-A266BZKCEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-black-sm-a266bzkceuc.html",
       "price": 13999.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy A37 8/256Gb Awesome Lavender (SM-A376BLVGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-8-256gb-awesome-lavender-sm-a376blvgeuc.html",
-      "price": 20699.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy S26 12/256Gb Black (SM-S942BZKGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-12-256gb-black-sm-s942bzkgeuc.html",
-      "price": 42299.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -388,46 +356,6 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A27 5G 6/128Gb Black (SM-A276BZKBEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-6-128gb-black-sm-a276bzkbeuc.html",
-      "price": 13499.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy A57 8/256Gb Awesome Lilac (SM-A576BZVDEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-lilac-sm-a576bzvdeuc.html",
-      "price": 25599.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy S26 Ultra 12/512Gb Black (SM-S948BZKGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-ultra-12-512gb-black-sm-s948bzkgeuc.html",
-      "price": 65299.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Graphite (SM-S741BZKGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-graphite-sm-s741bzkgeuc.html",
-      "price": 39499.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy A37 8/256Gb Awesome Charcoal (SM-A376BZAGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-8-256gb-awesome-charcoal-sm-a376bzageuc.html",
-      "price": 20699.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
       "name": "Смартфон Samsung Galaxy A17 4/128Gb Black (SM-A175FZKBEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-4-128gb-black-sm-a175fzkbeuc.html",
       "price": 8999.0,
@@ -436,17 +364,25 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy S26 12/256Gb Cobalt Violet (SM-S942BZVGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-12-256gb-cobalt-violet-sm-s942bzvgeuc.html",
-      "price": 42299.0,
+      "name": "Смартфон Samsung Galaxy A27 5G 6/128Gb Black (SM-A276BZKBEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-6-128gb-black-sm-a276bzkbeuc.html",
+      "price": 13499.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A27 5G 6/128Gb Light Pink (SM-A276BLIBEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-6-128gb-light-pink-sm-a276blibeuc.html",
-      "price": 13499.0,
+      "name": "Смартфон Samsung Galaxy A57 8/256Gb Awesome Navy (SM-A576BDBDEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-navy-sm-a576bdbdeuc.html",
+      "price": 25599.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Black (SM-A276BZKCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-black-sm-a276bzkceuc.html",
+      "price": 17099.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -460,9 +396,17 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Захисне скло для смартфону MAKE Samsung A26/M16 (MGF-SA26/SM16)",
-      "url": "https://comfy.ua/ua/zaschitnoe-steklo-dlja-smartfona-make-samsung-a26-m16-mgf-sa26-sm16.html",
-      "price": 349.0,
+      "name": "Смартфон Samsung Galaxy S26 12/256Gb Black (SM-S942BZKGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-12-256gb-black-sm-s942bzkgeuc.html",
+      "price": 42299.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A37 8/256Gb Awesome Lavender (SM-A376BLVGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-8-256gb-awesome-lavender-sm-a376blvgeuc.html",
+      "price": 20699.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -484,6 +428,54 @@
       "search_query": "Смартфон Samsung"
     },
     {
+      "name": "Захисне скло для смартфону MAKE Samsung A26/M16 (MGF-SA26/SM16)",
+      "url": "https://comfy.ua/ua/zaschitnoe-steklo-dlja-smartfona-make-samsung-a26-m16-mgf-sa26-sm16.html",
+      "price": 349.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A57 8/256Gb Awesome Lilac (SM-A576BZVDEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-lilac-sm-a576bzvdeuc.html",
+      "price": 25599.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Graphite (SM-S741BZKGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-graphite-sm-s741bzkgeuc.html",
+      "price": 39499.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A37 8/256Gb Awesome Charcoal (SM-A376BZAGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-8-256gb-awesome-charcoal-sm-a376bzageuc.html",
+      "price": 20699.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy S26 Ultra 12/512Gb Black (SM-S948BZKGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-ultra-12-512gb-black-sm-s948bzkgeuc.html",
+      "price": 65299.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A27 5G 6/128Gb Light Pink (SM-A276BLIBEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-6-128gb-light-pink-sm-a276blibeuc.html",
+      "price": 13499.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
       "name": "Смартфон Samsung Galaxy A17 4/128Gb Gray (SM-A175FZABEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-4-128gb-gray-sm-a175fzabeuc.html",
       "price": 8999.0,
@@ -492,33 +484,9 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A37 6/128Gb Awesome Charcoal (SM-A376BZABEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-6-128gb-awesome-charcoal-sm-a376bzabeuc.html",
-      "price": 17099.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Чохол для смартфону Samsung Clear Case A26 Transparent (EF-QA266CTEGWW)",
-      "url": "https://comfy.ua/ua/chehol-dlja-smartfona-samsung-clear-case-a26-transparent-ef-qa266ctegww.html",
-      "price": 319.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Light Pink (SM-A276BLICEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-light-pink-sm-a276bliceuc.html",
-      "price": 17099.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Pistachio (SM-S741BLGGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-pistachio-sm-s741blggeuc.html",
-      "price": 39499.0,
+      "name": "Смартфон Samsung Galaxy S26 12/256Gb Cobalt Violet (SM-S942BZVGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-12-256gb-cobalt-violet-sm-s942bzvgeuc.html",
+      "price": 42299.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -532,9 +500,33 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy S26 Ultra 12/256Gb Black (SM-S948BZKDEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-ultra-12-256gb-black-sm-s948bzkdeuc.html",
-      "price": 59799.0,
+      "name": "Чохол для смартфону Samsung Clear Case A26 Transparent (EF-QA266CTEGWW)",
+      "url": "https://comfy.ua/ua/chehol-dlja-smartfona-samsung-clear-case-a26-transparent-ef-qa266ctegww.html",
+      "price": 319.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Pistachio (SM-S741BLGGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-pistachio-sm-s741blggeuc.html",
+      "price": 39499.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A37 6/128Gb Awesome Charcoal (SM-A376BZABEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-6-128gb-awesome-charcoal-sm-a376bzabeuc.html",
+      "price": 17099.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Light Pink (SM-A276BLICEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-light-pink-sm-a276bliceuc.html",
+      "price": 17099.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -548,17 +540,25 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A57 8/256Gb Awesome Icyblue (SM-A576BLBDEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a57-8-256gb-awesome-icyblue-sm-a576blbdeuc.html",
-      "price": 25599.0,
+      "name": "Смартфон Samsung Galaxy S26 Ultra 12/256Gb Black (SM-S948BZKDEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-ultra-12-256gb-black-sm-s948bzkdeuc.html",
+      "price": 59799.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy S26 Ultra 12/512Gb Cobalt Violet (SM-S948BZVGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-ultra-12-512gb-cobalt-violet-sm-s948bzvgeuc.html",
-      "price": 65299.0,
+      "name": "Смартфон Samsung Galaxy S25FE 8/256Gb Navy (SM-S731BDBGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s25-fe-8-256gb-navy-sm-s731bdbgeuc.html",
+      "price": 32499.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Захисне скло для смартфону MAKE Pro for Samsung A37/A57 (MGP-SA37/A57)",
+      "url": "https://comfy.ua/ua/zahisne-sklo-dlja-smartfonu-make-pro-for-samsung-a37-a57-mgp-sa37-a57.html",
+      "price": 599.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -620,14 +620,6 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5600 RTX 5060 8GB CRb 3210 (Ryzen55600RTX50608GBCRb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600-rtx-5060-8gb-crb-3210-ryzen55600rtx50608gbcrb3210.html",
-      "price": 61769.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
       "name": "Системний блок QUBE QB i5 12400F RTX 5060 Ti 16GB NM 3210 (i512400FRTX5060TI16GBNM3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-i5-12400f-rtx-5060-ti-16gb-nm-3210-i512400frtx5060ti16gbnm3210.html",
       "price": 82127.0,
@@ -636,9 +628,9 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта Palit GF RTX 5060 Ti  8GB GDDR7 Dual (NE7506T019P1-GB2062D)",
-      "url": "https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-ti-8gb-gddr7-dual-ne7506t019p1-gb2062d.html",
-      "price": 27999.0,
+      "name": "Системний блок QUBE QB Ryzen 5 5600 RTX 5060 8GB CRb 3210 (Ryzen55600RTX50608GBCRb3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600-rtx-5060-8gb-crb-3210-ryzen55600rtx50608gbcrb3210.html",
+      "price": 61769.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -655,6 +647,14 @@
       "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 8GB CRb 1610 (Ryzen55600XRTX50608GBCRb1610)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-8gb-crb-1610-ryzen55600xrtx50608gbcrb1610.html",
       "price": 56549.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Відеокарта Palit GF RTX 5060 Ti  8GB GDDR7 Dual (NE7506T019P1-GB2062D)",
+      "url": "https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-ti-8gb-gddr7-dual-ne7506t019p1-gb2062d.html",
+      "price": 27999.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -718,7 +718,7 @@
     {
       "name": "Відеокарта Asus GeForce RTX 5070 12GB (DUAL-RTX5070-O12G)",
       "url": "https://comfy.ua/ua/videokarta-asus-geforce-rtx-5070-12gb-dual-rtx5070-o12g.html",
-      "price": 42999.0,
+      "price": 43239.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -748,17 +748,9 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта Gigabyte GF RTX 5060 8GB GDDR7 Windforce (GV-N5060WF2-8GD)",
-      "url": "https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5060-8gb-gddr7-windforce-gv-n5060wf2-8gd.html",
-      "price": 25699.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
       "name": "Відеокарта Gigabyte PCI-Ex GeForce RTX 5070 Windforce OC 12GB GDDR7 192bit (GV-N5070WF3OC-12GD)",
       "url": "https://comfy.ua/ua/videokarta-gigabyte-pci-ex-geforce-rtx-5070-windforce-oc-12gb-gddr7-192bit-gv-n5070wf3oc-12gd.html",
-      "price": 46335.0,
+      "price": 46435.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -796,17 +788,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5600 RTX 5060 Ti 16GB CRb 1610 (Ryzen55600RTX5060TI16GBCRb1610)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600-rtx-5060-ti-16gb-crb-1610-ryzen55600rtx5060ti16gbcrb1610.html",
-      "price": 71840.0,
+      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 16GB MRGb 3210 (Ryzen79700XRTX5060TI16GBMRGb3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-16gb-mrgb-3210-ryzen79700xrtx5060ti16gbmrgb3210.html",
+      "price": 106292.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 16GB MRGb 3210 (Ryzen79700XRTX5060TI16GBMRGb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-16gb-mrgb-3210-ryzen79700xrtx5060ti16gbmrgb3210.html",
-      "price": 106292.0,
+      "name": "Системний блок QUBE QB Ryzen 5 5600 RTX 5060 Ti 16GB CRb 1610 (Ryzen55600RTX5060TI16GBCRb1610)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600-rtx-5060-ti-16gb-crb-1610-ryzen55600rtx5060ti16gbcrb1610.html",
+      "price": 71840.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -823,6 +815,14 @@
       "name": "Системний блок QUBE QB Ryzen 7 9800X3D RTX 5070 Ti 16GB TK3B 3210 (Ryzen79800X3DRTX5070TI16GBTK3B3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9800x3d-rtx-5070-ti-16gb-tk3b-3210-ryzen79800x3drtx5070ti16gbtk3b3210.html",
       "price": 155621.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок QUBE QB Ryzen 9 9950X RTX 5080 16GB TK3B 641010 (Ryzen99950XRTX508016GBTK3B641010)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-9-9950x-rtx-5080-16gb-tk3b-641010-ryzen99950xrtx508016gbtk3b641010.html",
+      "price": 224250.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
