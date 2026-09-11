@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-11T13:25:38.979755+00:00",
-  "scan_duration_sec": 105.1,
+  "scan_time_utc": "2026-09-11T17:40:13.854807+00:00",
+  "scan_duration_sec": 106.8,
   "total_products_scanned": 98,
   "by_site": {
     "Comfy": 90,
@@ -21,8 +21,8 @@
       "count": 33,
       "main_count": 33,
       "median": 46499.0,
-      "mad": 11500.0,
-      "sigma": 17049.9
+      "mad": 12500.0,
+      "sigma": 18532.5
     },
     "phone": {
       "count": 33,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 32,
       "main_count": 32,
-      "median": 62204.0,
-      "mad": 14295.0,
-      "sigma": 21193.77
+      "median": 62943.5,
+      "mad": 17417.5,
+      "sigma": 25823.19
     }
   },
   "misprice_alerts_count": 1,
@@ -50,12 +50,12 @@
       "category": "gpu",
       "search_query": "Видеокарта RTX",
       "current_price": 18499.0,
-      "median_price": 62204.0,
-      "expected_min_price": 18661.2,
-      "discount_vs_median_pct": 70.3,
-      "misprice_score": 62.8,
+      "median_price": 62943.5,
+      "expected_min_price": 18883.05,
+      "discount_vs_median_pct": 70.6,
+      "misprice_score": 59.6,
       "severity": "high",
-      "reason": "ціна нижче очікуваного мінімуму (18,499 < 18,661₴)"
+      "reason": "ціна нижче очікуваного мінімуму (18,499 < 18,883₴)"
     }
   ],
   "all_products": [
@@ -119,6 +119,14 @@
       "name": "Ноутбук ігровий MSI Thin 15 B13VE (B13VE-3446XUA) Cosmos Gray",
       "url": "https://comfy.ua/ua/noutbuk-igrovij-msi-thin-15-b13ve-b13ve-3446xua-cosmos-gray.html",
       "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Asus Vivobook Go 15 E1504FA-BQ2965 Cool Silver",
+      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-go-15-e1504fa-bq2965-cool-silver.html",
+      "price": 29999.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -222,7 +230,7 @@
     {
       "name": "Ноутбук Asus Vivobook S 16 M3607HA-RP010 Cool Silver",
       "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-s-16-m3607ha-rp010-cool-silver.html",
-      "price": 57999.0,
+      "price": 49999.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -292,22 +300,6 @@
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 256GB MHFH4 Blush",
-      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-256gb-mhfh4-blush.html",
-      "price": 40999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-blush-mhfj4-2026-790231.html",
-      "price": 46499.0,
-      "site": "Citrus",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
       "name": "Ноутбук Apple MacBook Neo A",
       "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
       "price": 40999.0,
@@ -319,6 +311,14 @@
       "name": "Ноутбук Apple MacBook Neo A",
       "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-indigo-mhfg4-2026-790233.html",
       "price": 46499.0,
+      "site": "Citrus",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Acer Aspire Lite AL",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/acer-aspire-lite-al15-46p-nxjxveu002-silver-788985.html",
+      "price": 24999.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -388,17 +388,17 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Black (SM-A276BZKCEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-black-sm-a276bzkceuc.html",
-      "price": 17099.0,
+      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Mint (SM-A266BLGCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-mint-sm-a266blgceuc.html",
+      "price": 15999.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Mint (SM-A266BLGCEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-mint-sm-a266blgceuc.html",
-      "price": 15999.0,
+      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Black (SM-A276BZKCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-black-sm-a276bzkceuc.html",
+      "price": 17099.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -586,14 +586,6 @@
       "site": "Citrus",
       "category": "phone",
       "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 16Gb / SSD 1Tb (A5600.16.S10.5060.A6499)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s10-5060-a6499.html",
-      "price": 49999.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
     },
     {
       "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGw 3210 (Ryzen77700RTX507012GBMRGw3210)",
@@ -823,6 +815,14 @@
       "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB CRb 3210 (Ryzen55500RTX50608GBCRb3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-crb-3210-ryzen55500rtx50608gbcrb3210.html",
       "price": 59768.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок QUBE QB Ryzen 7 9800X3D RTX 5070 Ti 16GB TK3B 3210 (Ryzen79800X3DRTX5070TI16GBTK3B3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9800x3d-rtx-5070-ti-16gb-tk3b-3210-ryzen79800x3drtx5070ti16gbtk3b3210.html",
+      "price": 155621.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
