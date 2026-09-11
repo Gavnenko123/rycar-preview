@@ -4,17 +4,17 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-11T17:40:13.854807+00:00",
-  "scan_duration_sec": 106.8,
-  "total_products_scanned": 98,
+  "scan_time_utc": "2026-09-11T20:45:40.702362+00:00",
+  "scan_duration_sec": 104.1,
+  "total_products_scanned": 99,
   "by_site": {
     "Comfy": 90,
-    "Citrus": 8
+    "Citrus": 9
   },
   "by_category": {
     "laptop": 33,
     "phone": 33,
-    "gpu": 32
+    "gpu": 33
   },
   "category_stats": {
     "laptop": {
@@ -32,11 +32,11 @@
       "sigma": 12157.32
     },
     "gpu": {
-      "count": 32,
-      "main_count": 32,
-      "median": 62943.5,
-      "mad": 17417.5,
-      "sigma": 25823.19
+      "count": 33,
+      "main_count": 33,
+      "median": 62639.0,
+      "mad": 18705.0,
+      "sigma": 27732.03
     }
   },
   "misprice_alerts_count": 1,
@@ -50,12 +50,12 @@
       "category": "gpu",
       "search_query": "Видеокарта RTX",
       "current_price": 18499.0,
-      "median_price": 62943.5,
-      "expected_min_price": 18883.05,
-      "discount_vs_median_pct": 70.6,
-      "misprice_score": 59.6,
+      "median_price": 62639.0,
+      "expected_min_price": 18791.7,
+      "discount_vs_median_pct": 70.5,
+      "misprice_score": 58.2,
       "severity": "high",
-      "reason": "ціна нижче очікуваного мінімуму (18,499 < 18,883₴)"
+      "reason": "ціна нижче очікуваного мінімуму (18,499 < 18,792₴)"
     }
   ],
   "all_products": [
@@ -388,17 +388,17 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Mint (SM-A266BLGCEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-mint-sm-a266blgceuc.html",
-      "price": 15999.0,
+      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Black (SM-A276BZKCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-black-sm-a276bzkceuc.html",
+      "price": 17099.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Black (SM-A276BZKCEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-black-sm-a276bzkceuc.html",
-      "price": 17099.0,
+      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Mint (SM-A266BLGCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-mint-sm-a266blgceuc.html",
+      "price": 15999.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -732,9 +732,9 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 16Gb / SSD 500Gb (A5600.16.S5.5060.A6504)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s5-5060-a6504.html",
-      "price": 51590.0,
+      "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB NM 1610 (Ryzen55500RTX50608GBNM1610)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-nm-1610-ryzen55500rtx50608gbnm1610.html",
+      "price": 53591.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -764,14 +764,6 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта Palit NVIDIA RTX5070Ti GAMINGPRO-S OC 16GB GDDR7 (NE7507TS19T2-GB2031U)",
-      "url": "https://comfy.ua/ua/videokarta-palit-nvidia-rtx5070ti-gamingpro-s-oc-16gb-gddr7-ne7507ts19t2-gb2031u.html",
-      "price": 66379.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
       "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5050 8GB NM 1610 (Ryzen55500RTX50508GBNM1610)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5050-8gb-nm-1610-ryzen55500rtx50508gbnm1610.html",
       "price": 49589.0,
@@ -780,9 +772,9 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB NM 1610 (Ryzen55500RTX50608GBNM1610)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-nm-1610-ryzen55500rtx50608gbnm1610.html",
-      "price": 53591.0,
+      "name": "Відеокарта Palit NVIDIA RTX5070Ti GAMINGPRO-S OC 16GB GDDR7 (NE7507TS19T2-GB2031U)",
+      "url": "https://comfy.ua/ua/videokarta-palit-nvidia-rtx5070ti-gamingpro-s-oc-16gb-gddr7-ne7507ts19t2-gb2031u.html",
+      "price": 66379.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -796,17 +788,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 16GB MRGb 3210 (Ryzen79700XRTX5060TI16GBMRGb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-16gb-mrgb-3210-ryzen79700xrtx5060ti16gbmrgb3210.html",
-      "price": 106292.0,
+      "name": "Системний блок QUBE QB Ryzen 5 5600 RTX 5060 Ti 16GB CRb 1610 (Ryzen55600RTX5060TI16GBCRb1610)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600-rtx-5060-ti-16gb-crb-1610-ryzen55600rtx5060ti16gbcrb1610.html",
+      "price": 71840.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5600 RTX 5060 Ti 16GB CRb 1610 (Ryzen55600RTX5060TI16GBCRb1610)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600-rtx-5060-ti-16gb-crb-1610-ryzen55600rtx5060ti16gbcrb1610.html",
-      "price": 71840.0,
+      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 16GB MRGb 3210 (Ryzen79700XRTX5060TI16GBMRGb3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-16gb-mrgb-3210-ryzen79700xrtx5060ti16gbmrgb3210.html",
+      "price": 106292.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -828,6 +820,14 @@
       "search_query": "Видеокарта RTX"
     },
     {
+      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 32Gb / SSD 1Tb (A5600.32.S10.5060.A6529)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-32-s10-5060-a6529.html",
+      "price": 61160.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
       "name": "Відеокарта MSI RTX",
       "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
       "price": 33099.0,
@@ -839,6 +839,14 @@
       "name": "Відеокарта GIGABYTE RTX",
       "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html",
       "price": 75099.0,
+      "site": "Citrus",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Відеокарта MSI RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-gaming-rtx5070-12g-gam-trio-oc-791431.html",
+      "price": 39199.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
