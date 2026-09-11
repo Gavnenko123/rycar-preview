@@ -4,17 +4,17 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-11T03:53:28.601479+00:00",
-  "scan_duration_sec": 106.0,
-  "total_products_scanned": 98,
+  "scan_time_utc": "2026-09-11T08:48:07.752431+00:00",
+  "scan_duration_sec": 103.9,
+  "total_products_scanned": 99,
   "by_site": {
     "Comfy": 90,
-    "Citrus": 8
+    "Citrus": 9
   },
   "by_category": {
     "laptop": 33,
     "phone": 33,
-    "gpu": 32
+    "gpu": 33
   },
   "category_stats": {
     "laptop": {
@@ -32,11 +32,11 @@
       "sigma": 13343.4
     },
     "gpu": {
-      "count": 32,
-      "main_count": 32,
-      "median": 62943.5,
-      "mad": 14894.5,
-      "sigma": 22082.59
+      "count": 33,
+      "main_count": 33,
+      "median": 62639.0,
+      "mad": 16130.0,
+      "sigma": 23914.34
     }
   },
   "misprice_alerts_count": 0,
@@ -824,6 +824,14 @@
       "name": "Відеокарта GIGABYTE RTX",
       "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html",
       "price": 75099.0,
+      "site": "Citrus",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Відеокарта MSI RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-gaming-rtx5070-12g-gam-trio-oc-791431.html",
+      "price": 39199.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
