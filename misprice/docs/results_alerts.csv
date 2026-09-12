@@ -1,2 +1,2 @@
 severity,misprice_score,category,site,current_price_uah,median_price_uah,discount_vs_median_pct,name,reason,url
-high,58.2,gpu,Comfy,18499.0,62639.0,70.5,Відеокарта Asus GeForce RTX 5050 8 GB GDDR6 OC DUAL-RTX5050-O8G,"ціна нижче очікуваного мінімуму (18,499 < 18,792₴)",https://comfy.ua/ua/videokarta-asus-geforce-rtx-5050-8-gb-gddr6-oc-dual-rtx5050-o8g.html
+high,58.1,gpu,Comfy,18499.0,62639.0,70.5,Відеокарта Asus GeForce RTX 5050 8 GB GDDR6 OC DUAL-RTX5050-O8G,"ціна нижче очікуваного мінімуму (18,499 < 18,792₴)",https://comfy.ua/ua/videokarta-asus-geforce-rtx-5050-8-gb-gddr6-oc-dual-rtx5050-o8g.html
