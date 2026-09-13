@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-13T15:55:42.845202+00:00",
-  "scan_duration_sec": 103.0,
+  "scan_time_utc": "2026-09-13T18:41:01.936578+00:00",
+  "scan_duration_sec": 107.6,
   "total_products_scanned": 99,
   "by_site": {
     "Comfy": 90,
@@ -21,8 +21,8 @@
       "count": 33,
       "main_count": 33,
       "median": 46499.0,
-      "mad": 11500.0,
-      "sigma": 17049.9
+      "mad": 12500.0,
+      "sigma": 18532.5
     },
     "phone": {
       "count": 33,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 33,
       "main_count": 33,
-      "median": 61160.0,
-      "mad": 17921.0,
-      "sigma": 26569.67
+      "median": 61769.0,
+      "mad": 18530.0,
+      "sigma": 27472.58
     }
   },
   "misprice_alerts_count": 0,
@@ -253,14 +253,6 @@
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 256GB MHFH4 Blush",
-      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-256gb-mhfh4-blush.html",
-      "price": 40999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
       "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 256GB MHFA4 Silver",
       "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-256gb-mhfa4-silver.html",
       "price": 40999.0,
@@ -280,6 +272,14 @@
       "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 512GB Touch ID MHFG4 Indigo",
       "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-512gb-touch-id-mhfg4-indigo.html",
       "price": 46499.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Acer Aspire Lite AL15-46P-R7PX (NX.JXTEU.001) Steel Gray",
+      "url": "https://comfy.ua/ua/noutbuk-acer-aspire-lite-al15-46p-r7px-nx-jxteu-001-steel-gray.html",
+      "price": 23499.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -701,17 +701,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB NM 1610 (Ryzen55500RTX50608GBNM1610)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-nm-1610-ryzen55500rtx50608gbnm1610.html",
-      "price": 53591.0,
+      "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5050 8GB CRb 1610 (Ryzen55500RTX50508GBCRb1610)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5050-8gb-crb-1610-ryzen55500rtx50508gbcrb1610.html",
+      "price": 46509.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5050 8GB CRb 1610 (Ryzen55500RTX50508GBCRb1610)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5050-8gb-crb-1610-ryzen55500rtx50508gbcrb1610.html",
-      "price": 46509.0,
+      "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB NM 1610 (Ryzen55500RTX50608GBNM1610)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-nm-1610-ryzen55500rtx50608gbnm1610.html",
+      "price": 53591.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -757,17 +757,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB CRb 3210 (Ryzen55500RTX50608GBCRb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-crb-3210-ryzen55500rtx50608gbcrb3210.html",
-      "price": 59768.0,
+      "name": "Системний блок QUBE QB Ryzen 7 9800X3D RTX 5070 Ti 16GB TK3B 3210 (Ryzen79800X3DRTX5070TI16GBTK3B3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9800x3d-rtx-5070-ti-16gb-tk3b-3210-ryzen79800x3drtx5070ti16gbtk3b3210.html",
+      "price": 155621.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 7 9800X3D RTX 5070 Ti 16GB TK3B 3210 (Ryzen79800X3DRTX5070TI16GBTK3B3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9800x3d-rtx-5070-ti-16gb-tk3b-3210-ryzen79800x3drtx5070ti16gbtk3b3210.html",
-      "price": 155621.0,
+      "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB CRb 3210 (Ryzen55500RTX50608GBCRb3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-crb-3210-ryzen55500rtx50608gbcrb3210.html",
+      "price": 59768.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -797,17 +797,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта Asus NVIDIA (DUAL-RTX5060-O8G-A)",
-      "url": "https://comfy.ua/ua/videokarta-asus-nvidia-dual-rtx5060-o8g-a.html",
-      "price": 26299.0,
+      "name": "Системний блок QUBE QB i7 14700F RTX 3050 8GB NM 324 (i714700FRTX30508GBNM324)",
+      "url": "https://comfy.ua/ua/sistemnyj-blok-qube-qb-i7-14700f-rtx-3050-8gb-nm-324-i714700frtx30508gbnm324.html",
+      "price": 67415.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 16Gb / SSD 500Gb (A5600.16.S5.5060.A6504)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s5-5060-a6504.html",
-      "price": 51590.0,
+      "name": "Відеокарта Asus NVIDIA (DUAL-RTX5060-O8G-A)",
+      "url": "https://comfy.ua/ua/videokarta-asus-nvidia-dual-rtx5060-o8g-a.html",
+      "price": 26299.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
