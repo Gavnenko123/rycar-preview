@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-14T04:45:09.109647+00:00",
-  "scan_duration_sec": 105.9,
+  "scan_time_utc": "2026-09-14T10:27:47.941885+00:00",
+  "scan_duration_sec": 108.6,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -269,17 +269,17 @@
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук ігровий MSI Cyborg 15 B13WEKG-1038XUA (9S7-15Q342-1038) Translucent Black",
-      "url": "https://comfy.ua/ua/noutbuk-igrovij-msi-cyborg-15-b13wekg-1038xua-9s7-15q342-1038-translucent-black.html",
-      "price": 57499.0,
+      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 256GB MHFH4 Blush",
+      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-256gb-mhfh4-blush.html",
+      "price": 40999.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 512GB Touch ID MHFG4 Indigo",
-      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-512gb-touch-id-mhfg4-indigo.html",
-      "price": 46499.0,
+      "name": "Ноутбук ігровий MSI Cyborg 15 B13WEKG-1038XUA (9S7-15Q342-1038) Translucent Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-msi-cyborg-15-b13wekg-1038xua-9s7-15q342-1038-translucent-black.html",
+      "price": 57499.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -303,7 +303,7 @@
     {
       "name": "Ноутбук Acer Aspire Lite AL",
       "url": "https://citrus.ua/noutbuki-i-ultrabuki/acer-aspire-lite-al15-46p-nxjxveu002-silver-788985.html",
-      "price": 24999.0,
+      "price": 25999.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -813,17 +813,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html",
-      "price": 75099.0,
+      "name": "Відеокарта MSI RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
+      "price": 33099.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта MSI RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
-      "price": 33099.0,
+      "name": "Відеокарта GIGABYTE RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html",
+      "price": 75099.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
