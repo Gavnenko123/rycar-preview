@@ -1,22 +1,24 @@
-2026-09-15 04:10:32,829 - INFO - Запросы: ['Ноутбук', 'Смартфон Samsung', 'Видеокарта RTX']
-2026-09-15 04:10:33,294 - INFO - === Поиск: 'Ноутбук' ===
-2026-09-15 04:10:33,362 - INFO - [Comfy] https://comfy.ua/ua/search/?q=%D0%9D%D0%BE%D1%83%D1%82%D0%B1%D1%83%D0%BA
-2026-09-15 04:10:59,835 - INFO - [Comfy] найдено: 0
-2026-09-15 04:11:01,182 - INFO - [Citrus] https://citrus.ua/uk/search?query=%D0%9D%D0%BE%D1%83%D1%82%D0%B1%D1%83%D0%BA
-2026-09-15 04:11:17,752 - INFO - [Citrus] найдено: 3
-2026-09-15 04:11:20,489 - INFO - === Поиск: 'Смартфон Samsung' ===
-2026-09-15 04:11:20,522 - INFO - [Comfy] https://comfy.ua/ua/search/?q=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD+Samsung
-2026-09-15 04:11:34,760 - INFO - [Comfy] найдено: 30
-2026-09-15 04:11:35,744 - INFO - [Citrus] https://citrus.ua/uk/search?query=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD+Samsung
-2026-09-15 04:11:51,335 - INFO - [Citrus] найдено: 3
-2026-09-15 04:11:53,797 - INFO - === Поиск: 'Видеокарта RTX' ===
-2026-09-15 04:11:53,829 - INFO - [Comfy] https://comfy.ua/ua/search/?q=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%D0%BA%D0%B0%D1%80%D1%82%D0%B0+RTX
-2026-09-15 04:12:08,244 - INFO - [Comfy] найдено: 30
-2026-09-15 04:12:09,399 - INFO - [Citrus] https://citrus.ua/uk/search?query=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%D0%BA%D0%B0%D1%80%D1%82%D0%B0+RTX
-2026-09-15 04:12:23,849 - INFO - [Citrus] найдено: 3
-2026-09-15 04:12:26,606 - INFO - Собрано 69 товаров за 113.8 сек
-2026-09-15 04:12:26,606 - INFO - [laptop] товаров=3, основных=3, медиана=40,999, MAD=5,500, σ≈8,154
-2026-09-15 04:12:26,606 - INFO - [phone] товаров=33, основных=31, медиана=25,599, MAD=12,100, σ≈17,939
-2026-09-15 04:12:26,607 - INFO - [gpu] товаров=33, основных=33, медиана=62,639, MAD=16,130, σ≈23,914
-2026-09-15 04:12:26,607 - INFO - Найдено 0 misprice-алертов
-2026-09-15 04:12:26,608 - INFO - Результаты сохранены в /home/runner/work/rycar-preview/rycar-preview/misprice/docs/
+2026-09-15 09:51:36,542 - INFO - Запросы: ['Ноутбук', 'Смартфон Samsung', 'Видеокарта RTX']
+2026-09-15 09:51:37,070 - INFO - === Поиск: 'Ноутбук' ===
+2026-09-15 09:51:37,129 - INFO - [Comfy] https://comfy.ua/ua/search/?q=%D0%9D%D0%BE%D1%83%D1%82%D0%B1%D1%83%D0%BA
+2026-09-15 09:51:51,723 - INFO - [Comfy] найдено: 30
+2026-09-15 09:51:52,910 - INFO - [Citrus] https://citrus.ua/uk/search?query=%D0%9D%D0%BE%D1%83%D1%82%D0%B1%D1%83%D0%BA
+2026-09-15 09:52:28,869 - INFO - [Citrus] найдено: 3
+2026-09-15 09:52:31,760 - INFO - === Поиск: 'Смартфон Samsung' ===
+2026-09-15 09:52:31,800 - INFO - [Comfy] https://comfy.ua/ua/search/?q=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD+Samsung
+2026-09-15 09:52:46,621 - INFO - [Comfy] найдено: 30
+2026-09-15 09:52:47,589 - INFO - [Citrus] https://citrus.ua/uk/search?query=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD+Samsung
+2026-09-15 09:53:34,916 - INFO - [Citrus] найдено: 3
+2026-09-15 09:53:37,296 - INFO - === Поиск: 'Видеокарта RTX' ===
+2026-09-15 09:53:37,333 - INFO - [Comfy] https://comfy.ua/ua/search/?q=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%D0%BA%D0%B0%D1%80%D1%82%D0%B0+RTX
+2026-09-15 09:54:03,529 - INFO - [Comfy] найдено: 0
+2026-09-15 09:54:04,442 - INFO - [Citrus] https://citrus.ua/uk/search?query=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%D0%BA%D0%B0%D1%80%D1%82%D0%B0+RTX
+2026-09-15 09:54:49,447 - WARNING - [Citrus] goto failed: Page.goto: Timeout 45000ms exceeded.
+Call log:
+  - navigating to "https://citrus.ua/uk/search?query=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%D0%BA%D0%B0%D1%80%D1%82%D0%B0+RTX", waiting until "domcontentloaded"
+
+2026-09-15 09:54:52,663 - INFO - Собрано 66 товаров за 196.1 сек
+2026-09-15 09:54:52,663 - INFO - [laptop] товаров=33, основных=33, медиана=46,499, MAD=9,500, σ≈14,085
+2026-09-15 09:54:52,663 - INFO - [phone] товаров=33, основных=31, медиана=25,599, MAD=12,100, σ≈17,939
+2026-09-15 09:54:52,664 - INFO - Найдено 0 misprice-алертов
+2026-09-15 09:54:52,665 - INFO - Результаты сохранены в /home/runner/work/rycar-preview/rycar-preview/misprice/docs/
