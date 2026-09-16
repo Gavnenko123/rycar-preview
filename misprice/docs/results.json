@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-16T16:31:41.676144+00:00",
-  "scan_duration_sec": 103.7,
+  "scan_time_utc": "2026-09-16T19:56:31.023417+00:00",
+  "scan_duration_sec": 104.6,
   "total_products_scanned": 99,
   "by_site": {
     "Comfy": 90,
@@ -120,14 +120,6 @@
       "name": "Ноутбук ігровий MSI Thin 15 B13VE (B13VE-3446XUA) Cosmos Gray",
       "url": "https://comfy.ua/ua/noutbuk-igrovij-msi-thin-15-b13ve-b13ve-3446xua-cosmos-gray.html",
       "price": 49999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Asus Vivobook Go 15 E1504FA-BQ5029 Cool Silver",
-      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-go-15-e1504fa-bq5029-cool-silver.html",
-      "price": 23999.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -280,6 +272,14 @@
       "name": "Ноутбук Asus Vivobook 15 X1504VA-BQ4422 Cool Silver",
       "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504va-bq4422-cool-silver.html",
       "price": 37999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Asus Vivobook Go 15 E1504FA-BQ2965 Cool Silver",
+      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-go-15-e1504fa-bq2965-cool-silver.html",
+      "price": 29999.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -757,9 +757,9 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5600 RTX 5060 Ti 16GB CRb 1610 (Ryzen55600RTX5060TI16GBCRb1610)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600-rtx-5060-ti-16gb-crb-1610-ryzen55600rtx5060ti16gbcrb1610.html",
-      "price": 71840.0,
+      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 16GB MRGb 3210 (Ryzen79700XRTX5060TI16GBMRGb3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-16gb-mrgb-3210-ryzen79700xrtx5060ti16gbmrgb3210.html",
+      "price": 106292.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -768,14 +768,6 @@
       "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB CRb 3210 (Ryzen55500RTX50608GBCRb3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-crb-3210-ryzen55500rtx50608gbcrb3210.html",
       "price": 59768.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 16GB MRGb 3210 (Ryzen79700XRTX5060TI16GBMRGb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-16gb-mrgb-3210-ryzen79700xrtx5060ti16gbmrgb3210.html",
-      "price": 106292.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -792,6 +784,14 @@
       "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 8GB NM 1610 (Ryzen55600XRTX5060TI8GBNM1610)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-8gb-nm-1610-ryzen55600xrtx5060ti8gbnm1610.html",
       "price": 57471.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок QUBE QB i5 14400F RTX 5060 Ti 8GB NM 3210 (i514400FRTX5060TI8GBNM3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-i5-14400f-rtx-5060-ti-8gb-nm-3210-i514400frtx5060ti8gbnm3210.html",
+      "price": 67650.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
