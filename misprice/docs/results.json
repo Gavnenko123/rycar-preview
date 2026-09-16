@@ -4,17 +4,17 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-15T22:01:47.525460+00:00",
-  "scan_duration_sec": 108.2,
-  "total_products_scanned": 100,
+  "scan_time_utc": "2026-09-16T00:12:34.093809+00:00",
+  "scan_duration_sec": 102.1,
+  "total_products_scanned": 99,
   "by_site": {
     "Comfy": 90,
-    "Citrus": 10
+    "Citrus": 9
   },
   "by_category": {
     "laptop": 33,
     "phone": 33,
-    "gpu": 34
+    "gpu": 33
   },
   "category_stats": {
     "laptop": {
@@ -32,11 +32,11 @@
       "sigma": 17939.46
     },
     "gpu": {
-      "count": 34,
-      "main_count": 34,
-      "median": 60768.5,
-      "mad": 13495.0,
-      "sigma": 20007.69
+      "count": 33,
+      "main_count": 33,
+      "median": 61769.0,
+      "mad": 12180.0,
+      "sigma": 18058.07
     }
   },
   "misprice_alerts_count": 0,
@@ -286,16 +286,16 @@
     },
     {
       "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
-      "price": 40999.0,
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-indigo-mhfg4-2026-790233.html",
+      "price": 46499.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
     },
     {
       "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-indigo-mhfg4-2026-790233.html",
-      "price": 46499.0,
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
+      "price": 40999.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -821,9 +821,9 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта MSI RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
-      "price": 33099.0,
+      "name": "Відеокарта GIGABYTE RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080wf3oc-16gd-10-791650.html",
+      "price": 73499.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -832,14 +832,6 @@
       "name": "Відеокарта MSI RTX",
       "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-gaming-rtx5070-12g-gam-trio-oc-791431.html",
       "price": 39199.0,
-      "site": "Citrus",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080wf3oc-16gd-10-791650.html",
-      "price": 73499.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
