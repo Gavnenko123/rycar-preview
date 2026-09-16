@@ -4,25 +4,25 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-16T11:12:22.720301+00:00",
-  "scan_duration_sec": 117.3,
-  "total_products_scanned": 69,
+  "scan_time_utc": "2026-09-16T16:31:41.676144+00:00",
+  "scan_duration_sec": 103.7,
+  "total_products_scanned": 99,
   "by_site": {
-    "Citrus": 9,
-    "Comfy": 60
+    "Comfy": 90,
+    "Citrus": 9
   },
   "by_category": {
-    "laptop": 3,
+    "laptop": 33,
     "phone": 33,
     "gpu": 33
   },
   "category_stats": {
     "laptop": {
-      "count": 3,
-      "main_count": 3,
-      "median": 40999.0,
-      "mad": 5500.0,
-      "sigma": 8154.3
+      "count": 33,
+      "main_count": 33,
+      "median": 42999.0,
+      "mad": 7000.0,
+      "sigma": 10378.2
     },
     "phone": {
       "count": 33,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 33,
       "main_count": 33,
-      "median": 62639.0,
-      "mad": 13050.0,
-      "sigma": 19347.93
+      "median": 63248.0,
+      "mad": 13249.0,
+      "sigma": 19642.97
     }
   },
   "misprice_alerts_count": 0,
@@ -44,6 +44,246 @@
   "high_count": 0,
   "alerts": [],
   "all_products": [
+    {
+      "name": "Ноутбук Acer Extensa 15 EXO15-41-R3P7 (NX.EL5EU.009) Lunar Grey",
+      "url": "https://comfy.ua/ua/noutbuk-acer-extensa-15-exo15-41-r3p7-nx-el5eu-009-lunar-grey.html",
+      "price": 31999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Lenovo LOQ 15ARP10E (83S000EKRA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp10e-83s000ekra-luna-grey.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Acer Nitro V 15 ANV15-52 (NH.QV3EU.00X) Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-15-anv15-52-nh-qv3eu-00x-black.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 256GB MHFD4 Citrus",
+      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-256gb-mhfd4-citrus.html",
+      "price": 40999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Asus Vivobook Go 15 E1504FA-BQ2834 Mixed Black",
+      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-go-15-e1504fa-bq2834-mixed-black.html",
+      "price": 29999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Lenovo IdeaPad Slim 3 15AMN8 (82XQ01ASRA) Arctic Grey",
+      "url": "https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-3-15amn8-82xq01asra-arctic-grey.html",
+      "price": 32999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 256GB MHFF4 Indigo",
+      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-256gb-mhff4-indigo.html",
+      "price": 40999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Acer TravelMate P2 TMP216-51 (NX.BTWEU.001) Grey",
+      "url": "https://comfy.ua/ua/noutbuk-acer-travelmate-p2-tmp216-51-nx-btweu-001-grey.html",
+      "price": 37999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Asus TUF Gaming F17 FX707VJB-HX069 Mecha Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-f17-fx707vjb-hx069-mecha-gray.html",
+      "price": 54999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий MSI Thin 15 B13VE (B13VE-3446XUA) Cosmos Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-msi-thin-15-b13ve-b13ve-3446xua-cosmos-gray.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Asus Vivobook Go 15 E1504FA-BQ5029 Cool Silver",
+      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-go-15-e1504fa-bq5029-cool-silver.html",
+      "price": 23999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Acer Nitro V 15 ANV15-52 (NH.QV2EU.004) Obsidian Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-15-anv15-52-nh-qv2eu-004-obsidian-black.html",
+      "price": 55999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Lenovo IdeaPad Slim 3 15IRH10 (83K100ACRA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-3-15irh10-83k100acra-luna-grey.html",
+      "price": 39999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Acer Swift Lite 16 SFL16-31P-34N6 (NX.D4WEU.001) Silver",
+      "url": "https://comfy.ua/ua/noutbuk-acer-swift-lite-16-sfl16-31p-34n6-nx-d4weu-001-silver.html",
+      "price": 24999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Xiaomi RedmiBook 16 2024 i5/16GB/512GB (JYU4614CN)",
+      "url": "https://comfy.ua/ua/noutbuk-xiaomi-redmibook-16-2024-i5-16gb-512gb-jyu4614cn.html",
+      "price": 35999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Apple MacBook Pro 14'' M5 10-core CPU 10-core GPU 16GB 1TB MDE14 Space Black",
+      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-pro-14-m5-pro-12-core-cpu-16-core-gpu-24gb-512gb-silver.html",
+      "price": 120999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий MSI Cyborg A15 AI B2HWFKG-234XUA (9S7-15QL42-234)",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-msi-cyborg-a15-ai-b2hwfkg-234xua-9s7-15ql42-234.html",
+      "price": 65999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Acer Nitro V 16 AI ANV16-42 (NH.U1GEU.00A) Shale Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-16-ai-anv16-42-nh-u1geu-00a-shale-black.html",
+      "price": 71999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Asus ROG Strix G16 G614PP-RV085 Eclipse Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-rog-strix-g16-g614pp-rv085-eclipse-gray.html",
+      "price": 96999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Acer Nitro V 16 AI ANV16-42-R7BK (NH.U1FEU.002) Shale Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-16-ai-anv16-42-r7bk-nh-u1feu-002-shale-black.html",
+      "price": 81999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Acer Aspire Lite AL15-72P (NX.D5HEU.002) Silver",
+      "url": "https://comfy.ua/ua/noutbuk-acer-aspire-lite-al15-72p-nx-d5heu-002-silver.html",
+      "price": 36999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Asus TUF Gaming F16 FX607VJB-RL225 Mecha Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-f16-fx607vjb-rl225-mecha-gray.html",
+      "price": 52999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Asus Vivobook 15 X1504MA-BQ290 Cool Silver",
+      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504ma-bq290-cool-silver.html",
+      "price": 39999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Dream Machines RG3050-15 (RG3050-15UA83) Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-dream-machines-rg3050-15-rg3050-15ua83-black.html",
+      "price": 42999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Asus Vivobook 16 X1607CA-MB058 Quiet Blue",
+      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-16-x1607ca-mb058-quiet-blue.html",
+      "price": 40999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Lenovo LOQ 15AHP10 (83JG00F9RA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15ahp10-83jg00f9ra-luna-grey.html",
+      "price": 69999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Asus Vivobook S 16 M3607HA-RP010 Cool Silver",
+      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-s-16-m3607ha-rp010-cool-silver.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Acer Nitro V 16 AI ANV16-42 (NH.U1HEU.008) Black",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-16-ai-anv16-42-nh-u1heu-008-black.html",
+      "price": 66999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук ігровий Lenovo LOQ 15ARP9 (83JC00K6RA) Luna Grey",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp9-83jc00k6ra-luna-grey.html",
+      "price": 49999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук Asus Vivobook 15 X1504VA-BQ4422 Cool Silver",
+      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504va-bq4422-cool-silver.html",
+      "price": 37999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
     {
       "name": "Ноутбук Apple MacBook Neo A",
       "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-indigo-mhfg4-2026-790233.html",
@@ -101,17 +341,17 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Black (SM-A266BZKCEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-black-sm-a266bzkceuc.html",
-      "price": 15499.0,
+      "name": "Смартфон Samsung Galaxy S26 12/256Gb Black (SM-S942BZKGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-12-256gb-black-sm-s942bzkgeuc.html",
+      "price": 42299.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy S26 12/256Gb Black (SM-S942BZKGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-12-256gb-black-sm-s942bzkgeuc.html",
-      "price": 42299.0,
+      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Black (SM-A266BZKCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-black-sm-a266bzkceuc.html",
+      "price": 15499.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -173,17 +413,17 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A37 6/128Gb Awesome Charcoal (SM-A376BZABEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-6-128gb-awesome-charcoal-sm-a376bzabeuc.html",
-      "price": 17099.0,
+      "name": "Смартфон Samsung Galaxy S25FE 8/256Gb Jetblack (SM-S731BZKGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s25-fe-8-256gb-jetblack-sm-s731bzkgeuc.html",
+      "price": 32499.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy S25FE 8/256Gb Jetblack (SM-S731BZKGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s25-fe-8-256gb-jetblack-sm-s731bzkgeuc.html",
-      "price": 32499.0,
+      "name": "Смартфон Samsung Galaxy A37 6/128Gb Awesome Charcoal (SM-A376BZABEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-6-128gb-awesome-charcoal-sm-a376bzabeuc.html",
+      "price": 17099.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -213,17 +453,17 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Захисне скло для смартфону MAKE Samsung A26/M16 (MGF-SA26/SM16)",
-      "url": "https://comfy.ua/ua/zaschitnoe-steklo-dlja-smartfona-make-samsung-a26-m16-mgf-sa26-sm16.html",
-      "price": 349.0,
+      "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Pistachio (SM-S741BLGGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-pistachio-sm-s741blggeuc.html",
+      "price": 39499.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Pistachio (SM-S741BLGGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-pistachio-sm-s741blggeuc.html",
-      "price": 39499.0,
+      "name": "Захисне скло для смартфону MAKE Samsung A26/M16 (MGF-SA26/SM16)",
+      "url": "https://comfy.ua/ua/zaschitnoe-steklo-dlja-smartfona-make-samsung-a26-m16-mgf-sa26-sm16.html",
+      "price": 349.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -349,14 +589,6 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта Asus GeForce RTX 5070 12GB (DUAL-RTX5070-O12G)",
-      "url": "https://comfy.ua/ua/videokarta-asus-geforce-rtx-5070-12gb-dual-rtx5070-o12g.html",
-      "price": 43239.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
       "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGw 3210 (Ryzen77700RTX507012GBMRGw3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5070-12gb-mrgw-3210-ryzen77700rtx507012gbmrgw3210.html",
       "price": 104051.0,
@@ -368,6 +600,14 @@
       "name": "Системний блок QUBE QB i5 12400F RTX 5060 Ti 16GB NM 3210 (i512400FRTX5060TI16GBNM3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-i5-12400f-rtx-5060-ti-16gb-nm-3210-i512400frtx5060ti16gbnm3210.html",
       "price": 82127.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB CRb 3210 (Ryzen55600XRTX5060TI16GBCRb3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-crb-3210-ryzen55600xrtx5060ti16gbcrb3210.html",
+      "price": 68555.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -453,17 +693,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB i5 12400F RTX 5060 8GB NM 3210 (i512400FRTX50608GBNM3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-i5-12400f-rtx-5060-8gb-nm-3210-i512400frtx50608gbnm3210.html",
-      "price": 63248.0,
+      "name": "Відеокарта Asus TUF Gaming GeForce RTX 5070 Ti 16GB GDDR7 OC Edition (TUF-RTX5070TI-O16G-GAMING)",
+      "url": "https://comfy.ua/ua/videokarta-asus-tuf-gaming-geforce-rtxtm-5070-ti-16gb-gddr7-oc-edition-tuf-rtx5070ti-o16-ggaming.html",
+      "price": 77949.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта Asus TUF Gaming GeForce RTX 5070 Ti 16GB GDDR7 OC Edition (TUF-RTX5070TI-O16G-GAMING)",
-      "url": "https://comfy.ua/ua/videokarta-asus-tuf-gaming-geforce-rtxtm-5070-ti-16gb-gddr7-oc-edition-tuf-rtx5070ti-o16-ggaming.html",
-      "price": 77949.0,
+      "name": "Системний блок QUBE QB i5 12400F RTX 5060 8GB NM 3210 (i512400FRTX50608GBNM3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-i5-12400f-rtx-5060-8gb-nm-3210-i512400frtx50608gbnm3210.html",
+      "price": 63248.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
