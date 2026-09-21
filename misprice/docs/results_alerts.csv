@@ -1,2 +1,1 @@
 severity,misprice_score,category,site,current_price_uah,median_price_uah,discount_vs_median_pct,name,reason,url
-high,68.0,gpu,Citrus,39199.0,73499.0,46.7,Відеокарта MSI RTX,z-score=-14.46 (викид),https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-gaming-rtx5070-12g-gam-trio-oc-791431.html
