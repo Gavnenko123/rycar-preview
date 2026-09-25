@@ -4,17 +4,17 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-24T22:10:17.219302+00:00",
-  "scan_duration_sec": 103.0,
-  "total_products_scanned": 99,
+  "scan_time_utc": "2026-09-25T01:18:27.834735+00:00",
+  "scan_duration_sec": 105.3,
+  "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
-    "Citrus": 9
+    "Citrus": 10
   },
   "by_category": {
     "laptop": 33,
     "phone": 33,
-    "gpu": 33
+    "gpu": 34
   },
   "category_stats": {
     "laptop": {
@@ -32,11 +32,11 @@
       "sigma": 13121.01
     },
     "gpu": {
-      "count": 33,
-      "main_count": 33,
-      "median": 62639.0,
-      "mad": 19488.0,
-      "sigma": 28892.91
+      "count": 34,
+      "main_count": 34,
+      "median": 64509.0,
+      "mad": 18114.0,
+      "sigma": 26855.82
     }
   },
   "misprice_alerts_count": 0,
@@ -301,9 +301,9 @@
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
-      "price": 40999.0,
+      "name": "Ноутбук Apple MacBook Air M",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-air-m5-chip-15-16512-midnight-mdvh4-2026-790063.html",
+      "price": 92599.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -821,9 +821,9 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта ASUS GeForce RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-asus-geforce-rtx-5060-ti-8gb-gddr7-aero-gv-n506taero-oc-8gd-789996.html",
-      "price": 26104.0,
+      "name": "Відеокарта GIGABYTE RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080wf3oc-16gd-10-791650.html",
+      "price": 73499.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -832,6 +832,14 @@
       "name": "Відеокарта MSI RTX",
       "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-gaming-rtx5070-12g-gam-trio-oc-791431.html",
       "price": 39199.0,
+      "site": "Citrus",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Відеокарта ASUS GeForce RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-asus-geforce-rtx-5060-ti-8gb-gddr7-aero-gv-n506taero-oc-8gd-789996.html",
+      "price": 26104.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"

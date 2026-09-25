@@ -19,6 +19,7 @@ gpu,Comfy,Видеокарта RTX,62639.0,Системний блок QUBE QB R
 gpu,Comfy,Видеокарта RTX,66379.0,Відеокарта Palit NVIDIA RTX5070Ti GAMINGPRO-S OC 16GB GDDR7 (NE7507TS19T2-GB2031U),https://comfy.ua/ua/videokarta-palit-nvidia-rtx5070ti-gamingpro-s-oc-16gb-gddr7-ne7507ts19t2-gb2031u.html
 gpu,Comfy,Видеокарта RTX,67415.0,Системний блок QUBE QB i7 14700F RTX 3050 8GB NM 324 (i714700FRTX30508GBNM324),https://comfy.ua/ua/sistemnyj-blok-qube-qb-i7-14700f-rtx-3050-8gb-nm-324-i714700frtx30508gbnm324.html
 gpu,Comfy,Видеокарта RTX,68555.0,Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB CRb 3210 (Ryzen55600XRTX5060TI16GBCRb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-crb-3210-ryzen55600xrtx5060ti16gbcrb3210.html
+gpu,Citrus,Видеокарта RTX,73499.0,Відеокарта GIGABYTE RTX,https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080wf3oc-16gd-10-791650.html
 gpu,Citrus,Видеокарта RTX,75099.0,Відеокарта GIGABYTE RTX,https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html
 gpu,Comfy,Видеокарта RTX,81344.0,Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB NM 3210 (Ryzen55600XRTX5060TI16GBNM3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-nm-3210-ryzen55600xrtx5060ti16gbnm3210.html
 gpu,Comfy,Видеокарта RTX,81518.0,Системний блок QUBE QB Ryzen 5 5600X RTX 5060 8GB NM 3210 (Ryzen55600XRTX50608GBNM3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-8gb-nm-3210-ryzen55600xrtx50608gbnm3210.html
@@ -46,7 +47,6 @@ laptop,Comfy,Ноутбук,39999.0,Ноутбук Lenovo IdeaPad Slim 3 15IRH10
 laptop,Comfy,Ноутбук,39999.0,Ноутбук Asus Vivobook 15 X1504MA-BQ290 Cool Silver,https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504ma-bq290-cool-silver.html
 laptop,Comfy,Ноутбук,40999.0,Ноутбук Apple MacBook Neo A18 Pro 8GB 256GB MHFD4 Citrus,https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-256gb-mhfd4-citrus.html
 laptop,Comfy,Ноутбук,40999.0,Ноутбук Asus Vivobook 16 X1607CA-MB058 Quiet Blue,https://comfy.ua/ua/noutbuk-asus-vivobook-16-x1607ca-mb058-quiet-blue.html
-laptop,Citrus,Ноутбук,40999.0,Ноутбук Apple MacBook Neo A,https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html
 laptop,Comfy,Ноутбук,42999.0,Ноутбук ігровий Dream Machines RG3050-15 (RG3050-15UA83) Black,https://comfy.ua/ua/noutbuk-igrovij-dream-machines-rg3050-15-rg3050-15ua83-black.html
 laptop,Comfy,Ноутбук,46499.0,Ноутбук Apple MacBook Neo A18 Pro 8GB 512GB Touch ID MHFG4 Indigo,https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-512gb-touch-id-mhfg4-indigo.html
 laptop,Citrus,Ноутбук,46499.0,Ноутбук Apple MacBook Neo A,https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-blush-mhfj4-2026-790231.html
@@ -64,6 +64,7 @@ laptop,Comfy,Ноутбук,75999.0,Ноутбук ігровий Lenovo LOQ 15A
 laptop,Comfy,Ноутбук,77999.0,Ноутбук ігровий Acer Nitro V 16 AI ANV16-42 (NH.U1GEU.00A) Shale Black,https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-16-ai-anv16-42-nh-u1geu-00a-shale-black.html
 laptop,Comfy,Ноутбук,84999.0,Ноутбук ігровий Acer Nitro V 16 AI ANV16-42-R7BK (NH.U1FEU.002) Shale Black,https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-16-ai-anv16-42-r7bk-nh-u1feu-002-shale-black.html
 laptop,Comfy,Ноутбук,92599.0,Ноутбук Apple MacBook Air 15.3 M5 16GB 512GB MDVH4 Midnight,https://comfy.ua/ua/noutbuk-apple-macbook-air-15-3-m5-16gb-512gb-mdvh4-midnight.html
+laptop,Citrus,Ноутбук,92599.0,Ноутбук Apple MacBook Air M,https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-air-m5-chip-15-16512-midnight-mdvh4-2026-790063.html
 laptop,Comfy,Ноутбук,96999.0,Ноутбук ігровий Asus ROG Strix G16 G614PP-RV085 Eclipse Gray,https://comfy.ua/ua/noutbuk-igrovij-asus-rog-strix-g16-g614pp-rv085-eclipse-gray.html
 phone,Comfy,Смартфон Samsung,349.0,Захисне скло для смартфону MAKE Samsung A26/M16 (MGF-SA26/SM16),https://comfy.ua/ua/zaschitnoe-steklo-dlja-smartfona-make-samsung-a26-m16-mgf-sa26-sm16.html
 phone,Comfy,Смартфон Samsung,349.0,Захисне скло для смартфону MAKE For Samsung A37/A57 (MGF-SA37/SA57),https://comfy.ua/ua/zahisne-sklo-dlja-smartfonu-make-for-samsung-a37-a57-mgf-sa37-sa57.html
