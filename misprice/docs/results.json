@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-26T17:00:21.062626+00:00",
-  "scan_duration_sec": 140.3,
+  "scan_time_utc": "2026-09-26T19:44:07.924265+00:00",
+  "scan_duration_sec": 138.7,
   "total_products_scanned": 10,
   "by_site": {
     "Citrus": 10
@@ -19,7 +19,7 @@
     "laptop": {
       "count": 3,
       "main_count": 3,
-      "median": 40999.0,
+      "median": 46499.0,
       "mad": 5500.0,
       "sigma": 8154.3
     },
@@ -52,17 +52,17 @@
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Asus Vivobook Go",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/asus-vivobook-go-15-e1504fa-bq2770-90nb0zr1-m04kj0-cool-silver-798912.html",
-      "price": 22999.0,
+      "name": "Ноутбук Apple MacBook Neo A",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
+      "price": 40999.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8256-citrus-mhfd4-2026-790214.html",
-      "price": 40999.0,
+      "name": "Ноутбук Apple MacBook Air M",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-air-m5-chip-15-16512-midnight-mdvh4-2026-790063.html",
+      "price": 92599.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
