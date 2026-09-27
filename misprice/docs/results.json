@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-27T13:43:53.078048+00:00",
-  "scan_duration_sec": 104.9,
+  "scan_time_utc": "2026-09-27T18:11:21.313684+00:00",
+  "scan_duration_sec": 101.4,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -701,17 +701,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта Asus NVIDIA (DUAL-RTX5060-O8G-A)",
-      "url": "https://comfy.ua/ua/videokarta-asus-nvidia-dual-rtx5060-o8g-a.html",
-      "price": 26299.0,
+      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 8GB MRGw 3210 (Ryzen79700XRTX50608GBMRGw3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-8gb-mrgw-3210-ryzen79700xrtx50608gbmrgw3210.html",
+      "price": 88440.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 8GB MRGw 3210 (Ryzen79700XRTX50608GBMRGw3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-8gb-mrgw-3210-ryzen79700xrtx50608gbmrgw3210.html",
-      "price": 88440.0,
+      "name": "Відеокарта Asus NVIDIA (DUAL-RTX5060-O8G-A)",
+      "url": "https://comfy.ua/ua/videokarta-asus-nvidia-dual-rtx5060-o8g-a.html",
+      "price": 26299.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
