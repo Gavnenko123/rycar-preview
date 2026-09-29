@@ -1,2 +1,1 @@
 severity,misprice_score,category,site,current_price_uah,median_price_uah,discount_vs_median_pct,name,reason,url
-high,66.8,phone,Comfy,10699.0,47799.0,77.6,Смартфон Samsung Galaxy A08 4/128Gb Silver (SM-A085FZSGSEK),"ціна нижче очікуваного мінімуму (10,699 < 14,340₴)",https://comfy.ua/ua/smartfon-samsung-galaxy-a08-4-128gb-silver-sm-a085fzsgsek.html
