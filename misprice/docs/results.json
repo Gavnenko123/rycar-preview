@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-09-29T20:35:30.961243+00:00",
-  "scan_duration_sec": 101.0,
+  "scan_time_utc": "2026-09-30T00:12:35.079942+00:00",
+  "scan_duration_sec": 103.6,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 34,
       "main_count": 34,
-      "median": 62204.0,
-      "mad": 12995.0,
-      "sigma": 19266.39
+      "median": 61464.5,
+      "mad": 11788.5,
+      "sigma": 17477.63
     }
   },
   "misprice_alerts_count": 0,
@@ -709,6 +709,14 @@
       "search_query": "Видеокарта RTX"
     },
     {
+      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 16Gb / SSD 500Gb (A5600.16.S5.5060.A6504)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s5-5060-a6504.html",
+      "price": 51590.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
       "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5050 8GB NM 1610 (Ryzen55500RTX50508GBNM1610)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5050-8gb-nm-1610-ryzen55500rtx50508gbnm1610.html",
       "price": 49589.0,
@@ -728,6 +736,14 @@
       "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB NM 3210 (Ryzen55600XRTX5060TI16GBNM3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-nm-3210-ryzen55600xrtx5060ti16gbnm3210.html",
       "price": 81344.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 16Gb / SSD 1Tb (A5600.16.S10.5060.A6519)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s10-5060-a6519.html",
+      "price": 53678.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -797,22 +813,6 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта Inno3D GeForce RTX5060 Ti TWIN X2 OC WHITE, 8GB GDDR7 (N506T2-08D7X-193075W)",
-      "url": "https://comfy.ua/ua/videokarta-inno3d-geforce-rtx5060-ti-twin-x2-oc-white-8gb-gddr7-n506t2-08d7x-193075w.html",
-      "price": 29069.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Відеокарта Inno3D GeForce RTX5070 TWIN X2 OC WHITE, 12GB GDDR7 (N50702-12D7X-195064W)",
-      "url": "https://comfy.ua/ua/videokarta-inno3d-geforce-rtx5070-twin-x2-oc-white-12gb-gddr7-n50702-12d7x-195064w.html",
-      "price": 45899.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
       "name": "Відеокарта INNO",
       "url": "https://citrus.ua/videokarti/videokarta-inno3d-geforce-rtx5060-ti-8gb-gddr7-x2-n506t2-08d7-193075n-799685.html",
       "price": 28349.0,
@@ -837,9 +837,9 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html",
-      "price": 75099.0,
+      "name": "Відеокарта MSI RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
+      "price": 33099.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
