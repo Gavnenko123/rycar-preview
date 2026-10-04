@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-10-04T05:08:39.257148+00:00",
-  "scan_duration_sec": 122.9,
+  "scan_time_utc": "2026-10-04T12:04:06.987557+00:00",
+  "scan_duration_sec": 124.8,
   "total_products_scanned": 40,
   "by_site": {
     "Citrus": 10,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 34,
       "main_count": 34,
-      "median": 61160.0,
-      "mad": 12668.0,
-      "sigma": 18781.58
+      "median": 60377.0,
+      "mad": 12546.0,
+      "sigma": 18600.7
     }
   },
   "misprice_alerts_count": 0,
@@ -104,14 +104,6 @@
       "name": "Відеокарта Asus Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition (DUAL-RTX5060TI-O8G)",
       "url": "https://comfy.ua/ua/videokarta-asus-dual-rtx5060ti-o8g.html",
       "price": 28469.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB CRb 3210 (Ryzen55600XRTX5060TI16GBCRb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-crb-3210-ryzen55600xrtx5060ti16gbcrb3210.html",
-      "price": 68555.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -328,6 +320,14 @@
       "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 32Gb / SSD 1Tb (A5600.32.S10.5060.A6509)",
       "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-32-s10-5060-a6509.html",
       "price": 61160.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5050 / DDR4 16Gb / SSD 1Tb (A5600.16.S10.5050.A6518)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s10-5050-a6518.html",
+      "price": 52982.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
