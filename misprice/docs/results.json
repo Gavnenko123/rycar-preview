@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-10-05T22:26:01.965278+00:00",
-  "scan_duration_sec": 125.5,
+  "scan_time_utc": "2026-10-06T02:48:55.221685+00:00",
+  "scan_duration_sec": 124.6,
   "total_products_scanned": 40,
   "by_site": {
     "Citrus": 10,
@@ -22,7 +22,7 @@
       "main_count": 3,
       "median": 46499.0,
       "mad": 0.0,
-      "sigma": 11835.68
+      "sigma": 12990.38
     },
     "phone": {
       "count": 3,
@@ -55,7 +55,7 @@
     {
       "name": "Ноутбук Acer Aspire Lite AL",
       "url": "https://citrus.ua/noutbuki-i-ultrabuki/acer-aspire-lite-al15-46p-nxjxveu002-silver-788985.html",
-      "price": 25999.0,
+      "price": 23999.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -109,17 +109,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGb 3210 (Ryzen77700RTX507012GBMRGb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5070-12gb-mrgb-3210-ryzen77700rtx507012gbmrgb3210.html",
-      "price": 103790.0,
+      "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 8GB CRb 3210 (Ryzen55600XRTX50608GBCRb3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-8gb-crb-3210-ryzen55600xrtx50608gbcrb3210.html",
+      "price": 62639.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 8GB CRb 3210 (Ryzen55600XRTX50608GBCRb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-8gb-crb-3210-ryzen55600xrtx50608gbcrb3210.html",
-      "price": 62639.0,
+      "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGb 3210 (Ryzen77700RTX507012GBMRGb3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5070-12gb-mrgb-3210-ryzen77700rtx507012gbmrgb3210.html",
+      "price": 103790.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -349,17 +349,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта MSI RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-gaming-rtx5070-12g-gam-trio-oc-791431.html",
-      "price": 39199.0,
+      "name": "Відеокарта GIGABYTE RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html",
+      "price": 75099.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html",
-      "price": 75099.0,
+      "name": "Відеокарта MSI RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
+      "price": 33099.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
