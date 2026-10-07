@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-10-07T16:14:07.471937+00:00",
-  "scan_duration_sec": 106.1,
+  "scan_time_utc": "2026-10-07T21:51:05.350878+00:00",
+  "scan_duration_sec": 100.4,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 34,
       "main_count": 34,
-      "median": 60681.5,
-      "mad": 8191.0,
-      "sigma": 12143.98
+      "median": 62249.0,
+      "mad": 10142.0,
+      "sigma": 15036.53
     }
   },
   "misprice_alerts_count": 0,
@@ -144,6 +144,14 @@
       "name": "Ноутбук ігровий Acer Nitro V 15 ANV15-52 (NH.QV2EU.004) Obsidian Black",
       "url": "https://comfy.ua/ua/noutbuk-igrovij-acer-nitro-v-15-anv15-52-nh-qv2eu-004-obsidian-black.html",
       "price": 59999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
+      "name": "Ноутбук HP OmniBook 3 16-by0015ua (D8ZD6EA) Glacier Silver",
+      "url": "https://comfy.ua/ua/noutbuk-hp-omnibook-3-16-by0015ua-d8zd6ea-glacier-silver.html",
+      "price": 45499.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -272,14 +280,6 @@
       "name": "Ноутбук ігровий Lenovo LOQ 15ARP9 (83JC00K6RA) Luna Grey",
       "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp9-83jc00k6ra-luna-grey.html",
       "price": 55999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Asus Vivobook S 16 M3607HA-RP010 Cool Silver",
-      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-s-16-m3607ha-rp010-cool-silver.html",
-      "price": 49999.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -453,14 +453,6 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A17 4/128Gb Black (SM-A175FZKBEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-4-128gb-black-sm-a175fzkbeuc.html",
-      "price": 9899.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
       "name": "Смартфон Samsung Galaxy A37 6/128Gb Awesome Charcoal (SM-A376BZABEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-6-128gb-awesome-charcoal-sm-a376bzabeuc.html",
       "price": 17099.0,
@@ -549,6 +541,14 @@
       "search_query": "Смартфон Samsung"
     },
     {
+      "name": "Смартфон Samsung Galaxy A07s 4/128Gb Green (SM-A077FZGGSEK)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a07s-4-128gb-green-sm-a077fzggsek.html",
+      "price": 9699.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
       "name": "Смартфон Samsung Galaxy S",
       "url": "https://citrus.ua/smartfony/s942b-zkg-black-samsung-12256gb-786736.html",
       "price": 42299.0,
@@ -581,38 +581,6 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 8GB CRb 3210 (Ryzen55600XRTX50608GBCRb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-8gb-crb-3210-ryzen55600xrtx50608gbcrb3210.html",
-      "price": 62639.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGb 3210 (Ryzen77700RTX507012GBMRGb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5070-12gb-mrgb-3210-ryzen77700rtx507012gbmrgb3210.html",
-      "price": 103790.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5060 Ti 16GB NM 3210 (Ryzen77700RTX5060TI16GBNM3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5060-ti-16gb-nm-3210-ryzen77700rtx5060ti16gbnm3210.html",
-      "price": 101354.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Системний блок QUBE QB i5 12400F RTX 5060 Ti 16GB NM 3210 (i512400FRTX5060TI16GBNM3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-i5-12400f-rtx-5060-ti-16gb-nm-3210-i512400frtx5060ti16gbnm3210.html",
-      "price": 82127.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
       "name": "Системний блок QUBE QB Ryzen 7 7700X RTX 3050 8GB W1 324 (Ryzen77700XRTX30508GBW1324)",
       "url": "https://comfy.ua/ua/sistemnyj-blok-qube-qb-ryzen-7-7700x-rtx-3050-8gb-w1-324-ryzen77700xrtx30508gbw1324.html",
       "price": 76303.0,
@@ -637,14 +605,6 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 32Gb / SSD 1Tb (A5600.32.S10.5060.A6529)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-32-s10-5060-a6529.html",
-      "price": 61160.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
       "name": "Системний блок Expert PC Play Ryzen 5 7500F / RTX 5060 / DDR5 16Gb / SSD 1Tb (A7500F.16.S10.5060.A7241)",
       "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a7500f-16-s10-5060-a7241.html",
       "price": 63944.0,
@@ -661,14 +621,6 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Arena Ryzen 5 7500F / RTX 5060 Ti 8GB / DDR5 16Gb / SSD 1Tb (A7500F.16.S10.5060T.8.A7188)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a7500f-16-s10-5060t-8-a7188.html",
-      "price": 72383.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
       "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 16GB MRGw 3210 (Ryzen79700XRTX5060TI16GBMRGw3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-16gb-mrgw-3210-ryzen79700xrtx5060ti16gbmrgw3210.html",
       "price": 106292.0,
@@ -677,137 +629,185 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта Inno3D GeForce RTX5070 TWIN X2 OC WHITE, 12GB GDDR7 (N50702-12D7X-195064W)",
-      "url": "https://comfy.ua/ua/videokarta-inno3d-geforce-rtx5070-twin-x2-oc-white-12gb-gddr7-n50702-12d7x-195064w.html",
-      "price": 45899.0,
+      "name": "Системний блок Expert PC Arena Ryzen 5 7500F / RTX 5060 Ti 8GB / DDR5 16Gb / SSD 1Tb (A7500F.16.S10.5060T.8.A7188)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a7500f-16-s10-5060t-8-a7188.html",
+      "price": 72383.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта Inno3D GeForce RTX5060 Ti TWIN X2 OC WHITE, 8GB GDDR7 (N506T2-08D7X-193075W)",
-      "url": "https://comfy.ua/ua/videokarta-inno3d-geforce-rtx5060-ti-twin-x2-oc-white-8gb-gddr7-n506t2-08d7x-193075w.html",
-      "price": 29069.0,
+      "name": "Системний блок Cobra Go RTX 5060 Ti 8GB / Ryzen 5 5600 / RAM 32GB / SSD 1TB / Win 11 (R5G23577)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ti-8gb-ryzen-5-5600-ram-32gb-ssd-1tb-win-11-r5g23577.html",
+      "price": 75899.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 7500F / RTX 5060 / DDR5 16Gb / SSD 500Gb (A7500F.16.S5.5060.A7199)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a7500f-16-s5-5060-a7199.html",
-      "price": 60551.0,
+      "name": "Системний блок Cobra Go RTX 5060 Ti 8GB / Ryzen 5 5600 / RAM 32GB / SSD 1TB (R5G23575)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ti-8gb-ryzen-5-5600-ram-32gb-ssd-1tb-r5g23575.html",
+      "price": 70199.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 32Gb / SSD 1Tb (A5600.32.S10.5060.A6509)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-32-s10-5060-a6509.html",
-      "price": 61160.0,
+      "name": "Системний блок Cobra Go RTX 5060 / Ryzen 5 5600 / RAM 16GB / SSD 500GB / Win 11 (R5G23568)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ryzen-5-5600-ram-16gb-ssd-500gb-win-11-r5g23568.html",
+      "price": 62399.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 7500F / RTX 5060 / DDR5 16Gb / SSD 500Gb (A7500F.16.S5.5060.A7253)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a7500f-16-s5-5060-a7253.html",
-      "price": 60551.0,
+      "name": "Системний блок Cobra Go RTX 5060 / Ryzen 5 5600 / RAM 16GB / SSD 1TB (R5G23567)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ryzen-5-5600-ram-16gb-ssd-1tb-r5g23567.html",
+      "price": 58499.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 7500F / RTX 5050 / DDR5 16Gb / SSD 500Gb (A7500F.16.S5.5050.A7252)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a7500f-16-s5-5050-a7252.html",
-      "price": 59855.0,
+      "name": "Системний блок Cobra Go RTX 5060 / Ryzen 5 5600X / RAM 16GB / SSD 500GB (R5G23594)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ryzen-5-5600x-ram-16gb-ssd-500gb-r5g23594.html",
+      "price": 56599.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5050 / DDR4 16Gb / SSD 1Tb (A5600.16.S10.5050.A6518)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s10-5050-a6518.html",
-      "price": 52982.0,
+      "name": "Системний блок Cobra Go RTX 5060 / Ryzen 5 4500 / RAM 16GB / SSD 500GB (R5G23486)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ryzen-5-4500-ram-16gb-ssd-500gb-r5g23486.html",
+      "price": 51899.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 7500F / RTX 5060 / DDR5 16Gb / SSD 1Tb (A7500F.16.S10.5060.A7187)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a7500f-16-s10-5060-a7187.html",
-      "price": 63944.0,
+      "name": "Системний блок Cobra Go RTX 5060 Ti 8GB / Ryzen 5 5600 / RAM 32GB / SSD 500GB / Win 11 (R5G23576)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ti-8gb-ryzen-5-5600-ram-32gb-ssd-500gb-win-11-r5g23576.html",
+      "price": 75599.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 7 5700X / RTX 5060 / DDR4 16Gb / SSD 500Gb (A5700X.16.S5.5060.A6605)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5700x-16-s5-5060-a6605.html",
-      "price": 60812.0,
+      "name": "Системний блок Cobra Go RTX 5060 / Ryzen 5 5600 / RAM 32GB / SSD 500GB (R5G23570)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ryzen-5-5600-ram-32gb-ssd-500gb-r5g23570.html",
+      "price": 64799.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Arena Ryzen 5 7500F / RTX 5070 / DDR5 16Gb / SSD 500Gb (A7500F.16.S5.5070.A7202)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a7500f-16-s5-5070-a7202.html",
-      "price": 85259.0,
+      "name": "Системний блок Cobra Go RTX 5050 / Ryzen 5 5600 / RAM 16GB / SSD 1TB (R5G23559)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5050-ryzen-5-5600-ram-16gb-ssd-1tb-r5g23559.html",
+      "price": 55699.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Arena Ryzen 7 5700X / RTX 5070 / DDR4 16Gb / SSD 500Gb (A5700X.16.S5.5070.A6608)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5700x-16-s5-5070-a6608.html",
-      "price": 85694.0,
+      "name": "Системний блок Cobra Go RTX 5050 / Ryzen 5 4500 / RAM 16GB / SSD 1TB (R5G23479)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5050-ryzen-5-4500-ram-16gb-ssd-1tb-r5g23479.html",
+      "price": 50999.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5050 / DDR4 16Gb / SSD 1Tb (A5600.16.S10.5050.A6498)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s10-5050-a6498.html",
-      "price": 52982.0,
+      "name": "Системний блок Cobra Go RTX 3050 / Ryzen 5 4500 / RAM 16GB / SSD 1TB (R5G23475)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-3050-ryzen-5-4500-ram-16gb-ssd-1tb-r5g23475.html",
+      "price": 41299.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 7500F / RTX 5050 / DDR5 16Gb / SSD 500Gb (A7500F.16.S5.5050.A7198)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a7500f-16-s5-5050-a7198.html",
-      "price": 59855.0,
+      "name": "Системний блок Cobra Go RTX 5060 / Ryzen 5 5600 / RAM 32GB / SSD 1TB / Win 11 (R5G23573)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ryzen-5-5600-ram-32gb-ssd-1tb-win-11-r5g23573.html",
+      "price": 72399.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Arena Ryzen 5 7500F / RTX 5070 / DDR5 32Gb / SSD 500Gb (A7500F.32.S5.5070.A7220)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a7500f-32-s5-5070-a7220.html",
-      "price": 95351.0,
+      "name": "Системний блок Cobra Go RTX 5060 / Ryzen 5 5600 / RAM 32GB / SSD 1TB (R5G23571)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ryzen-5-5600-ram-32gb-ssd-1tb-r5g23571.html",
+      "price": 66699.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 7 5700X / RTX 5050 / DDR4 16Gb / SSD 500Gb (A5700X.16.S5.5050.A6604)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5700x-16-s5-5050-a6604.html",
-      "price": 60116.0,
+      "name": "Системний блок Cobra Go RTX 5060 Ti 8GB / Ryzen 5 5600X / RAM 32GB / SSD 1TB (R5G23603)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ti-8gb-ryzen-5-5600x-ram-32gb-ssd-1tb-r5g23603.html",
+      "price": 70199.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 7 5700X / RTX 5050 / DDR4 16Gb / SSD 500Gb (A5700X.16.S5.5050.A6550)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5700x-16-s5-5050-a6550.html",
-      "price": 60116.0,
+      "name": "Системний блок Cobra Go RTX 5050 / Ryzen 5 5600X / RAM 32GB / SSD 500GB (R5G23590)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5050-ryzen-5-5600x-ram-32gb-ssd-500gb-r5g23590.html",
+      "price": 62099.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5050 / DDR4 32Gb / SSD 500Gb (A5600.32.S5.5050.A6513)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-32-s5-5050-a6513.html",
-      "price": 58463.0,
+      "name": "Системний блок Cobra Go RTX 5060 / Ryzen 5 4500 / RAM 32GB / SSD 500GB (R5G23490)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ryzen-5-4500-ram-32gb-ssd-500gb-r5g23490.html",
+      "price": 60099.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Cobra Go RTX 5060 / Ryzen 5 5600X / RAM 32GB / SSD 1TB / Win 11 (R5G23601)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ryzen-5-5600x-ram-32gb-ssd-1tb-win-11-r5g23601.html",
+      "price": 72399.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Cobra Go RTX 5060 / Ryzen 5 5600X / RAM 32GB / SSD 1TB (R5G23599)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ryzen-5-5600x-ram-32gb-ssd-1tb-r5g23599.html",
+      "price": 66699.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Cobra Go RTX 5050 / Ryzen 5 4500 / RAM 16GB / SSD 500GB (R5G23478)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5050-ryzen-5-4500-ram-16gb-ssd-500gb-r5g23478.html",
+      "price": 49199.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Cobra Go RTX 3050 / Ryzen 5 4500 / RAM 16GB / SSD 500GB / Win 11 (R5G23476)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-3050-ryzen-5-4500-ram-16gb-ssd-500gb-win-11-r5g23476.html",
+      "price": 45199.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Cobra Go RTX 5060 Ti 8GB / Ryzen 5 5600 / RAM 32GB / SSD 500GB (R5G23574)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ti-8gb-ryzen-5-5600-ram-32gb-ssd-500gb-r5g23574.html",
+      "price": 68399.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Системний блок Cobra Go RTX 5060 / Ryzen 5 5600 / RAM 32GB / SSD 500GB / Win 11 (R5G23572)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-cobra-go-rtx-5060-ryzen-5-5600-ram-32gb-ssd-500gb-win-11-r5g23572.html",
+      "price": 70599.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
