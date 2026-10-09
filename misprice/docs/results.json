@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-10-08T21:55:40.161900+00:00",
-  "scan_duration_sec": 129.6,
+  "scan_time_utc": "2026-10-09T01:53:40.973098+00:00",
+  "scan_duration_sec": 128.2,
   "total_products_scanned": 40,
   "by_site": {
     "Citrus": 10,
@@ -349,17 +349,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html",
-      "price": 75099.0,
+      "name": "Відеокарта MSI RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
+      "price": 33099.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта MSI RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
-      "price": 33099.0,
+      "name": "Відеокарта GIGABYTE RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html",
+      "price": 75099.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
