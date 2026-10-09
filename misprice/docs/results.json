@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-10-09T08:44:11.023277+00:00",
-  "scan_duration_sec": 115.1,
+  "scan_time_utc": "2026-10-09T15:59:55.010951+00:00",
+  "scan_duration_sec": 117.4,
   "total_products_scanned": 70,
   "by_site": {
     "Citrus": 10,
@@ -28,15 +28,15 @@
       "count": 33,
       "main_count": 30,
       "median": 25599.0,
-      "mad": 11600.0,
-      "sigma": 17198.16
+      "mad": 12750.0,
+      "sigma": 18903.15
     },
     "gpu": {
       "count": 34,
       "main_count": 34,
       "median": 74585.0,
-      "mad": 21434.0,
-      "sigma": 31778.05
+      "mad": 19325.0,
+      "sigma": 28651.24
     }
   },
   "misprice_alerts_count": 0,
@@ -136,14 +136,6 @@
       "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Graphite (SM-S741BZKGEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-graphite-sm-s741bzkgeuc.html",
       "price": 39499.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Black (SM-A266BZKCEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-black-sm-a266bzkceuc.html",
-      "price": 15499.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -253,14 +245,6 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Pistachio (SM-S741BLGGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-pistachio-sm-s741blggeuc.html",
-      "price": 39499.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
       "name": "Смартфон Samsung Galaxy A37 8/256Gb Awesome Charcoal (SM-A376BZAGEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-8-256gb-awesome-charcoal-sm-a376bzageuc.html",
       "price": 21999.0,
@@ -269,8 +253,32 @@
       "search_query": "Смартфон Samsung"
     },
     {
+      "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Pistachio (SM-S741BLGGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-pistachio-sm-s741blggeuc.html",
+      "price": 39499.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Mint (SM-A266BLGCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-mint-sm-a266blgceuc.html",
+      "price": 15499.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
       "name": "Смартфон Samsung Galaxy A07s 4/128Gb Light Violet (SM-A077FLVGSEK)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a07s-4-128gb-light-violet-sm-a077flvgsek.html",
+      "price": 9699.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A07s 4/128Gb Green (SM-A077FZGGSEK)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a07s-4-128gb-green-sm-a077fzggsek.html",
       "price": 9699.0,
       "site": "Comfy",
       "category": "phone",
@@ -285,25 +293,17 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Mint (SM-A266BLGCEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-mint-sm-a266blgceuc.html",
-      "price": 15499.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy A07s 4/128Gb Green (SM-A077FZGGSEK)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a07s-4-128gb-green-sm-a077fzggsek.html",
-      "price": 9699.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
       "name": "Смартфон Samsung Galaxy S25FE 8/256Gb Navy (SM-S731BDBGEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s25-fe-8-256gb-navy-sm-s731bdbgeuc.html",
       "price": 32499.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A08 4/128Gb Dark Blue (SM-A085FDBGSEK)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a08-4-128gb-dark-blue-sm-a085fdbgsek.html",
+      "price": 10699.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -341,6 +341,14 @@
       "search_query": "Видеокарта RTX"
     },
     {
+      "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB CRb 3210 (Ryzen55600XRTX5060TI16GBCRb3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-crb-3210-ryzen55600xrtx5060ti16gbcrb3210.html",
+      "price": 86990.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
       "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 8GB CRb 3210 (Ryzen55600XRTX50608GBCRb3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-8gb-crb-3210-ryzen55600xrtx50608gbcrb3210.html",
       "price": 66907.0,
@@ -357,17 +365,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 8GB MRGw 3210 (Ryzen79700XRTX5060TI8GBMRGw3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-8gb-mrgw-3210-ryzen79700xrtx5060ti8gbmrgw3210.html",
-      "price": 91180.0,
+      "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5050 8GB CRb 1610 (Ryzen55500RTX50508GBCRb1610)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5050-8gb-crb-1610-ryzen55500rtx50508gbcrb1610.html",
+      "price": 53518.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5050 8GB CRb 1610 (Ryzen55500RTX50508GBCRb1610)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5050-8gb-crb-1610-ryzen55500rtx50508gbcrb1610.html",
-      "price": 53518.0,
+      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 8GB MRGw 3210 (Ryzen79700XRTX5060TI8GBMRGw3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-8gb-mrgw-3210-ryzen79700xrtx5060ti8gbmrgw3210.html",
+      "price": 91180.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -560,14 +568,6 @@
       "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 8GB CRb 3210 (Ryzen55600XRTX5060TI8GBCRb3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-8gb-crb-3210-ryzen55600xrtx5060ti8gbcrb3210.html",
       "price": 70353.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Системний блок QUBE QB Ryzen 5 9600X RTX 5070 Ti 16GB MRGb 3210 (Ryzen59600XRTX5070TI16GBMRGb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-9600x-rtx-5070-ti-16gb-mrgb-3210-ryzen59600xrtx5070ti16gbmrgb3210.html",
-      "price": 126885.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
