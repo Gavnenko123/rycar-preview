@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-10-10T13:27:18.543116+00:00",
-  "scan_duration_sec": 103.6,
+  "scan_time_utc": "2026-10-10T18:22:01.826885+00:00",
+  "scan_duration_sec": 110.1,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 34,
       "main_count": 34,
-      "median": 73785.0,
-      "mad": 21990.5,
-      "sigma": 32603.12
+      "median": 71553.5,
+      "mad": 19626.5,
+      "sigma": 29098.25
     }
   },
   "misprice_alerts_count": 1,
@@ -50,12 +50,12 @@
       "category": "gpu",
       "search_query": "Видеокарта RTX",
       "current_price": 17239.0,
-      "median_price": 73785.0,
-      "expected_min_price": 22135.5,
-      "discount_vs_median_pct": 76.6,
-      "misprice_score": 63.3,
+      "median_price": 71553.5,
+      "expected_min_price": 21466.05,
+      "discount_vs_median_pct": 75.9,
+      "misprice_score": 64.2,
       "severity": "high",
-      "reason": "ціна нижче очікуваного мінімуму (17,239 < 22,136₴)"
+      "reason": "ціна нижче очікуваного мінімуму (17,239 < 21,466₴)"
     }
   ],
   "all_products": [
@@ -652,9 +652,9 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5060 Ti 16GB NM 3210 (Ryzen77700RTX5060TI16GBNM3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5060-ti-16gb-nm-3210-ryzen77700rtx5060ti16gbnm3210.html",
-      "price": 103825.0,
+      "name": "Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 16Gb / SSD 1Tb (A5600.16.S10.5060.A6519)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s10-5060-a6519.html",
+      "price": 53678.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -708,17 +708,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGw 3210 (Ryzen77700RTX507012GBMRGw3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5070-12gb-mrgw-3210-ryzen77700rtx507012gbmrgw3210.html",
-      "price": 104051.0,
+      "name": "Системний блок QUBE QB Ryzen 5 5600 RTX 5060 8GB CRb 3210 (Ryzen55600RTX50608GBCRb3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600-rtx-5060-8gb-crb-3210-ryzen55600rtx50608gbcrb3210.html",
+      "price": 67598.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5600 RTX 5060 8GB CRb 3210 (Ryzen55600RTX50608GBCRb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600-rtx-5060-8gb-crb-3210-ryzen55600rtx50608gbcrb3210.html",
-      "price": 67598.0,
+      "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGw 3210 (Ryzen77700RTX507012GBMRGw3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5070-12gb-mrgw-3210-ryzen77700rtx507012gbmrgw3210.html",
+      "price": 104051.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -764,17 +764,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGb 3220 (Ryzen77700RTX507012GBMRGb3220)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5070-12gb-mrgb-3220-ryzen77700rtx507012gbmrgb3220.html",
-      "price": 106057.0,
+      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 8GB MRGb 3210 (Ryzen79700XRTX5060TI8GBMRGb3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-8gb-mrgb-3210-ryzen79700xrtx5060ti8gbmrgb3210.html",
+      "price": 91180.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 8GB MRGb 3210 (Ryzen79700XRTX5060TI8GBMRGb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-8gb-mrgb-3210-ryzen79700xrtx5060ti8gbmrgb3210.html",
-      "price": 91180.0,
+      "name": "Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGb 3220 (Ryzen77700RTX507012GBMRGb3220)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5070-12gb-mrgb-3220-ryzen77700rtx507012gbmrgb3220.html",
+      "price": 106057.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -796,17 +796,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB NM 3210 (Ryzen55600XRTX5060TI16GBNM3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-nm-3210-ryzen55600xrtx5060ti16gbnm3210.html",
-      "price": 86482.0,
+      "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 8GB NM 3210 (Ryzen55600XRTX5060TI8GBNM3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-8gb-nm-3210-ryzen55600xrtx5060ti8gbnm3210.html",
+      "price": 69608.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 8GB NM 3210 (Ryzen55600XRTX5060TI8GBNM3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-8gb-nm-3210-ryzen55600xrtx5060ti8gbnm3210.html",
-      "price": 69608.0,
+      "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB NM 3210 (Ryzen55600XRTX5060TI16GBNM3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-nm-3210-ryzen55600xrtx5060ti16gbnm3210.html",
+      "price": 86482.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
