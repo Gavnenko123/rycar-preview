@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-10-10T06:51:49.788577+00:00",
-  "scan_duration_sec": 109.5,
+  "scan_time_utc": "2026-10-10T13:27:18.543116+00:00",
+  "scan_duration_sec": 103.6,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -28,15 +28,15 @@
       "count": 33,
       "main_count": 30,
       "median": 25599.0,
-      "mad": 12750.0,
-      "sigma": 18903.15
+      "mad": 11600.0,
+      "sigma": 17198.16
     },
     "gpu": {
       "count": 34,
       "main_count": 34,
       "median": 73785.0,
-      "mad": 21026.5,
-      "sigma": 31173.89
+      "mad": 21990.5,
+      "sigma": 32603.12
     }
   },
   "misprice_alerts_count": 1,
@@ -53,7 +53,7 @@
       "median_price": 73785.0,
       "expected_min_price": 22135.5,
       "discount_vs_median_pct": 76.6,
-      "misprice_score": 64.1,
+      "misprice_score": 63.3,
       "severity": "high",
       "reason": "ціна нижче очікуваного мінімуму (17,239 < 22,136₴)"
     }
@@ -135,14 +135,6 @@
       "name": "Ноутбук Lenovo IdeaPad Slim 3 15IRH10 (83K100ACRA) Luna Grey",
       "url": "https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-3-15irh10-83k100acra-luna-grey.html",
       "price": 39999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Apple MacBook Neo A18 Pro 8GB 256GB MHFD4 Citrus",
-      "url": "https://comfy.ua/ua/noutbuk-apple-macbook-neo-a18-pro-8gb-256gb-mhfd4-citrus.html",
-      "price": 40999.0,
       "site": "Comfy",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -300,6 +292,14 @@
       "search_query": "Ноутбук"
     },
     {
+      "name": "Ноутбук ігровий Asus TUF Gaming F17 FX707VJB-HX069 Mecha Gray",
+      "url": "https://comfy.ua/ua/noutbuk-igrovij-asus-tuf-gaming-f17-fx707vjb-hx069-mecha-gray.html",
+      "price": 54999.0,
+      "site": "Comfy",
+      "category": "laptop",
+      "search_query": "Ноутбук"
+    },
+    {
       "name": "Ноутбук Apple MacBook Neo A",
       "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-blush-mhfj4-2026-790231.html",
       "price": 46499.0,
@@ -375,14 +375,6 @@
       "name": "Смартфон Samsung Galaxy A27 5G 6/128Gb Light Pink (SM-A276BLIBEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-6-128gb-light-pink-sm-a276blibeuc.html",
       "price": 14299.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Смартфон Samsung Galaxy A07s 4/128Gb Black (SM-A077FZKGSEK)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a07s-4-128gb-black-sm-a077fzkgsek.html",
-      "price": 9699.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -468,17 +460,17 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A37 8/256Gb Awesome Lavender (SM-A376BLVGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-8-256gb-awesome-lavender-sm-a376blvgeuc.html",
-      "price": 21999.0,
+      "name": "Смартфон Samsung Galaxy S26 Ultra 12/256Gb Cobalt Violet (SM-S948BZVDEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-ultra-12-256gb-cobalt-violet-sm-s948bzvdeuc.html",
+      "price": 59799.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy S26 Ultra 12/256Gb Cobalt Violet (SM-S948BZVDEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-ultra-12-256gb-cobalt-violet-sm-s948bzvdeuc.html",
-      "price": 59799.0,
+      "name": "Смартфон Samsung Galaxy A37 8/256Gb Awesome Lavender (SM-A376BLVGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-8-256gb-awesome-lavender-sm-a376blvgeuc.html",
+      "price": 21999.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -516,16 +508,16 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A07s 4/128Gb Green (SM-A077FZGGSEK)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a07s-4-128gb-green-sm-a077fzggsek.html",
-      "price": 9699.0,
+      "name": "Смартфон Samsung Galaxy A08 4/128Gb Dark Blue (SM-A085FDBGSEK)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a08-4-128gb-dark-blue-sm-a085fdbgsek.html",
+      "price": 10699.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A07s 4/128Gb Light Violet (SM-A077FLVGSEK)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a07s-4-128gb-light-violet-sm-a077flvgsek.html",
+      "name": "Смартфон Samsung Galaxy A07s 4/128Gb Green (SM-A077FZGGSEK)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a07s-4-128gb-green-sm-a077fzggsek.html",
       "price": 9699.0,
       "site": "Comfy",
       "category": "phone",
@@ -540,9 +532,9 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A08 4/128Gb Dark Blue (SM-A085FDBGSEK)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a08-4-128gb-dark-blue-sm-a085fdbgsek.html",
-      "price": 10699.0,
+      "name": "Смартфон Samsung Galaxy A07s 4/128Gb Light Violet (SM-A077FLVGSEK)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a07s-4-128gb-light-violet-sm-a077flvgsek.html",
+      "price": 9699.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -551,6 +543,14 @@
       "name": "Смартфон Samsung Galaxy A26 5G 8/256Gb Mint (SM-A266BLGCEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a26-5g-8-256gb-mint-sm-a266blgceuc.html",
       "price": 15499.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
+      "name": "Смартфон Samsung Galaxy A27 5G 6/128Gb Blue (SM-A276BZBBEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-6-128gb-blue-sm-a276bzbbeuc.html",
+      "price": 14299.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -596,6 +596,14 @@
       "search_query": "Видеокарта RTX"
     },
     {
+      "name": "Відеокарта Asus Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition (DUAL-RTX5060TI-O8G)",
+      "url": "https://comfy.ua/ua/videokarta-asus-dual-rtx5060ti-o8g.html",
+      "price": 28529.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
       "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB CRb 3210 (Ryzen55600XRTX5060TI16GBCRb3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-crb-3210-ryzen55600xrtx5060ti16gbcrb3210.html",
       "price": 86990.0,
@@ -620,6 +628,14 @@
       "search_query": "Видеокарта RTX"
     },
     {
+      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 8GB MRGw 3210 (Ryzen79700XRTX5060TI8GBMRGw3210)",
+      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-8gb-mrgw-3210-ryzen79700xrtx5060ti8gbmrgw3210.html",
+      "price": 91180.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
       "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB CRb 1610 (Ryzen55500RTX50608GBCRb1610)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-crb-1610-ryzen55500rtx50608gbcrb1610.html",
       "price": 57746.0,
@@ -631,14 +647,6 @@
       "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5050 8GB CRb 1610 (Ryzen55500RTX50508GBCRb1610)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5050-8gb-crb-1610-ryzen55500rtx50508gbcrb1610.html",
       "price": 53518.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 8GB MRGw 3210 (Ryzen79700XRTX5060TI8GBMRGw3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-8gb-mrgw-3210-ryzen79700xrtx5060ti8gbmrgw3210.html",
-      "price": 91180.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -815,14 +823,6 @@
       "name": "Системний блок QUBE QB Ryzen 5 5500 RTX 5060 Ti 8GB CRb 3210 (Ryzen55500RTX5060TI8GBCRb3210)",
       "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-ti-8gb-crb-3210-ryzen55500rtx5060ti8gbcrb3210.html",
       "price": 68160.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 8GB CRb 3210 (Ryzen55600XRTX5060TI8GBCRb3210)",
-      "url": "https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-8gb-crb-3210-ryzen55600xrtx5060ti8gbcrb3210.html",
-      "price": 70469.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
