@@ -1,2 +1,2 @@
 severity,misprice_score,category,site,current_price_uah,median_price_uah,discount_vs_median_pct,name,reason,url
-high,64.2,gpu,Comfy,17239.0,71553.5,75.9,Відеокарта Inno3D NVIDIA RTX 3050 (N30502-08D6-1711VA41),"ціна нижче очікуваного мінімуму (17,239 < 21,466₴)",https://comfy.ua/ua/videokarta-inno3d-nvidia-rtx-3050-ddr6-n30502-08d6-1711va41.html
+high,64.9,gpu,Comfy,17239.0,73785.0,76.6,Відеокарта Inno3D NVIDIA RTX 3050 (N30502-08D6-1711VA41),"ціна нижче очікуваного мінімуму (17,239 < 22,136₴)",https://comfy.ua/ua/videokarta-inno3d-nvidia-rtx-3050-ddr6-n30502-08d6-1711va41.html
