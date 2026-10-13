@@ -1,2 +1,1 @@
 severity,misprice_score,category,site,current_price_uah,median_price_uah,discount_vs_median_pct,name,reason,url
-high,55.8,gpu,Citrus,17399.0,28709.0,39.4,Відеокарта GIGABYTE RTX,z-score=-3.21 (викид),https://citrus.ua/videokarti/videokarta-gigabyte-rtx5060-8gb-gddr7-gv-n5060eagle-oc-8gd-791626.html
