@@ -1,3 +1,2 @@
 severity,misprice_score,category,site,current_price_uah,median_price_uah,discount_vs_median_pct,name,reason,url
-high,58.7,gpu,Comfy,17239.0,67252.5,74.4,Відеокарта Inno3D NVIDIA RTX 3050 (N30502-08D6-1711VA41),"ціна нижче очікуваного мінімуму (17,239 < 20,176₴)",https://comfy.ua/ua/videokarta-inno3d-nvidia-rtx-3050-ddr6-n30502-08d6-1711va41.html
-high,58.5,gpu,Citrus,17399.0,67252.5,74.1,Відеокарта GIGABYTE RTX,"ціна нижче очікуваного мінімуму (17,399 < 20,176₴)",https://citrus.ua/videokarti/videokarta-gigabyte-rtx5060-8gb-gddr7-gv-n5060eagle-oc-8gd-791626.html
+high,55.8,gpu,Citrus,17399.0,28709.0,39.4,Відеокарта GIGABYTE RTX,z-score=-3.21 (викид),https://citrus.ua/videokarti/videokarta-gigabyte-rtx5060-8gb-gddr7-gv-n5060eagle-oc-8gd-791626.html
