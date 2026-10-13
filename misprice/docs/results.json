@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-10-12T17:36:39.159582+00:00",
-  "scan_duration_sec": 106.0,
+  "scan_time_utc": "2026-10-13T00:24:10.602986+00:00",
+  "scan_duration_sec": 105.5,
   "total_products_scanned": 100,
   "by_site": {
     "Comfy": 90,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 34,
       "main_count": 34,
-      "median": 73785.0,
-      "mad": 20187.0,
-      "sigma": 29929.25
+      "median": 70548.5,
+      "mad": 19795.0,
+      "sigma": 29348.07
     }
   },
   "misprice_alerts_count": 1,
@@ -50,12 +50,12 @@
       "category": "gpu",
       "search_query": "Видеокарта RTX",
       "current_price": 17239.0,
-      "median_price": 73785.0,
-      "expected_min_price": 22135.5,
-      "discount_vs_median_pct": 76.6,
-      "misprice_score": 64.9,
+      "median_price": 70548.5,
+      "expected_min_price": 21164.55,
+      "discount_vs_median_pct": 75.6,
+      "misprice_score": 63.5,
       "severity": "high",
-      "reason": "ціна нижче очікуваного мінімуму (17,239 < 22,136₴)"
+      "reason": "ціна нижче очікуваного мінімуму (17,239 < 21,165₴)"
     }
   ],
   "all_products": [
@@ -844,17 +844,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
-      "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080wf3oc-16gd-10-791650.html",
-      "price": 73499.0,
+      "name": "Відеокарта MSI RTX",
+      "url": "https://citrus.ua/videokarti/videokarta-msi-rtx5070-12gb-gddr7-rtx5070-12gb-rtx5070-12g-ventus-2x-oc-791430.html",
+      "price": 33099.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
     },
     {
       "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080aero-oc-16gd-10-791652.html",
-      "price": 75099.0,
+      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080wf3oc-16gd-10-791650.html",
+      "price": 73499.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
