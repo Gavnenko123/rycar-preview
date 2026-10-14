@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-10-13T21:06:37.055162+00:00",
-  "scan_duration_sec": 125.0,
+  "scan_time_utc": "2026-10-14T01:01:44.439878+00:00",
+  "scan_duration_sec": 129.2,
   "total_products_scanned": 40,
   "by_site": {
     "Citrus": 10,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 34,
       "main_count": 34,
-      "median": 28174.0,
-      "mad": 4495.0,
-      "sigma": 6664.29
+      "median": 28424.0,
+      "mad": 4870.0,
+      "sigma": 7220.26
     }
   },
   "misprice_alerts_count": 0,
@@ -45,17 +45,17 @@
   "alerts": [],
   "all_products": [
     {
-      "name": "Ноутбук Acer Aspire Lite AL",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/acer-aspire-lite-al15-46p-nxjxveu002-silver-788985.html",
-      "price": 23999.0,
+      "name": "Ноутбук Apple MacBook Neo A",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-indigo-mhfg4-2026-790233.html",
+      "price": 46499.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
     },
     {
-      "name": "Ноутбук Apple MacBook Neo A",
-      "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-indigo-mhfg4-2026-790233.html",
-      "price": 46499.0,
+      "name": "Ноутбук Acer Aspire Lite AL",
+      "url": "https://citrus.ua/noutbuki-i-ultrabuki/acer-aspire-lite-al15-46p-nxjxveu002-silver-788985.html",
+      "price": 23999.0,
       "site": "Citrus",
       "category": "laptop",
       "search_query": "Ноутбук"
@@ -103,15 +103,7 @@
     {
       "name": "Відеокарта Gigabyte GF RTX 5060 8GB GDDR7 Gaming OC V2 (GV-N5060GAMING OCV2-8GD)",
       "url": "https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5060-8gb-gddr7-gaming-oc-v2-gv-n5060gaming-ocv2-8gd.html",
-      "price": 28609.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Відеокарта Gigabyte GF RTX 5060 8GB GDDR7 Windforce Max OC V2 (GV-N5060WF2MAX OCV2-8GD)",
-      "url": "https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5060-8gb-gddr7-windforce-max-oc-v2-gv-n5060wf2max-ocv2-8gd.html",
-      "price": 27705.0,
+      "price": 28639.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -135,7 +127,7 @@
     {
       "name": "Відеокарта Palit GF RTX 5060 8GB GDDR7 Infinity 2 OC (NE75060V19P1-GB2063L)",
       "url": "https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-8gb-gddr7-infinity-2-oc-ne75060v19p1-gb2063l.html",
-      "price": 27479.0,
+      "price": 27509.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -151,7 +143,7 @@
     {
       "name": "Відеокарта Palit GF RTX 5050 8GB GDDR6 StormX (NE65050019P1-GB2070F)",
       "url": "https://comfy.ua/ua/videokarta-palit-gf-rtx-5050-8gb-gddr6-stormx-ne65050019p1-gb2070f.html",
-      "price": 24779.0,
+      "price": 24805.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -191,7 +183,7 @@
     {
       "name": "Відеокарта Palit NVIDIA RTX5050 DUAL 8GB GDDR6 (NE65050019P1-GB2070D)",
       "url": "https://comfy.ua/ua/videokarta-palit-nvidia-rtx5050-dual-8gb-gddr6-ne65050019p1-gb2070d.html",
-      "price": 24779.0,
+      "price": 24805.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -207,7 +199,7 @@
     {
       "name": "Відеокарта Gigabyte GeForce RTX 5070 AERO OC 12G (GV-N5070AERO OC-12GD)",
       "url": "https://comfy.ua/ua/videokarta-gigabyte-geforce-rtx-5070-aero-oc-12g-gv-n5070aero-oc-12gd.html",
-      "price": 54509.0,
+      "price": 54569.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -215,7 +207,7 @@
     {
       "name": "Відеокарта Inno3D NVIDIA GEFORCE RTX 3050 6GB TWIN X2 V2 (N30502-06D6-1880VA60)",
       "url": "https://comfy.ua/ua/videokarta-inno3d-nvidia-geforce-rtx-3050-6gb-twin-x2-v2-n30502-06d6-1880va60.html",
-      "price": 15325.0,
+      "price": 15339.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -231,7 +223,7 @@
     {
       "name": "Відеокарта Palit NVIDIA RTX 3050  STORMX 6GB GDDR6 (NE63050018JE-1072F)",
       "url": "https://comfy.ua/ua/videokarta-palit-nvidia-rtx-3050-stormx-6gb-gddr6-ne63050018je-1072f.html",
-      "price": 13965.0,
+      "price": 13979.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -333,6 +325,14 @@
       "search_query": "Видеокарта RTX"
     },
     {
+      "name": "Відеокарта MSI GeForce RTX 5070 Ti 16G GAMING TRIO OC",
+      "url": "https://comfy.ua/ua/videokarta-msi-geforce-rtx-5070-ti-16g-gaming-trio-oc.html",
+      "price": 57199.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
       "name": "Відеокарта INNO",
       "url": "https://citrus.ua/videokarti/videokarta-inno3d-geforce-rtx5060-ti-8gb-gddr7-x2-n506t2-08d7-193075n-799685.html",
       "price": 28349.0,
@@ -358,8 +358,8 @@
     },
     {
       "name": "Відеокарта GIGABYTE RTX",
-      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5060-8gb-gddr7-gv-n5060eagle-oc-8gd-791626.html",
-      "price": 17399.0,
+      "url": "https://citrus.ua/videokarti/videokarta-gigabyte-rtx5070ti-16gb-n507tgaming-oc-16gd-10-791649.html",
+      "price": 56599.0,
       "site": "Citrus",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
