@@ -4,25 +4,25 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-10-15T11:08:28.681955+00:00",
-  "scan_duration_sec": 102.2,
-  "total_products_scanned": 100,
+  "scan_time_utc": "2026-10-15T16:39:43.831008+00:00",
+  "scan_duration_sec": 115.2,
+  "total_products_scanned": 70,
   "by_site": {
-    "Comfy": 90,
-    "Citrus": 10
+    "Citrus": 10,
+    "Comfy": 60
   },
   "by_category": {
-    "laptop": 33,
+    "laptop": 3,
     "phone": 33,
     "gpu": 34
   },
   "category_stats": {
     "laptop": {
-      "count": 33,
-      "main_count": 33,
-      "median": 47999.0,
-      "mad": 12000.0,
-      "sigma": 17791.2
+      "count": 3,
+      "main_count": 3,
+      "median": 46499.0,
+      "mad": 0.0,
+      "sigma": 11835.68
     },
     "phone": {
       "count": 33,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 34,
       "main_count": 34,
-      "median": 28349.0,
-      "mad": 4550.0,
-      "sigma": 6745.83
+      "median": 28554.0,
+      "mad": 4345.0,
+      "sigma": 6441.9
     }
   },
   "misprice_alerts_count": 0,
@@ -44,246 +44,6 @@
   "high_count": 0,
   "alerts": [],
   "all_products": [
-    {
-      "name": "Ноутбук Asus Vivobook 15 X1504VA-BQ4422 Cool Silver",
-      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504va-bq4422-cool-silver.html",
-      "price": 39999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук ігровий Lenovo LOQ 15ARP10E (83S000EMRA) Luna Grey",
-      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp10e-83s000emra-luna-grey.html",
-      "price": 59999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Asus Vivobook 15 X1504MA-BQ290 Cool Silver",
-      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504ma-bq290-cool-silver.html",
-      "price": 39999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Asus Vivobook 16 X1607CA-MB058 Quiet Blue",
-      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-16-x1607ca-mb058-quiet-blue.html",
-      "price": 40999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук ігровий Lenovo LOQ 15ARP9 (83JC00K6RA) Luna Grey",
-      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp9-83jc00k6ra-luna-grey.html",
-      "price": 48888.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Asus Vivobook 15 X1504MA-BQ541 Cool Silver",
-      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504ma-bq541-cool-silver.html",
-      "price": 28999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук ігровий Lenovo LOQ-15ARP10E (83S0007JRA) Luna Grey",
-      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp10e-83s0007jra-luna-grey.html",
-      "price": 59999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Asus Vivobook 15 X1504VA-BQ3613 Cool Silver",
-      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504va-bq3613-cool-silver.html",
-      "price": 34999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук ігровий Lenovo LOQ 15AHP11 (83TN00DDRA) Surge Green",
-      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15ahp11-83tn00ddra-surge-green.html",
-      "price": 79999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Asus Zenbook 14 UM3406GA-QD049 Jade  Black",
-      "url": "https://comfy.ua/ua/noutbuk-asus-zenbook-14-um3406ga-qd049-jade-black.html",
-      "price": 53999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук ігровий Gigabyte Gaming A16 (CTHI3UA894SD) Black Steel",
-      "url": "https://comfy.ua/ua/noutbuk-igrovij-gigabyte-gaming-a16-cthi3ua894sd-black-steel.html",
-      "price": 72999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук HP 255R G10 (AD1U6ET) Turbo Silver",
-      "url": "https://comfy.ua/ua/noutbuk-hp-255r-g10-ad1u6et-turbo-silver.html",
-      "price": 39755.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Lenovo IdeaPad Slim 5 (83S4002KRA) Luna Grey",
-      "url": "https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-5-83s4002kra-luna-grey.html",
-      "price": 47999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Asus Vivobook 17 X1704VA-AU984 Quiet Blue",
-      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-17-x1704va-au984-quiet-blue.html",
-      "price": 37999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Asus Vivobook 15 X1504VA-BQ5549 Quiet Blue",
-      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504va-bq5549-quiet-blue.html",
-      "price": 29999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Asus Vivobook 14 M1407KA-LY231 Quiet Blue",
-      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-14-m1407ka-ly231-quiet-blue.html",
-      "price": 39999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук HP ProBook 4 G1i (B1BC9AV_V7) Pike Silver",
-      "url": "https://comfy.ua/ua/noutbuk-hp-probook-4-g1i-b1bc9av-v7-pike-silver.html",
-      "price": 68655.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук ігровий Lenovo LOQ 15IRX9 (83DV01EKRA) Luna Grey",
-      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15irx9-83dv01ekra-luna-grey.html",
-      "price": 59999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук ігровий Dream Machines RT5060-17UA26 Black",
-      "url": "https://comfy.ua/ua/noutbuk-igrovij-dream-machines-rt5060-17ua26-black.html",
-      "price": 75699.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук HP 255R G10 (AD1U9ET) Silver",
-      "url": "https://comfy.ua/ua/noutbuk-hp-255r-g10-ad1u9et-silver.html",
-      "price": 42855.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук ігровий Lenovo LOQ 15IRX9 (83DV01L7RA) Luna Grey",
-      "url": "https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15irx9-83dv01l7ra-luna-grey.html",
-      "price": 59999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук HP 255R G10 (CE0Y5ES) Gray",
-      "url": "https://comfy.ua/ua/noutbuk-hp-255r-g10-ce0y5es-gray.html",
-      "price": 53055.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук HP 255R G10 (B9YP5ET) Turbo Silver",
-      "url": "https://comfy.ua/ua/noutbuk-hp-255r-g10-b9yp5et-turbo-silver.html",
-      "price": 34699.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук HP EliteBook 6 G1i (B1KE2AV_V3) Silver",
-      "url": "https://comfy.ua/ua/noutbuk-hp-elitebook-6-g1i-b1ke2av-v3-silver.html",
-      "price": 65955.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук ігровий HP Victus 15-fa2044ua (C1XB9EA) Blue",
-      "url": "https://comfy.ua/ua/noutbuk-igrovij-hp-victus-15-fa2044ua-c1xb9ea-blue.html",
-      "price": 66999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук HP EliteBook 6 G1i (AV3Q6AV_V3) Silver",
-      "url": "https://comfy.ua/ua/noutbuk-hp-elitebook-6-g1i-av3q6av-v3-silver.html",
-      "price": 79399.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук ігровий HP Victus 15-fa2041ua (C1WZ7EA) Gray",
-      "url": "https://comfy.ua/ua/noutbuk-igrovij-hp-victus-15-fa2041ua-c1wz7ea-gray.html",
-      "price": 71555.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Lenovo V15 G6 ARP (83V4A014RA) Business Black",
-      "url": "https://comfy.ua/ua/noutbuk-lenovo-v15-g6-arp-83v4a014ra-business-black.html",
-      "price": 51699.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук HP 255R G10 (D09G9AT) Silver",
-      "url": "https://comfy.ua/ua/noutbuk-hp-255r-g10-d09g9at-silver.html",
-      "price": 42299.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
-    {
-      "name": "Ноутбук Asus Vivobook 15 X1504MA-BQ790 Cool Silver",
-      "url": "https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504ma-bq790-cool-silver.html",
-      "price": 39999.0,
-      "site": "Comfy",
-      "category": "laptop",
-      "search_query": "Ноутбук"
-    },
     {
       "name": "Ноутбук Apple MacBook Neo A",
       "url": "https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-indigo-mhfg4-2026-790233.html",
@@ -413,6 +173,14 @@
       "search_query": "Смартфон Samsung"
     },
     {
+      "name": "Захисне скло для смартфону MAKE For Samsung A37/A57 (MGF-SA37/SA57)",
+      "url": "https://comfy.ua/ua/zahisne-sklo-dlja-smartfonu-make-for-samsung-a37-a57-mgf-sa37-sa57.html",
+      "price": 349.0,
+      "site": "Comfy",
+      "category": "phone",
+      "search_query": "Смартфон Samsung"
+    },
+    {
       "name": "Смартфон Samsung Galaxy S26 12/256Gb Cobalt Violet (SM-S942BZVGEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-12-256gb-cobalt-violet-sm-s942bzvgeuc.html",
       "price": 42299.0,
@@ -424,14 +192,6 @@
       "name": "Смартфон Samsung Galaxy A37 6/128Gb Awesome Charcoal (SM-A376BZABEUC)",
       "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a37-6-128gb-awesome-charcoal-sm-a376bzabeuc.html",
       "price": 17099.0,
-      "site": "Comfy",
-      "category": "phone",
-      "search_query": "Смартфон Samsung"
-    },
-    {
-      "name": "Захисне скло для смартфону MAKE For Samsung A37/A57 (MGF-SA37/SA57)",
-      "url": "https://comfy.ua/ua/zahisne-sklo-dlja-smartfonu-make-for-samsung-a37-a57-mgf-sa37-sa57.html",
-      "price": 349.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -453,17 +213,17 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Graphite (SM-S741BZKGEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-graphite-sm-s741bzkgeuc.html",
-      "price": 39499.0,
+      "name": "Смартфон Samsung Galaxy A17 8/256Gb Gray (SM-A175FZAEEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-8-256gb-gray-sm-a175fzaeeuc.html",
+      "price": 13999.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A17 8/256Gb Gray (SM-A175FZAEEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a17-8-256gb-gray-sm-a175fzaeeuc.html",
-      "price": 13999.0,
+      "name": "Смартфон Samsung Galaxy S26 FE 8/256Gb Graphite (SM-S741BZKGEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-s26-fe-8-256gb-graphite-sm-s741bzkgeuc.html",
+      "price": 39499.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -501,17 +261,17 @@
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Black (SM-A276BZKCEUC)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-black-sm-a276bzkceuc.html",
-      "price": 19299.0,
+      "name": "Смартфон Samsung Galaxy A07s 4/128Gb Black (SM-A077FZKGSEK)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a07s-4-128gb-black-sm-a077fzkgsek.html",
+      "price": 9699.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
     },
     {
-      "name": "Смартфон Samsung Galaxy A07s 4/128Gb Black (SM-A077FZKGSEK)",
-      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a07s-4-128gb-black-sm-a077fzkgsek.html",
-      "price": 9699.0,
+      "name": "Смартфон Samsung Galaxy A27 5G 8/256Gb Black (SM-A276BZKCEUC)",
+      "url": "https://comfy.ua/ua/smartfon-samsung-galaxy-a27-5g-8-256gb-black-sm-a276bzkceuc.html",
+      "price": 19299.0,
       "site": "Comfy",
       "category": "phone",
       "search_query": "Смартфон Samsung"
@@ -576,6 +336,14 @@
       "name": "Відеокарта Asus Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition (DUAL-RTX5060TI-O8G)",
       "url": "https://comfy.ua/ua/videokarta-asus-dual-rtx5060ti-o8g.html",
       "price": 28499.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Відеокарта Palit NVIDIA RTX5070Ti GAMINGPRO-S OC 16GB GDDR7 (NE7507TS19T2-GB2031U)",
+      "url": "https://comfy.ua/ua/videokarta-palit-nvidia-rtx5070ti-gamingpro-s-oc-16gb-gddr7-ne7507ts19t2-gb2031u.html",
+      "price": 75319.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -677,9 +445,17 @@
       "search_query": "Видеокарта RTX"
     },
     {
+      "name": "Відеокарта Palit GF RTX 5060 Ti  8GB GDDR7 Dual (NE7506T019P1-GB2062D)",
+      "url": "https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-ti-8gb-gddr7-dual-ne7506t019p1-gb2062d.html",
+      "price": 32699.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
       "name": "Відеокарта Gigabyte GF RTX 5060 8GB GDDR7 Windforce (GV-N5060WF2-8GD)",
       "url": "https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5060-8gb-gddr7-windforce-gv-n5060wf2-8gd.html",
-      "price": 27705.0,
+      "price": 27739.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -704,6 +480,22 @@
       "name": "Відеокарта Inno3D NVIDIA GEFORCE RTX 3050 6GB TWIN X2 V2 (N30502-06D6-1880VA60)",
       "url": "https://comfy.ua/ua/videokarta-inno3d-nvidia-geforce-rtx-3050-6gb-twin-x2-v2-n30502-06d6-1880va60.html",
       "price": 15339.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Відеокарта Gigabyte GeForce RTX 5070 EAGLE OC ICE SFF 12G (GV-N5070EAGLEOC ICE-12GD)",
+      "url": "https://comfy.ua/ua/videokarta-gigabyte-geforce-rtx-5070-eagle-oc-ice-sff-12g-gv-n5070eagleoc-ice-12gd.html",
+      "price": 52315.0,
+      "site": "Comfy",
+      "category": "gpu",
+      "search_query": "Видеокарта RTX"
+    },
+    {
+      "name": "Відеокарта Gigabyte GF RTX 5060 8GB GDDR7 Windforce OC (GV-N5060WF2OC-8GD)",
+      "url": "https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5060-8gb-gddr7-windforce-oc-gv-n5060wf2oc-8gd.html",
+      "price": 27739.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -776,38 +568,6 @@
       "name": "Відеокарта Palit GF RTX 5070 12GB GDDR7 White OC (NE75070U19K9-GB2050W)",
       "url": "https://comfy.ua/ua/videokarta-palit-gf-rtx-5070-12gb-gddr7-white-oc-ne75070u19k9-gb2050w.html",
       "price": 32199.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Відеокарта MSI NVIDIA GeForce RTX 3050 LP E 6G OC",
-      "url": "https://comfy.ua/ua/videokarta-msi-nvidia-geforce-rtx-3050-lp-e-6g-oc.html",
-      "price": 12389.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Відеокарта Gigabyte GF RTX 5080 16GB GDDR7 Gaming (GV-N5080GAMING-16GD)",
-      "url": "https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5080-16gb-gddr7-gaming-gv-n5080gaming-16gd.html",
-      "price": 71019.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Відеокарта Asus Nvidia RTX 5060 DUAL (DUAL-RTX5060-O8G)",
-      "url": "https://comfy.ua/ua/videokarta-asus-nvidia-rtx-5060-dual-dual-rtx5060-o8g.html",
-      "price": 22599.0,
-      "site": "Comfy",
-      "category": "gpu",
-      "search_query": "Видеокарта RTX"
-    },
-    {
-      "name": "Відеокарта Palit GF RTX 5060 Ti  8GB GDDR7 Dual (NE7506T019P1-GB2062D)",
-      "url": "https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-ti-8gb-gddr7-dual-ne7506t019p1-gb2062d.html",
-      "price": 27999.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
