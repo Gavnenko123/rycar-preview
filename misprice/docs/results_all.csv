@@ -1,41 +1,71 @@
 category,site,search_query,price_uah,name,url
-gpu,Comfy,Видеокарта RTX,12389.0,Відеокарта MSI NVIDIA GeForce RTX 3050 LP E 6G OC,https://comfy.ua/ua/videokarta-msi-nvidia-geforce-rtx-3050-lp-e-6g-oc.html
-gpu,Comfy,Видеокарта RTX,13949.0,Відеокарта Palit NVIDIA RTX 3050  STORMX 6GB GDDR6 (NE63050018JE-1072F),https://comfy.ua/ua/videokarta-palit-nvidia-rtx-3050-stormx-6gb-gddr6-ne63050018je-1072f.html
-gpu,Comfy,Видеокарта RTX,15339.0,Відеокарта Inno3D NVIDIA GEFORCE RTX 3050 6GB TWIN X2 V2 (N30502-06D6-1880VA60),https://comfy.ua/ua/videokarta-inno3d-nvidia-geforce-rtx-3050-6gb-twin-x2-v2-n30502-06d6-1880va60.html
-gpu,Comfy,Видеокарта RTX,17239.0,Відеокарта Inno3D NVIDIA RTX 3050 (N30502-08D6-1711VA41),https://comfy.ua/ua/videokarta-inno3d-nvidia-rtx-3050-ddr6-n30502-08d6-1711va41.html
-gpu,Comfy,Видеокарта RTX,21115.0,Відеокарта Asus GeForce RTX 5060 Ti 8GB GDDR7 (DUAL-RTX5060TI-8G),https://comfy.ua/ua/videokarta-asus-geforce-rtx-5060-ti-8gb-gddr7-dual-rtx5060ti-8g.html
-gpu,Comfy,Видеокарта RTX,22299.0,Відеокарта Inno3D GeForce RTX 5050 TWIN X2 8GB GDDR6 128bit (N50502-08D6-174071N),https://comfy.ua/ua/videokarta-inno3d-geforce-rtx-5050-twin-x2-8gb-gddr6-128bit-n50502-08d6-174071n.html
-gpu,Comfy,Видеокарта RTX,23359.0,Відеокарта Gigabyte GF RTX 5050 8GB GDDR6 WindForce OC (GV-N5050WF2OC-8GD),https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5050-8gb-gddr6-windforce-oc-gv-n5050wf2oc-8gd.html
-gpu,Comfy,Видеокарта RTX,23999.0,Відеокарта MSI GeForce RTX 5060 Ti 8G GAMING TRIO OC (RTX 5060 Ti 8G GAMING TRIO OC),https://comfy.ua/ua/videokarta-msi-geforce-rtx-5060-ti-8g-gaming-trio-oc-rtx-5060-ti-8g-gaming-trio-oc.html
-gpu,Comfy,Видеокарта RTX,24749.0,Відеокарта Palit GF RTX 5050 8GB GDDR6 StormX (NE65050019P1-GB2070F),https://comfy.ua/ua/videokarta-palit-gf-rtx-5050-8gb-gddr6-stormx-ne65050019p1-gb2070f.html
-gpu,Comfy,Видеокарта RTX,24749.0,Відеокарта Palit NVIDIA RTX5050 DUAL 8GB GDDR6 (NE65050019P1-GB2070D),https://comfy.ua/ua/videokarta-palit-nvidia-rtx5050-dual-8gb-gddr6-ne65050019p1-gb2070d.html
-gpu,Comfy,Видеокарта RTX,24859.0,Відеокарта Inno3D GeForce RTX5060 TWIN X2 OC WHITE (N50602-08D7X-195070W),https://comfy.ua/ua/videokarta-inno3d-geforce-rtx5060-twin-x2-oc-white-n50602-08d7x-195070w.html
-gpu,Comfy,Видеокарта RTX,25875.0,Відеокарта MSI NVIDIA GeForce RTX 5060 8G VENTUS 2 X OC V1,https://comfy.ua/ua/videokarta-msi-nvidia-geforce-rtx-5060-8g-ventus-2-x-oc-v1.html
-gpu,Comfy,Видеокарта RTX,27449.0,Відеокарта Palit GF RTX 5060 8GB GDDR7 Infinity 2 OC (NE75060V19P1-GB2063L),https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-8gb-gddr7-infinity-2-oc-ne75060v19p1-gb2063l.html
-gpu,Comfy,Видеокарта RTX,27675.0,Відеокарта Gigabyte GF RTX 5060 8GB GDDR7 Windforce (GV-N5060WF2-8GD),https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5060-8gb-gddr7-windforce-gv-n5060wf2-8gd.html
-gpu,Comfy,Видеокарта RTX,27675.0,Відеокарта Gigabyte GF RTX 5060 8GB GDDR7 Windforce OC (GV-N5060WF2OC-8GD),https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5060-8gb-gddr7-windforce-oc-gv-n5060wf2oc-8gd.html
-gpu,Comfy,Видеокарта RTX,28349.0,"Відеокарта Inno3D RTX5060 Ti TWIN X2, 8GB GDDR7 (N506T2-08D7-193075N)",https://comfy.ua/ua/videokarta-inno3d-rtx5060-ti-twin-x2-8gb-gddr7-n506t2-08d7-193075n.html
 gpu,Citrus,Видеокарта RTX,28349.0,Відеокарта INNO,https://citrus.ua/videokarti/videokarta-inno3d-geforce-rtx5060-ti-8gb-gddr7-x2-n506t2-08d7-193075n-799685.html
-gpu,Comfy,Видеокарта RTX,28575.0,Відеокарта Gigabyte GF RTX 5060 8GB GDDR7 Gaming OC V2 (GV-N5060GAMING OCV2-8GD),https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5060-8gb-gddr7-gaming-oc-v2-gv-n5060gaming-ocv2-8gd.html
-gpu,Comfy,Видеокарта RTX,28609.0,Відеокарта Palit GF RTX 5060 Ti  8GB GDDR7 Dual OC (NE7506TT19P1-GB2062D),https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-ti-8gb-gddr7-dual-oc-ne7506tt19p1-gb2062d.html
-gpu,Comfy,Видеокарта RTX,28829.0,Відеокарта Inno3D GeForce RTX5060 Ti 8GB GDDR7 (N506T2-08D7X-193075N),https://comfy.ua/ua/videokarta-inno3d-geforce-rtx5060-ti-8gb-gddr7-n506t2-08d7x-193075n.html
-gpu,Comfy,Видеокарта RTX,29069.0,"Відеокарта Inno3D GeForce RTX5060 Ti TWIN X2 OC WHITE, 8GB GDDR7 (N506T2-08D7X-193075W)",https://comfy.ua/ua/videokarta-inno3d-geforce-rtx5060-ti-twin-x2-oc-white-8gb-gddr7-n506t2-08d7x-193075w.html
 gpu,Citrus,Видеокарта RTX,29069.0,Відеокарта INNO,https://citrus.ua/videokarti/videokarta-inno3d-geforce-rtx5060-ti-8gb-gddr7-x2-oc-white-n506t2-08d7x-193075w-799686.html
-gpu,Comfy,Видеокарта RTX,32199.0,Відеокарта Palit GF RTX 5070 12GB GDDR7 White OC (NE75070U19K9-GB2050W),https://comfy.ua/ua/videokarta-palit-gf-rtx-5070-12gb-gddr7-white-oc-ne75070u19k9-gb2050w.html
-gpu,Comfy,Видеокарта RTX,32625.0,Відеокарта Palit GF RTX 5060 Ti  8GB GDDR7 Dual (NE7506T019P1-GB2062D),https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-ti-8gb-gddr7-dual-ne7506t019p1-gb2062d.html
 gpu,Comfy,Видеокарта RTX,33005.0,Відеокарта Asus Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition (DUAL-RTX5060TI-O8G),https://comfy.ua/ua/videokarta-asus-dual-rtx5060ti-o8g.html
-gpu,Comfy,Видеокарта RTX,43239.0,Відеокарта Asus GeForce RTX 5070 12GB (DUAL-RTX5070-O12G),https://comfy.ua/ua/videokarta-asus-geforce-rtx-5070-12gb-dual-rtx5070-o12g.html
-gpu,Comfy,Видеокарта RTX,45899.0,"Відеокарта Inno3D GeForce RTX5070 TWIN X2 OC WHITE, 12GB GDDR7 (N50702-12D7X-195064W)",https://comfy.ua/ua/videokarta-inno3d-geforce-rtx5070-twin-x2-oc-white-12gb-gddr7-n50702-12d7x-195064w.html
-gpu,Comfy,Видеокарта RTX,52199.0,Відеокарта Gigabyte GeForce RTX 5070 EAGLE OC ICE SFF 12G (GV-N5070EAGLEOC ICE-12GD),https://comfy.ua/ua/videokarta-gigabyte-geforce-rtx-5070-eagle-oc-ice-sff-12g-gv-n5070eagleoc-ice-12gd.html
-gpu,Comfy,Видеокарта RTX,54449.0,Відеокарта Gigabyte GeForce RTX 5070 AERO OC 12G (GV-N5070AERO OC-12GD),https://comfy.ua/ua/videokarta-gigabyte-geforce-rtx-5070-aero-oc-12g-gv-n5070aero-oc-12gd.html
+gpu,Comfy,Видеокарта RTX,42359.0,Системний блок QUBE QB Ryzen 5 5500 RTX 3050 8GB 162 (Ryzen55500RTX30508GB162),https://comfy.ua/ua/sistemnyj-blok-qube-qb-ryzen-5-5500-rtx-3050-8gb-162-ryzen55500rtx30508gb162.html
+gpu,Comfy,Видеокарта RTX,51999.0,Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 16Gb / SSD 1Tb (A5600.16.S10.5060.A6499),https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s10-5060-a6499.html
+gpu,Comfy,Видеокарта RTX,53518.0,Системний блок QUBE QB Ryzen 5 5500 RTX 5050 8GB CRb 1610 (Ryzen55500RTX50508GBCRb1610),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5050-8gb-crb-1610-ryzen55500rtx50508gbcrb1610.html
+gpu,Comfy,Видеокарта RTX,53678.0,Системний блок Expert PC Play Ryzen 5 5600 / RTX 5060 / DDR4 16Gb / SSD 1Tb (A5600.16.S10.5060.A6519),https://comfy.ua/ua/sistemnij-blok-expert-pc-ultimate-a5600-16-s10-5060-a6519.html
 gpu,Citrus,Видеокарта RTX,56599.0,Відеокарта GIGABYTE RTX,https://citrus.ua/videokarti/videokarta-gigabyte-rtx5070ti-16gb-n507tgaming-oc-16gd-10-791649.html
+gpu,Comfy,Видеокарта RTX,57746.0,Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB CRb 1610 (Ryzen55500RTX50608GBCRb1610),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-crb-1610-ryzen55500rtx50608gbcrb1610.html
+gpu,Comfy,Видеокарта RTX,59704.0,Системний блок QUBE QB Ryzen 5 5600X RTX 5060 8GB CRb 1610 (Ryzen55600XRTX50608GBCRb1610),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-8gb-crb-1610-ryzen55600xrtx50608gbcrb1610.html
+gpu,Comfy,Видеокарта RTX,61191.0,Системний блок QUBE QB Ryzen 5 3500X RTX 5050 8GB NM 3210 (Ryzen53500XRTX50508GBNM3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-3500x-rtx-5050-8gb-nm-3210-ryzen53500xrtx50508gbnm3210.html
+gpu,Comfy,Видеокарта RTX,62679.0,Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 8GB NM 1610 (Ryzen55600XRTX5060TI8GBNM1610),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-8gb-nm-1610-ryzen55600xrtx5060ti8gbnm1610.html
+gpu,Comfy,Видеокарта RTX,63932.0,Системний блок QUBE QB Ryzen 5 5500 RTX 5060 8GB NM 3210 (Ryzen55500RTX50608GBNM3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-8gb-nm-3210-ryzen55500rtx50608gbnm3210.html
+gpu,Comfy,Видеокарта RTX,66907.0,Системний блок QUBE QB Ryzen 5 5600X RTX 5060 8GB CRb 3210 (Ryzen55600XRTX50608GBCRb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-8gb-crb-3210-ryzen55600xrtx50608gbcrb3210.html
+gpu,Comfy,Видеокарта RTX,67598.0,Системний блок QUBE QB Ryzen 5 5600 RTX 5060 8GB CRb 3210 (Ryzen55600RTX50608GBCRb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600-rtx-5060-8gb-crb-3210-ryzen55600rtx50608gbcrb3210.html
+gpu,Comfy,Видеокарта RTX,67650.0,Системний блок QUBE QB Ryzen 5 5500 RTX 5060 Ti 8GB NM 3210 (Ryzen55500RTX5060TI8GBNM3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5500-rtx-5060-ti-8gb-nm-3210-ryzen55500rtx5060ti8gbnm3210.html
+gpu,Comfy,Видеокарта RTX,68865.0,Системний блок QUBE QB i5 12400F RTX 5060 8GB NM 3210 (i512400FRTX50608GBNM3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-i5-12400f-rtx-5060-8gb-nm-3210-i512400frtx50608gbnm3210.html
+gpu,Comfy,Видеокарта RTX,70469.0,Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 8GB CRb 3210 (Ryzen55600XRTX5060TI8GBCRb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-8gb-crb-3210-ryzen55600xrtx5060ti8gbcrb3210.html
 gpu,Citrus,Видеокарта RTX,73499.0,Відеокарта GIGABYTE RTX,https://citrus.ua/videokarti/videokarta-gigabyte-rtx5080-16gb-gddr7-gv-n5080wf3oc-16gd-10-791650.html
-gpu,Comfy,Видеокарта RTX,75149.0,Відеокарта Palit NVIDIA RTX5070Ti GAMINGPRO-S OC 16GB GDDR7 (NE7507TS19T2-GB2031U),https://comfy.ua/ua/videokarta-palit-nvidia-rtx5070ti-gamingpro-s-oc-16gb-gddr7-ne7507ts19t2-gb2031u.html
-gpu,Comfy,Видеокарта RTX,86015.0,Відеокарта Asus GeForce RTX 5070 Ti 16GB GDDR7 TUF Gaming OC White (TUF-RTX5070TI-O16G-WHITE-GAMING),https://comfy.ua/ua/videokarta-asus-geforce-rtx-5070-ti-16gb-gddr7-tuf-gaming-oc-white-tuf-rtx5070ti-o16g-white-gaming.html
-gpu,Comfy,Видеокарта RTX,88949.0,Відеокарта Inno3D NVIDIA GeForce RTX 5080 X3 OC (N50803-16D7X-17603930),https://comfy.ua/ua/videokarta-inno3d-nvidia-geforce-rtx-5080-x3-oc-n50803-16d7x-17603930.html
+gpu,Comfy,Видеокарта RTX,74071.0,Системний блок QUBE QB i5 14400F RTX 5060 Ti 8GB NM 3210 (i514400FRTX5060TI8GBNM3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-i5-14400f-rtx-5060-ti-8gb-nm-3210-i514400frtx5060ti8gbnm3210.html
+gpu,Comfy,Видеокарта RTX,78534.0,Системний блок QUBE QB Ryzen 7 7700X RTX 3050 8GB W1 324 (Ryzen77700XRTX30508GBW1324),https://comfy.ua/ua/sistemnyj-blok-qube-qb-ryzen-7-7700x-rtx-3050-8gb-w1-324-ryzen77700xrtx30508gbw1324.html
+gpu,Comfy,Видеокарта RTX,82019.0,Системний блок QUBE QB Ryzen 5 7500F RTX 5060 Ti 8GB CRb 3210 (Ryzen57500FRTX5060TI8GBCRb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-7500f-rtx-5060-ti-8gb-crb-3210-ryzen57500frtx5060ti8gbcrb3210.html
+gpu,Comfy,Видеокарта RTX,86990.0,Системний блок QUBE QB Ryzen 5 5600X RTX 5060 Ti 16GB CRb 3210 (Ryzen55600XRTX5060TI16GBCRb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-5600x-rtx-5060-ti-16gb-crb-3210-ryzen55600xrtx5060ti16gbcrb3210.html
+gpu,Comfy,Видеокарта RTX,89183.0,Системний блок QUBE QB i5 12400F RTX 5060 Ti 16GB NM 3210 (i512400FRTX5060TI16GBNM3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-i5-12400f-rtx-5060-ti-16gb-nm-3210-i512400frtx5060ti16gbnm3210.html
+gpu,Comfy,Видеокарта RTX,91180.0,Системний блок QUBE QB Ryzen 7 9700X RTX 5060 Ti 8GB MRGw 3210 (Ryzen79700XRTX5060TI8GBMRGw3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5060-ti-8gb-mrgw-3210-ryzen79700xrtx5060ti8gbmrgw3210.html
+gpu,Comfy,Видеокарта RTX,96386.0,Системний блок QUBE QB Ryzen 5 8400F RTX 5060 Ti 16GB CRb 3210 (Ryzen58400FRTX5060TI16GBCRb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-8400f-rtx-5060-ti-16gb-crb-3210-ryzen58400frtx5060ti16gbcrb3210.html
+gpu,Comfy,Видеокарта RTX,103790.0,Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGb 3210 (Ryzen77700RTX507012GBMRGb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5070-12gb-mrgb-3210-ryzen77700rtx507012gbmrgb3210.html
+gpu,Comfy,Видеокарта RTX,106800.0,Системний блок QUBE QB Ryzen 7 7700 RTX 5070 12GB MRGw 3210 (Ryzen77700RTX507012GBMRGw3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-7700-rtx-5070-12gb-mrgw-3210-ryzen77700rtx507012gbmrgw3210.html
+gpu,Comfy,Видеокарта RTX,107780.0,Системний блок QUBE QB Ryzen 7 9700X RTX 5070 12GB MRGb 3210 (Ryzen79700XRTX507012GBMRGb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5070-12gb-mrgb-3210-ryzen79700xrtx507012gbmrgb3210.html
+gpu,Comfy,Видеокарта RTX,112986.0,Системний блок QUBE QB Core Ultra 7 265F RTX 5070 12GB MRGb 3210 (CoreUltra7265FRTX507012GBMRGb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-core-ultra-7-265f-rtx-5070-12gb-mrgb-3210-coreultra7265frtx507012gbmrgb3210.html
+gpu,Comfy,Видеокарта RTX,126885.0,Системний блок QUBE QB Ryzen 5 9600X RTX 5070 Ti 16GB MRGb 3210 (Ryzen59600XRTX5070TI16GBMRGb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-5-9600x-rtx-5070-ti-16gb-mrgb-3210-ryzen59600xrtx5070ti16gbmrgb3210.html
+gpu,Comfy,Видеокарта RTX,131818.0,Системний блок QUBE QB Ryzen 7 9800X3D RTX 5070 12GB TK3W 3220 (Ryzen79800X3DRTX507012GBTK3W3220),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9800x3d-rtx-5070-12gb-tk3w-3220-ryzen79800x3drtx507012gbtk3w3220.html
+gpu,Comfy,Видеокарта RTX,134793.0,Системний блок QUBE QB Ryzen 7 9700X RTX 5070 Ti 16GB MRGb 3210 (Ryzen79700XRTX5070TI16GBMRGb3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9700x-rtx-5070-ti-16gb-mrgb-3210-ryzen79700xrtx5070ti16gbmrgb3210.html
+gpu,Comfy,Видеокарта RTX,135536.0,Системний блок QUBE QB Ryzen 7 9800X3D RTX 5070 12GB TK3B 3210 (Ryzen79800X3DRTX507012GBTK3B3210),https://comfy.ua/ua/sistemnij-blok-qube-qb-ryzen-7-9800x3d-rtx-5070-12gb-tk3b-3210-ryzen79800x3drtx507012gbtk3b3210.html
 laptop,Citrus,Ноутбук,25999.0,Ноутбук Acer Aspire Lite AL,https://citrus.ua/noutbuki-i-ultrabuki/acer-aspire-lite-al15-46p-nxjxveu002-silver-788985.html
+laptop,Comfy,Ноутбук,28999.0,Ноутбук Asus Vivobook 15 X1504MA-BQ541 Cool Silver,https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504ma-bq541-cool-silver.html
+laptop,Comfy,Ноутбук,29999.0,Ноутбук Asus Vivobook 15 X1504VA-BQ5549 Quiet Blue,https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504va-bq5549-quiet-blue.html
+laptop,Comfy,Ноутбук,32699.0,Ноутбук HP 255R G10 (B9YP5ET) Turbo Silver,https://comfy.ua/ua/noutbuk-hp-255r-g10-b9yp5et-turbo-silver.html
+laptop,Comfy,Ноутбук,37999.0,Ноутбук Asus Vivobook 17 X1704VA-AU984 Quiet Blue,https://comfy.ua/ua/noutbuk-asus-vivobook-17-x1704va-au984-quiet-blue.html
+laptop,Comfy,Ноутбук,39755.0,Ноутбук HP 255R G10 (AD1U6ET) Turbo Silver,https://comfy.ua/ua/noutbuk-hp-255r-g10-ad1u6et-turbo-silver.html
+laptop,Comfy,Ноутбук,39999.0,Ноутбук Asus Vivobook 15 X1504VA-BQ4422 Cool Silver,https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504va-bq4422-cool-silver.html
+laptop,Comfy,Ноутбук,39999.0,Ноутбук Asus Vivobook 15 X1504MA-BQ290 Cool Silver,https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504ma-bq290-cool-silver.html
+laptop,Comfy,Ноутбук,39999.0,Ноутбук Asus Vivobook 14 M1407KA-LY231 Quiet Blue,https://comfy.ua/ua/noutbuk-asus-vivobook-14-m1407ka-ly231-quiet-blue.html
+laptop,Comfy,Ноутбук,39999.0,Ноутбук Asus Vivobook 15 X1504MA-BQ790 Cool Silver,https://comfy.ua/ua/noutbuk-asus-vivobook-15-x1504ma-bq790-cool-silver.html
+laptop,Comfy,Ноутбук,41999.0,Ноутбук Asus Vivobook 16 X1607CA-MB058 Quiet Blue,https://comfy.ua/ua/noutbuk-asus-vivobook-16-x1607ca-mb058-quiet-blue.html
+laptop,Comfy,Ноутбук,42299.0,Ноутбук HP 255R G10 (D09G9AT) Silver,https://comfy.ua/ua/noutbuk-hp-255r-g10-d09g9at-silver.html
+laptop,Comfy,Ноутбук,42855.0,Ноутбук HP 255R G10 (AD1U9ET) Silver,https://comfy.ua/ua/noutbuk-hp-255r-g10-ad1u9et-silver.html
 laptop,Citrus,Ноутбук,46499.0,Ноутбук Apple MacBook Neo A,https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-indigo-mhfg4-2026-790233.html
 laptop,Citrus,Ноутбук,46499.0,Ноутбук Apple MacBook Neo A,https://citrus.ua/noutbuki-i-ultrabuki/noutbuk-apple-macbook-neo-a18-pro-chip-13-8512-touch-id-blush-mhfj4-2026-790231.html
+laptop,Comfy,Ноутбук,47999.0,Ноутбук Lenovo IdeaPad Slim 5 (83S4002KRA) Luna Grey,https://comfy.ua/ua/noutbuk-lenovo-ideapad-slim-5-83s4002kra-luna-grey.html
+laptop,Comfy,Ноутбук,48888.0,Ноутбук ігровий Lenovo LOQ 15ARP9 (83JC00K6RA) Luna Grey,https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp9-83jc00k6ra-luna-grey.html
+laptop,Comfy,Ноутбук,50199.0,Ноутбук HP ProBook 4 G1iR 14 (CU7A0AT) Silver,https://comfy.ua/ua/noutbuk-hp-probook-4-g1ir-14-cu7a0at-silver.html
+laptop,Comfy,Ноутбук,51699.0,Ноутбук Lenovo V15 G6 ARP (83V4A014RA) Business Black,https://comfy.ua/ua/noutbuk-lenovo-v15-g6-arp-83v4a014ra-business-black.html
+laptop,Comfy,Ноутбук,53055.0,Ноутбук HP 255R G10 (CE0Y5ES) Gray,https://comfy.ua/ua/noutbuk-hp-255r-g10-ce0y5es-gray.html
+laptop,Comfy,Ноутбук,53999.0,Ноутбук Asus Zenbook 14 UM3406GA-QD049 Jade  Black,https://comfy.ua/ua/noutbuk-asus-zenbook-14-um3406ga-qd049-jade-black.html
+laptop,Comfy,Ноутбук,57499.0,Ноутбук Asus Zenbook 14 UX3405CA-QL296 Ponder Blue,https://comfy.ua/ua/noutbuk-asus-zenbook-14-ux3405ca-ql296-ponder-blue.html
+laptop,Comfy,Ноутбук,59999.0,Ноутбук ігровий Lenovo LOQ 15ARP10E (83S000EMRA) Luna Grey,https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp10e-83s000emra-luna-grey.html
+laptop,Comfy,Ноутбук,59999.0,Ноутбук ігровий Lenovo LOQ-15ARP10E (83S0007JRA) Luna Grey,https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15arp10e-83s0007jra-luna-grey.html
+laptop,Comfy,Ноутбук,59999.0,Ноутбук ігровий Lenovo LOQ 15IRX9 (83DV01L7RA) Luna Grey,https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15irx9-83dv01l7ra-luna-grey.html
+laptop,Comfy,Ноутбук,64885.0,Ноутбук GEEKOM X14 Pro (GEEKBOONX14PROU5125U-321-US),https://comfy.ua/ua/noutbuk-geekom-x14-pro-geekboonx14prou5125u-321-us.html
+laptop,Comfy,Ноутбук,66999.0,Ноутбук ігровий HP Victus 15-fa2044ua (C1XB9EA) Blue,https://comfy.ua/ua/noutbuk-igrovij-hp-victus-15-fa2044ua-c1xb9ea-blue.html
+laptop,Comfy,Ноутбук,69999.0,Ноутбук ігровий Lenovo LOQ 15AHP10 (83JG00F9RA) Luna Grey,https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15ahp10-83jg00f9ra-luna-grey.html
+laptop,Comfy,Ноутбук,72999.0,Ноутбук ігровий Gigabyte Gaming A16 (CTHI3UA894SD) Black Steel,https://comfy.ua/ua/noutbuk-igrovij-gigabyte-gaming-a16-cthi3ua894sd-black-steel.html
+laptop,Comfy,Ноутбук,75699.0,Ноутбук ігровий Dream Machines RT5060-17UA26 Black,https://comfy.ua/ua/noutbuk-igrovij-dream-machines-rt5060-17ua26-black.html
+laptop,Comfy,Ноутбук,78399.0,Ноутбук Lenovo ThinkBook 14 G9 (21UY0017RA) Arctic Grey,https://comfy.ua/ua/noutbuk-lenovo-thinkbook-14-g9-21uy0017ra-arctic-grey.html
+laptop,Comfy,Ноутбук,79399.0,Ноутбук HP EliteBook 6 G1i (AV3Q6AV_V3) Silver,https://comfy.ua/ua/noutbuk-hp-elitebook-6-g1i-av3q6av-v3-silver.html
+laptop,Comfy,Ноутбук,79999.0,Ноутбук ігровий Lenovo LOQ 15AHP11 (83TN00DDRA) Surge Green,https://comfy.ua/ua/noutbuk-igrovij-lenovo-loq-15ahp11-83tn00ddra-surge-green.html
 phone,Citrus,Смартфон Samsung,39499.0,Смартфон Samsung Galaxy S,https://citrus.ua/smartfony/s741b-zkg-graphite-samsung-s26-fe-8256gb-802845.html
 phone,Citrus,Смартфон Samsung,42299.0,Смартфон Samsung Galaxy S,https://citrus.ua/smartfony/s942b-zkg-black-samsung-12256gb-786736.html
 phone,Citrus,Смартфон Samsung,65299.0,Смартфон Samsung Galaxy S,https://citrus.ua/smartfony/s948b-zkg-black-samsung-12512gb-786715.html
