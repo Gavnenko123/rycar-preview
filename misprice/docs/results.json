@@ -4,8 +4,8 @@
     "Смартфон Samsung",
     "Видеокарта RTX"
   ],
-  "scan_time_utc": "2026-10-15T23:37:58.078060+00:00",
-  "scan_duration_sec": 126.4,
+  "scan_time_utc": "2026-10-16T03:55:00.514573+00:00",
+  "scan_duration_sec": 125.8,
   "total_products_scanned": 40,
   "by_site": {
     "Citrus": 10,
@@ -34,9 +34,9 @@
     "gpu": {
       "count": 34,
       "main_count": 34,
-      "median": 28424.0,
-      "mad": 4350.0,
-      "sigma": 6449.31
+      "median": 28462.0,
+      "mad": 4503.0,
+      "sigma": 6676.15
     }
   },
   "misprice_alerts_count": 0,
@@ -95,7 +95,7 @@
     {
       "name": "Відеокарта Asus Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition (DUAL-RTX5060TI-O8G)",
       "url": "https://comfy.ua/ua/videokarta-asus-dual-rtx5060ti-o8g.html",
-      "price": 28499.0,
+      "price": 33005.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -103,7 +103,7 @@
     {
       "name": "Відеокарта Palit NVIDIA RTX5070Ti GAMINGPRO-S OC 16GB GDDR7 (NE7507TS19T2-GB2031U)",
       "url": "https://comfy.ua/ua/videokarta-palit-nvidia-rtx5070ti-gamingpro-s-oc-16gb-gddr7-ne7507ts19t2-gb2031u.html",
-      "price": 75319.0,
+      "price": 75149.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -119,7 +119,7 @@
     {
       "name": "Відеокарта Gigabyte GF RTX 5060 8GB GDDR7 Gaming OC V2 (GV-N5060GAMING OCV2-8GD)",
       "url": "https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5060-8gb-gddr7-gaming-oc-v2-gv-n5060gaming-ocv2-8gd.html",
-      "price": 28639.0,
+      "price": 28575.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -143,7 +143,7 @@
     {
       "name": "Відеокарта Palit GF RTX 5060 8GB GDDR7 Infinity 2 OC (NE75060V19P1-GB2063L)",
       "url": "https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-8gb-gddr7-infinity-2-oc-ne75060v19p1-gb2063l.html",
-      "price": 27509.0,
+      "price": 27449.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -159,7 +159,7 @@
     {
       "name": "Відеокарта Palit GF RTX 5050 8GB GDDR6 StormX (NE65050019P1-GB2070F)",
       "url": "https://comfy.ua/ua/videokarta-palit-gf-rtx-5050-8gb-gddr6-stormx-ne65050019p1-gb2070f.html",
-      "price": 24805.0,
+      "price": 24749.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -167,7 +167,7 @@
     {
       "name": "Відеокарта Palit NVIDIA RTX5050 DUAL 8GB GDDR6 (NE65050019P1-GB2070D)",
       "url": "https://comfy.ua/ua/videokarta-palit-nvidia-rtx5050-dual-8gb-gddr6-ne65050019p1-gb2070d.html",
-      "price": 24805.0,
+      "price": 24749.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -207,7 +207,7 @@
     {
       "name": "Відеокарта Palit GF RTX 5060 Ti  8GB GDDR7 Dual (NE7506T019P1-GB2062D)",
       "url": "https://comfy.ua/ua/videokarta-palit-gf-rtx-5060-ti-8gb-gddr7-dual-ne7506t019p1-gb2062d.html",
-      "price": 32699.0,
+      "price": 32625.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -215,7 +215,7 @@
     {
       "name": "Відеокарта Gigabyte GF RTX 5060 8GB GDDR7 Windforce (GV-N5060WF2-8GD)",
       "url": "https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5060-8gb-gddr7-windforce-gv-n5060wf2-8gd.html",
-      "price": 27739.0,
+      "price": 27675.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -231,7 +231,7 @@
     {
       "name": "Відеокарта Gigabyte GeForce RTX 5070 AERO OC 12G (GV-N5070AERO OC-12GD)",
       "url": "https://comfy.ua/ua/videokarta-gigabyte-geforce-rtx-5070-aero-oc-12g-gv-n5070aero-oc-12gd.html",
-      "price": 54569.0,
+      "price": 54449.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -247,7 +247,7 @@
     {
       "name": "Відеокарта Gigabyte GeForce RTX 5070 EAGLE OC ICE SFF 12G (GV-N5070EAGLEOC ICE-12GD)",
       "url": "https://comfy.ua/ua/videokarta-gigabyte-geforce-rtx-5070-eagle-oc-ice-sff-12g-gv-n5070eagleoc-ice-12gd.html",
-      "price": 52315.0,
+      "price": 52199.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -255,7 +255,7 @@
     {
       "name": "Відеокарта Gigabyte GF RTX 5060 8GB GDDR7 Windforce OC (GV-N5060WF2OC-8GD)",
       "url": "https://comfy.ua/ua/videokarta-gigabyte-gf-rtx-5060-8gb-gddr7-windforce-oc-gv-n5060wf2oc-8gd.html",
-      "price": 27739.0,
+      "price": 27675.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
@@ -263,7 +263,7 @@
     {
       "name": "Відеокарта Palit NVIDIA RTX 3050  STORMX 6GB GDDR6 (NE63050018JE-1072F)",
       "url": "https://comfy.ua/ua/videokarta-palit-nvidia-rtx-3050-stormx-6gb-gddr6-ne63050018je-1072f.html",
-      "price": 13979.0,
+      "price": 13949.0,
       "site": "Comfy",
       "category": "gpu",
       "search_query": "Видеокарта RTX"
